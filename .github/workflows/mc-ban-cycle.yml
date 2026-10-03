@@ -1,0 +1,30 @@
+name: Minecraft Ban Cycle
+
+on:
+  schedule:
+    - cron: '*/30 * * * *' # Runs every 30 minutes
+  workflow_dispatch: # Allows you to run it manually for testing
+
+jobs:
+  check-tasks:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install @supabase/supabase-js rcon-client
+
+      - name: Run Ban Cycle Script
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          RCON_HOST: ${{ secrets.RCON_HOST }}
+          RCON_PORT: ${{ secrets.RCON_PORT }}
+          RCON_PASSWORD: ${{ secrets.RCON_PASSWORD }}
+        run: node ban-cycle.js
