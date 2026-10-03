@@ -19,9 +19,11 @@ async function run() {
   try {
     rcon = await Rcon.connect({ host: rconHost, port: rconPort, password: rconPassword });
     console.log("[McBanCycle] Connected to Minecraft RCON.");
-  } catch (err) {
-    console.error(`[McBanCycle] RCON Connection Failed: ${err.message}. Is the server running?`);
-    process.exit(1);
+       } catch (err) {
+       console.error("[McBanCycle] RCON Connection Failed. Full error details:");
+       console.error(err);
+       process.exit(1);
+     }
   }
 
   try {
