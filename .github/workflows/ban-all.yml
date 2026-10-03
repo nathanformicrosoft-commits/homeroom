@@ -1,0 +1,24 @@
+name: Ban All Students
+
+# This only runs when you manually click the button
+on:
+  workflow_dispatch:
+
+jobs:
+  ban-students:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '22'
+
+      - name: Install RCON Client
+        run: npm install rcon-client
+
+      - name: Execute Ban Commands
+        env:
+          RCON_HOST: ${{ secrets.RCON_HOST }}
+          RCON_PORT: ${{ secrets.RCON_PORT }}
+          RCON_PASSWORD: ${{ secrets.RCON_PASSWORD }}
+        run: node ban-all-script.js
