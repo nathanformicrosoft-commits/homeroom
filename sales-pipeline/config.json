@@ -1,0 +1,57 @@
+{
+  "_readme": "Fill in the null values under studio. Nothing is sent, and no Gmail draft is created, while any of them is null.",
+  "studio": {
+    "studioName": null,
+    "ownerName": null,
+    "city": null,
+    "country": "Philippines",
+    "email": null,
+    "chatLink": null,
+    "postalAddress": null
+  },
+  "settings": {
+    "sendMode": "draft",
+    "dailyCap": 10,
+    "maxFollowUps": 2,
+    "followUpDays": [
+      4,
+      9
+    ],
+    "goalPHP": 100000
+  },
+  "pricing": {
+    "AU": {
+      "currency": "AUD",
+      "site": "$400–$800 AUD",
+      "care": "$29–$49 AUD/month"
+    },
+    "CA": {
+      "currency": "CAD",
+      "site": "$400–$800 CAD",
+      "care": "$29–$49 CAD/month"
+    },
+    "US": {
+      "currency": "USD",
+      "site": "$400–$800 USD",
+      "care": "$29–$49 USD/month"
+    },
+    "NZ": {
+      "currency": "NZD",
+      "site": "$400–$800 NZD",
+      "care": "$29–$49 NZD/month",
+      "_confirm": "NZ pricing was not specified; NZD assumed. Confirm before pitching NZ."
+    },
+    "UK": {
+      "currency": "GBP",
+      "site": "£300–£600",
+      "care": "£29–£49/month"
+    }
+  },
+  "netlify": {
+    "siteName": "local-homepage-demos",
+    "siteId": "690bd604-44f2-4193-b1a2-003c482a7536",
+    "plannedUrl": "https://local-homepage-demos.netlify.app",
+    "baseUrl": null,
+    "_note": "baseUrl stays null until the first deploy is live and checked."
+  }
+}

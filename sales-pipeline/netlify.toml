@@ -1,0 +1,5 @@
+# Used only if the Netlify project "local-homepage-demos" is linked to this repo
+# with Base directory = sales-pipeline. The site folder is pre-built and committed.
+[build]
+  publish = "site"
+  command = "node build.js"

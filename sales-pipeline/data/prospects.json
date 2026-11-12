@@ -1,0 +1,408 @@
+[
+  {
+    "slug": "mildura-lawn-mowing",
+    "name": "Mildura Lawn Mowing",
+    "market": "AU", "town": "Mildura", "state": "VIC", "tz": "Australia/Melbourne",
+    "category": "Lawn care service", "theme": "lawn",
+    "found": "2026-11-12",
+    "channel": "email",
+    "email": "milduralawnmowers@gmail.com",
+    "emailSource": "Listed on their public Facebook page",
+    "phoneDisplay": "0401 980 885", "phoneTel": "+61401980885",
+    "address": null, "mapQuery": "Mildura VIC, Australia", "serviceArea": "Mildura and surrounds",
+    "rating": 4.9, "reviewCount": 54,
+    "hours": [["Mon – Fri", "8am – 5:30pm"], ["Saturday", "9am – 4pm"], ["Sunday", "10am – 3pm"]],
+    "hoursNote": "Hours from your Google listing.",
+    "kicker": "Lawn mowing · Garden maintenance · Mildura",
+    "headline": "Lawns done properly, right across Mildura.",
+    "sub": "Regular mowing and garden maintenance from a local operator rated 4.9 by 54 Google reviewers.",
+    "servicesTitle": "What we do",
+    "services": [
+      ["Lawn mowing", "Regular or one-off cuts, with everything cleaned up before we leave."],
+      ["Garden maintenance", "Ongoing upkeep so the whole yard stays tidy, not just the lawn."],
+      ["Regular property care", "Scheduled visits for rentals and owners with more than one property."],
+      ["One-off tidy-ups", "Get the yard looking its best before an event or an inspection."]
+    ],
+    "themes": [
+      ["Reliable, every visit", "Reviewers describe prompt, dependable service, including regular visits across several properties."],
+      ["A clean finish", "People mention an even cut and a yard left tidy afterwards."],
+      ["Fair rates", "Pricing is repeatedly described as very reasonable for the standard of work."]
+    ],
+    "cta": "Get a free quote",
+    "photo": { "id": "photo-1458245201577-fc8a130b8829", "by": "Daniel Watson", "user": "danielwatsondesign" },
+    "pitch": {
+      "greeting": "Hi Aman,",
+      "line1": "54 Google reviews at 4.9, and nearly all of them say the same thing: you turn up, cut it clean and tidy up afterwards.",
+      "gap": "I couldn't find a website for Mildura Lawn Mowing"
+    },
+    "sources": ["Google Maps listing (rating, hours, reviews)", "facebook.com/p/Mildura-lawn-mowing-100064045365222 (email, phone, description)"],
+    "notes": "Owner named Aman in reviews and owner replies. No website on Google listing."
+  },
+  {
+    "slug": "blended-cafe",
+    "name": "Blended Cafe",
+    "market": "AU", "town": "Whyalla", "state": "SA", "tz": "Australia/Adelaide",
+    "category": "Cafe", "theme": "cafe",
+    "found": "2026-11-12",
+    "channel": "email",
+    "email": "blendedwhyalla@gmail.com",
+    "emailSource": "Listed on their public Facebook page",
+    "phoneDisplay": "(08) 8649 3048", "phoneTel": "+61886493048",
+    "address": "18 Forsyth St, Whyalla SA 5600", "mapQuery": "Blended Cafe, 18 Forsyth St, Whyalla SA 5600",
+    "rating": 4.6, "reviewCount": 212,
+    "hours": [["Mon – Fri", "7am – 1:30pm"], ["Saturday", "8am – 12pm"], ["Sunday", "Closed"]],
+    "hoursNote": "Hours from public listings. We will confirm them with you before launch.",
+    "kicker": "Breakfast · Coffee · Forsyth Street, Whyalla",
+    "headline": "All-day brekkie and good coffee on Forsyth Street.",
+    "sub": "A friendly local cafe with 212 Google reviews. Dine in, sit outside or take it away.",
+    "servicesTitle": "What people order",
+    "services": [
+      ["Avo Lover Eggs Benedict", "The breakfast reviewers keep coming back for."],
+      ["Bacon & egg roll with hollandaise", "A proper start to the day, dine in or takeaway."],
+      ["Ham, cheese & tomato croissant", "Served with horseradish cream."],
+      ["Cakes & slices", "Caramel cheesecake and Jaffa slice get a special mention."],
+      ["Coffee", "Consistently praised by regulars and visitors."]
+    ],
+    "servicesNote": "Dishes named in your Google reviews. Your full menu and prices go here.",
+    "themes": [
+      ["Breakfast worth the trip", "Reviewers describe fresh, well-presented breakfasts that changed their weekend routine."],
+      ["Friendly from the door", "The welcome and the service come up again and again."],
+      ["More than a cafe", "People notice the community touches, like the kindness wall."]
+    ],
+    "cta": "Book a table",
+    "photo": { "id": "photo-1655979283362-535e6a167a53", "by": "Ajeet Panesar", "user": "ajeetpanesarphotography" },
+    "pitch": {
+      "greeting": "Hi Blended team,",
+      "line1": "212 Google reviews, and people are still writing about the Avo Lover eggs benny and the kindness wall.",
+      "gap": "I couldn't find a website for the cafe"
+    },
+    "sources": ["Google Maps listing (rating, reviews)", "facebook.com/p/Blended-Cafe-Whyalla-100086660521344 (email, phone, address)", "onlinedining.com.au/venue/blended-cafe (hours)"],
+    "notes": "Sources disagree slightly on hours (a 2023 article says 7 days). Confirm before launch."
+  },
+  {
+    "slug": "route-66-diner",
+    "name": "Route 66 Diner",
+    "market": "AU", "town": "Whyalla Norrie", "state": "SA", "tz": "Australia/Adelaide",
+    "category": "Diner", "theme": "diner",
+    "found": "2026-11-12",
+    "channel": "email",
+    "email": "route66diner24@gmail.com",
+    "emailSource": "Listed on their public Facebook page",
+    "phoneDisplay": "(08) 7624 9153", "phoneTel": "+61876249153",
+    "address": "8A William St, Whyalla Norrie SA 5608", "mapQuery": "Route 66 Diner, 8A William St, Whyalla Norrie SA 5608",
+    "rating": 4.8, "reviewCount": 61,
+    "hours": [["Every day", "From 8:30am"], ["Weekdays", "Open until 8pm"]],
+    "hoursNote": "From your Facebook posts. Closing time can change with bookings.",
+    "kicker": "Burgers · Shakes · 50s diner · Whyalla Norrie",
+    "headline": "A 50s American diner, right here in Whyalla.",
+    "sub": "Burgers, ice-cream shakes and a room full of Marilyn and Elvis. Rated 4.8 by 61 Google reviewers.",
+    "servicesTitle": "On the menu",
+    "services": [
+      ["Burgers", "The reason most people walk in, and a favourite in the reviews."],
+      ["Milkshakes & thickshakes", "Made with real ice cream, in plenty of flavours."],
+      ["Home-made quiche", "Made in house."],
+      ["Delivery", "Order through DoorDash or Uber Eats."],
+      ["Birthdays & group bookings", "Call ahead and we will look after your table."]
+    ],
+    "servicesNote": "Taken from your Facebook posts and reviews. Your full menu and prices go here.",
+    "themes": [
+      ["Like stepping into a movie", "Reviewers say the decor, the music and the whole feel are unlike anywhere else in town."],
+      ["Owners who look after you", "People mention a personal welcome, and staying open late for a booking."],
+      ["Great value", "Burgers and shakes are praised for quality at the price."]
+    ],
+    "cta": "Book a table",
+    "photo": { "id": "photo-1678712803863-6cd22f6b9dba", "by": "Chris Boland", "user": "londonweddingphotographer" },
+    "pitch": {
+      "greeting": "Hi Route 66 team,",
+      "line1": "One of your Google reviewers said walking into Route 66 felt like stepping into a 50s movie, and another that you stayed open late just for their table.",
+      "gap": "I couldn't find a website for the diner"
+    },
+    "sources": ["Google Maps listing (rating, reviews)", "facebook.com/p/Route-66-Diner-61568326540265 (email, phone, address, hours, menu items)"],
+    "notes": "Hours vary in public posts (older posts say 8:30am to 6pm). Confirm before launch."
+  },
+  {
+    "slug": "kalgoorlie-mobile-detailing",
+    "name": "Kalgoorlie Mobile Detailing",
+    "market": "AU", "town": "Kalgoorlie", "state": "WA", "tz": "Australia/Perth",
+    "category": "Mobile car detailing", "theme": "detailing",
+    "found": "2026-11-12",
+    "channel": "email",
+    "email": "kalgoorlie.mobile.detailing@gmail.com",
+    "emailSource": "Listed on their public Facebook page and the Goldfields Key directory",
+    "phoneDisplay": "0431 714 778", "phoneTel": "+61431714778",
+    "address": null, "mapQuery": "Kalgoorlie WA, Australia", "serviceArea": "Kalgoorlie-Boulder (we come to you)",
+    "rating": 5.0, "reviewCount": 22,
+    "hours": [["Every day", "7am – 6pm"]],
+    "hoursNote": "Hours from your Google listing.",
+    "kicker": "Mobile car detailing · Kalgoorlie-Boulder",
+    "headline": "We come to you. Your car comes back looking new.",
+    "sub": "Mobile interior and exterior detailing across Kalgoorlie-Boulder. 5.0 from 22 Google reviews.",
+    "servicesTitle": "Detailing services",
+    "services": [
+      ["Full interior deep clean", "Seats, carpets and every surface, including dog hair and kid mess."],
+      ["Full exterior detail", "A thorough wash and finish, done at your place."],
+      ["Clay bar treatment", "Lifts the contamination a normal wash leaves behind."],
+      ["Cut & polish", "Brings tired paint back to life."],
+      ["Paint protection", "Keeps the finish looking fresh for longer."],
+      ["Pinstripe & scratch removal", "Takes out the marks that bug you every time you walk past."]
+    ],
+    "servicesNote": "Taken from jobs posted on your Facebook page.",
+    "themes": [
+      ["Looks brand new again", "Reviewers say cars come back looking and feeling near new, inside and out."],
+      ["Built for family cars", "Dog hair, toddler mess and years of dust all get a mention, and all get sorted."],
+      ["Easy to deal with", "People praise clear communication and an efficient job."]
+    ],
+    "cta": "Book a detail",
+    "photo": { "id": "photo-1658244500543-47f32dc51dc2", "by": "Vitali Adutskevich", "user": "vadutskevich" },
+    "pitch": {
+      "greeting": "Hi there,",
+      "line1": "Your Google reviews read like before-and-afters: dog hair, toddler mess, five years of dust, and every one says the car came back looking new.",
+      "gap": "I couldn't find a website for Kalgoorlie Mobile Detailing"
+    },
+    "sources": ["Google Maps listing (rating, hours, reviews)", "facebook.com/KalgoorlieMobileDetailing (email, phone, services)", "goldfieldskey.com.au listing (email)"],
+    "notes": "Owner name not public. No website on Google listing."
+  },
+  {
+    "slug": "keeley-industries",
+    "name": "Keeley Industries",
+    "market": "AU", "town": "Boulder", "state": "WA", "tz": "Australia/Perth",
+    "category": "Mechanic", "theme": "mechanic",
+    "found": "2026-11-12",
+    "channel": "email",
+    "email": "jay@keeleyindustries.com.au",
+    "emailSource": "Listed on their public Facebook page and the GE Connect (Chamber of Commerce) directory",
+    "phoneDisplay": "(08) 9093 1663", "phoneTel": "+61890931663",
+    "address": "36 Vivian St, Boulder WA 6432", "mapQuery": "Keeley Industries, 36 Vivian St, Boulder WA 6432",
+    "rating": 5.0, "reviewCount": 16,
+    "hours": [["Mon – Sat", "7am – 6pm"], ["Sunday", "Closed"]],
+    "hoursNote": "Hours from your Google listing.",
+    "kicker": "Mechanical repairs · Servicing · Kalgoorlie-Boulder",
+    "headline": "Kalgoorlie-Boulder's local mechanics since 2008.",
+    "sub": "Locally owned workshop on Vivian Street. 5.0 from 16 Google reviews.",
+    "servicesTitle": "In the workshop",
+    "services": [
+      ["Vehicle servicing", "Regular servicing with a clear run-down of what needs doing."],
+      ["Mechanical repairs", "Parts ordered and jobs turned around quickly."],
+      ["Diagnostic testing", "Find the fault first, then fix it properly."],
+      ["4WD repairs", "Keeping work and touring 4WDs on the road."],
+      ["Wheels", "Dynamic Wheel Co. dealer."]
+    ],
+    "servicesNote": "Based on your reviews and public listings. Your full service list goes here.",
+    "themes": [
+      ["Fast turnaround", "Reviewers mention parts ordered and the job finished within a day."],
+      ["Straight talk", "People say they are told what needs doing and agree to it before work starts."],
+      ["Never too busy to help", "The team is described as always willing to assist."]
+    ],
+    "cta": "Book your vehicle in",
+    "photo": { "id": "photo-1676018366904-c083ed678e60", "by": "Kato Blackmore", "user": "katoblackmore" },
+    "pitch": {
+      "greeting": "Hi Jay,",
+      "line1": "Sixteen Google reviews, every one five stars, and the line that keeps coming up is that you're never too busy to help.",
+      "gap": "I couldn't find a website for Keeley Industries"
+    },
+    "sources": ["Google Maps listing (rating, hours, reviews)", "facebook.com/KeeleyIndustries (email, address, since 2008)", "geconnect.com.au listing (email)", "dynamicwheelco.com.au dealer listing (landline)"],
+    "notes": "Mobile number differs between Google (0488 559 563) and GE Connect (0448 559 563), so the demo uses the landline. Domain keeleyindustries.com.au is used for email but serves no website."
+  },
+  {
+    "slug": "dubbo-exterior-cleaning",
+    "name": "Dubbo Exterior Cleaning",
+    "market": "AU", "town": "Dubbo", "state": "NSW", "tz": "Australia/Sydney",
+    "category": "Pressure washing service", "theme": "wash",
+    "found": "2026-11-12",
+    "channel": "email",
+    "email": "dubboexteriorcleaning@gmail.com",
+    "emailSource": "Listed on their public Facebook page",
+    "phoneDisplay": "0421 677 401", "phoneTel": "+61421677401",
+    "address": null, "mapQuery": "Dubbo NSW 2830, Australia", "serviceArea": "Dubbo and surrounds",
+    "rating": 5.0, "reviewCount": 22,
+    "hours": [["Every day", "Call or text any time"]],
+    "hoursNote": "Your Google listing shows open 24 hours. We will set this to your real booking hours.",
+    "kicker": "Pressure washing · Gutters · Windows · Dubbo",
+    "headline": "Driveways, gutters, windows and house washes across Dubbo.",
+    "sub": "Local exterior cleaning with a 5.0 rating from 22 Google reviews.",
+    "servicesTitle": "Exterior cleaning",
+    "services": [
+      ["Pressure washing", "Driveways, pathways and verandas brought back to clean."],
+      ["Gutter cleaning", "Cleared properly, with a quick check while we are up there."],
+      ["Window cleaning", "Streak-free glass, inside view restored."],
+      ["House washing", "A full exterior wash to lift the whole property."],
+      ["Roof cleaning", "Part of a complete exterior refresh."]
+    ],
+    "servicesNote": "Taken from your Localsearch, Instagram and Facebook listings.",
+    "themes": [
+      ["On time and professional", "Reviewers describe a punctual, courteous service with the work explained as it goes."],
+      ["Fair pricing", "Prices are called fair and good value."],
+      ["Care beyond the job", "One customer says an orchid found growing in their gutter was saved and replanted."]
+    ],
+    "cta": "Get a free quote",
+    "photo": { "id": "photo-1781637202423-33ec5b47e52e", "by": "web seo", "user": "webseoweb" },
+    "pitch": {
+      "greeting": "Hi Tyler,",
+      "line1": "One of your Google reviewers says you rescued an orchid growing in their gutter and it's now thriving in their garden. That's the kind of detail people remember.",
+      "gap": "I could only find a Calendly link, not a website"
+    },
+    "sources": ["Google Maps listing (rating, reviews, Calendly link)", "facebook.com/p/Dubbo-Exterior-Cleaning-100090371730851 (email, phone)", "localsearch.com.au profile (services)", "instagram.com/dubboexteriorcleaning"],
+    "notes": "Operator named Tyler in reviews. Has a Calendly booking link, hipages and Localsearch profiles, but no website."
+  },
+  {
+    "slug": "mmt-electrical",
+    "name": "MMT Electrical",
+    "market": "AU", "town": "Gympie", "state": "QLD", "tz": "Australia/Brisbane",
+    "category": "Electrician", "theme": "sparky",
+    "found": "2026-11-12",
+    "channel": "messenger",
+    "contactLink": "https://m.me/61573895315731",
+    "altContact": "SMS 0423 409 680",
+    "email": null,
+    "phoneDisplay": "0423 409 680", "phoneTel": "+61423409680",
+    "address": null, "mapQuery": "Widgee QLD, Australia", "serviceArea": "Gympie, Widgee, Woolooga, Kilkivan, Lower Wonga and the Wide Bay",
+    "rating": 5.0, "reviewCount": 20,
+    "hours": [["Mon – Fri", "Call any time"], ["Sat – Sun", "Closed"]],
+    "hoursNote": "From your Google listing.",
+    "kicker": "Domestic · Commercial · Industrial · Gympie & Wide Bay",
+    "headline": "Family-owned sparky for Gympie, Widgee and the Wide Bay.",
+    "sub": "From pumps to sheds, homes to farms. 5.0 from 20 Google reviews.",
+    "servicesTitle": "Electrical work",
+    "services": [
+      ["Ceiling fan installation", "Homes, sheds and barns, supplied and fitted neatly."],
+      ["Switchboard upgrades", "Safer, tidier and ready for what you run today."],
+      ["Underground power", "Blocks prepped and power run underground."],
+      ["Pumps, sheds & farms", "Rural electrical work done by a local."],
+      ["Repairs & installs", "No job too big or small."]
+    ],
+    "servicesNote": "Taken from jobs posted on your Facebook page.",
+    "themes": [
+      ["Quick quotes, quick installs", "Reviewers describe a fast, easy quote and install process."],
+      ["Clean and tidy", "People note the space is left clean when the job is done."],
+      ["Clear and fairly priced", "Prompt replies, clear communication and great prices come up repeatedly."]
+    ],
+    "cta": "Get a free quote",
+    "photo": null,
+    "pitch": {
+      "greeting": "Hi Mark and Monique,",
+      "line1": "Twenty Google reviews, all five stars, and a lot of them are about fans. The barn with four big ones sounds like it turned out great.",
+      "gap": "I couldn't find a website for MMT Electrical"
+    },
+    "sources": ["Google Maps listing (rating, hours, reviews)", "facebook.com/p/MMT-Electrical-61573895315731 (phone, services, areas)", "instagram.com/mmt_electrical_gympie"],
+    "notes": "Family owned (Mark and Monique, per their Facebook posts). No public email found, so this goes on the Send list."
+  },
+  {
+    "slug": "barberz-republic",
+    "name": "Barberz Republic",
+    "market": "AU", "town": "Whyalla", "state": "SA", "tz": "Australia/Adelaide",
+    "category": "Barber shop", "theme": "barber",
+    "found": "2026-11-12",
+    "channel": "messenger",
+    "contactLink": "https://m.me/BarberzRepublic",
+    "email": null,
+    "phoneDisplay": "(08) 8631 9167", "phoneTel": "+61886319167",
+    "address": "33 Patterson St, Whyalla SA 5600", "mapQuery": "Barberz Republic, 33 Patterson St, Whyalla SA 5600",
+    "rating": 4.7, "reviewCount": 86,
+    "hours": [["Mon – Fri", "9am – 5:30pm"], ["Saturday", "9am – 5pm"], ["Sunday", "Closed"]],
+    "hoursNote": "Patterson Street hours from your Google listing.",
+    "kicker": "Barber shop · Patterson Street & Westland · Whyalla",
+    "headline": "Sharp cuts. Two Whyalla shops.",
+    "sub": "Skilled barbers, a great vibe and a 4.7 rating from 86 Google reviews.",
+    "servicesTitle": "At the shop",
+    "services": [
+      ["Haircuts", "Clean, consistent cuts in whatever style you ask for."],
+      ["Two locations", "Patterson Street in town, and Westland Shopping Centre."],
+      ["Open six days", "Monday to Saturday."]
+    ],
+    "servicesNote": "Your price list and services go here.",
+    "themes": [
+      ["Sharp and consistent", "Reviewers praise attention to detail and a clean cut every visit."],
+      ["Great vibe", "Friendly, respectful barbers who are easy to talk to."],
+      ["Good value", "Pricing is called out as a pleasant surprise."]
+    ],
+    "cta": "Call the shop",
+    "photo": { "id": "photo-1503951914875-452162b0f3f1", "by": "Allef Vinicius", "user": "seteph" },
+    "pitch": {
+      "greeting": "Hi Barberz Republic team,",
+      "line1": "Congrats on the second shop at Westland. 86 Google reviews at 4.7 says Whyalla has noticed.",
+      "gap": "I couldn't find a website for the shops"
+    },
+    "sources": ["Google Maps listing (rating, hours, reviews)", "facebook.com/BarberzRepublic (second location)", "westlandsc.com.au store directory (phone)", "findme.hair listing (address, phone)"],
+    "notes": "Three shops (two in Whyalla, one in Port Augusta). Locally run, not a franchise. No public email found, so this goes on the Send list."
+  },
+  {
+    "slug": "backyard-barbershop",
+    "name": "Backyard Barbershop",
+    "market": "AU", "town": "Whyalla Norrie", "state": "SA", "tz": "Australia/Adelaide",
+    "category": "Barber shop", "theme": "barber-classic",
+    "found": "2026-11-12",
+    "channel": "messenger",
+    "contactLink": "https://m.me/100064719740386",
+    "email": null,
+    "phoneDisplay": "(08) 8645 8771", "phoneTel": "+61886458771",
+    "address": "15 Morris Cres, Whyalla Norrie SA 5608", "mapQuery": "Backyard Barbershop, 15 Morris Cres, Whyalla Norrie SA 5608",
+    "rating": 4.6, "reviewCount": 50,
+    "hours": [["Tue – Fri", "9am – 5pm"], ["Sat – Mon", "Closed"]],
+    "hoursNote": "Hours from your Google and Fresha listings.",
+    "kicker": "Traditional barber · Walk-ins only · Whyalla Norrie",
+    "headline": "No appointments. Just walk in.",
+    "sub": "A great haircut in a relaxed, friendly shop. Rated 4.6 by 50 Google reviewers.",
+    "servicesTitle": "Services",
+    "services": [
+      ["Men's haircut", "A proper cut, no booking needed."],
+      ["Beard trim", "Tidied and shaped."],
+      ["Hot towel shave", "The traditional way."],
+      ["Head shave", "Clean and close."]
+    ],
+    "servicesNote": "Services from your Fresha listing. Your prices go here.",
+    "themes": [
+      ["A warm welcome", "Reviewers describe a kind, easy-to-talk-to barber who cares about people."],
+      ["Clean, tidy and relaxed", "The well-kept garden entrance and homely feel get mentioned often."],
+      ["Great cut, fair price", "People are impressed with the haircut and the value."]
+    ],
+    "cta": "Call the shop",
+    "photo": { "id": "photo-1585747860715-2ba37e788b70", "by": "Nathon Oski", "user": "onatecan" },
+    "pitch": {
+      "greeting": "Hi there,",
+      "line1": "Not many barbershops get reviews about the garden. Yours has people mentioning the entrance, the welcome and the cut in the same breath.",
+      "gap": "I couldn't find a website for Backyard Barbershop"
+    },
+    "sources": ["Google Maps listing (rating, hours, reviews)", "facebook.com/100064719740386 (walk-ins only, address)", "fresha.com listing (services, phone, hours)"],
+    "notes": "No public email found, so this goes on the Send list."
+  },
+  {
+    "slug": "shivs-mowing",
+    "name": "Shiv's Mowing",
+    "market": "AU", "town": "Bundaberg", "state": "QLD", "tz": "Australia/Brisbane",
+    "category": "Lawn care service", "theme": "lawn-sun",
+    "found": "2026-11-12",
+    "channel": "sms",
+    "contactLink": "sms:+61467397303",
+    "email": null,
+    "phoneDisplay": "0467 397 303", "phoneTel": "+61467397303",
+    "address": null, "mapQuery": "Bundaberg QLD, Australia", "serviceArea": "Bundaberg and surrounds",
+    "rating": 4.4, "reviewCount": 7,
+    "hours": [["Mon – Fri", "7am – 5pm"], ["Saturday", "7am – 10am"], ["Sunday", "Closed"]],
+    "hoursNote": "Hours from your Google listing.",
+    "kicker": "Mowing · Yard clean-ups · Bundaberg",
+    "headline": "Mowing and yard clean-ups in Bundaberg, from someone who calls you back.",
+    "sub": "Local, reliable and fairly priced. See what customers say on Google.",
+    "servicesTitle": "What we do",
+    "services": [
+      ["Lawn mowing & whipper snipping", "Cut, edged and the clippings collected."],
+      ["Overgrown block clearing", "Big clean-ups fitted in around regular customers."],
+      ["Garden tidy-ups", "Removing plants and cutting back palms."],
+      ["Regular mowing", "Stay on the schedule and never think about it again."]
+    ],
+    "servicesNote": "Taken from jobs described in your Google reviews.",
+    "themes": [
+      ["Actually calls back", "One reviewer rang half a dozen businesses, and this was the only one that returned the call."],
+      ["Keeps you informed", "Customers were told when to expect a visit, with rates and dates sorted within a day."],
+      ["Great price", "The service is described as excellent for the price."]
+    ],
+    "cta": "Get a free quote",
+    "photo": { "id": "photo-1558904541-efa843a96f01", "by": "Petar Tonchev", "user": "ptonchev" },
+    "pitch": {
+      "greeting": "Hi Martin,",
+      "line1": "One of your Google reviews says that out of half a dozen businesses they rang, you were the only one who called back.",
+      "gap": "I couldn't find a website for Shiv's Mowing"
+    },
+    "sources": ["Google Maps listing (rating, hours, phone, reviews)"],
+    "notes": "Operator named Martin in reviews. No public email or Facebook page found, so this goes on the Send list as an SMS."
+  }
+]
