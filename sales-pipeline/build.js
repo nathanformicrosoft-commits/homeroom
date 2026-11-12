@@ -14,14 +14,14 @@ const esc = (s) => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</
 
 const THEMES = {
   lawn: { fonts: 'Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600', hf: "'Barlow Condensed'", bf: "'Barlow'", bg: '#F4F6EF', surface: '#FFFFFF', ink: '#14261A', muted: '#566458', line: '#DDE3D6', accent: '#2E7D32', accentInk: '#FFFFFF', tint: '16,34,22', upper: true },
-  'lawn-sun': { fonts: 'Bricolage+Grotesque:wght@600;800&family=Inter:wght@400;500;600', hf: "'Bricolage Grotesque'", bf: "'Inter'", bg: '#FFFBEA', surface: '#FFFFFF', ink: '#1F2A14', muted: '#5C6650', line: '#EADFB8', accent: '#F2B705', accentInk: '#1F2A14', accentText: '#7A5C00', tint: '26,38,16' },
+  'lawn-sun': { fonts: 'Bricolage+Grotesque:wght@600;800&family=Instrument+Sans:wght@400;500;600', hf: "'Bricolage Grotesque'", bf: "'Instrument Sans'", bg: '#FFFBEA', surface: '#FFFFFF', ink: '#1F2A14', muted: '#5C6650', line: '#EADFB8', accent: '#F2B705', accentInk: '#1F2A14', accentText: '#7A5C00', tint: '26,38,16' },
   cafe: { fonts: 'Fraunces:opsz,wght@9..144,500;9..144,700&family=DM+Sans:wght@400;500;700', hf: "'Fraunces'", bf: "'DM Sans'", bg: '#FAF5EC', surface: '#FFFFFF', ink: '#2B2118', muted: '#6B5D50', line: '#E8DCC8', accent: '#C4552D', accentInk: '#FFFFFF', tint: '43,33,24' },
   diner: { fonts: 'Oswald:wght@500;700&family=DM+Sans:wght@400;500;700', hf: "'Oswald'", bf: "'DM Sans'", bg: '#FFF7EE', surface: '#FFFFFF', ink: '#1B1B1F', muted: '#5F5A57', line: '#F0DDCB', accent: '#D7263D', accentInk: '#FFFFFF', tint: '40,10,16', upper: true, checker: true },
-  detailing: { dark: true, fonts: 'Sora:wght@600;700&family=Inter:wght@400;500;600', hf: "'Sora'", bf: "'Inter'", bg: '#0D1117', surface: '#161B22', ink: '#F0F3F6', muted: '#9BA7B4', line: '#27303B', accent: '#3BA7FF', accentInk: '#06131F', tint: '6,10,16' },
+  detailing: { dark: true, fonts: 'Sora:wght@600;700&family=Albert+Sans:wght@400;500;600', hf: "'Sora'", bf: "'Albert Sans'", bg: '#0D1117', surface: '#161B22', ink: '#F0F3F6', muted: '#9BA7B4', line: '#27303B', accent: '#3BA7FF', accentInk: '#06131F', tint: '6,10,16' },
   mechanic: { dark: true, fonts: 'Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600', hf: "'Barlow Condensed'", bf: "'Barlow'", bg: '#141618', surface: '#1D2023', ink: '#F3F1EC', muted: '#A6A39C', line: '#2E3236', accent: '#F28C28', accentInk: '#1A1206', tint: '12,13,14', upper: true },
-  wash: { fonts: 'Outfit:wght@600;700&family=Inter:wght@400;500;600', hf: "'Outfit'", bf: "'Inter'", bg: '#F2F8FC', surface: '#FFFFFF', ink: '#0C2A3A', muted: '#4F6675', line: '#D5E6F0', accent: '#0A7CC0', accentInk: '#FFFFFF', tint: '8,34,50' },
+  wash: { fonts: 'Outfit:wght@600;700&family=Figtree:wght@400;500;600', hf: "'Outfit'", bf: "'Figtree'", bg: '#F2F8FC', surface: '#FFFFFF', ink: '#0C2A3A', muted: '#4F6675', line: '#D5E6F0', accent: '#0A7CC0', accentInk: '#FFFFFF', tint: '8,34,50' },
   sparky: { dark: true, fonts: 'Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600', hf: "'Barlow Condensed'", bf: "'Barlow'", bg: '#0B1B2B', surface: '#12273C', ink: '#F4F7FA', muted: '#9FB3C6', line: '#1F3A55', accent: '#FFC629', accentInk: '#0B1B2B', tint: '8,20,34', upper: true },
-  barber: { dark: true, fonts: 'Anton&family=Inter:wght@400;500;600', hf: "'Anton'", bf: "'Inter'", bg: '#0F0F10', surface: '#1A1A1C', ink: '#F5F2EA', muted: '#A8A39A', line: '#2B2B2E', accent: '#E0B04A', accentInk: '#14100A', tint: '10,10,10', upper: true },
+  barber: { dark: true, fonts: 'Anton&family=Archivo:wght@400;500;600', hf: "'Anton'", bf: "'Archivo'", bg: '#0F0F10', surface: '#1A1A1C', ink: '#F5F2EA', muted: '#A8A39A', line: '#2B2B2E', accent: '#E0B04A', accentInk: '#14100A', tint: '10,10,10', upper: true },
   'barber-classic': { fonts: 'DM+Serif+Display&family=DM+Sans:wght@400;500;700', hf: "'DM Serif Display'", bf: "'DM Sans'", bg: '#F6F1E7', surface: '#FFFDF8', ink: '#1E2A22', muted: '#5E675F', line: '#E2D9C6', accent: '#8A2B2B', accentInk: '#FFFFFF', tint: '30,42,34' },
 };
 
@@ -187,11 +187,11 @@ ${themes}
 
 // ---------- studio pages (one-pager + portfolio) ----------
 const STUDIO_CSS = `
-*{box-sizing:border-box}body{margin:0;background:#F7F5F0;color:#17202A;font:400 17px/1.65 'Inter',system-ui,sans-serif}
-h1,h2,h3{font-family:'Bricolage Grotesque','Inter',sans-serif;line-height:1.1;margin:0;text-wrap:balance}
+*{box-sizing:border-box}body{margin:0;background:#F7F5F0;color:#17202A;font:400 17px/1.65 'Instrument Sans',system-ui,sans-serif}
+h1,h2,h3{font-family:'Bricolage Grotesque','Instrument Sans',sans-serif;line-height:1.1;margin:0;text-wrap:balance}
 .wrap{max-width:920px;margin:0 auto;padding:0 20px}a{color:#0B5FFF}
 header{padding:22px 0;font-weight:700;font-family:'Bricolage Grotesque';font-size:20px}
-header a{text-decoration:none;color:inherit}nav{float:right;font:500 15px 'Inter'}nav a{margin-left:16px}
+header a{text-decoration:none;color:inherit}nav{float:right;font:500 15px 'Instrument Sans'}nav a{margin-left:16px}
 .lead{padding:48px 0 40px}.lead h1{font-size:clamp(36px,8vw,64px);max-width:16ch}.lead p{font-size:20px;max-width:52ch;color:#44505C}
 .btn{display:inline-block;background:#17202A;color:#fff;text-decoration:none;font-weight:600;border-radius:999px;padding:14px 24px;margin-top:8px}
 section{padding:40px 0;border-top:1px solid #E2DED4}h2{font-size:clamp(26px,5vw,36px);margin-bottom:18px}
@@ -214,7 +214,7 @@ const shell = (title, body) => `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow"><title>${esc(title)}</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/studio.css"></head><body>
 <div class="wrap"><header><a href="/">${esc(studioName)}</a><nav><a href="/">Pricing</a><a href="/work/">Work</a></nav></header></div>
 ${body}
