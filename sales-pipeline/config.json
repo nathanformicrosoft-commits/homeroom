@@ -1,16 +1,16 @@
 {
   "_readme": "Fill in every null under studio and payments. qa.js blocks all sending while any required field is null.",
   "studio": {
-    "studioName": null,
-    "ownerName": null,
-    "city": null,
+    "studioName": "Visaya Web Studio",
+    "ownerName": "Nathaniel Visaya",
+    "city": "Antipolo City",
     "country": "Philippines",
-    "email": null,
+    "email": "nathanieljohnnicovisaya@gmail.com",
     "chatLink": null,
     "postalAddress": null
   },
   "payments": {
-    "paypalEmail": null,
+    "paypalEmail": "marjnimae@yahoo.com",
     "method": "PayPal invoice",
     "depositPercent": 50,
     "rules": "Invoices are created by you in PayPal and sent from PayPal. Never ask for card numbers, bank logins or passwords in any message."
