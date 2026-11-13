@@ -52,3 +52,8 @@ footer p{margin:0 0 8px}footer strong{color:var(--ink)}
 .callbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:20;box-shadow:0 10px 30px rgba(0,0,0,.28)}
 @media(min-width:760px){body{padding-bottom:0}.callbar{display:none}.grid{grid-template-columns:repeat(2,1fr)}.grid.three{grid-template-columns:repeat(3,1fr)}.visit{grid-template-columns:1fr 1.15fr;align-items:start;gap:40px}.hero .wrap{padding-top:110px;padding-bottom:96px}section{padding:88px 0}.contact-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:48px;align-items:start}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.adds{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.adds li{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:12px 16px 12px 42px;position:relative}
+.adds li::before{content:"+";position:absolute;left:16px;top:11px;font-weight:700;color:var(--accent-text)}
+.price-line{margin:22px 0 0;font-size:18px}.price-line strong{font-family:var(--hf);font-size:26px;color:var(--ink)}
+@media(min-width:760px){.adds{grid-template-columns:repeat(2,1fr)}}

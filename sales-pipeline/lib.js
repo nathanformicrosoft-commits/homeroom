@@ -56,4 +56,10 @@ function sendWindow(tz, fromDate, config) {
 
 const words = (t) => t.trim().split(/\s+/).filter(Boolean).length;
 
-module.exports = { ROOT, P, readJSON, writeJSON, readJSONL, appendJSONL, today, addDays, readCSV, writeCSV, money, sendWindow, words };
+// Price for one prospect: an explicit p.quote wins, else the market tier for p.complexity, else the market default.
+function quoteFor(p, config) {
+  const m = config.markets[p.market];
+  return p.quote || (m.tiers && m.tiers[p.complexity || 'standard']) || m.quote;
+}
+
+module.exports = { ROOT, P, readJSON, writeJSON, readJSONL, appendJSONL, today, addDays, readCSV, writeCSV, money, sendWindow, words, quoteFor };

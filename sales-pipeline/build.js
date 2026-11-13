@@ -11,6 +11,7 @@ const prospects = JSON.parse(fs.readFileSync(process.env.PROSPECTS || path.join(
 const CLIENTS = process.env.CLIENTS_DIR || path.join(ROOT, 'clients');
 const studio = config.studio;
 const studioLabel = studio.studioName || 'a small web studio in the Philippines';
+const { quoteFor, money } = require('./lib');
 const esc = (s) => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
 const THEMES = {
@@ -81,10 +82,34 @@ footer p{margin:0 0 8px}footer strong{color:var(--ink)}
 .callbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:20;box-shadow:0 10px 30px rgba(0,0,0,.28)}
 @media(min-width:760px){body{padding-bottom:0}.callbar{display:none}.grid{grid-template-columns:repeat(2,1fr)}.grid.three{grid-template-columns:repeat(3,1fr)}.visit{grid-template-columns:1fr 1.15fr;align-items:start;gap:40px}.hero .wrap{padding-top:110px;padding-bottom:96px}section{padding:88px 0}.contact-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:48px;align-items:start}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.adds{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.adds li{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:12px 16px 12px 42px;position:relative}
+.adds li::before{content:"+";position:absolute;left:16px;top:11px;font-weight:700;color:var(--accent-text)}
+.price-line{margin:22px 0 0;font-size:18px}.price-line strong{font-family:var(--hf);font-size:26px;color:var(--ink)}
+@media(min-width:760px){.adds{grid-template-columns:repeat(2,1fr)}}
 `;
 
 const img = (id, w) => `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${w}&q=70`;
 const monthYear = new Date().toLocaleString('en-US', { month: 'long', year: 'numeric' });
+
+function finishedSection(p) {
+  const m = config.markets[p.market] || {};
+  const food = p.complexity === 'menu' || ['cafe', 'diner'].includes(p.theme);
+  const adds = [
+    'Your own photos and logo in place of the placeholder picture',
+    food ? 'Your full menu with prices, worded your way' : 'Your full list of services and prices, worded your way',
+    food ? 'Specials, catering or where-to-find-us updates you can change with one message' : (p.complexity === 'standard' ? 'A gallery of your work and a booking link' : 'A free-quote form that sends job details straight to you'),
+    'A contact form that sends messages straight to your inbox',
+    'Your own web address, registered in your name',
+    'Two rounds of changes until it is right',
+  ];
+  return `<section id="finished" class="band"><div class="wrap">
+  <p class="eyebrow">This is a preview</p>
+  <h2>What your finished site adds</h2>
+  <ul class="adds">${adds.map((a) => `<li>${esc(a)}</li>`).join('')}</ul>
+  <p class="price-line">Finished site for ${esc(p.name)}: <strong>${esc(money(p.market, quoteFor(p, config), config))}</strong> one-time. Optional care plan ${esc(money(p.market, m.careQuote, config))}/month for hosting and small edits.</p>
+</div></section>`;
+}
 
 function demoPage(p) {
   const final = p.stage === 'final';
@@ -115,7 +140,7 @@ ${final ? '' : '<meta name="robots" content="noindex, nofollow">\n'}<title>${esc
 <link rel="stylesheet" href="${final ? 'assets/site.css' : '../assets/demo.css'}">
 </head>
 <body style="${vars}" class="${t.upper ? 'upper' : ''}">
-${final ? '' : `<div class="ribbon">Demo concept built as a free sample for ${esc(p.name)}. This is not the official website.</div>`}
+${final ? '' : `<div class="ribbon">Free preview for ${esc(p.name)}: a look at what your site could include, not the finished site. This is not the official website.</div>`}
 <header class="top">
   <a class="brand" href="#top">${esc(p.name)}</a>
   <a class="btn btn-sm" href="tel:${p.phoneTel}">Call ${esc(p.phoneDisplay)}</a>
@@ -161,7 +186,8 @@ ${themes}
   </div>
   <div class="map"><iframe loading="lazy" title="Map of ${esc(p.address || p.serviceArea)}" src="https://www.google.com/maps?q=${encodeURIComponent(p.mapQuery)}&output=embed"></iframe></div>
 </div></section>
-<section id="contact" class="band"><div class="wrap contact-grid">
+${final ? '' : finishedSection(p)}
+<section id="contact"${final ? ' class="band"' : ''}><div class="wrap contact-grid">
   <div>
     <p class="eyebrow">Contact</p>
     <h2>${esc(p.cta)}</h2>
@@ -237,7 +263,7 @@ function onePager() {
 <div class="box"><h3>You own it</h3><p>The domain and hosting are in your name, and the site is yours after the final payment.</p></div>
 </div></div></section>
 <section><div class="wrap"><h2>Pricing</h2><div class="cols">
-<div class="box"><h3>Website</h3><p class="price">$${m.US.quote}</p><p>One-time, in US dollars. Includes the page, the contact form, setup on your own domain and two rounds of edits. Paid 50% to start and 50% at launch, by PayPal invoice.</p></div>
+<div class="box"><h3>Website</h3><p class="price">From ${m.US.tiers.simple}</p><p>One-time, in US dollars, priced by how much your site needs: ${m.US.tiers.simple} for a simple service page, ${m.US.tiers.standard} with a gallery or booking, ${m.US.tiers.menu} with a full menu. Includes the contact form, setup on your own domain and two rounds of edits. Paid 50% to start and 50% at launch, by PayPal invoice.</p></div>
 <div class="box"><h3>Care plan (optional)</h3><p class="price">$${m.US.careQuote} / month</p><p>Hosting, updates and small edits. Cancel any month.</p></div>
 </div></div></section>
 <section><div class="wrap"><h2>How it works</h2><ol>

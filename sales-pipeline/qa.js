@@ -43,6 +43,8 @@ for (const q of queue) {
   if ([p.email, p.name, p.contactLink].filter(Boolean).some((x) => dncSet.has(x.toLowerCase()))) fail(sc, 'on the do-not-contact list');
   if (p.email && dnc.some((r) => r.domain && p.email.toLowerCase().endsWith('@' + r.domain.toLowerCase()))) fail(sc, 'email domain on the do-not-contact list');
   if (!p.sources || !p.sources.length) fail(sc, 'no sources recorded for the facts on the demo');
+  if (!q.quote || q.quote < (m.minQuote || 0)) fail(sc, `quote ${q.quote} is below the ${p.market} minimum of ${m.minQuote} (ask the owner first)`);
+  if (q.quote && !q.body.includes(String(q.quote))) fail(sc, 'message does not state the same price as the quote');
   if (!q.body.includes(q.demoUrl)) fail(sc, 'demo link missing from message');
   for (const b of banned) if (text.toLowerCase().includes(b.toLowerCase())) fail(sc, `uses banned phrase "${b}" (see playbook/voice.md)`);
   for (const mk of mistakes) if (new RegExp(mk.pattern, 'i').test(text)) fail(sc, `repeats a past mistake: ${mk.what} → ${mk.fix}`);
@@ -62,7 +64,16 @@ for (const q of queue) {
 async function live() {
   if (offline || !config.netlify.baseUrl) return;
   for (const q of queue) {
-    try { const r = await fetch(q.demoUrl, { method: 'GET', signal: AbortSignal.timeout(15000) }); if (r.status !== 200) fail(q.slug, `demo URL returned ${r.status}`); }
+    try {
+      const r = await fetch(q.demoUrl, { method: 'GET', signal: AbortSignal.timeout(15000) });
+      if (r.status !== 200) fail(q.slug, `demo URL returned ${r.status}`);
+      else {
+        const live = await r.text();
+        const local = fs.existsSync(P('site', q.slug, 'index.html')) ? fs.readFileSync(P('site', q.slug, 'index.html'), 'utf8') : '';
+        if (!live.includes(`Demo concept by ${config.studio.studioName}`)) fail(q.slug, 'live demo does not show the studio name yet: redeploy site/ to Netlify');
+        else if (local && live.trim() !== local.trim()) warn(q.slug, 'live demo differs from the local build: redeploy site/ to Netlify');
+      }
+    }
     catch (e) { warn(q.slug, `could not reach demo URL from here (${e.cause ? e.cause.code || e.message : e.message}); open it yourself before sending`); }
   }
 }

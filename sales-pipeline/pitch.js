@@ -5,7 +5,7 @@
 //   send-list.md           Messenger/SMS messages you send by hand
 // and appends new prospects to leads.csv. Usage: node pitch.js [YYYY-MM-DD]
 const fs = require('fs');
-const { P, readJSON, writeJSON, readJSONL, readCSV, writeCSV, money, sendWindow, words, today } = require('./lib');
+const { P, readJSON, writeJSON, readJSONL, readCSV, writeCSV, money, sendWindow, words, today, quoteFor } = require('./lib');
 
 const config = readJSON('config.json');
 const prospects = readJSON('data/prospects.json', []);
@@ -35,7 +35,7 @@ function emailPitch(p, arm) {
     p.pitch.greeting, '',
     p.pitch.line1, '',
     `I'm ${v('ownerName', 'YOUR NAME')} from ${v('studioName', 'STUDIO NAME')}, a small web design studio in ${v('city', 'CITY')}, Philippines. ${p.pitch.gap}, so I built you a free demo homepage: ${url}`, '',
-    `It has your ${what}, hours, a map, click-to-call and a contact form. The finished site is ${money(p.market, m.quote, config)} one-time, plus an optional ${money(p.market, m.careQuote, config)}/month care plan for hosting and small edits.`, '',
+    `It's a preview of what your site could include: your ${what}, hours, a map, click-to-call and a contact form. The finished site with your own photos is ${money(p.market, quoteFor(p, config), config)} one-time, plus an optional ${money(p.market, m.careQuote, config)}/month care plan for hosting and small edits.`, '',
     `Reply "yes" and I'll finish it in 3 days.`,
   ].join('\n');
   const sig = ['', v('ownerName', 'YOUR NAME'), `${v('studioName', 'STUDIO NAME')} · ${v('city', 'CITY')}, Philippines`];
@@ -45,7 +45,7 @@ function emailPitch(p, arm) {
 }
 function chatPitch(p) {
   const m = config.markets[p.market];
-  return `${p.pitch.greeting} ${p.pitch.line1} I'm ${v('ownerName', 'YOUR NAME')} from ${v('studioName', 'STUDIO NAME')}, a small web design studio in the Philippines. ${p.pitch.gap}, so I built you a free demo homepage: ${base}/${p.slug}/ The finished site is ${money(p.market, m.quote, config)}. Reply "yes" and I'll finish it in 3 days, or reply STOP and I won't message again.`;
+  return `${p.pitch.greeting} ${p.pitch.line1} I'm ${v('ownerName', 'YOUR NAME')} from ${v('studioName', 'STUDIO NAME')}, a small web design studio in the Philippines. ${p.pitch.gap}, so I built you a free preview homepage: ${base}/${p.slug}/ The finished site is ${money(p.market, quoteFor(p, config), config)}. Reply "yes" and I'll finish it in 3 days, or reply STOP and I won't message again.`;
 }
 
 const leads = readCSV('leads.csv');
@@ -61,11 +61,11 @@ for (const p of prospects) {
   if (p.channel === 'email') {
     const arm = pickArm();
     const e = emailPitch(p, arm);
-    queue.push({ slug: p.slug, market: p.market, channel: 'email', to: p.email, subject: e.subject, body: e.body, bodyWords: e.bodyWords, variant: { subject: arm.id }, sendAt: w.utcStart, demoUrl: `${base}/${p.slug}/` });
+    queue.push({ slug: p.slug, market: p.market, channel: 'email', to: p.email, subject: e.subject, body: e.body, bodyWords: e.bodyWords, quote: quoteFor(p, config), variant: { subject: arm.id }, sendAt: w.utcStart, demoUrl: `${base}/${p.slug}/` });
     fs.writeFileSync(P('pitches', `${p.slug}.md`), `**To:** ${p.email} (${p.emailSource})\n**Subject:** ${e.subject}  _(variant ${arm.id})_\n**Send:** ${w.day}, ${w.local} (${w.manila})\n**Body words:** ${e.bodyWords}\n\n---\n\n${e.body}\n`);
   } else {
     const msg = chatPitch(p);
-    queue.push({ slug: p.slug, market: p.market, channel: p.channel, to: p.contactLink, body: msg, bodyWords: words(msg), variant: {}, sendAt: w.utcStart, demoUrl: `${base}/${p.slug}/` });
+    queue.push({ slug: p.slug, market: p.market, channel: p.channel, to: p.contactLink, body: msg, bodyWords: words(msg), quote: quoteFor(p, config), variant: {}, sendAt: w.utcStart, demoUrl: `${base}/${p.slug}/` });
     const link = p.channel === 'sms' ? `${p.contactLink}?&body=${encodeURIComponent(msg)}` : `${p.contactLink}?text=${encodeURIComponent(msg)}`;
     sendList.push(`## ${p.name} (${p.town} ${p.state})`, '', `- Channel: ${p.channel === 'sms' ? 'SMS' : 'Facebook Messenger'}${p.altContact ? ` (or ${p.altContact})` : ''}`, `- Best time: ${w.day}, ${w.local} (${w.manila})`, `- [Open with message pre-filled](${link})`, `- After sending: \`node log.js ${p.slug} pitched\``, '', '```', msg, '```', '');
   }

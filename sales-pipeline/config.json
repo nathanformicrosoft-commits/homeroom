@@ -17,7 +17,7 @@
   },
   "settings": {
     "sendMode": "draft",
-    "dailyCap": 10,
+    "dailyCap": 30,
     "maxFollowUps": 2,
     "followUpDays": [
       4,
@@ -42,16 +42,18 @@
       10
     ],
     "phpPerUSD": null,
-    "_phpPerUSD": "Set the rate you actually receive from PayPal so the goal total is accurate."
+    "_phpPerUSD": "Set the rate you actually receive from PayPal so the goal total is accurate.",
+    "minQuoteUSD": 100,
+    "_pricing": "Each prospect gets a tier from its complexity (simple / standard / menu). Set prospect.quote to override. Never quote below minQuoteUSD (or the market equivalent) without asking the owner."
   },
   "markets": {
     "US": {
       "currency": "USD",
       "symbol": "$",
       "showCode": false,
-      "quote": 600,
+      "quote": 250,
       "careQuote": 39,
-      "range": "$400–$800",
+      "range": "$150–$350",
       "careRange": "$29–$49",
       "lang": "en-US",
       "postalAddressRequired": true,
@@ -60,15 +62,21 @@
         "messenger"
       ],
       "law": "CAN-SPAM",
-      "notes": "Every email needs your physical postal address and a working opt-out. No cold SMS to US numbers (TCPA risk)."
+      "notes": "Every email needs your physical postal address and a working opt-out. No cold SMS to US numbers (TCPA risk).",
+      "tiers": {
+        "simple": 150,
+        "standard": 250,
+        "menu": 350
+      },
+      "minQuote": 100
     },
     "CA": {
       "currency": "CAD",
       "symbol": "$",
       "showCode": true,
-      "quote": 600,
+      "quote": 350,
       "careQuote": 39,
-      "range": "$400–$800 CAD",
+      "range": "$210–$490 CAD",
       "careRange": "$29–$49 CAD",
       "lang": "en-CA",
       "postalAddressRequired": true,
@@ -76,15 +84,21 @@
         "email"
       ],
       "law": "CASL",
-      "notes": "Only emails the business publishes conspicuously, with no 'no solicitations' note, and the pitch must relate to their business."
+      "notes": "Only emails the business publishes conspicuously, with no 'no solicitations' note, and the pitch must relate to their business.",
+      "tiers": {
+        "simple": 210,
+        "standard": 350,
+        "menu": 490
+      },
+      "minQuote": 140
     },
     "AU": {
       "currency": "AUD",
       "symbol": "$",
       "showCode": true,
-      "quote": 600,
+      "quote": 380,
       "careQuote": 39,
-      "range": "$400–$800 AUD",
+      "range": "$230–$530 AUD",
       "careRange": "$29–$49 AUD",
       "lang": "en-AU",
       "postalAddressRequired": false,
@@ -94,15 +108,21 @@
         "sms"
       ],
       "law": "Spam Act 2003",
-      "notes": "Accurate sender and a working unsubscribe."
+      "notes": "Accurate sender and a working unsubscribe.",
+      "tiers": {
+        "simple": 230,
+        "standard": 380,
+        "menu": 530
+      },
+      "minQuote": 150
     },
     "UK": {
       "currency": "GBP",
       "symbol": "£",
       "showCode": false,
-      "quote": 450,
+      "quote": 200,
       "careQuote": 35,
-      "range": "£300–£600",
+      "range": "£120–£280",
       "careRange": "£29–£49",
       "lang": "en-GB",
       "postalAddressRequired": false,
@@ -110,15 +130,21 @@
         "email"
       ],
       "law": "PECR / UK GDPR",
-      "notes": "Cold email only to limited companies and LLPs, never sole traders or partnerships."
+      "notes": "Cold email only to limited companies and LLPs, never sole traders or partnerships.",
+      "tiers": {
+        "simple": 120,
+        "standard": 200,
+        "menu": 280
+      },
+      "minQuote": 80
     },
     "NZ": {
       "currency": "NZD",
       "symbol": "$",
       "showCode": true,
-      "quote": 600,
+      "quote": 420,
       "careQuote": 39,
-      "range": "$400–$800 NZD",
+      "range": "$250–$590 NZD",
       "careRange": "$29–$49 NZD",
       "lang": "en-NZ",
       "postalAddressRequired": false,
@@ -126,7 +152,13 @@
         "email"
       ],
       "law": "Unsolicited Electronic Messages Act",
-      "notes": "NZ pricing was never set by you; NZD assumed."
+      "notes": "NZ pricing was never set by you; NZD assumed.",
+      "tiers": {
+        "simple": 250,
+        "standard": 420,
+        "menu": 590
+      },
+      "minQuote": 170
     }
   },
   "netlify": {
@@ -141,5 +173,10 @@
     "kalgoorlie-mobile-detailing",
     "mildura-lawn-mowing"
   ],
-  "_portfolio": "Your 3 best demos, by slug. Swap in won client sites (with permission) as they launch."
+  "_portfolio": "Your 3 best demos, by slug. Swap in won client sites (with permission) as they launch.",
+  "tierLabels": {
+    "simple": "Simple one-page site: services, hours, map, click-to-call, contact form",
+    "standard": "One-page site plus a photo gallery or booking link and a longer services list",
+    "menu": "One-page site with a full menu, specials and catering or ordering info"
+  }
 }
