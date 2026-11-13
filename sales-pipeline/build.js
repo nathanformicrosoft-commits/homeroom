@@ -7,7 +7,8 @@ const path = require('path');
 const ROOT = __dirname;
 const OUT = path.join(ROOT, 'site');
 const config = JSON.parse(fs.readFileSync(path.join(ROOT, 'config.json'), 'utf8'));
-const prospects = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/prospects.json'), 'utf8'));
+const prospects = JSON.parse(fs.readFileSync(process.env.PROSPECTS || path.join(ROOT, 'data/prospects.json'), 'utf8'));
+const CLIENTS = process.env.CLIENTS_DIR || path.join(ROOT, 'clients');
 const studio = config.studio;
 const studioLabel = studio.studioName || 'a small web studio in the Philippines';
 const esc = (s) => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -83,9 +84,11 @@ footer p{margin:0 0 8px}footer strong{color:var(--ink)}
 `;
 
 const img = (id, w) => `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${w}&q=70`;
-const monthYear = new Date().toLocaleString('en-AU', { month: 'long', year: 'numeric' });
+const monthYear = new Date().toLocaleString('en-US', { month: 'long', year: 'numeric' });
 
 function demoPage(p) {
+  const final = p.stage === 'final';
+  const lang = (config.markets[p.market] || {}).lang || 'en';
   const t = THEMES[p.theme];
   const vars = `--bg:${t.bg};--surface:${t.surface};--ink:${t.ink};--muted:${t.muted};--line:${t.line};--accent:${t.accent};--accent-ink:${t.accentInk};--accent-text:${t.accentText || t.accent};--tint:${t.tint};--hf:${t.hf};--bf:${t.bf}`;
   const hero = p.photo
@@ -101,19 +104,18 @@ function demoPage(p) {
     ? `<p>Photo by <a href="https://unsplash.com/@${p.photo.user}?utm_source=demo_concept&utm_medium=referral">${esc(p.photo.by)}</a> on <a href="https://unsplash.com/?utm_source=demo_concept&utm_medium=referral">Unsplash</a>, used as a placeholder until you send your own photos.</p>`
     : '';
   return `<!doctype html>
-<html lang="en-AU">
+<html lang="${lang}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex, nofollow">
-<title>${esc(p.name)} | demo concept</title>
-<meta name="description" content="Demo homepage concept for ${esc(p.name)}, ${esc(p.town)} ${esc(p.state)}. Not the official website.">
+${final ? '' : '<meta name="robots" content="noindex, nofollow">\n'}<title>${esc(p.name)}${final ? ` | ${esc(p.category)} in ${esc(p.town)}, ${esc(p.state)}` : ' | demo concept'}</title>
+<meta name="description" content="${final ? esc(p.sub) : `Demo homepage concept for ${esc(p.name)}, ${esc(p.town)} ${esc(p.state)}. Not the official website.`}">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=${t.fonts}&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/demo.css">
+<link rel="stylesheet" href="${final ? 'assets/site.css' : '../assets/demo.css'}">
 </head>
 <body style="${vars}" class="${t.upper ? 'upper' : ''}">
-<div class="ribbon">Demo concept built as a free sample for ${esc(p.name)}. This is not the official website.</div>
+${final ? '' : `<div class="ribbon">Demo concept built as a free sample for ${esc(p.name)}. This is not the official website.</div>`}
 <header class="top">
   <a class="brand" href="#top">${esc(p.name)}</a>
   <a class="btn btn-sm" href="tel:${p.phoneTel}">Call ${esc(p.phoneDisplay)}</a>
@@ -165,22 +167,23 @@ ${themes}
     <h2>${esc(p.cta)}</h2>
     <p>Call <a href="tel:${p.phoneTel}"><strong>${esc(p.phoneDisplay)}</strong></a> or send a message and we will get back to you.</p>
   </div>
-  <form id="demo-form" novalidate>
+  ${final ? `<form name="contact" method="POST" action="/thanks/" data-netlify="true" netlify-honeypot="company">
+    <input type="hidden" name="form-name" value="contact"><p hidden><label>Leave blank<input name="company"></label></p>` : '<form id="demo-form" novalidate>'}
     <label>Name<input name="name" autocomplete="name" required></label>
     <label>Phone<input name="phone" type="tel" autocomplete="tel" required></label>
     <label>How can we help?<textarea name="message"></textarea></label>
     <button class="btn" type="submit">Send message</button>
-    <p class="note" id="demo-note" role="status">This form is switched off on the demo, so nothing was sent. On the finished site, messages go straight to ${esc(p.name)}.</p>
+    ${final ? '' : '<p class="note" id="demo-note" role="status">This form is switched off on the demo, so nothing was sent. On the finished site, messages go straight to ' + esc(p.name) + '.</p>'}
   </form>
 </div></section>
 </main>
-<footer><div class="wrap">
+<footer><div class="wrap">${final ? `<p><strong>${esc(p.name)}</strong> · ${esc(p.address || p.serviceArea)} · <a href="tel:${p.phoneTel}">${esc(p.phoneDisplay)}</a></p>${credit}<p>© ${new Date().getFullYear()} ${esc(p.name)}. Website by ${esc(studioLabel)}.</p>` : `
   <p><strong>Demo concept by ${esc(studioLabel)}.</strong> Built as an unsolicited sample for ${esc(p.name)} using details from their public listings. Not affiliated with or endorsed by the business.</p>
   ${credit}
-  <p>Want it changed or taken down? ${studio.email ? `Email <a href="mailto:${esc(studio.email)}">${esc(studio.email)}</a>` : 'Reply to the message that brought you here'} and it will be done straight away.</p>
+  <p>Want it changed or taken down? ${studio.email ? `Email <a href="mailto:${esc(studio.email)}">${esc(studio.email)}</a>` : 'Reply to the message that brought you here'} and it will be done straight away.</p>`}
 </div></footer>
 <a class="btn callbar" href="tel:${p.phoneTel}">Call ${esc(p.phoneDisplay)}</a>
-<script>document.getElementById('demo-form').addEventListener('submit',function(e){e.preventDefault();document.getElementById('demo-note').classList.add('on')});</script>
+${final ? '' : `<script>document.getElementById('demo-form').addEventListener('submit',function(e){e.preventDefault();document.getElementById('demo-note').classList.add('on')});</script>`}
 </body>
 </html>`;
 }
@@ -222,10 +225,10 @@ ${body}
 </body></html>`;
 
 function onePager() {
-  const pr = config.pricing;
+  const m = config.markets;
   return shell(`${studioName} | one-page websites for local businesses`, `
 <div class="wrap lead"><h1>A one-page website for your business, live in 3 days.</h1>
-<p>We build simple, fast, mobile-first sites for tradies, cafes, salons and mobile services. You see a working demo before you pay anything.</p>
+<p>We build simple, fast, mobile-first sites for plumbers, electricians, cleaners, landscapers, cafes, salons and mobile services. You see a working demo before you pay anything.</p>
 <a class="btn" href="/work/">See demo sites</a></div>
 <section><div class="wrap"><h2>What you get</h2><div class="cols">
 <div class="box"><h3>One page that does the job</h3><p>Your services or menu, opening hours, a map, click-to-call and a contact form.</p></div>
@@ -234,8 +237,8 @@ function onePager() {
 <div class="box"><h3>You own it</h3><p>The domain and hosting are in your name, and the site is yours after the final payment.</p></div>
 </div></div></section>
 <section><div class="wrap"><h2>Pricing</h2><div class="cols">
-<div class="box"><h3>Website</h3><p class="price">${pr.AU.site.replace(' AUD', '')}</p><p>AUD, CAD or USD, one-off. In the UK: ${pr.UK.site}. The price depends on how much content the page needs, and you get a fixed quote before any work starts.</p></div>
-<div class="box"><h3>Care plan (optional)</h3><p class="price">$29–$49 / month</p><p>Hosting, updates and small edits. In the UK: ${pr.UK.care}. Cancel any month.</p></div>
+<div class="box"><h3>Website</h3><p class="price">$${m.US.quote}</p><p>One-time, in US dollars. Includes the page, the contact form, setup on your own domain and two rounds of edits. Paid 50% to start and 50% at launch, by PayPal invoice.</p></div>
+<div class="box"><h3>Care plan (optional)</h3><p class="price">$${m.US.careQuote} / month</p><p>Hosting, updates and small edits. Cancel any month.</p></div>
 </div></div></section>
 <section><div class="wrap"><h2>How it works</h2><ol>
 <li>We send you a free demo homepage built from your public listing.</li>
@@ -247,7 +250,7 @@ function onePager() {
 }
 
 function portfolio() {
-  const picks = ['blended-cafe', 'kalgoorlie-mobile-detailing', 'mildura-lawn-mowing'].map((s) => prospects.find((p) => p.slug === s));
+  const picks = (config.portfolio || []).map((s) => prospects.find((p) => p.slug === s && p.stage !== 'final' && p.status !== 'do-not-contact')).filter(Boolean);
   const cards = picks.map((p) => `<a class="box" style="text-decoration:none;color:inherit" href="/${p.slug}/"><div class="shot" style="background-image:url(/assets/shots/${p.slug}.jpg)"></div><h3>${esc(p.category)}, ${esc(p.town)} ${esc(p.state)}</h3><p>Demo concept for ${esc(p.name)}.</p></a>`).join('\n');
   return shell(`${studioName} | demo sites`, `
 <div class="wrap lead"><h1>Demo sites</h1>
@@ -263,6 +266,15 @@ fs.writeFileSync(path.join(OUT, 'assets/demo.css'), CSS.trim());
 fs.writeFileSync(path.join(OUT, 'assets/studio.css'), STUDIO_CSS.trim());
 for (const p of prospects) {
   if (p.status === 'do-not-contact' || p.removed) continue; // honour removal requests: page is not rebuilt
+  if (p.stage === 'final') { // client sites: their own folder, deployed to their own Netlify site
+    const dir = path.join(CLIENTS, p.slug, 'site');
+    fs.mkdirSync(path.join(dir, 'assets'), { recursive: true });
+    fs.mkdirSync(path.join(dir, 'thanks'), { recursive: true });
+    fs.writeFileSync(path.join(dir, 'assets/site.css'), CSS.trim());
+    fs.writeFileSync(path.join(dir, 'index.html'), demoPage(p));
+    fs.writeFileSync(path.join(dir, 'thanks/index.html'), `<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Thanks | ${esc(p.name)}</title><body style="font:18px/1.6 system-ui;max-width:560px;margin:15vh auto;padding:0 20px"><h1>Thanks, we got your message.</h1><p>${esc(p.name)} will get back to you soon. Need us sooner? Call <a href="tel:${p.phoneTel}">${esc(p.phoneDisplay)}</a>.</p><p><a href="/">Back to the homepage</a></p></body></html>`);
+    continue;
+  }
   fs.mkdirSync(path.join(OUT, p.slug), { recursive: true });
   fs.writeFileSync(path.join(OUT, p.slug, 'index.html'), demoPage(p));
 }

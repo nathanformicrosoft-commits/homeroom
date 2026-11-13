@@ -1,0 +1,37 @@
+# One phrase per line, case-insensitive. qa.js blocks any message containing one.
+# Add to this list whenever a draft sounds like a template.
+I hope this email finds you well
+I hope this finds you well
+I hope you're doing well
+I came across your business
+I stumbled upon
+I wanted to reach out
+reaching out to you today
+take your business to the next level
+online presence
+digital presence
+elevate
+seamless
+leverage
+cutting-edge
+state-of-the-art
+in today's digital age
+in today's fast-paced
+game-changer
+unlock
+skyrocket
+boost your sales
+limited time
+act now
+don't miss out
+Dear Sir
+Dear Business Owner
+To whom it may concern
+valued customer
+I am a professional
+guaranteed results
+#1
+100% free
+as an AI
+I'm just a
+delve

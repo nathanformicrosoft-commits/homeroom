@@ -1,79 +1,87 @@
 #!/usr/bin/env node
-// Renders email pitches, the tap-to-send list and new tracker rows from data/prospects.json + config.json.
-// Usage: node pitch.js [YYYY-MM-DD run date]
-const fs = require('fs'), path = require('path');
-const ROOT = __dirname;
-const config = JSON.parse(fs.readFileSync(path.join(ROOT, 'config.json'), 'utf8'));
-const prospects = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/prospects.json'), 'utf8'));
-const s = config.studio, runDate = process.argv[2] || new Date().toISOString().slice(0, 10);
-const missing = ['studioName', 'ownerName', 'city', 'email'].filter((k) => !s[k]);
-const live = !!config.netlify.baseUrl;
-const base = config.netlify.baseUrl || config.netlify.plannedUrl;
-const v = (k, label) => s[k] || `[[${label}]]`;
-const words = (t) => t.trim().split(/\s+/).length;
+// Writes first-touch pitches for every prospect still at status "found":
+//   pitches/<slug>.md      human-readable draft
+//   pitches/queue.json     machine-readable queue (used for Gmail drafts and by log.js)
+//   send-list.md           Messenger/SMS messages you send by hand
+// and appends new prospects to leads.csv. Usage: node pitch.js [YYYY-MM-DD]
+const fs = require('fs');
+const { P, readJSON, writeJSON, readJSONL, readCSV, writeCSV, money, sendWindow, words, today } = require('./lib');
 
-// next Tue-Thu 9am local, shown in Manila time
-function sendWindow(tz) {
-  const d = new Date(runDate + 'T00:00:00Z');
-  do { d.setUTCDate(d.getUTCDate() + 1); } while (![2, 3, 4].includes(d.getUTCDay()));
-  const day = d.toISOString().slice(0, 10);
-  const off = (zone) => { const p = new Intl.DateTimeFormat('en-US', { timeZone: zone, timeZoneName: 'longOffset' }).formatToParts(new Date(day + 'T00:00:00Z')).find((x) => x.type === 'timeZoneName').value.replace('GMT', '') || '+00:00'; const [h, m] = p.split(':'); return Number(h) + Math.sign(Number(h)) * Number(m || 0) / 60; };
-  const shift = 8 - off(tz); // Manila is UTC+8
-  const fmt = (h) => { const t = h + shift; const hh = Math.floor(t), mm = Math.round((t - hh) * 60); return `${((hh + 11) % 12) + 1}:${String(mm).padStart(2, '0')}${hh < 12 ? 'am' : 'pm'}`; };
-  return { day, ph: `${fmt(8)}–${fmt(10)} Manila time` };
+const config = readJSON('config.json');
+const prospects = readJSON('data/prospects.json', []);
+const experiments = readJSON('playbook/experiments.json', {});
+const outcomes = readJSONL('data/outcomes.jsonl');
+const runDate = process.argv[2] || today();
+const s = config.studio;
+const v = (k, label) => s[k] || `[[${label}]]`;
+const base = config.netlify.baseUrl || config.netlify.plannedUrl;
+
+// --- A/B: give each new pitch the subject arm with the fewest sends so far ---
+const subj = experiments.subject;
+const armCount = Object.fromEntries((subj ? subj.arms : []).map((a) => [a.id, 0]));
+for (const e of outcomes) if (e.event === 'pitched' && e.variant && e.variant.subject in armCount) armCount[e.variant.subject]++;
+function pickArm() {
+  if (!subj) return { id: 'S0', text: 'I built a free homepage for {name}' };
+  const arm = subj.arms.filter((a) => !a.retired).sort((a, b) => armCount[a.id] - armCount[b.id])[0];
+  armCount[arm.id]++;
+  return arm;
 }
 
-const price = (p) => config.pricing[p.market];
-function emailPitch(p) {
+function emailPitch(p, arm) {
+  const m = config.markets[p.market];
   const url = `${base}/${p.slug}/`;
   const what = ['cafe', 'diner'].includes(p.theme) ? 'menu highlights' : 'services';
   const body = [
     p.pitch.greeting, '',
     p.pitch.line1, '',
-    `I'm ${v('ownerName', 'YOUR NAME')} from ${v('studioName', 'STUDIO NAME')}, a small web-design studio in ${v('city', 'CITY')}, Philippines. ${p.pitch.gap}, so I built you a free demo homepage: ${url}`, '',
-    `It has your ${what}, hours, a map, click-to-call and a contact form. A finished version is ${price(p).site} one-off, with an optional care plan (${price(p).care}) for hosting, updates and small edits.`, '',
+    `I'm ${v('ownerName', 'YOUR NAME')} from ${v('studioName', 'STUDIO NAME')}, a small web design studio in ${v('city', 'CITY')}, Philippines. ${p.pitch.gap}, so I built you a free demo homepage: ${url}`, '',
+    `It has your ${what}, hours, a map, click-to-call and a contact form. The finished site is ${money(p.market, m.quote, config)} one-time, plus an optional ${money(p.market, m.careQuote, config)}/month care plan for hosting and small edits.`, '',
     `Reply "yes" and I'll finish it in 3 days.`,
   ].join('\n');
-  const sign = ['', v('ownerName', 'YOUR NAME'), `${v('studioName', 'STUDIO NAME')}, ${v('city', 'CITY')}, Philippines`, v('email', 'EMAIL'), '', `Not interested? Reply STOP and I won't contact you again.`].join('\n');
-  return { subject: `I built a free homepage for ${p.name}`, body: body + '\n' + sign, wc: words(body) };
+  const sig = ['', v('ownerName', 'YOUR NAME'), `${v('studioName', 'STUDIO NAME')} · ${v('city', 'CITY')}, Philippines`];
+  if (m.postalAddressRequired) sig.push(v('postalAddress', 'POSTAL ADDRESS (required by law for this market)'));
+  sig.push('', `Not interested? Reply STOP and I won't contact you again.`);
+  return { subject: arm.text.replace('{name}', p.name), body: body + '\n' + sig.join('\n'), bodyWords: words(body) };
 }
 function chatPitch(p) {
-  const url = `${base}/${p.slug}/`;
-  return `${p.pitch.greeting} ${p.pitch.line1} I'm ${v('ownerName', 'YOUR NAME')} from ${v('studioName', 'STUDIO NAME')}, a small web-design studio in the Philippines. ${p.pitch.gap}, so I built you a free demo homepage: ${url} A finished version is ${price(p).site}. Reply "yes" and I'll finish it in 3 days, or reply STOP and I won't message again.`;
+  const m = config.markets[p.market];
+  return `${p.pitch.greeting} ${p.pitch.line1} I'm ${v('ownerName', 'YOUR NAME')} from ${v('studioName', 'STUDIO NAME')}, a small web design studio in the Philippines. ${p.pitch.gap}, so I built you a free demo homepage: ${base}/${p.slug}/ The finished site is ${money(p.market, m.quote, config)}. Reply "yes" and I'll finish it in 3 days, or reply STOP and I won't message again.`;
 }
 
-const blockers = [];
-if (missing.length) blockers.push(`config.json is missing: ${missing.join(', ')}`);
-if (!live) blockers.push('demo site is not deployed yet, so the links below do not work');
-const banner = blockers.length ? `> NOT READY TO SEND: ${blockers.join('; ')}.\n\n` : '';
-
-fs.mkdirSync(path.join(ROOT, 'pitches'), { recursive: true });
-const sendList = [`# Send list for ${runDate}`, '', banner + 'You tap Send yourself. Maximum 10 per day. Each message names who you are and how to opt out.', ''];
+const leads = readCSV('leads.csv');
+const statusOf = Object.fromEntries(leads.rows.map((r) => [r.name, r.status]));
+const queue = [];
+const sendList = [`# Send list for ${runDate}`, '', 'You tap Send yourself, at most 10 a day. Run `node qa.js` first: it must say PASS.', ''];
 for (const p of prospects) {
-  const w = sendWindow(p.tz);
+  const st = statusOf[p.name] || 'found';
+  if (st !== 'found' || p.status === 'do-not-contact') continue;
+  const m = config.markets[p.market];
+  if (!m.channels.includes(p.channel)) { console.warn(`SKIP ${p.slug}: ${p.channel} is not allowed for ${p.market} (${m.law})`); continue; }
+  const w = sendWindow(p.tz, runDate, config);
   if (p.channel === 'email') {
-    const e = emailPitch(p);
-    if (e.wc > 110) console.warn(`WARN ${p.slug}: body is ${e.wc} words`);
-    fs.writeFileSync(path.join(ROOT, 'pitches', `${p.slug}.md`), `${banner}**To:** ${p.email} (${p.emailSource})\n**Subject:** ${e.subject}\n**Send:** ${w.day}, 8–10am ${p.town} time (${w.ph})\n**Body words:** ${e.wc}\n\n---\n\n${e.body}\n`);
+    const arm = pickArm();
+    const e = emailPitch(p, arm);
+    queue.push({ slug: p.slug, market: p.market, channel: 'email', to: p.email, subject: e.subject, body: e.body, bodyWords: e.bodyWords, variant: { subject: arm.id }, sendAt: w.utcStart, demoUrl: `${base}/${p.slug}/` });
+    fs.writeFileSync(P('pitches', `${p.slug}.md`), `**To:** ${p.email} (${p.emailSource})\n**Subject:** ${e.subject}  _(variant ${arm.id})_\n**Send:** ${w.day}, ${w.local} (${w.manila})\n**Body words:** ${e.bodyWords}\n\n---\n\n${e.body}\n`);
   } else {
-    const m = chatPitch(p);
-    const link = p.channel === 'sms' ? `${p.contactLink}?&body=${encodeURIComponent(m)}` : `${p.contactLink}?text=${encodeURIComponent(m)}`;
-    sendList.push(`## ${p.name} (${p.town} ${p.state})`, '', `- Channel: ${p.channel === 'sms' ? 'SMS' : 'Facebook Messenger'}${p.altContact ? ` (or ${p.altContact})` : ''}`, `- Best time: ${w.day}, 8–10am ${p.town} time (${w.ph})`, `- [Open with message pre-filled](${link})`, `- Page or number: ${p.contactLink}`, '', '```', m, '```', '');
+    const msg = chatPitch(p);
+    queue.push({ slug: p.slug, market: p.market, channel: p.channel, to: p.contactLink, body: msg, bodyWords: words(msg), variant: {}, sendAt: w.utcStart, demoUrl: `${base}/${p.slug}/` });
+    const link = p.channel === 'sms' ? `${p.contactLink}?&body=${encodeURIComponent(msg)}` : `${p.contactLink}?text=${encodeURIComponent(msg)}`;
+    sendList.push(`## ${p.name} (${p.town} ${p.state})`, '', `- Channel: ${p.channel === 'sms' ? 'SMS' : 'Facebook Messenger'}${p.altContact ? ` (or ${p.altContact})` : ''}`, `- Best time: ${w.day}, ${w.local} (${w.manila})`, `- [Open with message pre-filled](${link})`, `- After sending: \`node log.js ${p.slug} pitched\``, '', '```', msg, '```', '');
   }
 }
-fs.writeFileSync(path.join(ROOT, 'send-list.md'), sendList.join('\n'));
+fs.mkdirSync(P('pitches'), { recursive: true });
+writeJSON('pitches/queue.json', queue);
+fs.writeFileSync(P('send-list.md'), sendList.join('\n'));
 
-// tracker: append rows for prospects not already in leads.csv; never rewrite existing rows
-const csvPath = path.join(ROOT, 'leads.csv');
+// tracker: add rows for new prospects only
 const cols = ['name', 'market', 'town', 'category', 'contact', 'channel', 'demo_url', 'screenshot', 'date_found', 'date_pitched', 'followup_1_due', 'followup_2_due', 'status', 'google_rating', 'google_reviews', 'notes', 'amount_won', 'currency', 'amount_won_php'];
-const q = (x) => `"${String(x == null ? '' : x).replace(/"/g, '""')}"`;
-let csv = fs.existsSync(csvPath) ? fs.readFileSync(csvPath, 'utf8') : cols.join(',') + '\n';
+if (!leads.header.length) leads.header = cols;
 let added = 0;
 for (const p of prospects) {
-  if (csv.includes(q(p.name) + ',')) continue;
-  const contact = p.email || `${p.contactLink}${p.altContact ? ' / ' + p.altContact : ''}`;
-  csv += [p.name, p.market, `${p.town} ${p.state}`, p.category, contact, p.channel, live ? `${base}/${p.slug}/` : `(not live) ${base}/${p.slug}/`, `screenshots/${p.slug}-mobile.jpg`, p.found, '', '', '', 'found', p.rating, p.reviewCount, p.notes, '', '', ''].map(q).join(',') + '\n';
+  if (statusOf[p.name] !== undefined) continue;
+  leads.rows.push({ name: p.name, market: p.market, town: `${p.town} ${p.state}`, category: p.category, contact: p.email || `${p.contactLink}${p.altContact ? ' / ' + p.altContact : ''}`, channel: p.channel, demo_url: `${base}/${p.slug}/`, screenshot: `screenshots/${p.slug}-mobile.jpg`, date_found: p.found, status: 'found', google_rating: p.rating, google_reviews: p.reviewCount, notes: p.notes });
   added++;
 }
-fs.writeFileSync(csvPath, csv);
-console.log(`pitches: ${prospects.filter((p) => p.channel === 'email').length} email, ${prospects.filter((p) => p.channel !== 'email').length} send-list; tracker rows added: ${added}; blockers: ${blockers.length ? blockers.join(' | ') : 'none'}`);
+writeCSV('leads.csv', leads);
+console.log(`queued ${queue.filter((q) => q.channel === 'email').length} email + ${queue.filter((q) => q.channel !== 'email').length} hand-sent; tracker rows added: ${added}. Next: node qa.js`);

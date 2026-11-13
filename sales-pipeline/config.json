@@ -1,5 +1,5 @@
 {
-  "_readme": "Fill in the null values under studio. Nothing is sent, and no Gmail draft is created, while any of them is null.",
+  "_readme": "Fill in every null under studio and payments. qa.js blocks all sending while any required field is null.",
   "studio": {
     "studioName": null,
     "ownerName": null,
@@ -9,6 +9,12 @@
     "chatLink": null,
     "postalAddress": null
   },
+  "payments": {
+    "paypalEmail": null,
+    "method": "PayPal invoice",
+    "depositPercent": 50,
+    "rules": "Invoices are created by you in PayPal and sent from PayPal. Never ask for card numbers, bank logins or passwords in any message."
+  },
   "settings": {
     "sendMode": "draft",
     "dailyCap": 10,
@@ -17,34 +23,110 @@
       4,
       9
     ],
-    "goalPHP": 100000
+    "goalPHP": 100000,
+    "marketOrder": [
+      "US",
+      "AU",
+      "UK",
+      "CA",
+      "NZ",
+      "PH"
+    ],
+    "sendDays": [
+      2,
+      3,
+      4
+    ],
+    "sendLocalHours": [
+      8,
+      10
+    ],
+    "phpPerUSD": null,
+    "_phpPerUSD": "Set the rate you actually receive from PayPal so the goal total is accurate."
   },
-  "pricing": {
-    "AU": {
-      "currency": "AUD",
-      "site": "$400–$800 AUD",
-      "care": "$29–$49 AUD/month"
+  "markets": {
+    "US": {
+      "currency": "USD",
+      "symbol": "$",
+      "showCode": false,
+      "quote": 600,
+      "careQuote": 39,
+      "range": "$400–$800",
+      "careRange": "$29–$49",
+      "lang": "en-US",
+      "postalAddressRequired": true,
+      "channels": [
+        "email",
+        "messenger"
+      ],
+      "law": "CAN-SPAM",
+      "notes": "Every email needs your physical postal address and a working opt-out. No cold SMS to US numbers (TCPA risk)."
     },
     "CA": {
       "currency": "CAD",
-      "site": "$400–$800 CAD",
-      "care": "$29–$49 CAD/month"
+      "symbol": "$",
+      "showCode": true,
+      "quote": 600,
+      "careQuote": 39,
+      "range": "$400–$800 CAD",
+      "careRange": "$29–$49 CAD",
+      "lang": "en-CA",
+      "postalAddressRequired": true,
+      "channels": [
+        "email"
+      ],
+      "law": "CASL",
+      "notes": "Only emails the business publishes conspicuously, with no 'no solicitations' note, and the pitch must relate to their business."
     },
-    "US": {
-      "currency": "USD",
-      "site": "$400–$800 USD",
-      "care": "$29–$49 USD/month"
-    },
-    "NZ": {
-      "currency": "NZD",
-      "site": "$400–$800 NZD",
-      "care": "$29–$49 NZD/month",
-      "_confirm": "NZ pricing was not specified; NZD assumed. Confirm before pitching NZ."
+    "AU": {
+      "currency": "AUD",
+      "symbol": "$",
+      "showCode": true,
+      "quote": 600,
+      "careQuote": 39,
+      "range": "$400–$800 AUD",
+      "careRange": "$29–$49 AUD",
+      "lang": "en-AU",
+      "postalAddressRequired": false,
+      "channels": [
+        "email",
+        "messenger",
+        "sms"
+      ],
+      "law": "Spam Act 2003",
+      "notes": "Accurate sender and a working unsubscribe."
     },
     "UK": {
       "currency": "GBP",
-      "site": "£300–£600",
-      "care": "£29–£49/month"
+      "symbol": "£",
+      "showCode": false,
+      "quote": 450,
+      "careQuote": 35,
+      "range": "£300–£600",
+      "careRange": "£29–£49",
+      "lang": "en-GB",
+      "postalAddressRequired": false,
+      "channels": [
+        "email"
+      ],
+      "law": "PECR / UK GDPR",
+      "notes": "Cold email only to limited companies and LLPs, never sole traders or partnerships."
+    },
+    "NZ": {
+      "currency": "NZD",
+      "symbol": "$",
+      "showCode": true,
+      "quote": 600,
+      "careQuote": 39,
+      "range": "$400–$800 NZD",
+      "careRange": "$29–$49 NZD",
+      "lang": "en-NZ",
+      "postalAddressRequired": false,
+      "channels": [
+        "email"
+      ],
+      "law": "Unsolicited Electronic Messages Act",
+      "notes": "NZ pricing was never set by you; NZD assumed."
     }
   },
   "netlify": {
@@ -53,5 +135,11 @@
     "plannedUrl": "https://local-homepage-demos.netlify.app",
     "baseUrl": null,
     "_note": "baseUrl stays null until the first deploy is live and checked."
-  }
+  },
+  "portfolio": [
+    "blended-cafe",
+    "kalgoorlie-mobile-detailing",
+    "mildura-lawn-mowing"
+  ],
+  "_portfolio": "Your 3 best demos, by slug. Swap in won client sites (with permission) as they launch."
 }

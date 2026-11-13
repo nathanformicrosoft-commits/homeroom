@@ -1,0 +1,11 @@
+{
+  "_readme": "Test ONE thing at a time. pitch.js gives each new email the version with the fewest sends. learn.js calls a winner only after minPerArm sends each. To end a test, set retired: true on the losers and add one new challenger.",
+  "subject": {
+    "metric": "positive reply (interested, won or paid)",
+    "minPerArm": 25,
+    "arms": [
+      { "id": "S1", "text": "I built a free homepage for {name}" },
+      { "id": "S2", "text": "{name} homepage (already built, free to look)" }
+    ]
+  }
+}
