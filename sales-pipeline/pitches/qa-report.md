@@ -1,12 +1,11 @@
-# QA report 2026-11-13T08:41Z
+# QA report 2026-11-13T13:31Z
 
-**BLOCKED: 25 problem(s). Nothing may be sent.**
+**BLOCKED: 24 problem(s). Nothing may be sent.**
 
 - FAIL `config` studio.studioName is empty
 - FAIL `config` studio.ownerName is empty
 - FAIL `config` studio.city is empty
 - FAIL `config` studio.email is empty
-- FAIL `config` netlify.baseUrl is empty: demos are not confirmed live
 - WARN `config` payments.paypalEmail is empty (needed before the first invoice, not before pitching)
 - FAIL `mildura-lawn-mowing` message still has [[placeholders]]
 - FAIL `mildura-lawn-mowing` demo footer does not name the studio yet (rebuild after filling config.json)

@@ -133,8 +133,8 @@
     "siteName": "local-homepage-demos",
     "siteId": "690bd604-44f2-4193-b1a2-003c482a7536",
     "plannedUrl": "https://local-homepage-demos.netlify.app",
-    "baseUrl": null,
-    "_note": "baseUrl stays null until the first deploy is live and checked."
+    "baseUrl": "https://local-homepage-demos.netlify.app",
+    "_note": "Live since 2026-11-13. Redeploy after every build.js run that changes a demo."
   },
   "portfolio": [
     "blended-cafe",
