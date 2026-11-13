@@ -27,9 +27,10 @@ Markets in `config.json → settings.marketOrder`; **USA first**.
 - `node build.js`, then `node shoot.js` for screenshots. Look at the screenshot before pitching.
 
 ## 5. Pitch
+Target: 30 new businesses a day across email + Messenger, within the warm-up caps in `playbook/deliverability.md`. Never exceed them to hit the number.
 - Write `pitch.line1` yourself: one specific, true detail. Follow `playbook/voice.md`.
 - `node pitch.js`, then **`node qa.js`. It must say PASS.** Fix every FAIL; never edit around the check.
-- Email: create Gmail drafts from `pitches/queue.json` (draft mode), timed for Tue–Thu 8–10am in their time zone. After the owner sends each one: `node log.js <slug> pitched`.
+- Email: create Gmail drafts from `pitches/queue.json` (draft mode), or use the one-click Gmail links in `send-list.md`. Each has its own scheduled time (Tue–Thu 8–10am their time, spaced apart); use Gmail's Schedule send. After the owner sends each one: `node log.js <slug> pitched`.
 - Messenger: `send-list.md`, sent by the owner.
 
 ## 6. When something goes wrong

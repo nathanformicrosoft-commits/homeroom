@@ -6,7 +6,8 @@ Speed wins: reply within the hour while they still have the demo open. Keep each
 Log `interested`, then send the scope confirmation in `closing.md` step 1. Same day.
 
 ## "How much?" (they missed it)
-> It's $600 one-time for the finished site, set up on your own domain, plus $39 a month if you want me to handle hosting and small changes. You can skip the monthly plan and host it yourself. Want me to go ahead?
+Use the price in their pitch (`pitches/queue.json` → `quote`): $150 simple, $250 with gallery or booking, $350 with a full menu.
+> It's $[QUOTE] one-time for the finished site, set up on your own domain, plus $39 a month if you want me to handle hosting and small changes. You can skip the monthly plan and host it yourself. Want me to go ahead?
 
 ## "Too expensive"
 Don't discount on the first push. Ask what they had in mind, and remind them what is included. If one of the first 3 clients: offer the founding-client price (`closing.md`) in exchange for a testimonial. Never go below the bottom of the range in config.json without asking the owner.
@@ -17,7 +18,7 @@ Don't discount on the first push. Ask what they had in mind, and remind them wha
 
 ## "Is this AI?" / "Are you a bot?"
 Always the truth. Never deny it. Turn it into the price advantage it is:
-> Yes, I use AI tools to research and draft. That's how I can build you a demo for free and charge $600 instead of the $2,000–$3,000 an agency would. But I'm a real person, Nathaniel, and I checked everything myself. Happy to jump on a quick call.
+> Yes, I use AI tools to research and draft. That's how I can build you a demo for free and charge $[QUOTE] instead of the $2,000–$3,000 an agency would. But I'm a real person, Nathaniel, and I checked everything myself. Happy to jump on a quick call.
 
 Why: people who ask usually suspect already, a caught lie turns a warm lead into a "scam" post and a PayPal dispute, and lying to make a sale can count as a deceptive practice in the US. The honest answer sells better.
 

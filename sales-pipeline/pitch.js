@@ -5,7 +5,7 @@
 //   send-list.md           Messenger/SMS messages you send by hand
 // and appends new prospects to leads.csv. Usage: node pitch.js [YYYY-MM-DD]
 const fs = require('fs');
-const { P, readJSON, writeJSON, readJSONL, readCSV, writeCSV, money, sendWindow, words, today, quoteFor } = require('./lib');
+const { P, readJSON, writeJSON, readJSONL, readCSV, writeCSV, money, words, today, quoteFor, makeScheduler } = require('./lib');
 
 const config = readJSON('config.json');
 const prospects = readJSON('data/prospects.json', []);
@@ -35,7 +35,7 @@ function emailPitch(p, arm) {
     p.pitch.greeting, '',
     p.pitch.line1, '',
     `I'm ${v('ownerName', 'YOUR NAME')} from ${v('studioName', 'STUDIO NAME')}, a small web design studio in ${v('city', 'CITY')}, Philippines. ${p.pitch.gap}, so I built you a free demo homepage: ${url}`, '',
-    `It's a preview of what your site could include: your ${what}, hours, a map, click-to-call and a contact form. The finished site with your own photos is ${money(p.market, quoteFor(p, config), config)} one-time, plus an optional ${money(p.market, m.careQuote, config)}/month care plan for hosting and small edits.`, '',
+    `It shows your ${what}, hours, a map, click-to-call and a contact form. The finished site with your own photos is ${money(p.market, quoteFor(p, config), config)} one-time, plus an optional ${money(p.market, m.careQuote, config)}/month care plan for hosting and edits.`, '',
     `Reply "yes" and I'll finish it in 3 days.`,
   ].join('\n');
   const sig = ['', v('ownerName', 'YOUR NAME'), `${v('studioName', 'STUDIO NAME')} · ${v('city', 'CITY')}, Philippines`];
@@ -51,23 +51,52 @@ function chatPitch(p) {
 const leads = readCSV('leads.csv');
 const statusOf = Object.fromEntries(leads.rows.map((r) => [r.name, r.status]));
 const queue = [];
-const sendList = [`# Send list for ${runDate}`, '', 'You tap Send yourself, at most 10 a day. Run `node qa.js` first: it must say PASS.', ''];
+const schedule = makeScheduler(config, outcomes, runDate);
+const emails = [];
+const chats = [];
 for (const p of prospects) {
   const st = statusOf[p.name] || 'found';
   if (st !== 'found' || p.status === 'do-not-contact') continue;
   const m = config.markets[p.market];
   if (!m.channels.includes(p.channel)) { console.warn(`SKIP ${p.slug}: ${p.channel} is not allowed for ${p.market} (${m.law})`); continue; }
-  const w = sendWindow(p.tz, runDate, config);
+  const w = schedule(p);
+  const when = { sendAt: w.utc, sendLocal: w.local, sendManila: w.manila };
   if (p.channel === 'email') {
     const arm = pickArm();
     const e = emailPitch(p, arm);
-    queue.push({ slug: p.slug, market: p.market, channel: 'email', to: p.email, subject: e.subject, body: e.body, bodyWords: e.bodyWords, quote: quoteFor(p, config), variant: { subject: arm.id }, sendAt: w.utcStart, demoUrl: `${base}/${p.slug}/` });
-    fs.writeFileSync(P('pitches', `${p.slug}.md`), `**To:** ${p.email} (${p.emailSource})\n**Subject:** ${e.subject}  _(variant ${arm.id})_\n**Send:** ${w.day}, ${w.local} (${w.manila})\n**Body words:** ${e.bodyWords}\n\n---\n\n${e.body}\n`);
+    queue.push({ slug: p.slug, market: p.market, channel: 'email', to: p.email, subject: e.subject, body: e.body, bodyWords: e.bodyWords, quote: quoteFor(p, config), variant: { subject: arm.id }, ...when, demoUrl: `${base}/${p.slug}/` });
+    emails.push({ p, e, w });
+    fs.writeFileSync(P('pitches', `${p.slug}.md`), `**To:** ${p.email} (${p.emailSource})\n**Subject:** ${e.subject}  _(variant ${arm.id})_\n**Send:** ${w.manila} (${w.local})\n**Body words:** ${e.bodyWords}\n\n---\n\n${e.body}\n`);
   } else {
     const msg = chatPitch(p);
-    queue.push({ slug: p.slug, market: p.market, channel: p.channel, to: p.contactLink, body: msg, bodyWords: words(msg), quote: quoteFor(p, config), variant: {}, sendAt: w.utcStart, demoUrl: `${base}/${p.slug}/` });
+    queue.push({ slug: p.slug, market: p.market, channel: p.channel, to: p.contactLink, body: msg, bodyWords: words(msg), quote: quoteFor(p, config), variant: {}, ...when, demoUrl: `${base}/${p.slug}/` });
+    chats.push({ p, msg, w });
+  }
+}
+
+// --- send list: emails (one-click Gmail compose, scheduled), then Messenger/SMS ---
+const byTime = (a, b) => a.w.utc.localeCompare(b.w.utc);
+const held = (p) => config.markets[p.market].postalAddressRequired && !s.postalAddress;
+const sendList = [`# Send list for ${runDate}`, '', 'Run `node qa.js` first: it must say PASS. Rules for staying out of spam folders: playbook/deliverability.md.', ''];
+const ready = emails.filter((x) => !held(x.p)).sort(byTime);
+if (ready.length) {
+  sendList.push('# Emails', '', `Each link opens Gmail with the email filled in. Click the arrow next to Send, choose **Schedule send**, and pick the Manila time shown. The times are already ${config.settings.emailGapMinutes || 9}+ minutes apart; never send a batch at once.`, '');
+  for (const { p, e, w } of ready) {
+    const gmail = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(p.email)}&su=${encodeURIComponent(e.subject)}&body=${encodeURIComponent(e.body)}`;
+    sendList.push(`## ${p.name} (${p.town} ${p.state})`, '', `- To: ${p.email}`, `- Schedule for: **${w.manila}** (${w.local})`, `- [Open in Gmail, filled in](${gmail})`, `- After it goes out: \`node log.js ${p.slug} pitched\``, '');
+  }
+}
+const onHold = emails.filter((x) => held(x.p));
+if (onHold.length) {
+  sendList.push('# Emails on hold', '', `${onHold.length} US email(s) are written (pitches/<slug>.md) but can't be sent yet: US law (CAN-SPAM) requires your postal address in every commercial email. Add it to config.json under studio.postalAddress, then run node pitch.js and node qa.js again.`, '');
+  for (const { p } of onHold) sendList.push(`- ${p.name} (${p.town} ${p.state}): pitches/${p.slug}.md`);
+  sendList.push('');
+}
+if (chats.length) {
+  sendList.push('# Messenger / SMS', '', `You tap Send yourself, at most ${config.settings.messengerPerDay || 10} a day, a few minutes apart.`, '');
+  for (const { p, msg, w } of chats.sort(byTime)) {
     const link = p.channel === 'sms' ? `${p.contactLink}?&body=${encodeURIComponent(msg)}` : `${p.contactLink}?text=${encodeURIComponent(msg)}`;
-    sendList.push(`## ${p.name} (${p.town} ${p.state})`, '', `- Channel: ${p.channel === 'sms' ? 'SMS' : 'Facebook Messenger'}${p.altContact ? ` (or ${p.altContact})` : ''}`, `- Best time: ${w.day}, ${w.local} (${w.manila})`, `- [Open with message pre-filled](${link})`, `- After sending: \`node log.js ${p.slug} pitched\``, '', '```', msg, '```', '');
+    sendList.push(`## ${p.name} (${p.town} ${p.state})`, '', `- Channel: ${p.channel === 'sms' ? 'SMS' : 'Facebook Messenger'}${p.altContact ? ` (or ${p.altContact})` : ''}`, `- Send: ${w.manila} (${w.local})`, `- [Open with message pre-filled](${link})`, `- After sending: \`node log.js ${p.slug} pitched\``, '', '```', msg, '```', '');
   }
 }
 fs.mkdirSync(P('pitches'), { recursive: true });

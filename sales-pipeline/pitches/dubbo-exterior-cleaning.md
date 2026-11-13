@@ -1,7 +1,7 @@
 **To:** dubboexteriorcleaning@gmail.com (Listed on their public Facebook page)
 **Subject:** Dubbo Exterior Cleaning homepage (already built, free to look)  _(variant S2)_
-**Send:** 2026-11-17, 8–10am local (Tue 5:00 AM to Tue 7:00 AM Manila time)
-**Body words:** 105
+**Send:** Tue, Nov 17, 5:14 AM Manila time (Tue, Nov 17, 8:14 AM their time)
+**Body words:** 108
 
 ---
 
@@ -11,7 +11,7 @@ One of your Google reviewers says you rescued an orchid growing in their gutter 
 
 I'm Nathaniel Visaya from Visaya Web Studio, a small web design studio in Antipolo City, Philippines. I could only find a Calendly link, not a website, so I built you a free demo homepage: https://local-homepage-demos.netlify.app/dubbo-exterior-cleaning/
 
-It has your services, hours, a map, click-to-call and a contact form. The finished site is $600 AUD one-time, plus an optional $39 AUD/month care plan for hosting and small edits.
+It shows your services, hours, a map, click-to-call and a contact form. The finished site with your own photos is $230 AUD one-time, plus an optional $39 AUD/month care plan for hosting and edits.
 
 Reply "yes" and I'll finish it in 3 days.
 

@@ -1,5 +1,7 @@
 # From "yes" to paid
 
+**Price:** use the quote from their pitch (`pitches/queue.json` → `quote`). US: $150 simple service page, $250 with a gallery or booking, $350 with a full menu; never below $100 without asking the owner. [HALF] = half the quote. Bigger jobs (extra pages, online ordering) are quoted separately, from $100 more.
+
 Payment is by **PayPal invoice** (address in `config.json` → `payments.paypalEmail`). You create and send every invoice yourself in PayPal. Claude only drafts the message. Never ask anyone for card numbers, bank logins or passwords in chat or email.
 
 ## 1. Confirm scope (within the hour)
@@ -10,7 +12,7 @@ Payment is by **PayPal invoice** (address in `config.json` → `payments.paypalE
 > - Up to 2 rounds of changes
 > - Live within 3 days of getting your photos and details
 >
-> The price is $600: $300 to start and $300 when you approve the finished site. I'll send a PayPal invoice for the first half. You can pay with a card or PayPal on the invoice page. Sound good?
+> The price is $[QUOTE]: $[HALF] to start and $[HALF] when you approve the finished site. I'll send a PayPal invoice for the first half. You can pay with a card or PayPal on the invoice page. Sound good?
 
 ## 2. Agreement (send with the first invoice)
 > **Website agreement between [CLIENT BUSINESS] and [STUDIO NAME] ([OWNER NAME], [CITY], Philippines)**
@@ -27,9 +29,9 @@ Payment is by **PayPal invoice** (address in `config.json` → `payments.paypalE
 Their "I agree" by email is the record. Claude never signs or agrees to anything on the owner's behalf.
 
 ## 3. Invoice message (you send the actual invoice from PayPal)
-> Here's the PayPal invoice for the first half ($300): [you paste the link PayPal gives you]. As soon as it's paid I'll start. Could you send these over too?
+> Here's the PayPal invoice for the first half ($[HALF]): [you paste the link PayPal gives you]. As soon as it's paid I'll start. Could you send these over too?
 
-Then log: `node log.js <slug> deposit --amount 300 --currency USD`.
+Then log: `node log.js <slug> deposit --amount [HALF] --currency USD`.
 
 ## 4. Collect content
 - Logo (any format; a phone photo of a sign works to start)
@@ -45,8 +47,8 @@ Then log: `node log.js <slug> deposit --amount 300 --currency USD`.
 3. Deploy to its own Netlify project (forms enabled), send them the preview link, and make up to 2 rounds of changes.
 
 ## 6. Final payment and launch
-> Here's the invoice for the second half ($300). Once it's paid I'll connect your domain and send you the logins.
-Log `node log.js <slug> paid --amount 300 --currency USD`. Then connect their domain, transfer the Netlify site to an account in their name, and send the how-to below.
+> Here's the invoice for the second half ($[HALF]). Once it's paid I'll connect your domain and send you the logins.
+Log `node log.js <slug> paid --amount [HALF] --currency USD`. Then connect their domain, transfer the Netlify site to an account in their name, and send the how-to below.
 
 ## 7. Handover how-to (send after launch)
 > Your site is live at [domain].
@@ -64,4 +66,4 @@ Log `node log.js <slug> paid --amount 300 --currency USD`. Then connect their do
 Real words only, and only with their written permission. Log `testimonial` / `referral`.
 
 ## Founding-client price (first 3 clients only)
-Offer $450 instead of $600 in exchange for a testimonial and permission to show their site in the portfolio. Say it plainly; don't present it as a time-limited deal.
+Offer $50 off their quote (never below $100) in exchange for a testimonial and permission to show their site in the portfolio. Say it plainly; don't present it as a time-limited deal.

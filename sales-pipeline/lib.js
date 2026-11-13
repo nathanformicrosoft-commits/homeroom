@@ -54,6 +54,67 @@ function sendWindow(tz, fromDate, config) {
   return { day, local: `${h1}–${h2}am local`, manila: `${fmt(utc(h1))} to ${fmt(utc(h2))} Manila time`, utcStart: utc(h1).toISOString() };
 }
 
+// --- Send scheduling (deliverability) ---
+// Next send day (Tue–Thu by default) strictly after fromDate.
+function nextSendDay(fromDate, config) {
+  const d = new Date(fromDate + 'T00:00:00Z');
+  do { d.setUTCDate(d.getUTCDate() + 1); } while (!config.settings.sendDays.includes(d.getUTCDay()));
+  return d.toISOString().slice(0, 10);
+}
+function tzOffset(zone, day) {
+  const name = new Intl.DateTimeFormat('en-US', { timeZone: zone, timeZoneName: 'longOffset' }).formatToParts(new Date(day + 'T12:00:00Z')).find((x) => x.type === 'timeZoneName').value;
+  const m = name.match(/([+-])(\d{2}):?(\d{2})?/);
+  return m ? (m[1] === '-' ? -1 : 1) * (Number(m[2]) + Number(m[3] || 0) / 60) : 0;
+}
+const fmtIn = (zone, t) => new Intl.DateTimeFormat('en-US', { timeZone: zone, weekday: 'short', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }).format(t);
+const hash = (s) => [...s].reduce((h, c) => (h * 31 + c.charCodeAt(0)) >>> 0, 7);
+
+// Gives every message its own send time:
+//  - emails: inside the recipient's local window, at least emailGapMinutes apart from every other email
+//    (in the sender's time, which is what spam filters see), and no more than the warm-up cap per day;
+//  - Messenger/SMS: at most messengerPerDay per day.
+// Overflow rolls to the next send day.
+function makeScheduler(config, outcomes, runDate) {
+  const st = config.settings;
+  const [h1, h2] = st.sendLocalHours;
+  const gap = (st.emailGapMinutes || 9) * 60e3;
+  const firstEmail = outcomes.filter((e) => e.event === 'pitched' && e.channel === 'email').map((e) => e.date).sort()[0];
+  const emailCap = (day) => {
+    const since = firstEmail ? Math.round((new Date(day) - new Date(firstEmail)) / 864e5) : 0;
+    let cap = 15;
+    for (const [d, n] of st.emailWarmup || [[0, 15]]) if (since >= d) cap = n;
+    return cap;
+  };
+  const used = {};
+  const times = [];
+  const hourIn = (zone, t) => new Intl.DateTimeFormat('en-US', { timeZone: zone, hour: 'numeric', minute: '2-digit' }).format(t);
+  return function assign(p) {
+    let day = nextSendDay(runDate, config);
+    for (let tries = 0; tries < 40; tries++, day = nextSendDay(day, config)) {
+      const u = (used[day] = used[day] || { email: 0, chat: 0 });
+      const off = tzOffset(p.tz, day);
+      const at = (h) => new Date(Date.parse(day + 'T00:00:00Z') + (h - off) * 3600e3);
+      if (p.channel !== 'email') {
+        if (u.chat >= (st.messengerPerDay || 10)) continue;
+        u.chat++;
+        return { day, utc: at(h1).toISOString(), local: `${fmtIn(p.tz, at(h1))} to ${hourIn(p.tz, at(h2))} their time`, manila: `${fmtIn('Asia/Manila', at(h1))} to ${hourIn('Asia/Manila', at(h2))} Manila time` };
+      }
+      if (u.email >= emailCap(day)) continue;
+      const start = at(h1).getTime() + (hash(p.slug) % 7) * 60e3;
+      const end = at(h2).getTime();
+      for (let t = start; t < end; t += 60e3) {
+        if (times.every((x) => Math.abs(x - t) >= gap)) {
+          times.push(t);
+          u.email++;
+          const d = new Date(t);
+          return { day, utc: d.toISOString(), local: `${fmtIn(p.tz, d)} their time`, manila: `${fmtIn('Asia/Manila', d)} Manila time` };
+        }
+      }
+    }
+    throw new Error('no send slot found for ' + p.slug);
+  };
+}
+
 const words = (t) => t.trim().split(/\s+/).filter(Boolean).length;
 
 // Price for one prospect: an explicit p.quote wins, else the market tier for p.complexity, else the market default.
@@ -62,4 +123,4 @@ function quoteFor(p, config) {
   return p.quote || (m.tiers && m.tiers[p.complexity || 'standard']) || m.quote;
 }
 
-module.exports = { ROOT, P, readJSON, writeJSON, readJSONL, appendJSONL, today, addDays, readCSV, writeCSV, money, sendWindow, words, quoteFor };
+module.exports = { ROOT, P, readJSON, writeJSON, readJSONL, appendJSONL, today, addDays, readCSV, writeCSV, money, sendWindow, words, quoteFor, makeScheduler, nextSendDay };

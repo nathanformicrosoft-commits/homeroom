@@ -44,7 +44,28 @@
     "phpPerUSD": null,
     "_phpPerUSD": "Set the rate you actually receive from PayPal so the goal total is accurate.",
     "minQuoteUSD": 100,
-    "_pricing": "Each prospect gets a tier from its complexity (simple / standard / menu). Set prospect.quote to override. Never quote below minQuoteUSD (or the market equivalent) without asking the owner."
+    "_pricing": "Each prospect gets a tier from its complexity (simple / standard / menu). Set prospect.quote to override. Never quote below minQuoteUSD (or the market equivalent) without asking the owner.",
+    "emailGapMinutes": 9,
+    "messengerPerDay": 10,
+    "emailWarmup": [
+      [
+        0,
+        15
+      ],
+      [
+        7,
+        20
+      ],
+      [
+        14,
+        25
+      ],
+      [
+        21,
+        30
+      ]
+    ],
+    "_deliverability": "emailWarmup: [days since first email pitched, max emails per send day]. pitch.js spaces emails at least emailGapMinutes apart (sender time) and rolls overflow to the next send day. See playbook/deliverability.md."
   },
   "markets": {
     "US": {

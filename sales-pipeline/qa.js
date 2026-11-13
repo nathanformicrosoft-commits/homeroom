@@ -27,6 +27,22 @@ if (!config.payments.paypalEmail) warn('config', 'payments.paypalEmail is empty 
 const pitchedToday = outcomes.filter((e) => e.event === 'pitched' && e.date === today()).length;
 if (pitchedToday + queue.length > config.settings.dailyCap) warn('cap', `${pitchedToday} sent today + ${queue.length} queued is over the daily cap of ${config.settings.dailyCap}; send the rest another day`);
 
+// --- deliverability: caps, spacing, uniqueness (see playbook/deliverability.md) ---
+const perDay = {};
+for (const q of queue) {
+  const k = `${(q.sendAt || '').slice(0, 10)} ${q.channel === 'email' ? 'email' : 'chat'}`;
+  perDay[k] = (perDay[k] || 0) + 1;
+}
+const maxEmailCap = Math.max(...(config.settings.emailWarmup || [[0, 15]]).map((x) => x[1]));
+for (const [k, n] of Object.entries(perDay)) {
+  if (k.endsWith('chat') && n > (config.settings.messengerPerDay || 10)) fail('cap', `${n} Messenger/SMS messages scheduled for ${k.slice(0, 10)} (max ${config.settings.messengerPerDay || 10})`);
+  if (k.endsWith('email') && n > maxEmailCap) fail('cap', `${n} emails scheduled for ${k.slice(0, 10)} (max ${maxEmailCap})`);
+}
+const emailTimes = queue.filter((q) => q.channel === 'email').map((q) => Date.parse(q.sendAt)).sort((a, b) => a - b);
+for (let i = 1; i < emailTimes.length; i++) if (emailTimes[i] - emailTimes[i - 1] < (config.settings.emailGapMinutes || 9) * 60e3) { fail('cap', 'two emails are scheduled closer together than settings.emailGapMinutes; rerun node pitch.js'); break; }
+const line1s = {};
+for (const q of queue) { const p = prospects[q.slug]; if (p && p.pitch) { const k = p.pitch.line1.trim().toLowerCase(); if (line1s[k]) fail(q.slug, `same opening line as ${line1s[k]}; every first line must be unique`); line1s[k] = q.slug; } }
+
 // --- per message ---
 const alreadyPitched = new Set(outcomes.filter((e) => e.event === 'pitched').map((e) => e.slug));
 for (const q of queue) {
@@ -46,6 +62,8 @@ for (const q of queue) {
   if (!q.quote || q.quote < (m.minQuote || 0)) fail(sc, `quote ${q.quote} is below the ${p.market} minimum of ${m.minQuote} (ask the owner first)`);
   if (q.quote && !q.body.includes(String(q.quote))) fail(sc, 'message does not state the same price as the quote');
   if (!q.body.includes(q.demoUrl)) fail(sc, 'demo link missing from message');
+  if ((q.body.match(/https?:\/\//g) || []).length > 1) fail(sc, 'more than one link in the message (spam filters count links; keep only the demo link)');
+  if (q.channel === 'email' && q.subject && (/[A-Z]{5,}/.test(q.subject) || /[!$%]/.test(q.subject))) fail(sc, 'subject has shouting caps or !/$/% (spam trigger)');
   for (const b of banned) if (text.toLowerCase().includes(b.toLowerCase())) fail(sc, `uses banned phrase "${b}" (see playbook/voice.md)`);
   for (const mk of mistakes) if (new RegExp(mk.pattern, 'i').test(text)) fail(sc, `repeats a past mistake: ${mk.what} → ${mk.fix}`);
   if ((text.match(/!/g) || []).length > 1) warn(sc, 'more than one exclamation mark');
@@ -62,7 +80,16 @@ for (const q of queue) {
 
 // --- live URL check ---
 async function live() {
-  if (offline || !config.netlify.baseUrl) return;
+  if (offline) return;
+  // Bounces hurt the sender's reputation more than anything else: the email's domain must accept mail.
+  const dns = require('dns').promises;
+  for (const q of queue.filter((x) => x.channel === 'email')) {
+    const domain = String(q.to || '').split('@')[1];
+    if (!domain) { fail(q.slug, `"${q.to}" is not an email address`); continue; }
+    try { const mx = await dns.resolveMx(domain); if (!mx.length) fail(q.slug, `${domain} has no mail server (would bounce)`); }
+    catch (e) { if (['ENOTFOUND', 'ENODATA'].includes(e.code)) fail(q.slug, `${domain} has no mail server (would bounce)`); else warn(q.slug, `could not check the mail server for ${domain} (${e.code})`); }
+  }
+  if (!config.netlify.baseUrl) return;
   for (const q of queue) {
     try {
       const r = await fetch(q.demoUrl, { method: 'GET', signal: AbortSignal.timeout(15000) });
