@@ -16,8 +16,10 @@ Don't discount on the first push. Ask what they had in mind, and remind them wha
 > Fair question. Your email is listed on your [Facebook page / Google listing], which is where I found your reviews too. There's nothing to pay unless you decide you want the site, and payment goes through a PayPal invoice, so you're covered by PayPal. If you'd rather I didn't contact you again, just say so.
 
 ## "Is this AI?" / "Are you a bot?"
-Always the truth. Never deny it.
-> I use AI tools to help with research and drafting, but I'm a real person: [name], running a small studio in [city], Philippines. I checked the demo myself before sending it. Happy to hop on a quick call if you'd like.
+Always the truth. Never deny it. Turn it into the price advantage it is:
+> Yes, I use AI tools to research and draft. That's how I can build you a demo for free and charge $600 instead of the $2,000–$3,000 an agency would. But I'm a real person, Nathaniel, and I checked everything myself. Happy to jump on a quick call.
+
+Why: people who ask usually suspect already, a caught lie turns a warm lead into a "scam" post and a PayPal dispute, and lying to make a sale can count as a deceptive practice in the US. The honest answer sells better.
 
 ## "We already have someone" / "We're fine with Facebook"
 > No problem at all. Many of your customers search Google before they call, and a page with your hours and a call button helps there, but I get it. I'll leave it there. All the best with the [business].
