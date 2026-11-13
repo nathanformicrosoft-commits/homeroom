@@ -15,7 +15,7 @@ const esc = (s) => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</
 
 const THEMES = {
   lawn: { fonts: 'Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600', hf: "'Barlow Condensed'", bf: "'Barlow'", bg: '#F4F6EF', surface: '#FFFFFF', ink: '#14261A', muted: '#566458', line: '#DDE3D6', accent: '#2E7D32', accentInk: '#FFFFFF', tint: '16,34,22', upper: true },
-  'lawn-sun': { fonts: 'Bricolage+Grotesque:wght@600;800&family=Instrument+Sans:wght@400;500;600', hf: "'Bricolage Grotesque'", bf: "'Instrument Sans'", bg: '#FFFBEA', surface: '#FFFFFF', ink: '#1F2A14', muted: '#5C6650', line: '#EADFB8', accent: '#F2B705', accentInk: '#1F2A14', accentText: '#7A5C00', tint: '26,38,16' },
+  'lawn-sun': { fonts: 'Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,800', hf: "'Bricolage Grotesque'", bf: "'Bricolage Grotesque'", bg: '#FFFBEA', surface: '#FFFFFF', ink: '#1F2A14', muted: '#5C6650', line: '#EADFB8', accent: '#F2B705', accentInk: '#1F2A14', accentText: '#7A5C00', tint: '26,38,16' },
   cafe: { fonts: 'Fraunces:opsz,wght@9..144,500;9..144,700&family=DM+Sans:wght@400;500;700', hf: "'Fraunces'", bf: "'DM Sans'", bg: '#FAF5EC', surface: '#FFFFFF', ink: '#2B2118', muted: '#6B5D50', line: '#E8DCC8', accent: '#C4552D', accentInk: '#FFFFFF', tint: '43,33,24' },
   diner: { fonts: 'Oswald:wght@500;700&family=DM+Sans:wght@400;500;700', hf: "'Oswald'", bf: "'DM Sans'", bg: '#FFF7EE', surface: '#FFFFFF', ink: '#1B1B1F', muted: '#5F5A57', line: '#F0DDCB', accent: '#D7263D', accentInk: '#FFFFFF', tint: '40,10,16', upper: true, checker: true },
   detailing: { dark: true, fonts: 'Sora:wght@600;700&family=Albert+Sans:wght@400;500;600', hf: "'Sora'", bf: "'Albert Sans'", bg: '#0D1117', surface: '#161B22', ink: '#F0F3F6', muted: '#9BA7B4', line: '#27303B', accent: '#3BA7FF', accentInk: '#06131F', tint: '6,10,16' },
@@ -190,11 +190,11 @@ ${final ? '' : `<script>document.getElementById('demo-form').addEventListener('s
 
 // ---------- studio pages (one-pager + portfolio) ----------
 const STUDIO_CSS = `
-*{box-sizing:border-box}body{margin:0;background:#F7F5F0;color:#17202A;font:400 17px/1.65 'Instrument Sans',system-ui,sans-serif}
-h1,h2,h3{font-family:'Bricolage Grotesque','Instrument Sans',sans-serif;line-height:1.1;margin:0;text-wrap:balance}
+*{box-sizing:border-box}body{margin:0;background:#F7F5F0;color:#17202A;font:400 17px/1.65 'Bricolage Grotesque',system-ui,sans-serif}
+h1,h2,h3{font-family:'Bricolage Grotesque','Bricolage Grotesque',sans-serif;line-height:1.1;margin:0;text-wrap:balance}
 .wrap{max-width:920px;margin:0 auto;padding:0 20px}a{color:#0B5FFF}
 header{padding:22px 0;font-weight:700;font-family:'Bricolage Grotesque';font-size:20px}
-header a{text-decoration:none;color:inherit}nav{float:right;font:500 15px 'Instrument Sans'}nav a{margin-left:16px}
+header a{text-decoration:none;color:inherit}nav{float:right;font:500 15px 'Bricolage Grotesque'}nav a{margin-left:16px}
 .lead{padding:48px 0 40px}.lead h1{font-size:clamp(36px,8vw,64px);max-width:16ch}.lead p{font-size:20px;max-width:52ch;color:#44505C}
 .btn{display:inline-block;background:#17202A;color:#fff;text-decoration:none;font-weight:600;border-radius:999px;padding:14px 24px;margin-top:8px}
 section{padding:40px 0;border-top:1px solid #E2DED4}h2{font-size:clamp(26px,5vw,36px);margin-bottom:18px}
@@ -217,7 +217,7 @@ const shell = (title, body) => `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow"><title>${esc(title)}</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/studio.css"></head><body>
 <div class="wrap"><header><a href="/">${esc(studioName)}</a><nav><a href="/">Pricing</a><a href="/work/">Work</a></nav></header></div>
 ${body}
