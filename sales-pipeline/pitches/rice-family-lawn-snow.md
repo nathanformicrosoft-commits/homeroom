@@ -1,5 +1,5 @@
 **To:** hardworkinrice@gmail.com (Listed on their public Facebook page)
-**Subject:** Rice Family Lawn & Snow Services + homepage (already built, free to look)  _(variant S2)_
+**Subject:** Rice Family Lawn & Snow Services homepage (already built, free to look)  _(variant S2)_
 **Send:** Wed, Nov 18, 11:08 PM Manila time (Wed, Nov 18, 9:08 AM their time)
 **Body words:** 101
 
@@ -17,6 +17,6 @@ Reply "yes" and I'll finish it in 3 days.
 
 Nathaniel Visaya
 Visaya Web Studio · Antipolo City, Philippines
-[[POSTAL ADDRESS (required by law for this market)]]
+Lilium Street, Barangay Dalig, Antipolo City, Rizal 1870, Philippines
 
 Not interested? Reply STOP and I won't contact you again.

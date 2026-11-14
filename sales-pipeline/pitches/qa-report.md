@@ -1,44 +1,4 @@
-# QA report 2026-11-14T00:37Z
+# QA report 2026-11-14T01:03Z
 
-**BLOCKED: 40 problem(s). Nothing may be sent.**
+**PASS**
 
-- FAIL `goodridges-lawn-care` message still has [[placeholders]]
-- FAIL `goodridges-lawn-care` CAN-SPAM needs your postal address in every email
-- FAIL `freddys-landscaping` message still has [[placeholders]]
-- FAIL `freddys-landscaping` CAN-SPAM needs your postal address in every email
-- FAIL `windham-pressure-washing` message still has [[placeholders]]
-- FAIL `windham-pressure-washing` CAN-SPAM needs your postal address in every email
-- FAIL `bubbas-stump-grinding` message still has [[placeholders]]
-- FAIL `bubbas-stump-grinding` CAN-SPAM needs your postal address in every email
-- FAIL `brannen-tree-service` message still has [[placeholders]]
-- FAIL `brannen-tree-service` CAN-SPAM needs your postal address in every email
-- FAIL `ellis-clean` message still has [[placeholders]]
-- FAIL `ellis-clean` CAN-SPAM needs your postal address in every email
-- FAIL `all-clear-power-washing` message still has [[placeholders]]
-- FAIL `all-clear-power-washing` CAN-SPAM needs your postal address in every email
-- FAIL `owens-landscaping-pressure-washing` message still has [[placeholders]]
-- FAIL `owens-landscaping-pressure-washing` CAN-SPAM needs your postal address in every email
-- FAIL `kovacs-home-property-services` message still has [[placeholders]]
-- FAIL `kovacs-home-property-services` CAN-SPAM needs your postal address in every email
-- FAIL `ftk-llc` message still has [[placeholders]]
-- FAIL `ftk-llc` CAN-SPAM needs your postal address in every email
-- FAIL `altoona-small-engine` message still has [[placeholders]]
-- FAIL `altoona-small-engine` CAN-SPAM needs your postal address in every email
-- FAIL `sosas-barbershop` message still has [[placeholders]]
-- FAIL `sosas-barbershop` CAN-SPAM needs your postal address in every email
-- FAIL `slay-all-day-pressure-washing` message still has [[placeholders]]
-- FAIL `slay-all-day-pressure-washing` CAN-SPAM needs your postal address in every email
-- FAIL `baggett-exterior-cleaning` message still has [[placeholders]]
-- FAIL `baggett-exterior-cleaning` CAN-SPAM needs your postal address in every email
-- FAIL `full-circle-bakery-cafe` message still has [[placeholders]]
-- FAIL `full-circle-bakery-cafe` CAN-SPAM needs your postal address in every email
-- FAIL `renfrows-tree-service` message still has [[placeholders]]
-- FAIL `renfrows-tree-service` CAN-SPAM needs your postal address in every email
-- FAIL `motion-sudz` message still has [[placeholders]]
-- FAIL `motion-sudz` CAN-SPAM needs your postal address in every email
-- FAIL `rice-family-lawn-snow` message still has [[placeholders]]
-- FAIL `rice-family-lawn-snow` CAN-SPAM needs your postal address in every email
-- FAIL `gios-paw-spa` message still has [[placeholders]]
-- FAIL `gios-paw-spa` CAN-SPAM needs your postal address in every email
-- FAIL `barks-and-bubbles-rapid-city` message still has [[placeholders]]
-- FAIL `barks-and-bubbles-rapid-city` CAN-SPAM needs your postal address in every email

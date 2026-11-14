@@ -17,6 +17,6 @@ Reply "yes" and I'll finish it in 3 days.
 
 Nathaniel Visaya
 Visaya Web Studio · Antipolo City, Philippines
-[[POSTAL ADDRESS (required by law for this market)]]
+Lilium Street, Barangay Dalig, Antipolo City, Rizal 1870, Philippines
 
 Not interested? Reply STOP and I won't contact you again.

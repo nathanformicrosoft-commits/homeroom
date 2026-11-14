@@ -1,11 +1,11 @@
 **To:** 270.renfrow@gmail.com (Listed on their public Facebook page)
 **Subject:** Renfrow's Tree Service homepage (already built, free to look)  _(variant S2)_
 **Send:** Wed, Nov 18, 10:50 PM Manila time (Wed, Nov 18, 8:50 AM their time)
-**Body words:** 98
+**Body words:** 101
 
 ---
 
-Hi Doug,
+Hi Renfrow's Tree Service team,
 
 Clean-up is the thing your Google reviewers mention most, which is usually the first thing people worry about with tree work.
 
@@ -17,6 +17,6 @@ Reply "yes" and I'll finish it in 3 days.
 
 Nathaniel Visaya
 Visaya Web Studio · Antipolo City, Philippines
-[[POSTAL ADDRESS (required by law for this market)]]
+Lilium Street, Barangay Dalig, Antipolo City, Rizal 1870, Philippines
 
 Not interested? Reply STOP and I won't contact you again.
