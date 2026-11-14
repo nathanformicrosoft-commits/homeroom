@@ -1,0 +1,7 @@
+{
+  "target": 100,
+  "low": 25,
+  "perRunMax": 16,
+  "buffer": 50,
+  "refilling": true
+}
