@@ -29,7 +29,7 @@ const THEMES = {
 
 const CSS = `
 *{box-sizing:border-box}html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--bf),system-ui,sans-serif;padding-bottom:76px}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--bf),system-ui,sans-serif;padding-bottom:130px}
 h1,h2,h3{font-family:var(--hf),var(--bf),sans-serif;line-height:1.08;margin:0;text-wrap:balance}
 .upper h1,.upper h2,.upper .brand{text-transform:uppercase;letter-spacing:.01em}
 a{color:inherit}img{max-width:100%;display:block}
@@ -79,7 +79,7 @@ textarea{min-height:120px;resize:vertical}
 .note.on{display:block}
 footer{padding:36px 0 28px;font-size:14px;color:var(--muted);border-top:1px solid var(--line)}
 footer p{margin:0 0 8px}footer strong{color:var(--ink)}
-.callbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:20;box-shadow:0 10px 30px rgba(0,0,0,.28)}
+.callbar{position:fixed;left:12px;right:12px;bottom:64px;z-index:20;box-shadow:0 10px 30px rgba(0,0,0,.28)}
 @media(min-width:760px){body{padding-bottom:0}.callbar{display:none}.grid{grid-template-columns:repeat(2,1fr)}.grid.three{grid-template-columns:repeat(3,1fr)}.visit{grid-template-columns:1fr 1.15fr;align-items:start;gap:40px}.hero .wrap{padding-top:110px;padding-bottom:96px}section{padding:88px 0}.contact-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:48px;align-items:start}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 .adds{list-style:none;padding:0;margin:0;display:grid;gap:10px}

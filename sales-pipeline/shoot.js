@@ -19,10 +19,15 @@ function fallback() {
   for (const p of prospects) {
     if (only && !only.includes(p.slug)) continue;
     const url = base ? `${base.replace(/\/$/, '')}/${p.slug}/` : 'file:///' + path.join(SITE, p.slug, 'index.html').replace(/\\/g, '/');
-    for (const [name, size] of [['mobile', '390,2600'], ['thumb', '1280,800']]) {
+    // Chrome won't make a window narrower than ~500px, so the phone shot loads the page in a
+    // 390px iframe inside a wider window, then crops to 390px.
+    const frame = path.join(profile, `${p.slug}-frame.html`);
+    fs.writeFileSync(frame, `<!doctype html><body style="margin:0"><iframe src="${url}" style="border:0;width:390px;height:2600px"></iframe>`);
+    const frameUrl = 'file:///' + frame.replace(/\\/g, '/');
+    for (const [name, size, target, crop] of [['mobile', '520,2600', frameUrl, '390x2600+0+0'], ['thumb', '1280,800', url, null]]) {
       const png = path.join(OUT, `${p.slug}-${name}.png`);
-      execFileSync(browser, ['--headless=new', '--disable-gpu', '--hide-scrollbars', `--user-data-dir=${profile}`, `--window-size=${size}`, '--virtual-time-budget=8000', `--screenshot=${png}`, url], { stdio: 'ignore' });
-      try { execFileSync('magick', [png, '-quality', name === 'mobile' ? '72' : '70', png.replace(/\.png$/, '.jpg')], { stdio: 'ignore' }); fs.unlinkSync(png); } catch (e) { /* keep the PNG */ }
+      execFileSync(browser, ['--headless=new', '--disable-gpu', '--hide-scrollbars', '--allow-file-access-from-files', `--user-data-dir=${profile}`, `--window-size=${size}`, '--virtual-time-budget=8000', `--screenshot=${png}`, target], { stdio: 'ignore' });
+      try { execFileSync('magick', [png, ...(crop ? ['-crop', crop, '+repage'] : []), '-quality', name === 'mobile' ? '72' : '70', png.replace(/\.png$/, '.jpg')], { stdio: 'ignore' }); fs.unlinkSync(png); } catch (e) { /* keep the PNG */ }
     }
     console.log('shot', p.slug);
   }
