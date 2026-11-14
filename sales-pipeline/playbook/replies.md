@@ -6,12 +6,16 @@ Speed wins: reply within the hour while they still have the demo open. Keep each
 Log `interested`, then send the scope confirmation in `closing.md` step 1. Same day.
 
 ## "How much?" (they missed it)
-Use the price in their pitch (`pitches/queue.json` → `quote`): $150 simple, $250 with gallery or booking, $350 with a full menu.
-> It's $[QUOTE] one-time for the finished site, set up on your own domain, plus $39 a month if you want me to handle hosting and small changes. You can skip the monthly plan and host it yourself. Want me to go ahead?
+Always use the exact prices in their pitch: `pitches/queue.json` → `quote` and `careQuote` (also stored on the prospect as `offer.quote` / `offer.care`). Prices are being tested, so different businesses were quoted different amounts. Quote only theirs, and never mention the test or anyone else's price.
+> It's $[QUOTE] one-time for the finished site, set up on your own domain, plus $[CARE] a month if you want me to handle hosting and small changes. You can skip the monthly plan and host it yourself. Want me to go ahead?
 
 ## "Too expensive"
-Don't discount on the first push. Ask what they had in mind, and remind them what is included. If one of the first 3 clients: offer the founding-client price (`closing.md`) in exchange for a testimonial. Never go below the bottom of the range in config.json without asking the owner.
+Don't discount on the first push. Ask what they had in mind, and remind them what is included. If they still can't stretch, offer a smaller scope (fewer sections, no gallery) at a lower tier before any discount. If one of the first 3 clients: offer the founding-client price (`closing.md`) in exchange for a testimonial. Never go below `minQuote` in config.json without asking the owner. Log the objection with `--note "price"` so learn.js can see it.
 > Totally fair. That price covers the page, the contact form, setting it up on your own domain, and two rounds of changes, and you own it outright. What budget did you have in mind?
+
+## "Will this get me more customers?" / "Do you do Google?"
+Be honest: a site helps people who already search for them, and there is no guarantee of more calls. If they want ongoing help, offer Local Growth (`closing.md` step 8).
+> It helps people who already search for you find your hours and call you, but I won't promise a number. If you want me to keep your Google profile current too (posts, photos, hours) and set you up with a review-request link and QR card, that's my Local Growth plan at $[GROWTH] a month, cancel any month.
 
 ## "Is this a scam?" / "How did you get my email?"
 > Fair question. Your email is listed on your [Facebook page / Google listing], which is where I found your reviews too. There's nothing to pay unless you decide you want the site, and payment goes through a PayPal invoice, so you're covered by PayPal. If you'd rather I didn't contact you again, just say so.

@@ -86,7 +86,15 @@
       "facebook.com/p/Mildura-lawn-mowing-100064045365222 (email, phone, description)"
     ],
     "notes": "Owner named Aman in reviews and owner replies. No website on Google listing.",
-    "complexity": "simple"
+    "complexity": "simple",
+    "offer": {
+      "price": "P1",
+      "quote": 230,
+      "care": 39,
+      "legacy": true,
+      "subject": "S1",
+      "cta": "C1"
+    }
   },
   {
     "slug": "blended-cafe",
@@ -180,7 +188,15 @@
       "onlinedining.com.au/venue/blended-cafe (hours)"
     ],
     "notes": "Sources disagree slightly on hours (a 2023 article says 7 days). Confirm before launch.",
-    "complexity": "menu"
+    "complexity": "menu",
+    "offer": {
+      "price": "P1",
+      "quote": 530,
+      "care": 39,
+      "legacy": true,
+      "subject": "S2",
+      "cta": "C1"
+    }
   },
   {
     "slug": "route-66-diner",
@@ -269,7 +285,15 @@
       "facebook.com/p/Route-66-Diner-61568326540265 (email, phone, address, hours, menu items)"
     ],
     "notes": "Hours vary in public posts (older posts say 8:30am to 6pm). Confirm before launch.",
-    "complexity": "menu"
+    "complexity": "menu",
+    "offer": {
+      "price": "P1",
+      "quote": 530,
+      "care": 39,
+      "legacy": true,
+      "subject": "S1",
+      "cta": "C1"
+    }
   },
   {
     "slug": "kalgoorlie-mobile-detailing",
@@ -360,7 +384,15 @@
       "goldfieldskey.com.au listing (email)"
     ],
     "notes": "Owner name not public. No website on Google listing.",
-    "complexity": "simple"
+    "complexity": "simple",
+    "offer": {
+      "price": "P1",
+      "quote": 230,
+      "care": 39,
+      "legacy": true,
+      "subject": "S2",
+      "cta": "C1"
+    }
   },
   {
     "slug": "keeley-industries",
@@ -451,7 +483,15 @@
       "dynamicwheelco.com.au dealer listing (landline)"
     ],
     "notes": "Mobile number differs between Google (0488 559 563) and GE Connect (0448 559 563), so the demo uses the landline. Domain keeleyindustries.com.au is used for email but serves no website.",
-    "complexity": "standard"
+    "complexity": "standard",
+    "offer": {
+      "price": "P1",
+      "quote": 380,
+      "care": 39,
+      "legacy": true,
+      "subject": "S1",
+      "cta": "C1"
+    }
   },
   {
     "slug": "dubbo-exterior-cleaning",
@@ -539,7 +579,15 @@
       "instagram.com/dubboexteriorcleaning"
     ],
     "notes": "Operator named Tyler in reviews. Has a Calendly booking link, hipages and Localsearch profiles, but no website.",
-    "complexity": "simple"
+    "complexity": "simple",
+    "offer": {
+      "price": "P1",
+      "quote": 230,
+      "care": 39,
+      "legacy": true,
+      "subject": "S2",
+      "cta": "C1"
+    }
   },
   {
     "slug": "mmt-electrical",
@@ -627,7 +675,13 @@
       "instagram.com/mmt_electrical_gympie"
     ],
     "notes": "Family owned (Mark and Monique, per their Facebook posts). No public email found, so this goes on the Send list.",
-    "complexity": "simple"
+    "complexity": "simple",
+    "offer": {
+      "price": "P1",
+      "quote": 230,
+      "care": 39,
+      "legacy": true
+    }
   },
   {
     "slug": "barberz-republic",
@@ -714,7 +768,13 @@
       "findme.hair listing (address, phone)"
     ],
     "notes": "Three shops (two in Whyalla, one in Port Augusta). Locally run, not a franchise. No public email found, so this goes on the Send list.",
-    "complexity": "standard"
+    "complexity": "standard",
+    "offer": {
+      "price": "P1",
+      "quote": 380,
+      "care": 39,
+      "legacy": true
+    }
   },
   {
     "slug": "backyard-barbershop",
@@ -800,7 +860,13 @@
       "fresha.com listing (services, phone, hours)"
     ],
     "notes": "No public email found, so this goes on the Send list.",
-    "complexity": "standard"
+    "complexity": "standard",
+    "offer": {
+      "price": "P1",
+      "quote": 380,
+      "care": 39,
+      "legacy": true
+    }
   },
   {
     "slug": "shivs-mowing",
@@ -889,7 +955,13 @@
       "Google Maps listing (rating, hours, phone, reviews)"
     ],
     "notes": "Operator named Martin in reviews. No public email or Facebook page found, so this goes on the Send list as an SMS.",
-    "complexity": "simple"
+    "complexity": "simple",
+    "offer": {
+      "price": "P1",
+      "quote": 230,
+      "care": 39,
+      "legacy": true
+    }
   },
   {
     "slug": "goodridges-lawn-care",
@@ -986,7 +1058,15 @@
       "Google Maps listing (rating, hours, address, phone, reviews)",
       "facebook.com/goodridgeslawncare (email, intro, service area, services post from Feb 2021)"
     ],
-    "notes": "Owner first name Josh comes from two Google reviews (\"Josh communicated well\", \"I have been with Josh and his company\"); not confirmed as owner on Facebook. Google lists 402 N Tulsa Ave; Facebook lists 8341 US Hwy 64, Russellville. Used the Google address. Facebook intro says they have served the River Valley for nine years, but the post date is unclear, so years in business are left out. Google listing shows 'Add website'. Facebook page has about 700 followers and posted Dec 26, 2025. The 'original business cards' review is about 2 weeks old."
+    "notes": "Owner first name Josh comes from two Google reviews (\"Josh communicated well\", \"I have been with Josh and his company\"); not confirmed as owner on Facebook. Google lists 402 N Tulsa Ave; Facebook lists 8341 US Hwy 64, Russellville. Used the Google address. Facebook intro says they have served the River Valley for nine years, but the post date is unclear, so years in business are left out. Google listing shows 'Add website'. Facebook page has about 700 followers and posted Dec 26, 2025. The 'original business cards' review is about 2 weeks old.",
+    "offer": {
+      "price": "P1",
+      "quote": 150,
+      "care": 39,
+      "legacy": true,
+      "subject": "S1",
+      "cta": "C1"
+    }
   },
   {
     "slug": "freddys-landscaping",
@@ -1067,7 +1147,15 @@
       "facebook.com/people/Freddys-Lanscaping/100076169653734 (email, address, service area)",
       "Facebook reels on fredy.gomez.hernandez.278438 (owner posts in English, Mar to Apr 2026)"
     ],
-    "notes": "Owner first name Freddy from Google reviews (\"Freddy is so nice and great to work with\"); his personal Facebook is 'Fredy Gomez Hernandez' and the business page is spelled 'Freddy's Lanscaping' (missing d). Phone conflict: Google shows (832) 641-6282, Facebook shows (832) 641-6072 (also WhatsApp). Used Google. Houston area code on a local Enid business. Google says open 24 hours, which is probably a placeholder; confirm before showing. Google listing shows 'Add website'. Facebook page is small (99 followers) but reels were posted in 2026."
+    "notes": "Owner first name Freddy from Google reviews (\"Freddy is so nice and great to work with\"); his personal Facebook is 'Fredy Gomez Hernandez' and the business page is spelled 'Freddy's Lanscaping' (missing d). Phone conflict: Google shows (832) 641-6282, Facebook shows (832) 641-6072 (also WhatsApp). Used Google. Houston area code on a local Enid business. Google says open 24 hours, which is probably a placeholder; confirm before showing. Google listing shows 'Add website'. Facebook page is small (99 followers) but reels were posted in 2026.",
+    "offer": {
+      "price": "P1",
+      "quote": 150,
+      "care": 39,
+      "legacy": true,
+      "subject": "S2",
+      "cta": "C1"
+    }
   },
   {
     "slug": "windham-pressure-washing",
@@ -1159,7 +1247,15 @@
       "facebook.com/windhampressurewashing posts (soft wash commercial post; 'Pontoons polished' Apr 15, 2025)",
       "DNS check: windhampressurewashing.com returns NXDOMAIN (Google DNS, 2026-11-14)"
     ],
-    "notes": "Dead domain: Facebook lists http://Windhampressurewashing.com/ but the domain does not resolve (NXDOMAIN), so it has likely lapsed. One review thanks 'Brent' (possibly the owner, not confirmed), and a 'Helen Joyce Windham' comments on posts. Phone conflict: Google (936) 234-6821, Facebook (936) 553-6108. Used Google. Facebook also lists 628 NE Stallings Dr, Nacogdoches, but Google shows no address, so I treated it as a service-area business. Activity risk: Google reviews are 4 to 6 years old, and the last Facebook post I saw was Apr 2025. Instagram posted Jan 2024 ('big plans this year')."
+    "notes": "Dead domain: Facebook lists http://Windhampressurewashing.com/ but the domain does not resolve (NXDOMAIN), so it has likely lapsed. One review thanks 'Brent' (possibly the owner, not confirmed), and a 'Helen Joyce Windham' comments on posts. Phone conflict: Google (936) 234-6821, Facebook (936) 553-6108. Used Google. Facebook also lists 628 NE Stallings Dr, Nacogdoches, but Google shows no address, so I treated it as a service-area business. Activity risk: Google reviews are 4 to 6 years old, and the last Facebook post I saw was Apr 2025. Instagram posted Jan 2024 ('big plans this year').",
+    "offer": {
+      "price": "P1",
+      "quote": 150,
+      "care": 39,
+      "legacy": true,
+      "subject": "S1",
+      "cta": "C1"
+    }
   },
   {
     "slug": "bubbas-stump-grinding",
@@ -1232,7 +1328,15 @@
       "Google Maps listing (rating, phone, reviews, review topic chips; no hours, no street address)",
       "facebook.com/people/Bubbas-Stump-Grinding/61573104430370 (email, intro, phone match, New Year's post Jan 2, 2026)"
     ],
-    "notes": "Name 'Bubba' comes from a Google review (\"Bubba had the best price by far\"); real first name unknown. Facebook says Ponchatoula; Google says Hammond 70401 (service-area). Phone matches on both. Only 3 Google reviews were readable logged out, so services are limited to stump grinding; review chips mention stump grinding (10), fair quote (4), clean up (3), punctuality (3). Heads-up: a Bing result shows a demo site at felixchenyijun.github.io/websites/bubbas-stump-grinding/, which suggests someone else may already be pitching them. It isn't their own website. No hours on Google. Hammond is about 45 miles from Baton Rouge and New Orleans."
+    "notes": "Name 'Bubba' comes from a Google review (\"Bubba had the best price by far\"); real first name unknown. Facebook says Ponchatoula; Google says Hammond 70401 (service-area). Phone matches on both. Only 3 Google reviews were readable logged out, so services are limited to stump grinding; review chips mention stump grinding (10), fair quote (4), clean up (3), punctuality (3). Heads-up: a Bing result shows a demo site at felixchenyijun.github.io/websites/bubbas-stump-grinding/, which suggests someone else may already be pitching them. It isn't their own website. No hours on Google. Hammond is about 45 miles from Baton Rouge and New Orleans.",
+    "offer": {
+      "price": "P1",
+      "quote": 150,
+      "care": 39,
+      "legacy": true,
+      "subject": "S2",
+      "cta": "C1"
+    }
   },
   {
     "slug": "brannen-tree-service",
@@ -1313,7 +1417,15 @@
       "Google listing via Google Search knowledge panel (rating, review count, hours, phone, 'Add website', business description, all visible reviews and owner replies)",
       "facebook.com/p/Brannen-Tree-Service-61579351892514 (email, services intro, 167 Kell Rd address, storm post Oct 9 2026, forestry mulching post Mar 9 2026)"
     ],
-    "notes": "Reviewers repeatedly name the owner as John ('John and his crew'); public FMCSA/BrokerSnapshot records list owner John Brannen. Owner replies are unsigned, so greeting uses the team. Google shows 'Kell Rd, Tifton' without a number; Facebook lists 167 Kell Rd, shown as a service area. One 3-star review (2 years ago) complains about holes left in the yard after a crane removal; the owner replied in detail. Google description says '7+ years of experience' but a third-party site quotes '4+', so years were left out. The Maps place panel would not render in the hidden browser pane, so listing data was read from the Google Search knowledge panel and its reviews view instead."
+    "notes": "Reviewers repeatedly name the owner as John ('John and his crew'); public FMCSA/BrokerSnapshot records list owner John Brannen. Owner replies are unsigned, so greeting uses the team. Google shows 'Kell Rd, Tifton' without a number; Facebook lists 167 Kell Rd, shown as a service area. One 3-star review (2 years ago) complains about holes left in the yard after a crane removal; the owner replied in detail. Google description says '7+ years of experience' but a third-party site quotes '4+', so years were left out. The Maps place panel would not render in the hidden browser pane, so listing data was read from the Google Search knowledge panel and its reviews view instead.",
+    "offer": {
+      "price": "P1",
+      "quote": 150,
+      "care": 39,
+      "legacy": true,
+      "subject": "S1",
+      "cta": "C1"
+    }
   },
   {
     "slug": "ellis-clean",
@@ -1407,7 +1519,15 @@
       "Google listing via Google Search knowledge panel (rating, review count, address, hours, phone, 'Add website', business description, review topics, reviews and owner replies)",
       "facebook.com/p/Ellis-Clean-61594835782903 (email, Greenwood address and phone matching Google)"
     ],
-    "notes": "Owner signs one Google reply 'Thanks, Jeff, Ellis Clean'; a reviewer also mentions working with Jeff, and another mentions 'the 2 Ellis brothers'. There are two older Ellis Clean Facebook pages (100065232570787 and 105740327954508, one posting about jobs in Lexington); the page with the email matches the Google address and phone. Reviews range from 10 months to 6 years old. A Google AI overview claimed experience back to 1996, which was not used."
+    "notes": "Owner signs one Google reply 'Thanks, Jeff, Ellis Clean'; a reviewer also mentions working with Jeff, and another mentions 'the 2 Ellis brothers'. There are two older Ellis Clean Facebook pages (100065232570787 and 105740327954508, one posting about jobs in Lexington); the page with the email matches the Google address and phone. Reviews range from 10 months to 6 years old. A Google AI overview claimed experience back to 1996, which was not used.",
+    "offer": {
+      "price": "P1",
+      "quote": 150,
+      "care": 39,
+      "legacy": true,
+      "subject": "S2",
+      "cta": "C1"
+    }
   },
   {
     "slug": "all-clear-power-washing",
@@ -1506,7 +1626,15 @@
       "facebook.com/people/All-Clear-Power-Washing-LLC/100063622178113 (email, link to allclearpowerwashing.org, services intro from search snippet)",
       "DNS check: allclearpowerwashing.org returns non-existent domain (checked 2026-11-14)"
     ],
-    "notes": "Owner appears to be James 'Jimmy' Dingle (reviewers mention Mr. Dingle, James and Jimmy; email is jdingle68). Owner replies are unsigned, so greeting uses the team. The Facebook link has a utm_source=gmb tag, so the dead domain was probably once on the Google listing too. Most reviews are 2 to 7 years old; latest Facebook activity March 2026. 'Veteran Led' comes from the business's own Google description. Allbiz says founded 2018, not used."
+    "notes": "Owner appears to be James 'Jimmy' Dingle (reviewers mention Mr. Dingle, James and Jimmy; email is jdingle68). Owner replies are unsigned, so greeting uses the team. The Facebook link has a utm_source=gmb tag, so the dead domain was probably once on the Google listing too. Most reviews are 2 to 7 years old; latest Facebook activity March 2026. 'Veteran Led' comes from the business's own Google description. Allbiz says founded 2018, not used.",
+    "offer": {
+      "price": "P1",
+      "quote": 150,
+      "care": 39,
+      "legacy": true,
+      "subject": "S1",
+      "cta": "C1"
+    }
   },
   {
     "slug": "owens-landscaping-pressure-washing",
@@ -1602,7 +1730,15 @@
       "facebook.com/owenslandscaping1/posts/4266061596827162 (Feb 4 2022: thanks Danville for voting them favorite landscaping company in Showcase Magazine's Rave awards)",
       "HTTP check: owens-landscaping-pressure.business.site returns Google 404 (checked 2026-11-14)"
     ],
-    "notes": "Owner is Scotty Owen: named in several reviews and he posts on the page under his own name. Google name uses a curly apostrophe (Owen’s). Google reviews are 4 to 8 years old; latest Facebook activity April 2025 (Rave awards vote post), so confirm the business is still active. Facebook gives 'Highway 29N, Danville' rather than a street address, so shown as a service area. Facebook page shows no phone; phone is from Google. Possible extra pitch detail: voted Danville's favorite landscaping company in Showcase Magazine's Rave awards (2022)."
+    "notes": "Owner is Scotty Owen: named in several reviews and he posts on the page under his own name. Google name uses a curly apostrophe (Owen’s). Google reviews are 4 to 8 years old; latest Facebook activity April 2025 (Rave awards vote post), so confirm the business is still active. Facebook gives 'Highway 29N, Danville' rather than a street address, so shown as a service area. Facebook page shows no phone; phone is from Google. Possible extra pitch detail: voted Danville's favorite landscaping company in Showcase Magazine's Rave awards (2022).",
+    "offer": {
+      "price": "P1",
+      "quote": 250,
+      "care": 39,
+      "legacy": true,
+      "subject": "S2",
+      "cta": "C1"
+    }
   },
   {
     "slug": "kovacs-home-property-services",
@@ -1684,7 +1820,15 @@
       "Google Maps listing (rating, reviews, phone, review topics)",
       "facebook.com/p/Kovacs-Home-Property-Services-LLC-100082986710123 (email, phone, description, used appliance post)"
     ],
-    "notes": "Owner Ryan, named in nearly every review; a public Marquette Facebook group post calls him Ryan Kovacs with the same cell number. Google listing has no hours and no address, and Facebook says 'In-Home Service', so treated as service-area. Facebook page name is 'Kovacs Home & Property Services LLC'. An April 2026 post says he is getting the page back up and running; latest post April 20, 2026 offers a refurbished Amana dryer. A Bing snippet from a local group mentions service in parts of Alger and Delta counties, but I could not confirm that was his post, so left it out. One reviewer says he offers a warranty; not listed as a service. Theme 'sparky' chosen as the closest home-repair theme (could also be 'mechanic')."
+    "notes": "Owner Ryan, named in nearly every review; a public Marquette Facebook group post calls him Ryan Kovacs with the same cell number. Google listing has no hours and no address, and Facebook says 'In-Home Service', so treated as service-area. Facebook page name is 'Kovacs Home & Property Services LLC'. An April 2026 post says he is getting the page back up and running; latest post April 20, 2026 offers a refurbished Amana dryer. A Bing snippet from a local group mentions service in parts of Alger and Delta counties, but I could not confirm that was his post, so left it out. One reviewer says he offers a warranty; not listed as a service. Theme 'sparky' chosen as the closest home-repair theme (could also be 'mechanic').",
+    "offer": {
+      "price": "P1",
+      "quote": 250,
+      "care": 39,
+      "legacy": true,
+      "subject": "S1",
+      "cta": "C1"
+    }
   },
   {
     "slug": "ftk-llc",
@@ -1775,7 +1919,15 @@
       "Google Maps listing (rating, hours, reviews, phone, address)",
       "facebook.com/ftkhandyman (email, phone, service list, dead ftkllc.business.site link)"
     ],
-    "notes": "Owner Brenden, named in reviews (one spells it Brendan) and matches the email brenden.luther@gmail.com. Facebook page name is 'FTK llc Property Maintenance and Improvements'; page is active (latest post Oct 30, 2026: removed 4 spruce trees and stumps). The Facebook link ftkllc.business.site returns HTTP 404 (Google Business Profile sites were shut down). Google shows 7600 58th Ave NW, Minot, which reads like a home base, so treated as service-area. Google category not captured; 'Tree service' is from the search it appeared under and the Facebook category 'Tree Cutting Service'. Most Google reviews are 6 to 8 years old; one is from about a year ago. A nice backup line1: one reviewer said the crew put her chain link fence back up at the end of each day because she has a dog."
+    "notes": "Owner Brenden, named in reviews (one spells it Brendan) and matches the email brenden.luther@gmail.com. Facebook page name is 'FTK llc Property Maintenance and Improvements'; page is active (latest post Oct 30, 2026: removed 4 spruce trees and stumps). The Facebook link ftkllc.business.site returns HTTP 404 (Google Business Profile sites were shut down). Google shows 7600 58th Ave NW, Minot, which reads like a home base, so treated as service-area. Google category not captured; 'Tree service' is from the search it appeared under and the Facebook category 'Tree Cutting Service'. Most Google reviews are 6 to 8 years old; one is from about a year ago. A nice backup line1: one reviewer said the crew put her chain link fence back up at the end of each day because she has a dog.",
+    "offer": {
+      "price": "P1",
+      "quote": 150,
+      "care": 39,
+      "legacy": true,
+      "subject": "S2",
+      "cta": "C1"
+    }
   },
   {
     "slug": "altoona-small-engine",
@@ -1878,7 +2030,15 @@
       "Google Maps listing (rating, hours, reviews, owner replies, phone, address, review topics)",
       "facebook.com/AltoonaSmallEngine (email, phone, description: sales, service, repair and rentals; used mower for sale post)"
     ],
-    "notes": "A reviewer names Jason as the person who helped; not confirmed as the owner (owner replies are unsigned and mention an employee), so greeting uses the team. Owner reply says they generally do not sell or order parts, so parts are left out of services. One recent 1-star review complains about a $50 deposit and diagnostic charge; the owner replied publicly. Facebook page is active (posts Oct 2026, 1.7K followers). Altoona is about 43,000 people in its own small metro, well away from Pittsburgh and Harrisburg."
+    "notes": "A reviewer names Jason as the person who helped; not confirmed as the owner (owner replies are unsigned and mention an employee), so greeting uses the team. Owner reply says they generally do not sell or order parts, so parts are left out of services. One recent 1-star review complains about a $50 deposit and diagnostic charge; the owner replied publicly. Facebook page is active (posts Oct 2026, 1.7K followers). Altoona is about 43,000 people in its own small metro, well away from Pittsburgh and Harrisburg.",
+    "offer": {
+      "price": "P1",
+      "quote": 250,
+      "care": 39,
+      "legacy": true,
+      "subject": "S1",
+      "cta": "C1"
+    }
   },
   {
     "slug": "joses-lawn-landscape",
@@ -1964,7 +2124,13 @@
       "Google Maps listing (rating, hours, reviews, phone, review topics)",
       "facebook.com/JosesLawnandlandscape2 (Page, phone, Twin Falls location, description)"
     ],
-    "notes": "No email found; Facebook Page 'Jose's Lawn & Landscape 2' (Twin Falls ID, same phone 208-613-6006, active Oct 2026) is a real Page, so Messenger is the channel. The '2' suggests an older page may exist; I did not find one for Twin Falls (a similarly named page in Springfield MO/VA is a different business). Owner Jose named in reviews; a reviewer also names Jessie on the crew. Google pin sits at a bad location (in the Pacific), so mapQuery uses the town. Google hours 'Open 24 hours' Mon to Sat look like a placeholder. Facebook intro says they have served Southern Idaho for 25 years (their own claim, misspelled 'surving'); left out of the page copy, confirm before using. Only 5 of 193 reviews were readable logged out; service list relies on Google review topic chips (sprinkler blowout 28, tree trimming 3, backyard design 2, snow removal 2)."
+    "notes": "No email found; Facebook Page 'Jose's Lawn & Landscape 2' (Twin Falls ID, same phone 208-613-6006, active Oct 2026) is a real Page, so Messenger is the channel. The '2' suggests an older page may exist; I did not find one for Twin Falls (a similarly named page in Springfield MO/VA is a different business). Owner Jose named in reviews; a reviewer also names Jessie on the crew. Google pin sits at a bad location (in the Pacific), so mapQuery uses the town. Google hours 'Open 24 hours' Mon to Sat look like a placeholder. Facebook intro says they have served Southern Idaho for 25 years (their own claim, misspelled 'surving'); left out of the page copy, confirm before using. Only 5 of 193 reviews were readable logged out; service list relies on Google review topic chips (sprinkler blowout 28, tree trimming 3, backyard design 2, snow removal 2).",
+    "offer": {
+      "price": "P1",
+      "quote": 250,
+      "care": 39,
+      "legacy": true
+    }
   },
   {
     "slug": "sosas-barbershop",
@@ -2057,7 +2223,15 @@
       "Google Maps listing (rating, hours, address, phone, review topics, reviews)",
       "facebook.com/p/Sosas-Barbershop-61582288561406 (email, description, beard work)"
     ],
-    "notes": "Greeting uses Marlene from the page's email and Instagram handle; confirm she runs the shop. Barbers named in reviews: BJ and Omar. Google shows a Book online button (provider unknown). Fact-check: Line1 says 'while they waited'. The review only says they broke out toys for both boys. Fine as a paraphrase. The theme's 'toys in the waiting area' slightly embellishes the same review, which doesn't mention a waiting area."
+    "notes": "Greeting uses Marlene from the page's email and Instagram handle; confirm she runs the shop. Barbers named in reviews: BJ and Omar. Google shows a Book online button (provider unknown). Fact-check: Line1 says 'while they waited'. The review only says they broke out toys for both boys. Fine as a paraphrase. The theme's 'toys in the waiting area' slightly embellishes the same review, which doesn't mention a waiting area.",
+    "offer": {
+      "price": "P1",
+      "quote": 250,
+      "care": 39,
+      "legacy": true,
+      "subject": "S2",
+      "cta": "C1"
+    }
   },
   {
     "slug": "slay-all-day-pressure-washing",
@@ -2148,7 +2322,15 @@
       "facebook.com/SlayAllDayPressurewashing (email, website link)",
       "slayalldaypressurewashing.com did not load on 2026-11-13 (DNS lookup failed from two browsers)"
     ],
-    "notes": "Owner Kevin Slay, named in reviews and a Facebook post. One 1-star review, updated after he came back to fix missed spots. Re-check the domain the day you send. Fact-check: Logged out, the Facebook page shows no town or phone. The match rests on the email (kslay), owner Kevin being named in Dothan reviews, and the listed domain. That's a reasonable match, but not a town/phone match. I didn't re-read the 'cushions and plants put back' and 'carports' services, because logged-out Maps only shows a few reviews. The chips do support deck, porch, siding, sidewalk and window washing, plus before/after pictures."
+    "notes": "Owner Kevin Slay, named in reviews and a Facebook post. One 1-star review, updated after he came back to fix missed spots. Re-check the domain the day you send. Fact-check: Logged out, the Facebook page shows no town or phone. The match rests on the email (kslay), owner Kevin being named in Dothan reviews, and the listed domain. That's a reasonable match, but not a town/phone match. I didn't re-read the 'cushions and plants put back' and 'carports' services, because logged-out Maps only shows a few reviews. The chips do support deck, porch, siding, sidewalk and window washing, plus before/after pictures.",
+    "offer": {
+      "price": "P1",
+      "quote": 150,
+      "care": 39,
+      "legacy": true,
+      "subject": "S1",
+      "cta": "C1"
+    }
   },
   {
     "slug": "baggett-exterior-cleaning",
@@ -2239,7 +2421,15 @@
       "facebook.com/baggettexteriorcleaning (email, description, residential and commercial, Petal and Bellevue jobs)",
       "thumbtack.com Baggett Exterior Cleaning profile (owner name Roman Baggett, campers and driveways)"
     ],
-    "notes": "Owner name Roman Baggett from the Thumbtack profile. Facebook post says 7 years in business (not used on the demo). Google lists 489 Sullivan Kilrain Rd; shown as a service area instead. Fact-check: Google's category is 'Pressure washing service', not 'Exterior cleaning service'. Campers and the owner name Roman come only from Thumbtack. I didn't re-check them here."
+    "notes": "Owner name Roman Baggett from the Thumbtack profile. Facebook post says 7 years in business (not used on the demo). Google lists 489 Sullivan Kilrain Rd; shown as a service area instead. Fact-check: Google's category is 'Pressure washing service', not 'Exterior cleaning service'. Campers and the owner name Roman come only from Thumbtack. I didn't re-check them here.",
+    "offer": {
+      "price": "P1",
+      "quote": 150,
+      "care": 39,
+      "legacy": true,
+      "subject": "S2",
+      "cta": "C1"
+    }
   },
   {
     "slug": "full-circle-bakery-cafe",
@@ -2332,7 +2522,15 @@
       "Google Maps listing (rating, hours, address, phone, review topics, reviews)",
       "facebook.com/p/Full-Circle-Bakery-Cafe-100065230772865 (email, hours, Friday grill menu)"
     ],
-    "notes": "Facebook hours (Tue–Fri 6–1:30, Sat 6–12) match Google. Fact-check: The Google name is 'Full Circle Bakery/Cafe' and the Facebook name is 'Full Circle Bakery Cafe'. Either is fine. Breakfast burritos and pies don't appear in the chips. The review summary does mention pies, breakfast and lunch."
+    "notes": "Facebook hours (Tue–Fri 6–1:30, Sat 6–12) match Google. Fact-check: The Google name is 'Full Circle Bakery/Cafe' and the Facebook name is 'Full Circle Bakery Cafe'. Either is fine. Breakfast burritos and pies don't appear in the chips. The review summary does mention pies, breakfast and lunch.",
+    "offer": {
+      "price": "P1",
+      "quote": 350,
+      "care": 39,
+      "legacy": true,
+      "subject": "S1",
+      "cta": "C1"
+    }
   },
   {
     "slug": "renfrows-tree-service",
@@ -2418,7 +2616,15 @@
       "Google Maps listing (rating, hours, phone, review topics, reviews)",
       "facebook.com/p/Renfrows-Tree-Service-100049219102164 (email)"
     ],
-    "notes": "Google lists 221 Forsythia Dr, Facebook lists 1131 Rutter St; shown as a service area. One review on this Google listing names a different company (Travis Tree Service) and was not used. Reviews are 3 to 7 years old. Line1 trimmed to the parts the 2026-11-14 fact-check could confirm. Fact-check: The Google name is 'Renfrow tree service'. The 'clean up' chip (5) ties with a generic 'job' chip (5), so 'mentioned most' is fair but not strictly true. Logged out, I couldn't re-read reviews to confirm that more than one thanks Doug and the crew by name. The owner name Doug isn't otherwise confirmed. The Facebook page shows no phone, and its address differs from Google's (1131 Rutter St vs 221 Forsythia Dr). Same town and name."
+    "notes": "Google lists 221 Forsythia Dr, Facebook lists 1131 Rutter St; shown as a service area. One review on this Google listing names a different company (Travis Tree Service) and was not used. Reviews are 3 to 7 years old. Line1 trimmed to the parts the 2026-11-14 fact-check could confirm. Fact-check: The Google name is 'Renfrow tree service'. The 'clean up' chip (5) ties with a generic 'job' chip (5), so 'mentioned most' is fair but not strictly true. Logged out, I couldn't re-read reviews to confirm that more than one thanks Doug and the crew by name. The owner name Doug isn't otherwise confirmed. The Facebook page shows no phone, and its address differs from Google's (1131 Rutter St vs 221 Forsythia Dr). Same town and name.",
+    "offer": {
+      "price": "P1",
+      "quote": 150,
+      "care": 39,
+      "legacy": true,
+      "subject": "S2",
+      "cta": "C1"
+    }
   },
   {
     "slug": "motion-sudz",
@@ -2501,7 +2707,15 @@
       "facebook.com/p/Motion-sudz-mobile-carwash-and-detailing-61571829167507 (email, owner Ryan, mobile anywhere)",
       "Paragould community Facebook group post by Motion Sudz (shampoo seats and rugs)"
     ],
-    "notes": "Owner Ryan, from the Facebook intro. Line1 trimmed to the parts the 2026-11-14 fact-check could confirm. Fact-check: Google's category is 'Car wash', and Google shows an address (4505 E Highland Dr, Jonesboro). The demo uses a service area, which is fine for a mobile business. Logged out, I couldn't re-read the '47 degrees' review. The 'ford explorer' (2) and 'hard working' (2) chips support the Explorer and cold-weather part. Jonesboro AR is ~80k (78.6k in the 2020 census, a bit over now), the top of the range."
+    "notes": "Owner Ryan, from the Facebook intro. Line1 trimmed to the parts the 2026-11-14 fact-check could confirm. Fact-check: Google's category is 'Car wash', and Google shows an address (4505 E Highland Dr, Jonesboro). The demo uses a service area, which is fine for a mobile business. Logged out, I couldn't re-read the '47 degrees' review. The 'ford explorer' (2) and 'hard working' (2) chips support the Explorer and cold-weather part. Jonesboro AR is ~80k (78.6k in the 2020 census, a bit over now), the top of the range.",
+    "offer": {
+      "price": "P1",
+      "quote": 150,
+      "care": 39,
+      "legacy": true,
+      "subject": "S1",
+      "cta": "C1"
+    }
   },
   {
     "slug": "angels-tacos",
@@ -2598,7 +2812,13 @@
       "Google Maps listing (rating, hours, location, phone, review topics, reviews)",
       "facebook.com/angelstacos21 (description, weekly schedule, Saturday specials)"
     ],
-    "notes": "No email published; Messenger to the Facebook Page (4.8K followers). The truck's location moves; schedule is posted weekly on Facebook. Fact-check: Google's category is 'Mexican restaurant' and Facebook's is Food Truck. The file's category is fine. The Maps 'Website' field links only to facebook.com/angelstacos21, which doesn't count as a website. Chubbuck ID (~16k) is part of the Pocatello metro (~95k)."
+    "notes": "No email published; Messenger to the Facebook Page (4.8K followers). The truck's location moves; schedule is posted weekly on Facebook. Fact-check: Google's category is 'Mexican restaurant' and Facebook's is Food Truck. The file's category is fine. The Maps 'Website' field links only to facebook.com/angelstacos21, which doesn't count as a website. Chubbuck ID (~16k) is part of the Pocatello metro (~95k).",
+    "offer": {
+      "price": "P1",
+      "quote": 350,
+      "care": 39,
+      "legacy": true
+    }
   },
   {
     "slug": "too-smooth-wash-pros",
@@ -2690,7 +2910,13 @@
       "facebook.com/toosmoothwashpros (description, phone)",
       "linktr.ee/toosmoothwashpros (links toosmoothwashpros.com)"
     ],
-    "notes": "Owner Gabe / Gabriel, named in several reviews and thanked in owner replies; his wife works with him (tractor review). No email published, so Messenger. Rebranded from Too Smooth Detailing (old page facebook.com/toosmoothdetailing now shows 'content isn't available' logged out). toosmoothwashpros.com is registered on Cloudflare nameservers but has no A record, so it doesn't load (checked 2026-11-13); a Dribbble logo shot for the new brand suggests a site may be in progress, so check again before sending. Bing lists the address as South Hutchinson; Google says Hutchinson. Business leans toward fleet and ag equipment washing now. Line1 trimmed to the parts the 2026-11-14 fact-check could confirm. Fact-check: Logged out, I couldn't re-read the New Holland tractor review, so the first sentence of line1 isn't re-verified. toosmoothwashpros.com still has no A record and didn't load on 2026-11-14. Re-check before sending, since a site may be in progress."
+    "notes": "Owner Gabe / Gabriel, named in several reviews and thanked in owner replies; his wife works with him (tractor review). No email published, so Messenger. Rebranded from Too Smooth Detailing (old page facebook.com/toosmoothdetailing now shows 'content isn't available' logged out). toosmoothwashpros.com is registered on Cloudflare nameservers but has no A record, so it doesn't load (checked 2026-11-13); a Dribbble logo shot for the new brand suggests a site may be in progress, so check again before sending. Bing lists the address as South Hutchinson; Google says Hutchinson. Business leans toward fleet and ag equipment washing now. Line1 trimmed to the parts the 2026-11-14 fact-check could confirm. Fact-check: Logged out, I couldn't re-read the New Holland tractor review, so the first sentence of line1 isn't re-verified. toosmoothwashpros.com still has no A record and didn't load on 2026-11-14. Re-check before sending, since a site may be in progress.",
+    "offer": {
+      "price": "P1",
+      "quote": 250,
+      "care": 39,
+      "legacy": true
+    }
   },
   {
     "slug": "rice-family-lawn-snow",
@@ -2781,7 +3007,15 @@
       "Google Maps listing (rating, hours, reviews, phone, address)",
       "facebook.com/workhard.faith (email, description, phone)"
     ],
-    "notes": "Owner Josh, named in several reviews; one reviewer says he and his wife did the job together. Phone conflict: Google lists (217) 640-0326, Facebook lists (217) 316-2662; used the Google number. Google shows an address at 901 N 15th St but it reads like a home base, so treated as a service-area business. Facebook page name is 'Rice Family Lawn and Snow services plus'; last public post seen is May 2024, so the page is quiet, but Google reviews run up to about a year ago. Google hours say 'Open 24 hours' Mon to Sat, likely a placeholder. Fact-check: The 4:30am snow review is about 4 years old. Line1 says 'one winter', which is fine. The phone conflict remains: Google lists +1 217-640-0326 and Facebook lists 217-316-2662. The demo uses the Google number."
+    "notes": "Owner Josh, named in several reviews; one reviewer says he and his wife did the job together. Phone conflict: Google lists (217) 640-0326, Facebook lists (217) 316-2662; used the Google number. Google shows an address at 901 N 15th St but it reads like a home base, so treated as a service-area business. Facebook page name is 'Rice Family Lawn and Snow services plus'; last public post seen is May 2024, so the page is quiet, but Google reviews run up to about a year ago. Google hours say 'Open 24 hours' Mon to Sat, likely a placeholder. Fact-check: The 4:30am snow review is about 4 years old. Line1 says 'one winter', which is fine. The phone conflict remains: Google lists +1 217-640-0326 and Facebook lists 217-316-2662. The demo uses the Google number.",
+    "offer": {
+      "price": "P1",
+      "quote": 150,
+      "care": 39,
+      "legacy": true,
+      "subject": "S2",
+      "cta": "C1"
+    }
   },
   {
     "slug": "gios-paw-spa",
@@ -2870,7 +3104,15 @@
       "Google Maps listing (rating, hours, phone, address, reviews)",
       "facebook.com/1134MalvernAve (email, description, phone)"
     ],
-    "notes": "Google listing shows Add website. Facebook page (1.5K followers, active Nov 11, 2026) lists the email and describes them as a full service dog and cat grooming salon. A groomer named Molly is thanked in one review; owner name not found. Theme 'wash' chosen as closest fit for a grooming salon (no pet theme in list). Fact-check: line1 and theme 1 say reviewers call it 'one of the only places in Hot Springs' that grooms cats. I couldn't verify that. The 'cat grooming' chip (4) shows cats come up, but none of the reviews visible logged out say it's one of the only places. It overstates unless re-confirmed, so I replaced both with supported versions. The photo duplicated barks-and-bubbles-rapid-city (same Unsplash id). It stays here because the scissors-on-small-dog shot suits a salon, and Barks & Bubbles gets the new photo."
+    "notes": "Google listing shows Add website. Facebook page (1.5K followers, active Nov 11, 2026) lists the email and describes them as a full service dog and cat grooming salon. A groomer named Molly is thanked in one review; owner name not found. Theme 'wash' chosen as closest fit for a grooming salon (no pet theme in list). Fact-check: line1 and theme 1 say reviewers call it 'one of the only places in Hot Springs' that grooms cats. I couldn't verify that. The 'cat grooming' chip (4) shows cats come up, but none of the reviews visible logged out say it's one of the only places. It overstates unless re-confirmed, so I replaced both with supported versions. The photo duplicated barks-and-bubbles-rapid-city (same Unsplash id). It stays here because the scissors-on-small-dog shot suits a salon, and Barks & Bubbles gets the new photo.",
+    "offer": {
+      "price": "P1",
+      "quote": 250,
+      "care": 39,
+      "legacy": true,
+      "subject": "S1",
+      "cta": "C1"
+    }
   },
   {
     "slug": "barks-and-bubbles-rapid-city",
@@ -2961,7 +3203,15 @@
       "Google Maps listing (rating, hours, reviews, phone, address)",
       "facebook.com/barksandbubblessd (email, description, address, phone)"
     ],
-    "notes": "Facebook page (Barks & Bubbles Dog Grooming | Rapid City SD) matches Maps address and phone. Bing also returned barksandbubbles.com, which is a mobile groomer's site (since 2007) with no Rapid City address or phone, so it looks unrelated; their Facebook page lists no website. Owner first name not confirmed (a post is signed 'Jean' but unclear if owner), so greeting uses the team. Facebook showed 'Opening Soon' at the time checked, which just reflects hours. Line1 trimmed to the parts the 2026-11-14 fact-check could confirm. Fact-check: The photo was the same Unsplash id as gios-paw-spa. I replaced it with a Pomeranian in a pink towel being combed (no person's face, no logos), checked visually. Logged out, I couldn't re-read the Piedmont review. The tail-color part of line1 is verified."
+    "notes": "Facebook page (Barks & Bubbles Dog Grooming | Rapid City SD) matches Maps address and phone. Bing also returned barksandbubbles.com, which is a mobile groomer's site (since 2007) with no Rapid City address or phone, so it looks unrelated; their Facebook page lists no website. Owner first name not confirmed (a post is signed 'Jean' but unclear if owner), so greeting uses the team. Facebook showed 'Opening Soon' at the time checked, which just reflects hours. Line1 trimmed to the parts the 2026-11-14 fact-check could confirm. Fact-check: The photo was the same Unsplash id as gios-paw-spa. I replaced it with a Pomeranian in a pink towel being combed (no person's face, no logos), checked visually. Logged out, I couldn't re-read the Piedmont review. The tail-color part of line1 is verified.",
+    "offer": {
+      "price": "P1",
+      "quote": 250,
+      "care": 39,
+      "legacy": true,
+      "subject": "S2",
+      "cta": "C1"
+    }
   },
   {
     "slug": "the-modest-barbershop-casper",
@@ -3056,6 +3306,12 @@
       "Google Maps listing (rating, hours, reviews, phone, address)",
       "facebook.com/p/Modest-Barber-61579851485088 (description, address, phone, walk-in posts)"
     ],
-    "notes": "No email published on Facebook, so Messenger. Facebook page name is 'Modest Barber'; Maps name is 'The Modest Barbershop'; same address and phone. Opened about October 2025 per a Facebook post. Trish is a long-time barber there (a post calls her the 3rd longest practicing barber in Casper) but I could not confirm she is the owner, so the greeting uses the team. Facebook posts say 'walk in only' and recently 'open 9-5:30', which differs slightly from Google hours (9am – 6pm); confirm hours. Shaves come from a post saying 'get a cut or a shave'; the price list is only an image, so no prices taken. Fact-check could not re-load the review about Trish cutting hair for close to a decade; glance at the Google reviews before sending. Fact-check: Logged out, I couldn't re-read the 'close to a decade' review. Trish is named in a visible review, and a 'local products' (2) chip exists. Hours differ between sources: Google says Tue-Fri 9-6, Sat 8-4, while Facebook posts mention 9-5:30 and walk-in only (already in notes)."
+    "notes": "No email published on Facebook, so Messenger. Facebook page name is 'Modest Barber'; Maps name is 'The Modest Barbershop'; same address and phone. Opened about October 2025 per a Facebook post. Trish is a long-time barber there (a post calls her the 3rd longest practicing barber in Casper) but I could not confirm she is the owner, so the greeting uses the team. Facebook posts say 'walk in only' and recently 'open 9-5:30', which differs slightly from Google hours (9am – 6pm); confirm hours. Shaves come from a post saying 'get a cut or a shave'; the price list is only an image, so no prices taken. Fact-check could not re-load the review about Trish cutting hair for close to a decade; glance at the Google reviews before sending. Fact-check: Logged out, I couldn't re-read the 'close to a decade' review. Trish is named in a visible review, and a 'local products' (2) chip exists. Hours differ between sources: Google says Tue-Fri 9-6, Sat 8-4, while Facebook posts mention 9-5:30 and walk-in only (already in notes).",
+    "offer": {
+      "price": "P1",
+      "quote": 250,
+      "care": 39,
+      "legacy": true
+    }
   }
 ]

@@ -10,7 +10,25 @@ The goal is 30 new businesses contacted per day. Do it by **spreading across cha
 | Facebook Messenger (US/AU) | up to 10 (`settings.messengerPerDay`) | More than ~10 messages to strangers a day can get a personal account restricted. |
 | SMS (Australia only) | counts inside the Messenger 10 | Never cold-text US numbers (TCPA). |
 
-So on day one: 15 emails + 10 Messenger = 25. From week 2: 20 + 10 = 30. Email-only is never more than 30.
+So on day one: 15 emails + 10 Messenger = 25. From week 2: 20 + 10 = 30.
+
+## Growing past 30 a day, automatically and only while it's safe
+
+After the 3-week warm-up, `node learn.js` sets the volume in `data/send-state.json`, which `pitch.js` and `qa.js` read. It grows reach in steps, adding send days before adding emails per day, because the same daily rate over more days looks like normal mail:
+
+| Level | Send days | Emails a day | New businesses a week (with 10 Messenger) |
+| --- | --- | --- | --- |
+| 0 | Tue–Thu | 30 | about 120 |
+| 1 | Mon–Thu | 30 | about 160 |
+| 2 | Mon–Fri | 30 | about 200 |
+| 3 | Mon–Fri | 35 | about 225 |
+| 4 | Mon–Fri | 40 (ceiling for one Gmail inbox) | about 250 |
+
+- **Step up** at most once every 7 days, and only if the last 21 days had at least 60 emails, bounces at 2% or less, STOPs at 3% or less, zero spam complaints, and at least 2% replies.
+- **Cut back** at the first bad signal: any complaint, bounces over 3% (or 3 in one day), or STOPs over 5%. The email cap is halved for 7 days and the level drops by one.
+- **Never past `settings.emailCeiling` (40).** More than that needs your own domain and a second inbox (see the paid upgrades below), which costs money: ask the owner first.
+- Messenger stays at 10 a day, sent by the owner. Facebook restricts personal accounts that message too many strangers.
+- Log every bounce, STOP and complaint the same day (`node log.js <slug> bounced|stop|complaint`). The governor can only protect the inbox if it sees them.
 
 ## What the scripts already enforce
 

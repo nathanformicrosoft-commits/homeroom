@@ -4,7 +4,8 @@ Whoever runs the day (you or Claude) follows these steps in order. Commands run 
 
 ## 0. Learn first (2 minutes)
 - `node learn.js`, then read `playbook/insights.md`: money, what is due, what is working, and the mistakes list.
-- Apply its decisions before doing anything else (retire a losing subject line, drop a business type that keeps saying STOP, and so on).
+- learn.js already applies the safe decisions itself: it retires clear losers in the price, subject and call-to-action tests, adds a higher price challenger when the top price is winning, and sets today's send days and email cap (`data/send-state.json`). Don't override them.
+- Do what it asks of you: when a copy test is down to one version, write one new challenger in `playbook/experiments.json` (next id, new `text`, one idea changed, `voice.md` rules). Draft the "Grow existing clients" asks it lists for the owner to approve. Steer research toward the business types under "Targeting".
 
 ## 1. Replies (always before new outreach)
 - Search Gmail: `in:inbox newer_than:3d -category:promotions` plus `from:` each pitched address. Read each thread in full.
@@ -29,7 +30,8 @@ Markets in `config.json → settings.marketOrder`; **USA first**.
 - `node build.js`, then `node shoot.js` for screenshots. Look at the screenshot before pitching.
 
 ## 5. Pitch
-Target: 30 new businesses a day across email + Messenger, within the warm-up caps in `playbook/deliverability.md`. Never exceed them to hit the number.
+Target: as many new businesses as today's caps allow (warm-up table, then `data/send-state.json`; see `playbook/deliverability.md`). Never exceed them to hit a number.
+- Prices, care price, subject and call to action come from each prospect's `offer` (assigned by `build.js` / `pitch.js`). Never hand-edit a quote; the demo page shows the same price.
 - Write `pitch.line1` yourself: one specific, true detail. Follow `playbook/voice.md`.
 - `node pitch.js`, then **`node qa.js`. It must say PASS.** Fix every FAIL; never edit around the check.
 - Email: create Gmail drafts from `pitches/queue.json` (draft mode), or use the one-click Gmail links in `send-list.md`. Each has its own scheduled time (Tue–Thu 8–10am their time, spaced apart); use Gmail's Schedule send. After the owner sends each one: `node log.js <slug> pitched`.
@@ -39,4 +41,5 @@ Target: 30 new businesses a day across email + Messenger, within the warm-up cap
 Any mistake (wrong fact, bounce, a complaint, an awkward phrase): `node log.js mistake "<what happened>" --fix "<the rule from now on>" --pattern "<regex>"`. qa.js then blocks it forever. Phrases that sounded canned go into `banned-phrases.txt`.
 
 ## 7. Wrap up
-`node learn.js`, write `reports/<date>.md` (prospects found, demos built with links, drafts to approve, send list, replies, hot leads, payments, total toward ₱100,000), then commit and push.
+`node learn.js`, write `reports/<date>.md` (prospects found, demos built with links, drafts to approve, send list, replies, hot leads, payments, total toward ₱100,000, yearly pace toward the $200,000 goal, sending level, and anything learn.js changed), then commit and push.
+- Money after a sale is logged too, so the pace is real: `care`, `carepaid`, `carecancel`, `upsell` (see `log.js`).

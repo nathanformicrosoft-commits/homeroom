@@ -11,7 +11,9 @@ const prospects = JSON.parse(fs.readFileSync(process.env.PROSPECTS || path.join(
 const CLIENTS = process.env.CLIENTS_DIR || path.join(ROOT, 'clients');
 const studio = config.studio;
 const studioLabel = studio.studioName || 'a small web studio in the Philippines';
-const { quoteFor, money } = require('./lib');
+const { quoteFor, careFor, money, assignOffers, readJSON, readJSONL } = require('./lib');
+// Give new prospects their fixed offer (price-test arm etc.) before building, so the demo shows the price the pitch will quote.
+if (!process.env.PROSPECTS && assignOffers(prospects, config, readJSON('playbook/experiments.json', {}), readJSONL('data/outcomes.jsonl'), readJSON('pitches/queue.json', []))) fs.writeFileSync(path.join(ROOT, 'data/prospects.json'), JSON.stringify(prospects, null, 2) + '\n');
 const esc = (s) => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 
 const THEMES = {
@@ -107,7 +109,7 @@ function finishedSection(p) {
   <p class="eyebrow">This is a preview</p>
   <h2>What your finished site adds</h2>
   <ul class="adds">${adds.map((a) => `<li>${esc(a)}</li>`).join('')}</ul>
-  <p class="price-line">Finished site for ${esc(p.name)}: <strong>${esc(money(p.market, quoteFor(p, config), config))}</strong> one-time. Optional care plan ${esc(money(p.market, m.careQuote, config))}/month for hosting and small edits.</p>
+  <p class="price-line">Finished site for ${esc(p.name)}: <strong>${esc(money(p.market, quoteFor(p, config), config))}</strong> one-time. Optional care plan ${esc(money(p.market, careFor(p, config), config))}/month for hosting and small edits.</p>
 </div></section>`;
 }
 
@@ -263,8 +265,9 @@ function onePager() {
 <div class="box"><h3>You own it</h3><p>The domain and hosting are in your name, and the site is yours after the final payment.</p></div>
 </div></div></section>
 <section><div class="wrap"><h2>Pricing</h2><div class="cols">
-<div class="box"><h3>Website</h3><p class="price">From ${m.US.tiers.simple}</p><p>One-time, in US dollars, priced by how much your site needs: ${m.US.tiers.simple} for a simple service page, ${m.US.tiers.standard} with a gallery or booking, ${m.US.tiers.menu} with a full menu. Includes the contact form, setup on your own domain and two rounds of edits. Paid 50% to start and 50% at launch, by PayPal invoice.</p></div>
-<div class="box"><h3>Care plan (optional)</h3><p class="price">$${m.US.careQuote} / month</p><p>Hosting, updates and small edits. Cancel any month.</p></div>
+<div class="box"><h3>Website</h3><p class="price">One-time price</p><p>In US dollars, priced by how much your site needs, and shown on your free demo page before you decide anything. Includes the contact form, setup on your own domain and two rounds of edits. Paid 50% to start and 50% at launch, by PayPal invoice.</p></div>
+<div class="box"><h3>Care plan (optional)</h3><p class="price">$${m.US.careTiers.basic} / month</p><p>Basic: hosting, updates and small edits. Cancel any month.</p></div>
+<div class="box"><h3>Local Growth (optional)</h3><p class="price">$${m.US.careTiers.growth} / month</p><p>Everything in Basic, plus your Google Business Profile kept current (two posts a month, hours and photos), a review-request link with a printable QR card, and a short monthly report. Pay a year up front and get ${12 - m.US.careTiers.annualMonths} months free.</p></div>
 </div></div></section>
 <section><div class="wrap"><h2>How it works</h2><ol>
 <li>We send you a free demo homepage built from your public listing.</li>

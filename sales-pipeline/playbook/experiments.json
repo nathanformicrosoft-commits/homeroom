@@ -1,11 +1,36 @@
 {
-  "_readme": "Test ONE thing at a time. pitch.js gives each new email the version with the fewest sends. learn.js calls a winner only after minPerArm sends each. To end a test, set retired: true on the losers and add one new challenger.",
+  "_readme": "Each prospect gets one arm of every experiment when its offer is assigned (lib.js assignOffers, run by build.js and pitch.js), stored in prospects.json so the demo, email and replies always match. Arms are balanced until each has minPerArm pitches, then Thompson sampling sends most new pitches to the likely winner while still testing the rest. A pitch counts once it is ageDays old. learn.js retires an arm only when it has less than a 5% chance of being best after minPerArm results, adds a higher price challenger when the top price is winning, and says when a copy test needs a new challenger (the daily run writes it, following voice.md). The three tests are assigned independently, so they don't disturb each other. Never edit an arm's text after it has been sent; retire it and add a new one.",
+  "price": {
+    "metric": "won client (deposit or paid), weighed by first-year value: build price + expected care plan revenue",
+    "minPerArm": 40,
+    "ageDays": 14,
+    "prior": [0.2, 20],
+    "maxMultiplier": 3,
+    "step": 0.5,
+    "arms": [
+      { "id": "P1", "multiplier": 1, "note": "original tiers (US $150 / $250 / $350)" },
+      { "id": "P2", "multiplier": 1.4, "note": "US about $200 / $350 / $500" },
+      { "id": "P3", "multiplier": 2, "note": "US about $300 / $500 / $700" }
+    ]
+  },
   "subject": {
     "metric": "positive reply (interested, won or paid)",
     "minPerArm": 25,
+    "ageDays": 7,
+    "prior": [0.5, 15],
     "arms": [
       { "id": "S1", "text": "I built a free homepage for {name}" },
       { "id": "S2", "text": "{name} homepage (already built, free to look)" }
+    ]
+  },
+  "cta": {
+    "metric": "positive reply (interested, won or paid)",
+    "minPerArm": 25,
+    "ageDays": 7,
+    "prior": [0.5, 15],
+    "arms": [
+      { "id": "C1", "text": "Reply \"yes\" and I'll finish it in 3 days." },
+      { "id": "C2", "text": "If you like it, reply \"yes\" and it can be live within 3 days of getting your photos." }
     ]
   }
 }

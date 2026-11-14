@@ -1,15 +1,55 @@
 # Insights (updated 2026-11-14)
 
-Read this before every run. It is rebuilt from data/outcomes.jsonl by `node learn.js`.
+Read this before every run. It is rebuilt from data/outcomes.jsonl by `node learn.js`, which also tunes prices, copy tests and sending volume.
 
 ## Money
 
-- Collected: nothing yet
+- Collected so far: nothing yet
+- Care plans: 0 active (0 Local Growth), $0/month
+- Yearly pace: **$0** of the $200,000 goal (0%), 26 months left to 2028-12-31. Pace = care plans x 12 + last 90 days of build and extra-work revenue x 4.
+- What the goal takes (60% from care plans, 40% from builds): about **163 paying care clients** at $62/month plus **19 new builds a month** at $367 (estimate from the live price arms).
 - Toward ₱100,000: $0 USD (set settings.phpPerUSD to convert)
 
-## Due today
+### Funnel (pitches at least 14 days old)
 
-- No follow-ups due.
+- No pitch is 14 days old yet. Rates appear here once one is.
+
+## Sending volume
+
+- Level 0 of 4: Tue–Thu, 30 emails a day after warm-up, plus up to 10 Messenger/SMS a day sent by the owner. Up to about 120 new businesses a week.
+- Last 21 days: 0 emails, 0 bounced, 0 STOP, 0 complaints, – replied.
+- Holding at level 0. Next step needs: finish the 21-day warm-up (0 days so far); at least 60 emails in the last 21 days (0); 30 emails at least 5 days old to judge replies; 7 days at the current level.
+- Rules: one level up at most every 7 days, only while healthy; any complaint, bounces over 3% (or 3 in one day) or STOPs over 5% halve the cap for a week. Never more than 40 emails a day from one inbox. Going beyond that needs your own domain and a second inbox (playbook/deliverability.md), which costs money, so ask the owner.
+
+## Experiments
+
+### Experiment: price
+
+Success = won client (deposit or paid), weighed by first-year value: build price + expected care plan revenue. Balanced until each version has 40 pitches; after that most pitches go to the likely winner.
+
+- P1 x1 (US standard site about $250): 0 sent, 0 old enough to judge, 0 successes (–), still collecting data
+- P2 x1.4 (US standard site about $350): 0 sent, 0 old enough to judge, 0 successes (–), still collecting data
+- P3 x2 (US standard site about $500): 0 sent, 0 old enough to judge, 0 successes (–), still collecting data
+
+Not enough data yet. Keep sending; never edit an arm that has been sent.
+
+### Experiment: subject line
+
+Success = positive reply (interested, won or paid). Balanced until each version has 25 pitches; after that most pitches go to the likely winner.
+
+- S1 "I built a free homepage for {name}": 0 sent, 0 old enough to judge, 0 successes (–), still collecting data
+- S2 "{name} homepage (already built, free to look)": 0 sent, 0 old enough to judge, 0 successes (–), still collecting data
+
+Not enough data yet. Keep sending; never edit an arm that has been sent.
+
+### Experiment: call to action
+
+Success = positive reply (interested, won or paid). Balanced until each version has 25 pitches; after that most pitches go to the likely winner.
+
+- C1 "Reply "yes" and I'll finish it in 3 days.": 0 sent, 0 old enough to judge, 0 successes (–), still collecting data
+- C2 "If you like it, reply "yes" and it can be live within 3 days of getting your photos.": 0 sent, 0 old enough to judge, 0 successes (–), still collecting data
+
+Not enough data yet. Keep sending; never edit an arm that has been sent.
 
 ## What is working
 
@@ -31,13 +71,19 @@ Read this before every run. It is rebuilt from data/outcomes.jsonl by `node lear
 | --- | --- | --- | --- | --- | --- |
 | (no sends yet) | 0 | – | – | 0 | 0 |
 
-### Experiment: subject line (needs 25 sends per version before calling it)
+## Targeting (the prospect bank reads this)
 
-- S1 "I built a free homepage for {name}": 0 sent, – replied, – positive
-- S2 "{name} homepage (already built, free to look)": 0 sent, – replied, – positive
+- Not enough data yet (needs 20 pitches per business type, 14+ days old). Keep the current mix.
+- Nothing to avoid yet.
 
-Not enough data yet. Keep sending; do not change the copy mid-test.
+## Due today
+
+- No follow-ups due.
 
 ## Mistakes we will not repeat
 
 - None logged yet. Log one with `node log.js mistake "<what>" --fix "<rule>"`.
+
+## Changed by learn.js today
+
+- Nothing.

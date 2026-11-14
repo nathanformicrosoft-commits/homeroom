@@ -5,9 +5,9 @@
 //   send-list.md           Messenger/SMS messages you send by hand
 // and appends new prospects to leads.csv. Usage: node pitch.js [YYYY-MM-DD]
 const fs = require('fs');
-const { P, readJSON, writeJSON, readJSONL, readCSV, writeCSV, money, words, today, quoteFor, makeScheduler } = require('./lib');
+const { P, readJSON, writeJSON, readJSONL, readCSV, writeCSV, money, words, today, quoteFor, careFor, toUSD, makeScheduler, assignOffers, applySendState } = require('./lib');
 
-const config = readJSON('config.json');
+const config = applySendState(readJSON('config.json'));
 const prospects = readJSON('data/prospects.json', []);
 const experiments = readJSON('playbook/experiments.json', {});
 const outcomes = readJSONL('data/outcomes.jsonl');
@@ -16,18 +16,19 @@ const s = config.studio;
 const v = (k, label) => s[k] || `[[${label}]]`;
 const base = config.netlify.baseUrl || config.netlify.plannedUrl;
 
-// --- A/B: give each new pitch the subject arm with the fewest sends so far ---
-const subj = experiments.subject;
-const armCount = Object.fromEntries((subj ? subj.arms : []).map((a) => [a.id, 0]));
-for (const e of outcomes) if (e.event === 'pitched' && e.variant && e.variant.subject in armCount) armCount[e.variant.subject]++;
-function pickArm() {
-  if (!subj) return { id: 'S0', text: 'I built a free homepage for {name}' };
-  const arm = subj.arms.filter((a) => !a.retired).sort((a, b) => armCount[a.id] - armCount[b.id])[0];
-  armCount[arm.id]++;
-  return arm;
-}
+// --- experiments: every prospect carries a fixed offer (price arm, care price, subject, call to action) ---
+// assigned once (lib.js assignOffers) and stored in prospects.json, so reruns never change what was quoted.
+if (assignOffers(prospects, config, experiments, outcomes, readJSON('pitches/queue.json', []))) writeJSON('data/prospects.json', prospects);
+const armText = (ex, id, fallback) => ((ex && ex.arms.find((a) => a.id === id)) || { text: fallback }).text;
+const variantOf = (p) => {
+  const o = p.offer || {};
+  const v = { price: o.price, quoteUSD: Math.round(toUSD(quoteFor(p, config), config.markets[p.market].currency, config)) };
+  if (p.channel === 'email') Object.assign(v, { subject: o.subject, cta: o.cta });
+  return v;
+};
 
-function emailPitch(p, arm) {
+function emailPitch(p) {
+  const o = p.offer || {};
   const m = config.markets[p.market];
   const url = `${base}/${p.slug}/`;
   const what = ['cafe', 'diner'].includes(p.theme) ? 'menu highlights' : 'services';
@@ -35,13 +36,13 @@ function emailPitch(p, arm) {
     p.pitch.greeting, '',
     p.pitch.line1, '',
     `I'm ${v('ownerName', 'YOUR NAME')} from ${v('studioName', 'STUDIO NAME')}, a small web design studio in ${v('city', 'CITY')}, Philippines. ${p.pitch.gap}, so I built you a free demo homepage: ${url}`, '',
-    `It shows your ${what}, hours, a map, click-to-call and a contact form. The finished site with your own photos is ${money(p.market, quoteFor(p, config), config)} one-time, plus an optional ${money(p.market, m.careQuote, config)}/month care plan for hosting and edits.`, '',
-    `Reply "yes" and I'll finish it in 3 days.`,
+    `It shows your ${what}, hours, a map, click-to-call and a contact form. The finished site with your own photos is ${money(p.market, quoteFor(p, config), config)} one-time, plus an optional ${money(p.market, careFor(p, config), config)}/month care plan for hosting and edits.`, '',
+    armText(experiments.cta, o.cta, `Reply "yes" and I'll finish it in 3 days.`),
   ].join('\n');
   const sig = ['', v('ownerName', 'YOUR NAME'), `${v('studioName', 'STUDIO NAME')} · ${v('city', 'CITY')}, Philippines`];
   if (m.postalAddressRequired) sig.push(v('postalAddress', 'POSTAL ADDRESS (required by law for this market)'));
   sig.push('', `Not interested? Reply STOP and I won't contact you again.`);
-  return { subject: arm.text.replace('{name}', p.name), body: body + '\n' + sig.join('\n'), bodyWords: words(body) };
+  return { subject: armText(experiments.subject, o.subject, 'I built a free homepage for {name}').replace('{name}', p.name), body: body + '\n' + sig.join('\n'), bodyWords: words(body) };
 }
 function chatPitch(p) {
   const m = config.markets[p.market];
@@ -62,14 +63,13 @@ for (const p of prospects) {
   const w = schedule(p);
   const when = { sendAt: w.utc, sendLocal: w.local, sendManila: w.manila };
   if (p.channel === 'email') {
-    const arm = pickArm();
-    const e = emailPitch(p, arm);
-    queue.push({ slug: p.slug, market: p.market, channel: 'email', to: p.email, subject: e.subject, body: e.body, bodyWords: e.bodyWords, quote: quoteFor(p, config), variant: { subject: arm.id }, ...when, demoUrl: `${base}/${p.slug}/` });
+    const e = emailPitch(p);
+    queue.push({ slug: p.slug, market: p.market, channel: 'email', to: p.email, subject: e.subject, body: e.body, bodyWords: e.bodyWords, quote: quoteFor(p, config), careQuote: careFor(p, config), variant: variantOf(p), ...when, demoUrl: `${base}/${p.slug}/` });
     emails.push({ p, e, w });
-    fs.writeFileSync(P('pitches', `${p.slug}.md`), `**To:** ${p.email} (${p.emailSource})\n**Subject:** ${e.subject}  _(variant ${arm.id})_\n**Send:** ${w.manila} (${w.local})\n**Body words:** ${e.bodyWords}\n\n---\n\n${e.body}\n`);
+    fs.writeFileSync(P('pitches', `${p.slug}.md`), `**To:** ${p.email} (${p.emailSource})\n**Subject:** ${e.subject}  _(subject ${p.offer.subject}, call to action ${p.offer.cta}, price ${p.offer.price})_\n**Send:** ${w.manila} (${w.local})\n**Body words:** ${e.bodyWords}\n\n---\n\n${e.body}\n`);
   } else {
     const msg = chatPitch(p);
-    queue.push({ slug: p.slug, market: p.market, channel: p.channel, to: p.contactLink, body: msg, bodyWords: words(msg), quote: quoteFor(p, config), variant: {}, ...when, demoUrl: `${base}/${p.slug}/` });
+    queue.push({ slug: p.slug, market: p.market, channel: p.channel, to: p.contactLink, body: msg, bodyWords: words(msg), quote: quoteFor(p, config), careQuote: careFor(p, config), variant: variantOf(p), ...when, demoUrl: `${base}/${p.slug}/` });
     chats.push({ p, msg, w });
   }
 }

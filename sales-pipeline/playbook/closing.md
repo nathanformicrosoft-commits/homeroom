@@ -1,6 +1,6 @@
 # From "yes" to paid
 
-**Price:** use the quote from their pitch (`pitches/queue.json` → `quote`). US: $150 simple service page, $250 with a gallery or booking, $350 with a full menu; never below $100 without asking the owner. [HALF] = half the quote. Bigger jobs (extra pages, online ordering) are quoted separately, from $100 more.
+**Price:** use the exact quote and care price from their pitch (`pitches/queue.json` → `quote`, `careQuote`; also on the prospect as `offer`). Prices are being tested, so they differ between businesses; quote only theirs and never mention the test. Never below `minQuote` in config.json without asking the owner. [HALF] = half the quote. [CARE] = their care price. [GROWTH] = `careTiers.growth` for their market (US $99). Bigger jobs (extra pages, online ordering) are quoted separately, from $100 more, and logged with `node log.js <slug> upsell --amount <collected>`.
 
 Payment is by **PayPal invoice** (address in `config.json` → `payments.paypalEmail`). You create and send every invoice yourself in PayPal. Claude only drafts the message. Never ask anyone for card numbers, bank logins or passwords in chat or email.
 
@@ -58,12 +58,21 @@ Log `node log.js <slug> paid --amount [HALF] --currency USD`. Then connect their
 > - **Google:** add the site link to your Google Business Profile so searchers can find it.
 
 ## 8. Care plan offer (same message or next day)
-> If you'd rather not deal with any of that, I can look after it for $39 a month: hosting, updates and small edits like new hours or prices. Cancel any month. Want me to set it up?
+Two plans. Use [CARE] from their pitch for Basic (older pitches said $39; honor that).
+> If you'd rather not deal with any of that, I can look after it for $[CARE] a month: hosting, updates and small edits like new hours or prices. Or for $[GROWTH] a month I'll also keep your Google Business Profile current (two posts a month, hours and photos), set you up with a review-request link and a printable QR card for the counter or truck, and send you a short monthly note on what came in through the site. Either one, cancel any month, and if you pay for a year up front you get 2 months free. Want me to set one up?
+
+Log it: `node log.js <slug> care --amount <monthly price> --plan basic|growth [--annual]`, each payment with `carepaid --amount <amount>`, a cancellation with `carecancel`. Then `node log.js <slug> offered --note care` so the reminder stops. Local Growth needs them to add the studio email as a manager on their Google Business Profile; never ask for their Google password.
 
 ## 9. Testimonial and referral (a week after launch)
-> Glad it's working for you. Would you write two or three sentences about how it went? I'd like to put it on my site with your business name, only if you're OK with that. And if you know another business owner who needs a site, I'd be grateful for the intro.
+> Glad it's working for you. Would you write two or three sentences about how it went? I'd like to put it on my site with your business name, only if you're OK with that. And if you know another business owner who needs a site, I'd be grateful for the intro. If they go ahead, your next month of care is on me.
 
-Real words only, and only with their written permission. Log `testimonial` / `referral`.
+Real words only, and only with their written permission. Log `testimonial` / `referral`, and `offered --note referral` once asked. A referred business is contacted only if the client introduces you or the referred owner gets in touch; never cold-email a name a client mentioned.
+
+## 10. Growing an existing client (learn.js lists who is due)
+Ask once each, short, and only when it fits. Each is drafted for the owner to approve.
+- **Basic for 45+ days → Local Growth:** "Your site's been live a while. Want me to start keeping your Google profile current too? It's $[GROWTH] a month, same cancel-any-month deal." Log `offered --note growth`.
+- **Monthly for 60+ days → yearly:** "If it's easier, you can pay for the year up front and get 2 months free." Log `offered --note annual`.
+- **Extra work** they mention (new page, booking, menu change beyond a small edit): quote it from $100, log `upsell --amount <collected>` when paid.
 
 ## Founding-client price (first 3 clients only)
 Offer $50 off their quote (never below $100) in exchange for a testimonial and permission to show their site in the portfolio. Say it plainly; don't present it as a time-limited deal.

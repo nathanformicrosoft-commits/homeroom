@@ -19,7 +19,7 @@
   },
   "settings": {
     "sendMode": "draft",
-    "dailyCap": 30,
+    "dailyCap": 50,
     "maxFollowUps": 2,
     "followUpDays": [
       4,
@@ -67,7 +67,21 @@
         30
       ]
     ],
-    "_deliverability": "emailWarmup: [days since first email pitched, max emails per send day]. pitch.js spaces emails at least emailGapMinutes apart (sender time) and rolls overflow to the next send day. See playbook/deliverability.md."
+    "_deliverability": "emailWarmup: [days since first email pitched, max emails per send day]. pitch.js spaces emails at least emailGapMinutes apart (sender time) and rolls overflow to the next send day. See playbook/deliverability.md.",
+    "goalUSDPerYear": 200000,
+    "goalBy": "2028-12-31",
+    "_goal": "goalUSDPerYear: the yearly revenue pace to reach by goalBy. learn.js tracks run-rate (care plans x 12 + last 90 days of build revenue x 4) against it.",
+    "fxToUSD": {
+      "AUD": 0.65,
+      "CAD": 0.72,
+      "GBP": 1.27,
+      "NZD": 0.59,
+      "PHP": 0.017
+    },
+    "_fxToUSD": "Approximate rates used only to add up revenue in USD. Replace them with the rates PayPal actually gives you.",
+    "_dailyCap": "Hard ceiling on all new first-touch messages in one send day (email + Messenger/SMS). The real email cap comes from the warm-up table and data/send-state.json (set by learn.js), never above emailCeiling.",
+    "emailCeiling": 40,
+    "_emailCeiling": "Most cold emails per day from one Gmail inbox, however healthy the numbers look. Going past it needs a second sending domain and inbox, which costs money: ask the owner."
   },
   "markets": {
     "US": {
@@ -91,7 +105,13 @@
         "standard": 250,
         "menu": 350
       },
-      "minQuote": 100
+      "minQuote": 100,
+      "careTiers": {
+        "basic": 49,
+        "growth": 99,
+        "annualMonths": 10
+      },
+      "_careTiers": "basic: hosting, updates and small edits. growth: basic plus Google Business Profile upkeep (2 posts a month, hours and photos kept current), a review-request link and printable QR card, and a short monthly report. annualMonths: paying a year up front costs this many months. Pitches sent before 2026-11-15 quoted careQuote; honor that price for them."
     },
     "CA": {
       "currency": "CAD",
@@ -113,7 +133,13 @@
         "standard": 350,
         "menu": 490
       },
-      "minQuote": 140
+      "minQuote": 140,
+      "careTiers": {
+        "basic": 49,
+        "growth": 99,
+        "annualMonths": 10
+      },
+      "_careTiers": "basic: hosting, updates and small edits. growth: basic plus Google Business Profile upkeep (2 posts a month, hours and photos kept current), a review-request link and printable QR card, and a short monthly report. annualMonths: paying a year up front costs this many months. Pitches sent before 2026-11-15 quoted careQuote; honor that price for them."
     },
     "AU": {
       "currency": "AUD",
@@ -137,7 +163,13 @@
         "standard": 380,
         "menu": 530
       },
-      "minQuote": 150
+      "minQuote": 150,
+      "careTiers": {
+        "basic": 49,
+        "growth": 99,
+        "annualMonths": 10
+      },
+      "_careTiers": "basic: hosting, updates and small edits. growth: basic plus Google Business Profile upkeep (2 posts a month, hours and photos kept current), a review-request link and printable QR card, and a short monthly report. annualMonths: paying a year up front costs this many months. Pitches sent before 2026-11-15 quoted careQuote; honor that price for them."
     },
     "UK": {
       "currency": "GBP",
@@ -159,7 +191,13 @@
         "standard": 200,
         "menu": 280
       },
-      "minQuote": 80
+      "minQuote": 80,
+      "careTiers": {
+        "basic": 45,
+        "growth": 89,
+        "annualMonths": 10
+      },
+      "_careTiers": "basic: hosting, updates and small edits. growth: basic plus Google Business Profile upkeep (2 posts a month, hours and photos kept current), a review-request link and printable QR card, and a short monthly report. annualMonths: paying a year up front costs this many months. Pitches sent before 2026-11-15 quoted careQuote; honor that price for them."
     },
     "NZ": {
       "currency": "NZD",
@@ -181,7 +219,13 @@
         "standard": 420,
         "menu": 590
       },
-      "minQuote": 170
+      "minQuote": 170,
+      "careTiers": {
+        "basic": 49,
+        "growth": 99,
+        "annualMonths": 10
+      },
+      "_careTiers": "basic: hosting, updates and small edits. growth: basic plus Google Business Profile upkeep (2 posts a month, hours and photos kept current), a review-request link and printable QR card, and a short monthly report. annualMonths: paying a year up front costs this many months. Pitches sent before 2026-11-15 quoted careQuote; honor that price for them."
     }
   },
   "netlify": {

@@ -4,10 +4,10 @@
 // and every rule learned from past mistakes (data/mistakes.jsonl).
 // Usage: node qa.js [--offline]   (--offline skips the live-URL check)
 const fs = require('fs');
-const { P, readJSON, readJSONL, readCSV } = require('./lib');
+const { P, readJSON, readJSONL, readCSV, applySendState } = require('./lib');
 
 const offline = process.argv.includes('--offline');
-const config = readJSON('config.json');
+const config = applySendState(readJSON('config.json'));
 const prospects = Object.fromEntries(readJSON('data/prospects.json', []).map((p) => [p.slug, p]));
 const queue = readJSON('pitches/queue.json', []);
 const outcomes = readJSONL('data/outcomes.jsonl');
@@ -35,7 +35,7 @@ for (const q of queue) {
   const k = `${(q.sendAt || '').slice(0, 10)} ${q.channel === 'email' ? 'email' : 'chat'}`;
   perDay[k] = (perDay[k] || 0) + 1;
 }
-const maxEmailCap = Math.max(...(config.settings.emailWarmup || [[0, 15]]).map((x) => x[1]));
+const maxEmailCap = Math.min(config.settings.emailCeiling || 40, Math.max(config.settings.emailCapAfterWarmup || 0, ...(config.settings.emailWarmup || [[0, 15]]).map((x) => x[1])));
 for (const [k, n] of Object.entries(perDay)) {
   if (k.endsWith('chat') && n > (config.settings.messengerPerDay || 10)) fail('cap', `${n} Messenger/SMS messages scheduled for ${k.slice(0, 10)} (max ${config.settings.messengerPerDay || 10})`);
   if (k.endsWith('email') && n > maxEmailCap) fail('cap', `${n} emails scheduled for ${k.slice(0, 10)} (max ${maxEmailCap})`);
@@ -63,6 +63,8 @@ for (const q of queue) {
   if (!p.sources || !p.sources.length) fail(sc, 'no sources recorded for the facts on the demo');
   if (!q.quote || q.quote < (m.minQuote || 0)) fail(sc, `quote ${q.quote} is below the ${p.market} minimum of ${m.minQuote} (ask the owner first)`);
   if (q.quote && !q.body.includes(String(q.quote))) fail(sc, 'message does not state the same price as the quote');
+  if (p.offer && !p.quote && q.quote !== p.offer.quote) fail(sc, `queued quote ${q.quote} differs from the offer stored on the prospect (${p.offer.quote}); the demo page shows the offer price`);
+  if (q.channel === 'email' && q.careQuote && !q.body.includes(String(q.careQuote))) warn(sc, 'message does not mention the same care plan price as careQuote');
   if (!q.body.includes(q.demoUrl)) fail(sc, 'demo link missing from message');
   if ((q.body.match(/https?:\/\//g) || []).length > 1) fail(sc, 'more than one link in the message (spam filters count links; keep only the demo link)');
   if (q.channel === 'email' && q.subject && (/[A-Z]{5,}/.test(q.subject) || /[!$%]/.test(q.subject))) fail(sc, 'subject has shouting caps or !/$/% (spam trigger)');
