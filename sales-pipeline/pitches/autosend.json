@@ -1,0 +1,210 @@
+[
+  {
+    "slug": "mildura-lawn-mowing",
+    "to": "milduralawnmowers@gmail.com",
+    "draftId": "r-6613258561244601235",
+    "sendAtUTC": "2026-11-16T21:05:00.000Z",
+    "manila": "2026-11-17 05:05",
+    "cron": "5 5 17 11 *"
+  },
+  {
+    "slug": "dubbo-exterior-cleaning",
+    "to": "dubboexteriorcleaning@gmail.com",
+    "draftId": "r7492021937832033382",
+    "sendAtUTC": "2026-11-16T21:14:00.000Z",
+    "manila": "2026-11-17 05:14",
+    "cron": "14 5 17 11 *"
+  },
+  {
+    "slug": "blended-cafe",
+    "to": "blendedwhyalla@gmail.com",
+    "draftId": "r-1846103853787523116",
+    "sendAtUTC": "2026-11-16T21:36:00.000Z",
+    "manila": "2026-11-17 05:36",
+    "cron": "36 5 17 11 *"
+  },
+  {
+    "slug": "route-66-diner",
+    "to": "route66diner24@gmail.com",
+    "draftId": "r-6495188689378765192",
+    "sendAtUTC": "2026-11-16T21:45:00.000Z",
+    "manila": "2026-11-17 05:45",
+    "cron": "45 5 17 11 *"
+  },
+  {
+    "slug": "kalgoorlie-mobile-detailing",
+    "to": "kalgoorlie.mobile.detailing@gmail.com",
+    "draftId": "r-7268406524157868734",
+    "sendAtUTC": "2026-11-17T00:03:00.000Z",
+    "manila": "2026-11-17 08:03",
+    "cron": "3 8 17 11 *"
+  },
+  {
+    "slug": "keeley-industries",
+    "to": "jay@keeleyindustries.com.au",
+    "draftId": "r-2181720844804469262",
+    "sendAtUTC": "2026-11-17T00:12:00.000Z",
+    "manila": "2026-11-17 08:12",
+    "cron": "12 8 17 11 *"
+  },
+  {
+    "slug": "brannen-tree-service",
+    "to": "Brannentreeservice@gmail.com",
+    "draftId": "r6275218744137250152",
+    "sendAtUTC": "2026-11-17T13:03:00.000Z",
+    "manila": "2026-11-17 21:03",
+    "cron": "3 21 17 11 *"
+  },
+  {
+    "slug": "ellis-clean",
+    "to": "Scellisclean@gmail.com",
+    "draftId": "r-7445071951576751600",
+    "sendAtUTC": "2026-11-17T13:12:00.000Z",
+    "manila": "2026-11-17 21:12",
+    "cron": "12 21 17 11 *"
+  },
+  {
+    "slug": "all-clear-power-washing",
+    "to": "jdingle68@gmail.com",
+    "draftId": "r-6282706014812523923",
+    "sendAtUTC": "2026-11-17T13:21:00.000Z",
+    "manila": "2026-11-17 21:21",
+    "cron": "21 21 17 11 *"
+  },
+  {
+    "slug": "owens-landscaping-pressure-washing",
+    "to": "Owen_scotty@yahoo.com",
+    "draftId": "r-2519348084605683187",
+    "sendAtUTC": "2026-11-17T13:30:00.000Z",
+    "manila": "2026-11-17 21:30",
+    "cron": "30 21 17 11 *"
+  },
+  {
+    "slug": "kovacs-home-property-services",
+    "to": "kovacshomeandpropertyservices@gmail.com",
+    "draftId": "r3316750090243988172",
+    "sendAtUTC": "2026-11-17T13:39:00.000Z",
+    "manila": "2026-11-17 21:39",
+    "cron": "39 21 17 11 *"
+  },
+  {
+    "slug": "goodridges-lawn-care",
+    "to": "goodridgeslawncare@outlook.com",
+    "draftId": "r-430109228832186223",
+    "sendAtUTC": "2026-11-17T14:01:00.000Z",
+    "manila": "2026-11-17 22:01",
+    "cron": "1 22 17 11 *"
+  },
+  {
+    "slug": "freddys-landscaping",
+    "to": "fredylandscaping08@gmail.com",
+    "draftId": "r-3347091765547304772",
+    "sendAtUTC": "2026-11-17T14:10:00.000Z",
+    "manila": "2026-11-17 22:10",
+    "cron": "10 22 17 11 *"
+  },
+  {
+    "slug": "windham-pressure-washing",
+    "to": "windhampressurecleaning@gmail.com",
+    "draftId": "r2418160668011238983",
+    "sendAtUTC": "2026-11-17T14:19:00.000Z",
+    "manila": "2026-11-17 22:19",
+    "cron": "19 22 17 11 *"
+  },
+  {
+    "slug": "bubbas-stump-grinding",
+    "to": "bubbas.stump.grinding@gmail.com",
+    "draftId": "r8822711592858682775",
+    "sendAtUTC": "2026-11-17T14:28:00.000Z",
+    "manila": "2026-11-17 22:28",
+    "cron": "28 22 17 11 *"
+  },
+  {
+    "slug": "altoona-small-engine",
+    "to": "AltoonaSmallEngine@gmail.com",
+    "draftId": "r-1900284969228347751",
+    "sendAtUTC": "2026-11-18T13:05:00.000Z",
+    "manila": "2026-11-18 21:05",
+    "cron": "5 21 18 11 *"
+  },
+  {
+    "slug": "ftk-llc",
+    "to": "brenden.luther@gmail.com",
+    "draftId": "r-720079175755386474",
+    "sendAtUTC": "2026-11-18T14:05:00.000Z",
+    "manila": "2026-11-18 22:05",
+    "cron": "5 22 18 11 *"
+  },
+  {
+    "slug": "sosas-barbershop",
+    "to": "sosamarlene01@gmail.com",
+    "draftId": "r-3226325074747566453",
+    "sendAtUTC": "2026-11-18T14:14:00.000Z",
+    "manila": "2026-11-18 22:14",
+    "cron": "14 22 18 11 *"
+  },
+  {
+    "slug": "slay-all-day-pressure-washing",
+    "to": "kslay5074@gmail.com",
+    "draftId": "r-6937347016319463619",
+    "sendAtUTC": "2026-11-18T14:23:00.000Z",
+    "manila": "2026-11-18 22:23",
+    "cron": "23 22 18 11 *"
+  },
+  {
+    "slug": "baggett-exterior-cleaning",
+    "to": "baggettexteriorcleaning@gmail.com",
+    "draftId": "r6601468510904573210",
+    "sendAtUTC": "2026-11-18T14:32:00.000Z",
+    "manila": "2026-11-18 22:32",
+    "cron": "32 22 18 11 *"
+  },
+  {
+    "slug": "full-circle-bakery-cafe",
+    "to": "fullcirclebakerycafe@gmail.com",
+    "draftId": "r-6741253298329625689",
+    "sendAtUTC": "2026-11-18T14:41:00.000Z",
+    "manila": "2026-11-18 22:41",
+    "cron": "41 22 18 11 *"
+  },
+  {
+    "slug": "renfrows-tree-service",
+    "to": "270.renfrow@gmail.com",
+    "draftId": "r7149405350694152325",
+    "sendAtUTC": "2026-11-18T14:50:00.000Z",
+    "manila": "2026-11-18 22:50",
+    "cron": "50 22 18 11 *"
+  },
+  {
+    "slug": "motion-sudz",
+    "to": "ryankarr469@gmail.com",
+    "draftId": "r-688866344358862499",
+    "sendAtUTC": "2026-11-18T14:59:00.000Z",
+    "manila": "2026-11-18 22:59",
+    "cron": "59 22 18 11 *"
+  },
+  {
+    "slug": "rice-family-lawn-snow",
+    "to": "hardworkinrice@gmail.com",
+    "draftId": "r-6107413688765213269",
+    "sendAtUTC": "2026-11-18T15:08:00.000Z",
+    "manila": "2026-11-18 23:08",
+    "cron": "8 23 18 11 *"
+  },
+  {
+    "slug": "gios-paw-spa",
+    "to": "giospawspa1217@gmail.com",
+    "draftId": "r6983067860233296762",
+    "sendAtUTC": "2026-11-18T15:17:00.000Z",
+    "manila": "2026-11-18 23:17",
+    "cron": "17 23 18 11 *"
+  },
+  {
+    "slug": "barks-and-bubbles-rapid-city",
+    "to": "barksandbubbles20@gmail.com",
+    "draftId": "r86000559308323247",
+    "sendAtUTC": "2026-11-18T15:26:00.000Z",
+    "manila": "2026-11-18 23:26",
+    "cron": "26 23 18 11 *"
+  }
+]
