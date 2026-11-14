@@ -97,8 +97,10 @@ async function live() {
       else {
         const live = await r.text();
         const local = fs.existsSync(P('site', q.slug, 'index.html')) ? fs.readFileSync(P('site', q.slug, 'index.html'), 'utf8') : '';
+        // Netlify injects an HTML comment and a /.netlify/ script; ignore those when comparing.
+        const norm = (h) => h.replace(/<!--[\s\S]*?-->/g, '').replace(/<script[^>]*\/\.netlify\/[^>]*><\/script>/g, '').replace(/\s+/g, ' ').trim();
         if (!live.includes(`Demo concept by ${config.studio.studioName}`)) fail(q.slug, 'live demo does not show the studio name yet: redeploy site/ to Netlify');
-        else if (local && live.trim() !== local.trim()) warn(q.slug, 'live demo differs from the local build: redeploy site/ to Netlify');
+        else if (local && norm(live) !== norm(local)) warn(q.slug, 'live demo differs from the local build: redeploy site/ to Netlify');
       }
     }
     catch (e) { warn(q.slug, `could not reach demo URL from here (${e.cause ? e.cause.code || e.message : e.message}); open it yourself before sending`); }
