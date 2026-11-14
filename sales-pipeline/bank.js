@@ -6,12 +6,15 @@
 //   node bank.js take [N|auto]          move N (or enough to keep the pitch queue full) into data/prospects.json
 //   node bank.js skiplist               names, slugs and photo ids research subagents must avoid
 const fs = require('fs');
+const path = require('path');
 const { P, readJSON, writeJSON, readCSV, today } = require('./lib');
 
 const config = readJSON('config.json');
 const state = Object.assign({ target: 100, low: 25, perRunMax: 16, buffer: 50, refilling: true }, readJSON('data/bank-state.json', {}));
+// Files passed to `add` are excluded, or their own records would be rejected as already seen.
+const adding = new Set(process.argv[2] === 'add' ? process.argv.slice(3).map((f) => path.basename(f)) : []);
 // Everything researched before, including businesses that were dropped: never research them again.
-const seen = fs.existsSync(P('data/incoming')) ? fs.readdirSync(P('data/incoming')).filter((f) => f.endsWith('.json') && !f.startsWith('verify')).flatMap((f) => { try { return [].concat(JSON.parse(fs.readFileSync(P('data/incoming', f), 'utf8'))); } catch (e) { return []; } }) : [];
+const seen = fs.existsSync(P('data/incoming')) ? fs.readdirSync(P('data/incoming')).filter((f) => f.endsWith('.json') && !f.startsWith('verify') && !adding.has(f)).flatMap((f) => { try { return [].concat(JSON.parse(fs.readFileSync(P('data/incoming', f), 'utf8'))); } catch (e) { return []; } }) : [];
 const bank = readJSON('data/bank.json', []);
 const prospects = readJSON('data/prospects.json', []);
 const dnc = readCSV('data/do-not-contact.csv').rows;
