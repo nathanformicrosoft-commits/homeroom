@@ -34,7 +34,7 @@ h2{font-size:clamp(30px,6.5vw,46px);margin-bottom:28px}
 .svc .n{flex:none;font-family:var(--hf);font-size:15px;font-weight:700;color:var(--accent-ink);background:var(--accent);width:34px;height:34px;border-radius:50%;display:grid;place-items:center;margin-top:2px}
 .fine{font-size:13.5px;color:var(--muted);margin:18px 0 0}
 .band{background:var(--surface);border-block:1px solid var(--line)}
-.theme h3{font-size:24px}.theme{border-top:4px solid var(--accent)}
+.theme h3{font-size:24px}.theme::before{content:"";display:block;width:36px;height:4px;border-radius:2px;background:var(--accent);margin-bottom:14px}
 .visit{display:grid;gap:22px}
 table.hours{width:100%;border-collapse:collapse;font-size:17px}
 table.hours td{padding:12px 0;border-bottom:1px solid var(--line)}table.hours td:last-child{text-align:right;font-weight:600}

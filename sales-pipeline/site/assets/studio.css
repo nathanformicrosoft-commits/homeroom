@@ -7,7 +7,7 @@ header a{text-decoration:none;color:inherit}nav{float:right;font:500 15px 'Brico
 .btn{display:inline-block;background:#17202A;color:#fff;text-decoration:none;font-weight:600;border-radius:999px;padding:14px 24px;margin-top:8px}
 section{padding:40px 0;border-top:1px solid #E2DED4}h2{font-size:clamp(26px,5vw,36px);margin-bottom:18px}
 .cols{display:grid;gap:14px}.box{background:#fff;border:1px solid #E2DED4;border-radius:16px;padding:20px 22px}
-.box h3{font-size:20px;margin-bottom:6px}.box p{margin:0;color:#44505C}
+.box h2,.box h3{font-size:20px;margin-bottom:6px}.box p{margin:0;color:#44505C}
 .price{font-family:'Bricolage Grotesque';font-size:30px;font-weight:800;color:#17202A}
 ol{padding-left:20px;margin:0}li{margin-bottom:8px}
 .shot{aspect-ratio:4/3;background:#DAD5C8 center top/cover;border-radius:12px;margin-bottom:14px;border:1px solid #E2DED4}
