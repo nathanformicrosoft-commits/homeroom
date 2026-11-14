@@ -29,7 +29,7 @@ Payment is by **PayPal invoice** (address in `config.json` → `payments.paypalE
 Their "I agree" by email is the record. Claude never signs or agrees to anything on the owner's behalf.
 
 ## 3. Invoice message (you send the actual invoice from PayPal)
-> Here's the PayPal invoice for the first half ($[HALF]): [you paste the link PayPal gives you]. As soon as it's paid I'll start. Could you send these over too?
+> Here's the PayPal invoice for the first half ($[HALF]): [you paste the link PayPal gives you]. It comes from our business account, under the name Marjorie Visaya. As soon as it's paid I'll start. Could you send these over too?
 
 Then log: `node log.js <slug> deposit --amount [HALF] --currency USD`.
 

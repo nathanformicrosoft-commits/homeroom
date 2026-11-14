@@ -11,9 +11,11 @@
   },
   "payments": {
     "paypalEmail": "marjnimae@yahoo.com",
+    "paypalOwner": "Marjorie Visaya",
     "method": "PayPal invoice",
     "depositPercent": 50,
-    "rules": "Invoices are created by you in PayPal and sent from PayPal. Never ask for card numbers, bank logins or passwords in any message."
+    "rules": "Invoices are created by you in PayPal and sent from PayPal. Never ask for card numbers, bank logins or passwords in any message.",
+    "_paypalOwner": "Name clients see on PayPal invoices. Mention it in the invoice message so a different name is not a surprise."
   },
   "settings": {
     "sendMode": "draft",
