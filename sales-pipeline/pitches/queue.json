@@ -156,5 +156,401 @@
     "sendLocal": "Tue, Nov 17, 8:00 AM to 10:00 AM their time",
     "sendManila": "Tue, Nov 17, 6:00 AM to 8:00 AM Manila time",
     "demoUrl": "https://local-homepage-demos.netlify.app/shivs-mowing/"
+  },
+  {
+    "slug": "goodridges-lawn-care",
+    "market": "US",
+    "channel": "email",
+    "to": "goodridgeslawncare@outlook.com",
+    "subject": "I built a free homepage for Goodridge's Lawn Care LLC",
+    "body": "Hi Josh,\n\nA reviewer just thanked your family for looking after her childhood home while her dad was in the hospital, and joked she's still sad she never got one of your original business cards.\n\nI'm Nathaniel Visaya from Visaya Web Studio, a small web design studio in Antipolo City, Philippines. I couldn't find a website for Goodridge's Lawn Care, so I built you a free demo homepage: https://local-homepage-demos.netlify.app/goodridges-lawn-care/\n\nIt shows your services, hours, a map, click-to-call and a contact form. The finished site with your own photos is $150 one-time, plus an optional $39/month care plan for hosting and edits.\n\nReply \"yes\" and I'll finish it in 3 days.\n\nNathaniel Visaya\nVisaya Web Studio · Antipolo City, Philippines\n[[POSTAL ADDRESS (required by law for this market)]]\n\nNot interested? Reply STOP and I won't contact you again.",
+    "bodyWords": 110,
+    "quote": 150,
+    "variant": {
+      "subject": "S1"
+    },
+    "sendAt": "2026-11-17T14:01:00.000Z",
+    "sendLocal": "Tue, Nov 17, 8:01 AM their time",
+    "sendManila": "Tue, Nov 17, 10:01 PM Manila time",
+    "demoUrl": "https://local-homepage-demos.netlify.app/goodridges-lawn-care/"
+  },
+  {
+    "slug": "freddys-landscaping",
+    "market": "US",
+    "channel": "email",
+    "to": "fredylandscaping08@gmail.com",
+    "subject": "Freddy's Landscaping homepage (already built, free to look)",
+    "body": "Hi Freddy,\n\nTwo of your recent reviewers said they wished they had taken before pictures, and one said the overgrowth was so bad you couldn't even see the fence until your crew cleared it.\n\nI'm Nathaniel Visaya from Visaya Web Studio, a small web design studio in Antipolo City, Philippines. I couldn't find a website for Freddy's Landscaping, so I built you a free demo homepage: https://local-homepage-demos.netlify.app/freddys-landscaping/\n\nIt shows your services, hours, a map, click-to-call and a contact form. The finished site with your own photos is $150 one-time, plus an optional $39/month care plan for hosting and edits.\n\nReply \"yes\" and I'll finish it in 3 days.\n\nNathaniel Visaya\nVisaya Web Studio · Antipolo City, Philippines\n[[POSTAL ADDRESS (required by law for this market)]]\n\nNot interested? Reply STOP and I won't contact you again.",
+    "bodyWords": 108,
+    "quote": 150,
+    "variant": {
+      "subject": "S2"
+    },
+    "sendAt": "2026-11-17T14:10:00.000Z",
+    "sendLocal": "Tue, Nov 17, 8:10 AM their time",
+    "sendManila": "Tue, Nov 17, 10:10 PM Manila time",
+    "demoUrl": "https://local-homepage-demos.netlify.app/freddys-landscaping/"
+  },
+  {
+    "slug": "windham-pressure-washing",
+    "market": "US",
+    "channel": "email",
+    "to": "windhampressurecleaning@gmail.com",
+    "subject": "I built a free homepage for Windham Pressure Washing",
+    "body": "Hi Windham Pressure Washing team,\n\nYour Facebook page still links to windhampressurewashing.com, but that domain no longer loads. One reviewer said you brought your own water and turned their black concrete white.\n\nI'm Nathaniel Visaya from Visaya Web Studio, a small web design studio in Antipolo City, Philippines. I couldn't find a working website for Windham Pressure Washing, so I built you a free demo homepage: https://local-homepage-demos.netlify.app/windham-pressure-washing/\n\nIt shows your services, hours, a map, click-to-call and a contact form. The finished site with your own photos is $150 one-time, plus an optional $39/month care plan for hosting and edits.\n\nReply \"yes\" and I'll finish it in 3 days.\n\nNathaniel Visaya\nVisaya Web Studio · Antipolo City, Philippines\n[[POSTAL ADDRESS (required by law for this market)]]\n\nNot interested? Reply STOP and I won't contact you again.",
+    "bodyWords": 108,
+    "quote": 150,
+    "variant": {
+      "subject": "S1"
+    },
+    "sendAt": "2026-11-17T14:19:00.000Z",
+    "sendLocal": "Tue, Nov 17, 8:19 AM their time",
+    "sendManila": "Tue, Nov 17, 10:19 PM Manila time",
+    "demoUrl": "https://local-homepage-demos.netlify.app/windham-pressure-washing/"
+  },
+  {
+    "slug": "bubbas-stump-grinding",
+    "market": "US",
+    "channel": "email",
+    "to": "bubbas.stump.grinding@gmail.com",
+    "subject": "Bubba's Stump Grinding homepage (already built, free to look)",
+    "body": "Hi Bubba,\n\nOn your New Year's post, a follower tagged a friend to say you were the stump grinder she'd been recommending, and a reviewer said there was nothing left to clean up.\n\nI'm Nathaniel Visaya from Visaya Web Studio, a small web design studio in Antipolo City, Philippines. I couldn't find a website for Bubba's Stump Grinding, so I built you a free demo homepage: https://local-homepage-demos.netlify.app/bubbas-stump-grinding/\n\nIt shows your services, hours, a map, click-to-call and a contact form. The finished site with your own photos is $150 one-time, plus an optional $39/month care plan for hosting and edits.\n\nReply \"yes\" and I'll finish it in 3 days.\n\nNathaniel Visaya\nVisaya Web Studio · Antipolo City, Philippines\n[[POSTAL ADDRESS (required by law for this market)]]\n\nNot interested? Reply STOP and I won't contact you again.",
+    "bodyWords": 108,
+    "quote": 150,
+    "variant": {
+      "subject": "S2"
+    },
+    "sendAt": "2026-11-17T14:28:00.000Z",
+    "sendLocal": "Tue, Nov 17, 8:28 AM their time",
+    "sendManila": "Tue, Nov 17, 10:28 PM Manila time",
+    "demoUrl": "https://local-homepage-demos.netlify.app/bubbas-stump-grinding/"
+  },
+  {
+    "slug": "brannen-tree-service",
+    "market": "US",
+    "channel": "email",
+    "to": "Brannentreeservice@gmail.com",
+    "subject": "I built a free homepage for Brannen Tree Service",
+    "body": "Hi Brannen Tree Service team,\n\nYour Google reviewers keep describing big trees right up against the house coming down clean, and you've replied to nearly every one, thanking most of them by name.\n\nI'm Nathaniel Visaya from Visaya Web Studio, a small web design studio in Antipolo City, Philippines. I couldn't find a website for Brannen Tree Service, so I built you a free demo homepage: https://local-homepage-demos.netlify.app/brannen-tree-service/\n\nIt shows your services, hours, a map, click-to-call and a contact form. The finished site with your own photos is $150 one-time, plus an optional $39/month care plan for hosting and edits.\n\nReply \"yes\" and I'll finish it in 3 days.\n\nNathaniel Visaya\nVisaya Web Studio · Antipolo City, Philippines\n[[POSTAL ADDRESS (required by law for this market)]]\n\nNot interested? Reply STOP and I won't contact you again.",
+    "bodyWords": 108,
+    "quote": 150,
+    "variant": {
+      "subject": "S1"
+    },
+    "sendAt": "2026-11-17T13:03:00.000Z",
+    "sendLocal": "Tue, Nov 17, 8:03 AM their time",
+    "sendManila": "Tue, Nov 17, 9:03 PM Manila time",
+    "demoUrl": "https://local-homepage-demos.netlify.app/brannen-tree-service/"
+  },
+  {
+    "slug": "ellis-clean",
+    "market": "US",
+    "channel": "email",
+    "to": "Scellisclean@gmail.com",
+    "subject": "Ellis Clean homepage (already built, free to look)",
+    "body": "Hi Jeff,\n\nOne of your Google reviewers said the house looked so good afterward that the neighbor hired you for his house and driveway too.\n\nI'm Nathaniel Visaya from Visaya Web Studio, a small web design studio in Antipolo City, Philippines. I couldn't find a website for Ellis Clean, so I built you a free demo homepage: https://local-homepage-demos.netlify.app/ellis-clean/\n\nIt shows your services, hours, a map, click-to-call and a contact form. The finished site with your own photos is $150 one-time, plus an optional $39/month care plan for hosting and edits.\n\nReply \"yes\" and I'll finish it in 3 days.\n\nNathaniel Visaya\nVisaya Web Studio · Antipolo City, Philippines\n[[POSTAL ADDRESS (required by law for this market)]]\n\nNot interested? Reply STOP and I won't contact you again.",
+    "bodyWords": 99,
+    "quote": 150,
+    "variant": {
+      "subject": "S2"
+    },
+    "sendAt": "2026-11-17T13:12:00.000Z",
+    "sendLocal": "Tue, Nov 17, 8:12 AM their time",
+    "sendManila": "Tue, Nov 17, 9:12 PM Manila time",
+    "demoUrl": "https://local-homepage-demos.netlify.app/ellis-clean/"
+  },
+  {
+    "slug": "all-clear-power-washing",
+    "market": "US",
+    "channel": "email",
+    "to": "jdingle68@gmail.com",
+    "subject": "I built a free homepage for All Clear Power Washing",
+    "body": "Hi All Clear Power Washing team,\n\nYour Facebook page links to allclearpowerwashing.org, but that domain no longer exists, so anyone who taps it gets nothing.\n\nI'm Nathaniel Visaya from Visaya Web Studio, a small web design studio in Antipolo City, Philippines. I couldn't find a working website for All Clear Power Washing, so I built you a free demo homepage: https://local-homepage-demos.netlify.app/all-clear-power-washing/\n\nIt shows your services, hours, a map, click-to-call and a contact form. The finished site with your own photos is $150 one-time, plus an optional $39/month care plan for hosting and edits.\n\nReply \"yes\" and I'll finish it in 3 days.\n\nNathaniel Visaya\nVisaya Web Studio · Antipolo City, Philippines\n[[POSTAL ADDRESS (required by law for this market)]]\n\nNot interested? Reply STOP and I won't contact you again.",
+    "bodyWords": 102,
+    "quote": 150,
+    "variant": {
+      "subject": "S1"
+    },
+    "sendAt": "2026-11-17T13:21:00.000Z",
+    "sendLocal": "Tue, Nov 17, 8:21 AM their time",
+    "sendManila": "Tue, Nov 17, 9:21 PM Manila time",
+    "demoUrl": "https://local-homepage-demos.netlify.app/all-clear-power-washing/"
+  },
+  {
+    "slug": "owens-landscaping-pressure-washing",
+    "market": "US",
+    "channel": "email",
+    "to": "Owen_scotty@yahoo.com",
+    "subject": "Owen's Landscaping & Pressure Washing homepage (already built, free to look)",
+    "body": "Hi Scotty,\n\nYour Facebook page still sends people to owens-landscaping-pressure.business.site, and that link now just shows a Google error page.\n\nI'm Nathaniel Visaya from Visaya Web Studio, a small web design studio in Antipolo City, Philippines. I couldn't find a working website for Owen's Landscaping, so I built you a free demo homepage: https://local-homepage-demos.netlify.app/owens-landscaping-pressure-washing/\n\nIt shows your services, hours, a map, click-to-call and a contact form. The finished site with your own photos is $250 one-time, plus an optional $39/month care plan for hosting and edits.\n\nReply \"yes\" and I'll finish it in 3 days.\n\nNathaniel Visaya\nVisaya Web Studio · Antipolo City, Philippines\n[[POSTAL ADDRESS (required by law for this market)]]\n\nNot interested? Reply STOP and I won't contact you again.",
+    "bodyWords": 95,
+    "quote": 250,
+    "variant": {
+      "subject": "S2"
+    },
+    "sendAt": "2026-11-17T13:30:00.000Z",
+    "sendLocal": "Tue, Nov 17, 8:30 AM their time",
+    "sendManila": "Tue, Nov 17, 9:30 PM Manila time",
+    "demoUrl": "https://local-homepage-demos.netlify.app/owens-landscaping-pressure-washing/"
+  },
+  {
+    "slug": "kovacs-home-property-services",
+    "market": "US",
+    "channel": "email",
+    "to": "kovacshomeandpropertyservices@gmail.com",
+    "subject": "I built a free homepage for Kovacs Home & Property Services",
+    "body": "Hi Ryan,\n\nOne of your reviewers was told no double oven would fit their kitchen. You measured, found one that fit, and installed it.\n\nI'm Nathaniel Visaya from Visaya Web Studio, a small web design studio in Antipolo City, Philippines. I couldn't find a website for Kovacs Home & Property Services, so I built you a free demo homepage: https://local-homepage-demos.netlify.app/kovacs-home-property-services/\n\nIt shows your services, hours, a map, click-to-call and a contact form. The finished site with your own photos is $250 one-time, plus an optional $39/month care plan for hosting and edits.\n\nReply \"yes\" and I'll finish it in 3 days.\n\nNathaniel Visaya\nVisaya Web Studio · Antipolo City, Philippines\n[[POSTAL ADDRESS (required by law for this market)]]\n\nNot interested? Reply STOP and I won't contact you again.",
+    "bodyWords": 101,
+    "quote": 250,
+    "variant": {
+      "subject": "S1"
+    },
+    "sendAt": "2026-11-17T13:39:00.000Z",
+    "sendLocal": "Tue, Nov 17, 8:39 AM their time",
+    "sendManila": "Tue, Nov 17, 9:39 PM Manila time",
+    "demoUrl": "https://local-homepage-demos.netlify.app/kovacs-home-property-services/"
+  },
+  {
+    "slug": "ftk-llc",
+    "market": "US",
+    "channel": "email",
+    "to": "brenden.luther@gmail.com",
+    "subject": "FTK llc. homepage (already built, free to look)",
+    "body": "Hi Brenden,\n\nYour Facebook page still links to ftkllc.business.site, but that address now just returns a Google error page.\n\nI'm Nathaniel Visaya from Visaya Web Studio, a small web design studio in Antipolo City, Philippines. I couldn't find a website for FTK llc., so I built you a free demo homepage: https://local-homepage-demos.netlify.app/ftk-llc/\n\nIt shows your services, hours, a map, click-to-call and a contact form. The finished site with your own photos is $150 one-time, plus an optional $39/month care plan for hosting and edits.\n\nReply \"yes\" and I'll finish it in 3 days.\n\nNathaniel Visaya\nVisaya Web Studio · Antipolo City, Philippines\n[[POSTAL ADDRESS (required by law for this market)]]\n\nNot interested? Reply STOP and I won't contact you again.",
+    "bodyWords": 93,
+    "quote": 150,
+    "variant": {
+      "subject": "S2"
+    },
+    "sendAt": "2026-11-18T14:05:00.000Z",
+    "sendLocal": "Wed, Nov 18, 8:05 AM their time",
+    "sendManila": "Wed, Nov 18, 10:05 PM Manila time",
+    "demoUrl": "https://local-homepage-demos.netlify.app/ftk-llc/"
+  },
+  {
+    "slug": "altoona-small-engine",
+    "market": "US",
+    "channel": "email",
+    "to": "AltoonaSmallEngine@gmail.com",
+    "subject": "I built a free homepage for Altoona Small Engine",
+    "body": "Hi Altoona Small Engine team,\n\nOne reviewer brought in their dad's weed eater, and you talked through whether a repair was even worth it. Then you fixed it on the spot and didn't charge them.\n\nI'm Nathaniel Visaya from Visaya Web Studio, a small web design studio in Antipolo City, Philippines. I couldn't find a website for Altoona Small Engine, so I built you a free demo homepage: https://local-homepage-demos.netlify.app/altoona-small-engine/\n\nIt shows your services, hours, a map, click-to-call and a contact form. The finished site with your own photos is $250 one-time, plus an optional $39/month care plan for hosting and edits.\n\nReply \"yes\" and I'll finish it in 3 days.\n\nNathaniel Visaya\nVisaya Web Studio · Antipolo City, Philippines\n[[POSTAL ADDRESS (required by law for this market)]]\n\nNot interested? Reply STOP and I won't contact you again.",
+    "bodyWords": 110,
+    "quote": 250,
+    "variant": {
+      "subject": "S1"
+    },
+    "sendAt": "2026-11-18T13:05:00.000Z",
+    "sendLocal": "Wed, Nov 18, 8:05 AM their time",
+    "sendManila": "Wed, Nov 18, 9:05 PM Manila time",
+    "demoUrl": "https://local-homepage-demos.netlify.app/altoona-small-engine/"
+  },
+  {
+    "slug": "joses-lawn-landscape",
+    "market": "US",
+    "channel": "messenger",
+    "to": "https://m.me/JosesLawnandlandscape2",
+    "body": "Hi Jose, Sprinkler blowouts come up in 28 of your Google reviews, and one customer said you walked every zone at spring startup and tweaked coverage they never would have noticed. I'm Nathaniel Visaya from Visaya Web Studio, a small web design studio in the Philippines. I couldn't find a website for Jose's Lawn & Landscape, so I built you a free preview homepage: https://local-homepage-demos.netlify.app/joses-lawn-landscape/ The finished site is $250. Reply \"yes\" and I'll finish it in 3 days, or reply STOP and I won't message again.",
+    "bodyWords": 87,
+    "quote": 250,
+    "variant": {},
+    "sendAt": "2026-11-17T15:00:00.000Z",
+    "sendLocal": "Tue, Nov 17, 8:00 AM to 10:00 AM their time",
+    "sendManila": "Tue, Nov 17, 11:00 PM to 1:00 AM Manila time",
+    "demoUrl": "https://local-homepage-demos.netlify.app/joses-lawn-landscape/"
+  },
+  {
+    "slug": "sosas-barbershop",
+    "market": "US",
+    "channel": "email",
+    "to": "sosamarlene01@gmail.com",
+    "subject": "Sosa's Barbershop homepage (already built, free to look)",
+    "body": "Hi Marlene,\n\nAttention to detail comes up in more of your Google reviews than anything else, and one parent mentioned you broke out toys for their two boys while they waited.\n\nI'm Nathaniel Visaya from Visaya Web Studio, a small web design studio in Antipolo City, Philippines. I couldn't find a website for Sosa's, so I built you a free demo homepage: https://local-homepage-demos.netlify.app/sosas-barbershop/\n\nIt shows your services, hours, a map, click-to-call and a contact form. The finished site with your own photos is $250 one-time, plus an optional $39/month care plan for hosting and edits.\n\nReply \"yes\" and I'll finish it in 3 days.\n\nNathaniel Visaya\nVisaya Web Studio · Antipolo City, Philippines\n[[POSTAL ADDRESS (required by law for this market)]]\n\nNot interested? Reply STOP and I won't contact you again.",
+    "bodyWords": 104,
+    "quote": 250,
+    "variant": {
+      "subject": "S2"
+    },
+    "sendAt": "2026-11-18T14:14:00.000Z",
+    "sendLocal": "Wed, Nov 18, 8:14 AM their time",
+    "sendManila": "Wed, Nov 18, 10:14 PM Manila time",
+    "demoUrl": "https://local-homepage-demos.netlify.app/sosas-barbershop/"
+  },
+  {
+    "slug": "slay-all-day-pressure-washing",
+    "market": "US",
+    "channel": "email",
+    "to": "kslay5074@gmail.com",
+    "subject": "I built a free homepage for Slay All Day Pressure Washing",
+    "body": "Hi Kevin,\n\nYour Facebook page still links to slayalldaypressurewashing.com, but the site doesn't load, so anyone who taps it from your page hits a dead end.\n\nI'm Nathaniel Visaya from Visaya Web Studio, a small web design studio in Antipolo City, Philippines. I couldn't find a working website for Slay All Day, so I built you a free demo homepage: https://local-homepage-demos.netlify.app/slay-all-day-pressure-washing/\n\nIt shows your services, hours, a map, click-to-call and a contact form. The finished site with your own photos is $150 one-time, plus an optional $39/month care plan for hosting and edits.\n\nReply \"yes\" and I'll finish it in 3 days.\n\nNathaniel Visaya\nVisaya Web Studio · Antipolo City, Philippines\n[[POSTAL ADDRESS (required by law for this market)]]\n\nNot interested? Reply STOP and I won't contact you again.",
+    "bodyWords": 102,
+    "quote": 150,
+    "variant": {
+      "subject": "S1"
+    },
+    "sendAt": "2026-11-18T14:23:00.000Z",
+    "sendLocal": "Wed, Nov 18, 8:23 AM their time",
+    "sendManila": "Wed, Nov 18, 10:23 PM Manila time",
+    "demoUrl": "https://local-homepage-demos.netlify.app/slay-all-day-pressure-washing/"
+  },
+  {
+    "slug": "baggett-exterior-cleaning",
+    "market": "US",
+    "channel": "email",
+    "to": "baggettexteriorcleaning@gmail.com",
+    "subject": "Baggett Exterior Cleaning homepage (already built, free to look)",
+    "body": "Hi Roman,\n\nFair pricing comes up in 14 of your Google reviews, more than anything else, and you're still at a perfect 5.0 after 109 of them.\n\nI'm Nathaniel Visaya from Visaya Web Studio, a small web design studio in Antipolo City, Philippines. I couldn't find a website for Baggett Exterior Cleaning, so I built you a free demo homepage: https://local-homepage-demos.netlify.app/baggett-exterior-cleaning/\n\nIt shows your services, hours, a map, click-to-call and a contact form. The finished site with your own photos is $150 one-time, plus an optional $39/month care plan for hosting and edits.\n\nReply \"yes\" and I'll finish it in 3 days.\n\nNathaniel Visaya\nVisaya Web Studio · Antipolo City, Philippines\n[[POSTAL ADDRESS (required by law for this market)]]\n\nNot interested? Reply STOP and I won't contact you again.",
+    "bodyWords": 102,
+    "quote": 150,
+    "variant": {
+      "subject": "S2"
+    },
+    "sendAt": "2026-11-18T14:32:00.000Z",
+    "sendLocal": "Wed, Nov 18, 8:32 AM their time",
+    "sendManila": "Wed, Nov 18, 10:32 PM Manila time",
+    "demoUrl": "https://local-homepage-demos.netlify.app/baggett-exterior-cleaning/"
+  },
+  {
+    "slug": "full-circle-bakery-cafe",
+    "market": "US",
+    "channel": "email",
+    "to": "fullcirclebakerycafe@gmail.com",
+    "subject": "I built a free homepage for Full Circle Bakery Cafe",
+    "body": "Hi Full Circle team,\n\nOne of your reviewers drove past for four years before stopping in, then said the pastry was as good as anything in Chicago.\n\nI'm Nathaniel Visaya from Visaya Web Studio, a small web design studio in Antipolo City, Philippines. I couldn't find a website for Full Circle, so I built you a free demo homepage: https://local-homepage-demos.netlify.app/full-circle-bakery-cafe/\n\nIt shows your menu highlights, hours, a map, click-to-call and a contact form. The finished site with your own photos is $350 one-time, plus an optional $39/month care plan for hosting and edits.\n\nReply \"yes\" and I'll finish it in 3 days.\n\nNathaniel Visaya\nVisaya Web Studio · Antipolo City, Philippines\n[[POSTAL ADDRESS (required by law for this market)]]\n\nNot interested? Reply STOP and I won't contact you again.",
+    "bodyWords": 102,
+    "quote": 350,
+    "variant": {
+      "subject": "S1"
+    },
+    "sendAt": "2026-11-18T14:41:00.000Z",
+    "sendLocal": "Wed, Nov 18, 8:41 AM their time",
+    "sendManila": "Wed, Nov 18, 10:41 PM Manila time",
+    "demoUrl": "https://local-homepage-demos.netlify.app/full-circle-bakery-cafe/"
+  },
+  {
+    "slug": "renfrows-tree-service",
+    "market": "US",
+    "channel": "email",
+    "to": "270.renfrow@gmail.com",
+    "subject": "Renfrow's Tree Service homepage (already built, free to look)",
+    "body": "Hi Doug,\n\nClean-up is the thing your Google reviewers mention most, which is usually the first thing people worry about with tree work.\n\nI'm Nathaniel Visaya from Visaya Web Studio, a small web design studio in Antipolo City, Philippines. I couldn't find a website for Renfrow's Tree Service, so I built you a free demo homepage: https://local-homepage-demos.netlify.app/renfrows-tree-service/\n\nIt shows your services, hours, a map, click-to-call and a contact form. The finished site with your own photos is $150 one-time, plus an optional $39/month care plan for hosting and edits.\n\nReply \"yes\" and I'll finish it in 3 days.\n\nNathaniel Visaya\nVisaya Web Studio · Antipolo City, Philippines\n[[POSTAL ADDRESS (required by law for this market)]]\n\nNot interested? Reply STOP and I won't contact you again.",
+    "bodyWords": 98,
+    "quote": 150,
+    "variant": {
+      "subject": "S2"
+    },
+    "sendAt": "2026-11-18T14:50:00.000Z",
+    "sendLocal": "Wed, Nov 18, 8:50 AM their time",
+    "sendManila": "Wed, Nov 18, 10:50 PM Manila time",
+    "demoUrl": "https://local-homepage-demos.netlify.app/renfrows-tree-service/"
+  },
+  {
+    "slug": "motion-sudz",
+    "market": "US",
+    "channel": "email",
+    "to": "ryankarr469@gmail.com",
+    "subject": "I built a free homepage for Motion Sudz",
+    "body": "Hi Ryan,\n\nOne of your reviewers said you worked for hours in the cold on their Explorer and it came out looking better than they had ever seen it.\n\nI'm Nathaniel Visaya from Visaya Web Studio, a small web design studio in Antipolo City, Philippines. I couldn't find a website for Motion Sudz, so I built you a free demo homepage: https://local-homepage-demos.netlify.app/motion-sudz/\n\nIt shows your services, hours, a map, click-to-call and a contact form. The finished site with your own photos is $150 one-time, plus an optional $39/month care plan for hosting and edits.\n\nReply \"yes\" and I'll finish it in 3 days.\n\nNathaniel Visaya\nVisaya Web Studio · Antipolo City, Philippines\n[[POSTAL ADDRESS (required by law for this market)]]\n\nNot interested? Reply STOP and I won't contact you again.",
+    "bodyWords": 103,
+    "quote": 150,
+    "variant": {
+      "subject": "S1"
+    },
+    "sendAt": "2026-11-18T14:59:00.000Z",
+    "sendLocal": "Wed, Nov 18, 8:59 AM their time",
+    "sendManila": "Wed, Nov 18, 10:59 PM Manila time",
+    "demoUrl": "https://local-homepage-demos.netlify.app/motion-sudz/"
+  },
+  {
+    "slug": "angels-tacos",
+    "market": "US",
+    "channel": "messenger",
+    "to": "https://m.me/angelstacos21",
+    "body": "Hi Angel's Tacos team, One of your reviewers said the four-taco combo smelled so good they nearly pulled over to eat it before getting back to work. I'm Nathaniel Visaya from Visaya Web Studio, a small web design studio in the Philippines. I couldn't find a website for Angel's Tacos, so I built you a free preview homepage: https://local-homepage-demos.netlify.app/angels-tacos/ The finished site is $350. Reply \"yes\" and I'll finish it in 3 days, or reply STOP and I won't message again.",
+    "bodyWords": 81,
+    "quote": 350,
+    "variant": {},
+    "sendAt": "2026-11-17T15:00:00.000Z",
+    "sendLocal": "Tue, Nov 17, 8:00 AM to 10:00 AM their time",
+    "sendManila": "Tue, Nov 17, 11:00 PM to 1:00 AM Manila time",
+    "demoUrl": "https://local-homepage-demos.netlify.app/angels-tacos/"
+  },
+  {
+    "slug": "too-smooth-wash-pros",
+    "market": "US",
+    "channel": "messenger",
+    "to": "https://m.me/toosmoothwashpros",
+    "body": "Hi Gabe, Your Linktree still points to toosmoothwashpros.com, but that address doesn't load right now, so anyone who taps it from your page hits a dead end. I'm Nathaniel Visaya from Visaya Web Studio, a small web design studio in the Philippines. I couldn't find a working website for Too Smooth Wash Pros, so I built you a free preview homepage: https://local-homepage-demos.netlify.app/too-smooth-wash-pros/ The finished site is $250. Reply \"yes\" and I'll finish it in 3 days, or reply STOP and I won't message again.",
+    "bodyWords": 84,
+    "quote": 250,
+    "variant": {},
+    "sendAt": "2026-11-17T14:00:00.000Z",
+    "sendLocal": "Tue, Nov 17, 8:00 AM to 10:00 AM their time",
+    "sendManila": "Tue, Nov 17, 10:00 PM to 12:00 AM Manila time",
+    "demoUrl": "https://local-homepage-demos.netlify.app/too-smooth-wash-pros/"
+  },
+  {
+    "slug": "rice-family-lawn-snow",
+    "market": "US",
+    "channel": "email",
+    "to": "hardworkinrice@gmail.com",
+    "subject": "Rice Family Lawn & Snow Services + homepage (already built, free to look)",
+    "body": "Hi Josh,\n\nOne of your reviewers had to be at work by 5am one winter, and you had their snow cleared by 4:30.\n\nI'm Nathaniel Visaya from Visaya Web Studio, a small web design studio in Antipolo City, Philippines. I couldn't find a website for Rice Family Lawn & Snow Services, so I built you a free demo homepage: https://local-homepage-demos.netlify.app/rice-family-lawn-snow/\n\nIt shows your services, hours, a map, click-to-call and a contact form. The finished site with your own photos is $150 one-time, plus an optional $39/month care plan for hosting and edits.\n\nReply \"yes\" and I'll finish it in 3 days.\n\nNathaniel Visaya\nVisaya Web Studio · Antipolo City, Philippines\n[[POSTAL ADDRESS (required by law for this market)]]\n\nNot interested? Reply STOP and I won't contact you again.",
+    "bodyWords": 101,
+    "quote": 150,
+    "variant": {
+      "subject": "S2"
+    },
+    "sendAt": "2026-11-18T15:08:00.000Z",
+    "sendLocal": "Wed, Nov 18, 9:08 AM their time",
+    "sendManila": "Wed, Nov 18, 11:08 PM Manila time",
+    "demoUrl": "https://local-homepage-demos.netlify.app/rice-family-lawn-snow/"
+  },
+  {
+    "slug": "gios-paw-spa",
+    "market": "US",
+    "channel": "email",
+    "to": "giospawspa1217@gmail.com",
+    "subject": "I built a free homepage for Gio's Paw Spa",
+    "body": "Hi Gio's Paw Spa team,\n\nCat grooming comes up again and again in your Google reviews, and one longtime customer said your team treats their dogs and cats like family.\n\nI'm Nathaniel Visaya from Visaya Web Studio, a small web design studio in Antipolo City, Philippines. I couldn't find a website for Gio's Paw Spa, so I built you a free demo homepage: https://local-homepage-demos.netlify.app/gios-paw-spa/\n\nIt shows your services, hours, a map, click-to-call and a contact form. The finished site with your own photos is $250 one-time, plus an optional $39/month care plan for hosting and edits.\n\nReply \"yes\" and I'll finish it in 3 days.\n\nNathaniel Visaya\nVisaya Web Studio · Antipolo City, Philippines\n[[POSTAL ADDRESS (required by law for this market)]]\n\nNot interested? Reply STOP and I won't contact you again.",
+    "bodyWords": 105,
+    "quote": 250,
+    "variant": {
+      "subject": "S1"
+    },
+    "sendAt": "2026-11-18T15:17:00.000Z",
+    "sendLocal": "Wed, Nov 18, 9:17 AM their time",
+    "sendManila": "Wed, Nov 18, 11:17 PM Manila time",
+    "demoUrl": "https://local-homepage-demos.netlify.app/gios-paw-spa/"
+  },
+  {
+    "slug": "barks-and-bubbles-rapid-city",
+    "market": "US",
+    "channel": "email",
+    "to": "barksandbubbles20@gmail.com",
+    "subject": "Barks & Bubbles homepage (already built, free to look)",
+    "body": "Hi Barks & Bubbles team,\n\nOne of your reviewers has been getting color added to her dog's tail with you for years.\n\nI'm Nathaniel Visaya from Visaya Web Studio, a small web design studio in Antipolo City, Philippines. I couldn't find a website for Barks & Bubbles, so I built you a free demo homepage: https://local-homepage-demos.netlify.app/barks-and-bubbles-rapid-city/\n\nIt shows your services, hours, a map, click-to-call and a contact form. The finished site with your own photos is $250 one-time, plus an optional $39/month care plan for hosting and edits.\n\nReply \"yes\" and I'll finish it in 3 days.\n\nNathaniel Visaya\nVisaya Web Studio · Antipolo City, Philippines\n[[POSTAL ADDRESS (required by law for this market)]]\n\nNot interested? Reply STOP and I won't contact you again.",
+    "bodyWords": 97,
+    "quote": 250,
+    "variant": {
+      "subject": "S2"
+    },
+    "sendAt": "2026-11-18T15:26:00.000Z",
+    "sendLocal": "Wed, Nov 18, 8:26 AM their time",
+    "sendManila": "Wed, Nov 18, 11:26 PM Manila time",
+    "demoUrl": "https://local-homepage-demos.netlify.app/barks-and-bubbles-rapid-city/"
+  },
+  {
+    "slug": "the-modest-barbershop-casper",
+    "market": "US",
+    "channel": "messenger",
+    "to": "https://m.me/61579851485088",
+    "body": "Hi Modest Barber team, One of your reviewers says Trish has cut his hair for close to a decade, and others mention the arcade and the shelf of local products while they wait. I'm Nathaniel Visaya from Visaya Web Studio, a small web design studio in the Philippines. I couldn't find a website for The Modest Barbershop, so I built you a free preview homepage: https://local-homepage-demos.netlify.app/the-modest-barbershop-casper/ The finished site is $250. Reply \"yes\" and I'll finish it in 3 days, or reply STOP and I won't message again.",
+    "bodyWords": 88,
+    "quote": 250,
+    "variant": {},
+    "sendAt": "2026-11-17T15:00:00.000Z",
+    "sendLocal": "Tue, Nov 17, 8:00 AM to 10:00 AM their time",
+    "sendManila": "Tue, Nov 17, 11:00 PM to 1:00 AM Manila time",
+    "demoUrl": "https://local-homepage-demos.netlify.app/the-modest-barbershop-casper/"
   }
 ]

@@ -1,4 +1,4 @@
-# Insights (updated 2026-11-13)
+# Insights (updated 2026-11-14)
 
 Read this before every run. It is rebuilt from data/outcomes.jsonl by `node learn.js`.
 

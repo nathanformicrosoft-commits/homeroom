@@ -890,5 +890,2172 @@
     ],
     "notes": "Operator named Martin in reviews. No public email or Facebook page found, so this goes on the Send list as an SMS.",
     "complexity": "simple"
+  },
+  {
+    "slug": "goodridges-lawn-care",
+    "name": "Goodridge's Lawn Care LLC",
+    "market": "US",
+    "town": "Russellville",
+    "state": "AR",
+    "tz": "America/Chicago",
+    "category": "Lawn care service",
+    "theme": "lawn-sun",
+    "found": "2026-11-14",
+    "channel": "email",
+    "email": "goodridgeslawncare@outlook.com",
+    "emailSource": "Listed on their public Facebook page",
+    "phoneDisplay": "(479) 264-4278",
+    "phoneTel": "+14792644278",
+    "address": "402 N Tulsa Ave, Russellville, AR 72801",
+    "mapQuery": "Goodridge's Lawn Care, 402 N Tulsa Ave, Russellville, AR 72801",
+    "rating": 4.7,
+    "reviewCount": 61,
+    "hours": [
+      [
+        "Mon – Fri",
+        "7am – 5pm"
+      ],
+      [
+        "Saturday",
+        "7am – 12pm"
+      ],
+      [
+        "Sunday",
+        "Closed"
+      ]
+    ],
+    "hoursNote": "Hours from your Google listing.",
+    "kicker": "Lawn care · Landscaping · Russellville",
+    "headline": "Lawn care and landscaping across the River Valley.",
+    "sub": "Regular mowing, landscaping, sod and flower beds for homes and businesses, rated 4.7 by 61 Google reviewers.",
+    "servicesTitle": "What we do",
+    "services": [
+      [
+        "Lawn care on a schedule",
+        "Regular visits that keep your yard maintained, with driveways, sidewalks and porches left clean."
+      ],
+      [
+        "Landscaping and design",
+        "Fresh ideas for your yard, planned with you and carried through."
+      ],
+      [
+        "Sod installation",
+        "New sod laid for a full, even lawn."
+      ],
+      [
+        "Flower beds and mulch",
+        "Beds freshened up with new mulch for instant curb appeal."
+      ],
+      [
+        "Shrub trimming and tree removal",
+        "Bushes shaped and unwanted trees taken down."
+      ],
+      [
+        "Commercial properties",
+        "Grounds care for businesses as well as homes."
+      ]
+    ],
+    "servicesNote": "Taken from your Google listing, Facebook page and reviews. Your full list and prices go here.",
+    "themes": [
+      [
+        "A family business people trust",
+        "Reviewers describe a kind, family-run crew and an owner who genuinely cares about his customers."
+      ],
+      [
+        "Curb appeal that sells",
+        "One homeowner said the yard work before listing their house made it look amazing, with design ideas that were followed through."
+      ],
+      [
+        "Set it and forget it",
+        "Long-time customers say they never have to worry about their yard, and the crew even checks in after the job."
+      ]
+    ],
+    "cta": "Get a free quote",
+    "photo": {
+      "id": "photo-1777428762767-e3a797da389a",
+      "by": "QY Liu",
+      "user": "qy_liu"
+    },
+    "pitch": {
+      "greeting": "Hi Josh,",
+      "line1": "A reviewer just thanked your family for looking after her childhood home while her dad was in the hospital, and joked she's still sad she never got one of your original business cards.",
+      "gap": "I couldn't find a website for Goodridge's Lawn Care"
+    },
+    "complexity": "simple",
+    "sources": [
+      "Google Maps listing (rating, hours, address, phone, reviews)",
+      "facebook.com/goodridgeslawncare (email, intro, service area, services post from Feb 2021)"
+    ],
+    "notes": "Owner first name Josh comes from two Google reviews (\"Josh communicated well\", \"I have been with Josh and his company\"); not confirmed as owner on Facebook. Google lists 402 N Tulsa Ave; Facebook lists 8341 US Hwy 64, Russellville. Used the Google address. Facebook intro says they have served the River Valley for nine years, but the post date is unclear, so years in business are left out. Google listing shows 'Add website'. Facebook page has about 700 followers and posted Dec 26, 2025. The 'original business cards' review is about 2 weeks old."
+  },
+  {
+    "slug": "freddys-landscaping",
+    "name": "Freddy's Landscaping",
+    "market": "US",
+    "town": "Enid",
+    "state": "OK",
+    "tz": "America/Chicago",
+    "category": "Lawn care service",
+    "theme": "lawn",
+    "found": "2026-11-14",
+    "channel": "email",
+    "email": "fredylandscaping08@gmail.com",
+    "emailSource": "Listed on their public Facebook page",
+    "phoneDisplay": "(832) 641-6282",
+    "phoneTel": "+18326416282",
+    "address": "317 E Cedar Ave, Enid, OK 73701",
+    "mapQuery": "Freddy's Landscaping, 317 E Cedar Ave, Enid, OK 73701",
+    "rating": 4.9,
+    "reviewCount": 45,
+    "hours": [],
+    "hoursNote": "Your Google listing says open 24 hours, which Google often shows when hours were never set. Your real hours go here.",
+    "kicker": "Yard cleanup · Brush removal · Enid",
+    "headline": "Overgrown yard? Freddy clears it, often the same day.",
+    "sub": "Yard cleanups, brush and tree removal, mowing and hauling in Enid, rated 4.9 by 45 Google reviewers.",
+    "servicesTitle": "What we do",
+    "services": [
+      [
+        "Overgrowth clearing",
+        "Trees, bushes, weeds and ivy cut back so you can see your yard again."
+      ],
+      [
+        "Brush and limb hauling",
+        "Dead limbs and brush piles loaded up and hauled away."
+      ],
+      [
+        "Mowing and raking",
+        "Whole yards raked and mowed, with shrubs trimmed and weeds pulled from rock borders."
+      ],
+      [
+        "Leaf cleanup in tight spots",
+        "Leaves cleared from hard-to-reach areas, like between a house, a fence and an AC unit."
+      ],
+      [
+        "Fence removal and leveling",
+        "Old wood fences taken down, yards leveled and grass seed put down."
+      ]
+    ],
+    "servicesNote": "Taken from your Google listing and reviews. Your full list and prices go here.",
+    "themes": [
+      [
+        "Fast turnaround",
+        "Several reviewers say Freddy came out to quote the same day they called, and some had the work finished that same day."
+      ],
+      [
+        "Friendly and hard working",
+        "Customers keep mentioning a polite, patient crew that keeps appointments and works hard."
+      ],
+      [
+        "Fair prices",
+        "Reviewers describe the estimates as reasonable for the amount of work done."
+      ]
+    ],
+    "cta": "Get a free quote",
+    "photo": {
+      "id": "photo-1776025808938-dec3b01391ea",
+      "by": "QY Liu",
+      "user": "qy_liu"
+    },
+    "pitch": {
+      "greeting": "Hi Freddy,",
+      "line1": "Two of your recent reviewers said they wished they had taken before pictures, and one said the overgrowth was so bad you couldn't even see the fence until your crew cleared it.",
+      "gap": "I couldn't find a website for Freddy's Landscaping"
+    },
+    "complexity": "simple",
+    "sources": [
+      "Google Maps listing (rating, hours, address, phone, reviews)",
+      "facebook.com/people/Freddys-Lanscaping/100076169653734 (email, address, service area)",
+      "Facebook reels on fredy.gomez.hernandez.278438 (owner posts in English, Mar to Apr 2026)"
+    ],
+    "notes": "Owner first name Freddy from Google reviews (\"Freddy is so nice and great to work with\"); his personal Facebook is 'Fredy Gomez Hernandez' and the business page is spelled 'Freddy's Lanscaping' (missing d). Phone conflict: Google shows (832) 641-6282, Facebook shows (832) 641-6072 (also WhatsApp). Used Google. Houston area code on a local Enid business. Google says open 24 hours, which is probably a placeholder; confirm before showing. Google listing shows 'Add website'. Facebook page is small (99 followers) but reels were posted in 2026."
+  },
+  {
+    "slug": "windham-pressure-washing",
+    "name": "Windham Pressure Washing",
+    "market": "US",
+    "town": "Nacogdoches",
+    "state": "TX",
+    "tz": "America/Chicago",
+    "category": "Pressure washing service",
+    "theme": "wash",
+    "found": "2026-11-14",
+    "channel": "email",
+    "email": "windhampressurecleaning@gmail.com",
+    "emailSource": "Listed on their public Facebook page",
+    "phoneDisplay": "(936) 234-6821",
+    "phoneTel": "+19362346821",
+    "address": null,
+    "serviceArea": "Nacogdoches, Lufkin, Center, Alto, Rusk, Diboll and surrounding East Texas towns",
+    "mapQuery": "Nacogdoches, TX",
+    "rating": 5,
+    "reviewCount": 17,
+    "hours": [
+      [
+        "Mon – Sat",
+        "8am – 10pm"
+      ],
+      [
+        "Sunday",
+        "Closed"
+      ]
+    ],
+    "hoursNote": "Hours from your Google listing.",
+    "kicker": "House washing · Concrete · Nacogdoches",
+    "headline": "Brick, porches and concrete cleaned in East Texas.",
+    "sub": "Pressure washing and soft washing for homes and businesses around Nacogdoches, rated 5.0 by 17 Google reviewers.",
+    "servicesTitle": "What we do",
+    "services": [
+      [
+        "House and brick washing",
+        "Brick and siding washed so your home looks fresh again."
+      ],
+      [
+        "Porches and walkways",
+        "Front porches and walkways cleaned all the way to the street."
+      ],
+      [
+        "Driveways and concrete",
+        "Stained, dark concrete brought back to a clean finish."
+      ],
+      [
+        "Commercial soft washing",
+        "Office buildings and storefronts cleaned with a gentle soft wash method."
+      ],
+      [
+        "Pontoon boat polishing",
+        "Pontoons cleaned up and polished."
+      ]
+    ],
+    "servicesNote": "Taken from your Google listing, Facebook posts and reviews. Your full list and prices go here.",
+    "themes": [
+      [
+        "Ready for any job site",
+        "A customer with no water on the property said the crew simply brought their own."
+      ],
+      [
+        "A walk-through before they leave",
+        "Reviewers like that the crew walks the job with them for approval before packing up."
+      ],
+      [
+        "Honest pricing",
+        "Homeowners and a corporate office both mention fair prices and flexible scheduling."
+      ]
+    ],
+    "cta": "Get a free quote",
+    "photo": {
+      "id": "photo-1605146768851-eda79da39897",
+      "by": "Dillon Kydd",
+      "user": "kyddvisuals"
+    },
+    "pitch": {
+      "greeting": "Hi Windham Pressure Washing team,",
+      "line1": "Your Facebook page still links to windhampressurewashing.com, but that domain no longer loads. One reviewer said you brought your own water and turned their black concrete white.",
+      "gap": "I couldn't find a working website for Windham Pressure Washing"
+    },
+    "complexity": "simple",
+    "sources": [
+      "Google Maps listing (rating, hours, phone, reviews; no address, 'Add website' shown)",
+      "facebook.com/windhampressurewashing/about (email, service area, website link, alt phone)",
+      "facebook.com/windhampressurewashing posts (soft wash commercial post; 'Pontoons polished' Apr 15, 2025)",
+      "DNS check: windhampressurewashing.com returns NXDOMAIN (Google DNS, 2026-11-14)"
+    ],
+    "notes": "Dead domain: Facebook lists http://Windhampressurewashing.com/ but the domain does not resolve (NXDOMAIN), so it has likely lapsed. One review thanks 'Brent' (possibly the owner, not confirmed), and a 'Helen Joyce Windham' comments on posts. Phone conflict: Google (936) 234-6821, Facebook (936) 553-6108. Used Google. Facebook also lists 628 NE Stallings Dr, Nacogdoches, but Google shows no address, so I treated it as a service-area business. Activity risk: Google reviews are 4 to 6 years old, and the last Facebook post I saw was Apr 2025. Instagram posted Jan 2024 ('big plans this year')."
+  },
+  {
+    "slug": "bubbas-stump-grinding",
+    "name": "Bubba's Stump Grinding",
+    "market": "US",
+    "town": "Hammond",
+    "state": "LA",
+    "tz": "America/Chicago",
+    "category": "Tree service",
+    "theme": "lawn",
+    "found": "2026-11-14",
+    "channel": "email",
+    "email": "bubbas.stump.grinding@gmail.com",
+    "emailSource": "Listed on their public Facebook page",
+    "phoneDisplay": "(985) 974-9896",
+    "phoneTel": "+19859749896",
+    "address": null,
+    "serviceArea": "Hammond, Ponchatoula and the Tangipahoa Parish area",
+    "mapQuery": "Hammond, LA 70401",
+    "rating": 5,
+    "reviewCount": 28,
+    "hours": [],
+    "hoursNote": "Your Google listing doesn't show hours yet. Your hours go here.",
+    "kicker": "Stump grinding · Tangipahoa Parish",
+    "headline": "Stumps gone, yard left clean.",
+    "sub": "Stump grinding around Hammond and Tangipahoa Parish, rated 5.0 by 28 Google reviewers.",
+    "servicesTitle": "What we do",
+    "services": [
+      [
+        "Stump grinding",
+        "Old stumps ground down so you can mow, plant or build over the spot."
+      ],
+      [
+        "Multiple stumps in one visit",
+        "Got several stumps? Bubba takes care of them in one trip."
+      ],
+      [
+        "Clean finish",
+        "Reviewers say there's nothing left for you to clean up afterward."
+      ]
+    ],
+    "servicesNote": "Taken from your Google listing and reviews. Your full list and prices go here.",
+    "themes": [
+      [
+        "Best price around",
+        "Reviewers say Bubba's quote was the best they got, and the work matched it."
+      ],
+      [
+        "Quick and friendly",
+        "Customers describe a kind, easygoing guy who gets the job done fast."
+      ],
+      [
+        "Neat results",
+        "People mention the yard looks nice when he's finished, with no cleanup needed."
+      ]
+    ],
+    "cta": "Get a free quote",
+    "photo": {
+      "id": "photo-1605474321797-3b02fa702976",
+      "by": "Yves Alarie",
+      "user": "yvesalarie"
+    },
+    "pitch": {
+      "greeting": "Hi Bubba,",
+      "line1": "On your New Year's post, a follower tagged a friend to say you were the stump grinder she'd been recommending, and a reviewer said there was nothing left to clean up.",
+      "gap": "I couldn't find a website for Bubba's Stump Grinding"
+    },
+    "complexity": "simple",
+    "sources": [
+      "Google Maps listing (rating, phone, reviews, review topic chips; no hours, no street address)",
+      "facebook.com/people/Bubbas-Stump-Grinding/61573104430370 (email, intro, phone match, New Year's post Jan 2, 2026)"
+    ],
+    "notes": "Name 'Bubba' comes from a Google review (\"Bubba had the best price by far\"); real first name unknown. Facebook says Ponchatoula; Google says Hammond 70401 (service-area). Phone matches on both. Only 3 Google reviews were readable logged out, so services are limited to stump grinding; review chips mention stump grinding (10), fair quote (4), clean up (3), punctuality (3). Heads-up: a Bing result shows a demo site at felixchenyijun.github.io/websites/bubbas-stump-grinding/, which suggests someone else may already be pitching them. It isn't their own website. No hours on Google. Hammond is about 45 miles from Baton Rouge and New Orleans."
+  },
+  {
+    "slug": "brannen-tree-service",
+    "name": "Brannen Tree Service",
+    "market": "US",
+    "town": "Tifton",
+    "state": "GA",
+    "tz": "America/New_York",
+    "category": "Tree service",
+    "theme": "lawn",
+    "found": "2026-11-14",
+    "channel": "email",
+    "email": "Brannentreeservice@gmail.com",
+    "emailSource": "Listed on their public Facebook page",
+    "phoneDisplay": "(229) 529-5404",
+    "phoneTel": "+12295295404",
+    "address": null,
+    "serviceArea": "Tifton and the surrounding area",
+    "mapQuery": "Tifton, GA",
+    "rating": 4.9,
+    "reviewCount": 15,
+    "hours": [],
+    "hoursNote": "Your Google listing says open 24 hours, which Google often shows when hours were never set. Your real hours go here.",
+    "kicker": "Tree removal · Stump grinding · Storm cleanup · Tifton",
+    "headline": "Big trees down safely, yard left clean.",
+    "sub": "Tree removal, trimming and stump grinding in Tifton, rated 4.9 by 15 Google reviewers.",
+    "servicesTitle": "What we do",
+    "services": [
+      [
+        "Tree removal",
+        "Big trees and pines taken down, including ones close to the house, with a crane or bucket truck when needed."
+      ],
+      [
+        "Tree trimming",
+        "Branches and overgrown limbs cut back."
+      ],
+      [
+        "Stump grinding",
+        "Stumps ground down so the yard is smooth and level."
+      ],
+      [
+        "Forestry mulching",
+        "Brush and small trees ground into usable land, with no burning."
+      ],
+      [
+        "24/7 storm cleanup",
+        "Emergency help with storm-damaged and fallen trees."
+      ]
+    ],
+    "servicesNote": "Taken from your Google listing, Facebook page and reviews. Your full list and prices go here.",
+    "themes": [
+      [
+        "Careful around the house",
+        "Several reviewers had big trees right next to the house and say the crew took them down without anything hitting it."
+      ],
+      [
+        "Clean when they leave",
+        "People keep mentioning the cleanup: debris gone and the yard left smooth and level."
+      ],
+      [
+        "Fair price, on time",
+        "Most reviewers tag the price as great and say the crew showed up when promised and finished quickly."
+      ]
+    ],
+    "cta": "Get a free quote",
+    "photo": {
+      "id": "photo-1474742509976-ddec6b387356",
+      "by": "Tim Umphreys",
+      "user": "timumphreys"
+    },
+    "pitch": {
+      "greeting": "Hi Brannen Tree Service team,",
+      "line1": "Your Google reviewers keep describing big trees right up against the house coming down clean, and you've replied to nearly every one, thanking most of them by name.",
+      "gap": "I couldn't find a website for Brannen Tree Service"
+    },
+    "complexity": "simple",
+    "sources": [
+      "Google listing via Google Search knowledge panel (rating, review count, hours, phone, 'Add website', business description, all visible reviews and owner replies)",
+      "facebook.com/p/Brannen-Tree-Service-61579351892514 (email, services intro, 167 Kell Rd address, storm post Oct 9 2026, forestry mulching post Mar 9 2026)"
+    ],
+    "notes": "Reviewers repeatedly name the owner as John ('John and his crew'); public FMCSA/BrokerSnapshot records list owner John Brannen. Owner replies are unsigned, so greeting uses the team. Google shows 'Kell Rd, Tifton' without a number; Facebook lists 167 Kell Rd, shown as a service area. One 3-star review (2 years ago) complains about holes left in the yard after a crane removal; the owner replied in detail. Google description says '7+ years of experience' but a third-party site quotes '4+', so years were left out. The Maps place panel would not render in the hidden browser pane, so listing data was read from the Google Search knowledge panel and its reviews view instead."
+  },
+  {
+    "slug": "ellis-clean",
+    "name": "Ellis Clean",
+    "market": "US",
+    "town": "Greenwood",
+    "state": "SC",
+    "tz": "America/New_York",
+    "category": "Pressure washing service",
+    "theme": "wash",
+    "found": "2026-11-14",
+    "channel": "email",
+    "email": "Scellisclean@gmail.com",
+    "emailSource": "Listed on their public Facebook page",
+    "phoneDisplay": "(864) 321-7345",
+    "phoneTel": "+18643217345",
+    "address": "213 Charles Rd, Greenwood, SC 29649",
+    "serviceArea": null,
+    "mapQuery": "Ellis Clean, 213 Charles Rd, Greenwood, SC 29649",
+    "rating": 5,
+    "reviewCount": 28,
+    "hours": [
+      [
+        "Mon – Thu",
+        "8am – 7pm"
+      ],
+      [
+        "Fri – Sat",
+        "7am – 7pm"
+      ],
+      [
+        "Sunday",
+        "1pm – 7pm"
+      ]
+    ],
+    "hoursNote": "Hours from your Google listing.",
+    "kicker": "House washing · Driveways · Windows · Greenwood",
+    "headline": "Clean house, clean windows, inside and out.",
+    "sub": "Pressure washing and window cleaning in Greenwood, rated 5.0 by 28 Google reviewers.",
+    "servicesTitle": "What we do",
+    "services": [
+      [
+        "House washing",
+        "Siding, brick and two-story homes washed down."
+      ],
+      [
+        "Driveways and walkways",
+        "Concrete driveways, walkways, carports and patio pavers cleaned up."
+      ],
+      [
+        "Decks, fences and docks",
+        "Wood decks, fences and lake docks washed so they look new."
+      ],
+      [
+        "Roof washing",
+        "Black algae streaks washed off the roof."
+      ],
+      [
+        "Window cleaning",
+        "Windows cleaned inside and out."
+      ]
+    ],
+    "servicesNote": "Taken from your Google listing, Facebook page and reviews. Your full list and prices go here.",
+    "themes": [
+      [
+        "Careful and thorough",
+        "Reviewers describe a crew that takes its time, moves furniture carefully and cleans up after itself."
+      ],
+      [
+        "Quick quote, on time",
+        "People mention getting a quote within a day, a quick spot on the schedule, and a crew that showed up when promised."
+      ],
+      [
+        "Looks brand new",
+        "Driveways, docks and whole houses that reviewers say look new again afterward."
+      ]
+    ],
+    "cta": "Get a free quote",
+    "photo": {
+      "id": "photo-1575397205849-f5e0a03323a3",
+      "by": "Keagan Henman",
+      "user": "henmankk"
+    },
+    "pitch": {
+      "greeting": "Hi Jeff,",
+      "line1": "One of your Google reviewers said the house looked so good afterward that the neighbor hired you for his house and driveway too.",
+      "gap": "I couldn't find a website for Ellis Clean"
+    },
+    "complexity": "simple",
+    "sources": [
+      "Google listing via Google Search knowledge panel (rating, review count, address, hours, phone, 'Add website', business description, review topics, reviews and owner replies)",
+      "facebook.com/p/Ellis-Clean-61594835782903 (email, Greenwood address and phone matching Google)"
+    ],
+    "notes": "Owner signs one Google reply 'Thanks, Jeff, Ellis Clean'; a reviewer also mentions working with Jeff, and another mentions 'the 2 Ellis brothers'. There are two older Ellis Clean Facebook pages (100065232570787 and 105740327954508, one posting about jobs in Lexington); the page with the email matches the Google address and phone. Reviews range from 10 months to 6 years old. A Google AI overview claimed experience back to 1996, which was not used."
+  },
+  {
+    "slug": "all-clear-power-washing",
+    "name": "All Clear Power Washing",
+    "market": "US",
+    "town": "Florence",
+    "state": "SC",
+    "tz": "America/New_York",
+    "category": "Pressure washing service",
+    "theme": "wash",
+    "found": "2026-11-14",
+    "channel": "email",
+    "email": "jdingle68@gmail.com",
+    "emailSource": "Listed on their public Facebook page",
+    "phoneDisplay": "(843) 356-9137",
+    "phoneTel": "+18433569137",
+    "address": "1001 Hallie Dr, Florence, SC 29505",
+    "serviceArea": null,
+    "mapQuery": "All Clear Power Washing, 1001 Hallie Dr, Florence, SC 29505",
+    "rating": 5,
+    "reviewCount": 29,
+    "hours": [
+      [
+        "Mon – Wed",
+        "8am – 5pm"
+      ],
+      [
+        "Thu – Fri",
+        "7am – 5pm"
+      ],
+      [
+        "Saturday",
+        "7:30am – 5pm"
+      ],
+      [
+        "Sunday",
+        "Closed"
+      ]
+    ],
+    "hoursNote": "Hours from your Google listing.",
+    "kicker": "House washing · Driveways · Decks & fences · Florence",
+    "headline": "Driveways and houses that look new again.",
+    "sub": "Veteran-led power washing in Florence, rated 5.0 by 29 Google reviewers.",
+    "servicesTitle": "What we do",
+    "services": [
+      [
+        "House washing",
+        "Whole-house washing that reviewers say takes years off the look of a home."
+      ],
+      [
+        "Driveways and sidewalks",
+        "Concrete driveways and sidewalks cleaned back to bright."
+      ],
+      [
+        "Soft washing",
+        "Gentler soft washing for surfaces that need it."
+      ],
+      [
+        "Fences and pool decks",
+        "Fencing and pool deck areas power washed."
+      ],
+      [
+        "Deck and fence restoration",
+        "Wood decks and fences cleaned and restored."
+      ]
+    ],
+    "servicesNote": "Taken from your Google listing, Facebook page and reviews. Your full list and prices go here.",
+    "themes": [
+      [
+        "Fast response",
+        "Reviewers say calls were returned within minutes, even on a Saturday, with a fair quote and a quick arrival."
+      ],
+      [
+        "Like a new house",
+        "People say their home and driveway looked brand new, including one reviewer whose ten-year-old house looked like new construction again."
+      ],
+      [
+        "Professional crew",
+        "Reviewers describe polite, professional technicians and a job that beat their expectations."
+      ]
+    ],
+    "cta": "Get a free quote",
+    "photo": {
+      "id": "photo-1783125127143-d4e18726bab3",
+      "by": "Salvo Media LLC",
+      "user": "salvomedia"
+    },
+    "pitch": {
+      "greeting": "Hi All Clear Power Washing team,",
+      "line1": "Your Facebook page links to allclearpowerwashing.org, but that domain no longer exists, so anyone who taps it gets nothing.",
+      "gap": "I couldn't find a working website for All Clear Power Washing"
+    },
+    "complexity": "simple",
+    "sources": [
+      "Google listing via Google Search knowledge panel (rating, review count, address, hours, phone, 'Add website', 'Veteran Led' description, review topics, reviews)",
+      "facebook.com/people/All-Clear-Power-Washing-LLC/100063622178113 (email, link to allclearpowerwashing.org, services intro from search snippet)",
+      "DNS check: allclearpowerwashing.org returns non-existent domain (checked 2026-11-14)"
+    ],
+    "notes": "Owner appears to be James 'Jimmy' Dingle (reviewers mention Mr. Dingle, James and Jimmy; email is jdingle68). Owner replies are unsigned, so greeting uses the team. The Facebook link has a utm_source=gmb tag, so the dead domain was probably once on the Google listing too. Most reviews are 2 to 7 years old; latest Facebook activity March 2026. 'Veteran Led' comes from the business's own Google description. Allbiz says founded 2018, not used."
+  },
+  {
+    "slug": "owens-landscaping-pressure-washing",
+    "name": "Owen's Landscaping & Pressure Washing",
+    "market": "US",
+    "town": "Danville",
+    "state": "VA",
+    "tz": "America/New_York",
+    "category": "Landscaper",
+    "theme": "lawn-sun",
+    "found": "2026-11-14",
+    "channel": "email",
+    "email": "Owen_scotty@yahoo.com",
+    "emailSource": "Listed on their public Facebook page",
+    "phoneDisplay": "(434) 728-5263",
+    "phoneTel": "+14347285263",
+    "address": null,
+    "serviceArea": "Danville and the surrounding area",
+    "mapQuery": "Danville, VA",
+    "rating": 5,
+    "reviewCount": 12,
+    "hours": [
+      [
+        "Mon – Sat",
+        "9am – 6pm"
+      ],
+      [
+        "Sunday",
+        "Closed"
+      ]
+    ],
+    "hoursNote": "Hours from your Google listing.",
+    "kicker": "Lawn care · Landscaping · Pressure washing · Danville",
+    "headline": "Danville lawns, mulch and pressure washing.",
+    "sub": "Lawn care, landscaping and pressure washing in Danville, rated 5.0 by 12 Google reviewers.",
+    "servicesTitle": "What we do",
+    "services": [
+      [
+        "Lawn maintenance",
+        "Regular lawn care, year after year."
+      ],
+      [
+        "Landscaping and mulch",
+        "Beds and front lawns mulched and kept sharp."
+      ],
+      [
+        "Pressure washing",
+        "Houses and mobile homes washed down."
+      ],
+      [
+        "Deck washing and staining",
+        "Decks pressure washed and stained so they look new."
+      ],
+      [
+        "Snow removal",
+        "Driveways cleared when the snow comes."
+      ],
+      [
+        "Small tree removal",
+        "Small trees taken out."
+      ]
+    ],
+    "servicesNote": "Taken from your Google listing, Facebook page and reviews. Your full list and prices go here.",
+    "themes": [
+      [
+        "Dependable for years",
+        "Several reviewers say Scotty has taken care of their yard for years and always shows up."
+      ],
+      [
+        "Takes pride in the work",
+        "Reviewers call it a hometown, mom-and-pop business where the owner does the work himself and does it right."
+      ],
+      [
+        "Honest timing and prices",
+        "People mention accurate estimates on when he can get to the job and a reasonable price."
+      ]
+    ],
+    "cta": "Get a free quote",
+    "photo": {
+      "id": "photo-1740822399239-6f0eb5cabc76",
+      "by": "Naoki Suzuki",
+      "user": "naopp"
+    },
+    "pitch": {
+      "greeting": "Hi Scotty,",
+      "line1": "Your Facebook page still sends people to owens-landscaping-pressure.business.site, and that link now just shows a Google error page.",
+      "gap": "I couldn't find a working website for Owen's Landscaping"
+    },
+    "complexity": "standard",
+    "sources": [
+      "Google listing via Google Search knowledge panel (rating, review count, hours, phone, 'Add website', business description, reviews and owner replies)",
+      "facebook.com/owenslandscaping1 (email, Highway 29N Danville location, link to owens-landscaping-pressure.business.site, posts by Scotty Owen)",
+      "facebook.com/owenslandscaping1/posts/4266061596827162 (Feb 4 2022: thanks Danville for voting them favorite landscaping company in Showcase Magazine's Rave awards)",
+      "HTTP check: owens-landscaping-pressure.business.site returns Google 404 (checked 2026-11-14)"
+    ],
+    "notes": "Owner is Scotty Owen: named in several reviews and he posts on the page under his own name. Google name uses a curly apostrophe (Owen’s). Google reviews are 4 to 8 years old; latest Facebook activity April 2025 (Rave awards vote post), so confirm the business is still active. Facebook gives 'Highway 29N, Danville' rather than a street address, so shown as a service area. Facebook page shows no phone; phone is from Google. Possible extra pitch detail: voted Danville's favorite landscaping company in Showcase Magazine's Rave awards (2022)."
+  },
+  {
+    "slug": "kovacs-home-property-services",
+    "name": "Kovacs Home & Property Services",
+    "market": "US",
+    "town": "Marquette",
+    "state": "MI",
+    "tz": "America/Detroit",
+    "category": "Appliance repair service",
+    "theme": "sparky",
+    "found": "2026-11-14",
+    "channel": "email",
+    "email": "kovacshomeandpropertyservices@gmail.com",
+    "emailSource": "Listed on their public Facebook page",
+    "contactLink": null,
+    "phoneDisplay": "(906) 202-2498",
+    "phoneTel": "+19062022498",
+    "address": null,
+    "serviceArea": "Marquette and surrounding area",
+    "mapQuery": "Kovacs Home & Property Services, Marquette, MI",
+    "rating": 4.9,
+    "reviewCount": 36,
+    "hours": [],
+    "hoursNote": "No hours on your Google listing yet. Call or email to set up a visit.",
+    "kicker": "Appliance repair · Installs · Marquette",
+    "headline": "Washer, dryer and dishwasher help in Marquette",
+    "sub": "In-home appliance repair and installation in Marquette, rated 4.9 by 36 Google reviewers.",
+    "servicesTitle": "What we do",
+    "services": [
+      [
+        "Washer repair",
+        "Washers diagnosed and fixed at your home, often in under an hour."
+      ],
+      [
+        "Dryer repair",
+        "Dryers looked over, repaired and tested so they run right again."
+      ],
+      [
+        "Dishwasher installation",
+        "Old dishwashers pulled out and new ones set in to sit flush with your cabinets."
+      ],
+      [
+        "Oven replacement",
+        "Space measured, a fitting oven found and installed when the old one gives out."
+      ],
+      [
+        "Refurbished used appliances",
+        "Used units opened up, cleaned, inspected and tested before they are sold."
+      ]
+    ],
+    "servicesNote": "Taken from your Google listing, Facebook page and reviews. Your full list and prices go here.",
+    "themes": [
+      [
+        "Fits your schedule",
+        "Reviewers say Ryan answers fast and books a time that works, so they don't lose a whole day off work."
+      ],
+      [
+        "Careful, tidy work",
+        "Customers mention him pointing out tiny issues before installing and leaving the work area spotless."
+      ],
+      [
+        "Fair and honest",
+        "Several reviewers call his rates fair and say he clearly knows appliances and explains things patiently."
+      ]
+    ],
+    "cta": "Book a repair",
+    "photo": {
+      "id": "photo-1778731660248-044f78e8c1fb",
+      "by": "Franco Debartolo",
+      "user": "francotheshooter"
+    },
+    "pitch": {
+      "greeting": "Hi Ryan,",
+      "line1": "One of your reviewers was told no double oven would fit their kitchen. You measured, found one that fit, and installed it.",
+      "gap": "I couldn't find a website for Kovacs Home & Property Services"
+    },
+    "complexity": "standard",
+    "sources": [
+      "Google Maps listing (rating, reviews, phone, review topics)",
+      "facebook.com/p/Kovacs-Home-Property-Services-LLC-100082986710123 (email, phone, description, used appliance post)"
+    ],
+    "notes": "Owner Ryan, named in nearly every review; a public Marquette Facebook group post calls him Ryan Kovacs with the same cell number. Google listing has no hours and no address, and Facebook says 'In-Home Service', so treated as service-area. Facebook page name is 'Kovacs Home & Property Services LLC'. An April 2026 post says he is getting the page back up and running; latest post April 20, 2026 offers a refurbished Amana dryer. A Bing snippet from a local group mentions service in parts of Alger and Delta counties, but I could not confirm that was his post, so left it out. One reviewer says he offers a warranty; not listed as a service. Theme 'sparky' chosen as the closest home-repair theme (could also be 'mechanic')."
+  },
+  {
+    "slug": "ftk-llc",
+    "name": "FTK llc.",
+    "market": "US",
+    "town": "Minot",
+    "state": "ND",
+    "tz": "America/Chicago",
+    "category": "Tree service",
+    "theme": "lawn",
+    "found": "2026-11-14",
+    "channel": "email",
+    "email": "brenden.luther@gmail.com",
+    "emailSource": "Listed on their public Facebook page",
+    "contactLink": null,
+    "phoneDisplay": "(701) 340-5524",
+    "phoneTel": "+17013405524",
+    "address": null,
+    "serviceArea": "Minot and surrounding area",
+    "mapQuery": "FTK llc., 7600 58th Ave NW, Minot, ND 58703",
+    "rating": 4.8,
+    "reviewCount": 12,
+    "hours": [
+      [
+        "Mon – Fri",
+        "7am – 7pm"
+      ],
+      [
+        "Sat – Sun",
+        "7am – 5pm"
+      ]
+    ],
+    "hoursNote": "Hours from your Google listing.",
+    "kicker": "Tree removal · Stump grinding · Minot",
+    "headline": "Tree removal and stump grinding around Minot",
+    "sub": "Tree removal, trimming, stump grinding and snow removal in Minot, rated 4.8 by 12 Google reviewers.",
+    "servicesTitle": "What we do",
+    "services": [
+      [
+        "Tree removal and trimming",
+        "Dead, damaged or unwanted trees taken down, from single yard trees to rows of poplars and spruce."
+      ],
+      [
+        "Stump grinding",
+        "Stumps ground out after removal so the yard is ready to use again."
+      ],
+      [
+        "Landscaping and hauling",
+        "Branches and debris hauled away and the yard raked and leveled."
+      ],
+      [
+        "Snow removal",
+        "Snow cleared, including off roofs."
+      ],
+      [
+        "24 hour emergency calls",
+        "Storm damage and trees on power lines handled on short notice."
+      ]
+    ],
+    "servicesNote": "Taken from your Facebook page and Google reviews. Your full list and prices go here.",
+    "themes": [
+      [
+        "Shows up fast",
+        "Reviewers say Brenden got back to them right away, including after a hail storm dropped a tree on a power line."
+      ],
+      [
+        "Leaves the yard clean",
+        "Customers mention cleanup at the end of every day: raking, hauling branches and filling holes."
+      ],
+      [
+        "Fair prices",
+        "Several reviewers call the price fair and say the crew was punctual and polite."
+      ]
+    ],
+    "cta": "Request an estimate",
+    "photo": {
+      "id": "photo-1754322449185-31f56117ed87",
+      "by": "Zack Masters",
+      "user": "masters25"
+    },
+    "pitch": {
+      "greeting": "Hi Brenden,",
+      "line1": "Your Facebook page still links to ftkllc.business.site, but that address now just returns a Google error page.",
+      "gap": "I couldn't find a website for FTK llc."
+    },
+    "complexity": "simple",
+    "sources": [
+      "Google Maps listing (rating, hours, reviews, phone, address)",
+      "facebook.com/ftkhandyman (email, phone, service list, dead ftkllc.business.site link)"
+    ],
+    "notes": "Owner Brenden, named in reviews (one spells it Brendan) and matches the email brenden.luther@gmail.com. Facebook page name is 'FTK llc Property Maintenance and Improvements'; page is active (latest post Oct 30, 2026: removed 4 spruce trees and stumps). The Facebook link ftkllc.business.site returns HTTP 404 (Google Business Profile sites were shut down). Google shows 7600 58th Ave NW, Minot, which reads like a home base, so treated as service-area. Google category not captured; 'Tree service' is from the search it appeared under and the Facebook category 'Tree Cutting Service'. Most Google reviews are 6 to 8 years old; one is from about a year ago. A nice backup line1: one reviewer said the crew put her chain link fence back up at the end of each day because she has a dog."
+  },
+  {
+    "slug": "altoona-small-engine",
+    "name": "Altoona Small Engine",
+    "market": "US",
+    "town": "Altoona",
+    "state": "PA",
+    "tz": "America/New_York",
+    "category": "Small engine repair service",
+    "theme": "mechanic",
+    "found": "2026-11-14",
+    "channel": "email",
+    "email": "AltoonaSmallEngine@gmail.com",
+    "emailSource": "Listed on their public Facebook page",
+    "contactLink": null,
+    "phoneDisplay": "(814) 931-9397",
+    "phoneTel": "+18149319397",
+    "address": "2929 Broad Ave, Altoona, PA 16601",
+    "serviceArea": null,
+    "mapQuery": "Altoona Small Engine, 2929 Broad Ave, Altoona, PA 16601",
+    "rating": 4.7,
+    "reviewCount": 88,
+    "hours": [
+      [
+        "Monday",
+        "10am – 4pm"
+      ],
+      [
+        "Tue – Fri",
+        "10am – 6pm"
+      ],
+      [
+        "Saturday",
+        "10am – 2pm"
+      ],
+      [
+        "Sunday",
+        "Closed"
+      ]
+    ],
+    "hoursNote": "Hours from your Google listing.",
+    "kicker": "Small engine repair · Sales · Altoona",
+    "headline": "Small engine repair on Broad Ave in Altoona",
+    "sub": "Repairs for mowers, snowblowers, chainsaws and trimmers in Altoona, rated 4.7 by 88 Google reviewers.",
+    "servicesTitle": "What we do",
+    "services": [
+      [
+        "Diagnosis and repair",
+        "Equipment looked over and the problem found fast, often fixed within minutes."
+      ],
+      [
+        "Snowblower repair",
+        "Snowblowers brought back to life before the snow hits."
+      ],
+      [
+        "Chainsaw and trimmer repair",
+        "Chainsaws, weed eaters and other handheld equipment repaired."
+      ],
+      [
+        "Mower and lawn tractor repair",
+        "Push mowers, riders and lawn tractors serviced and fixed."
+      ],
+      [
+        "Used equipment sales",
+        "Used mowers and other equipment for sale at the shop."
+      ],
+      [
+        "Rentals",
+        "Equipment rentals available. Ask what is in stock."
+      ]
+    ],
+    "servicesNote": "Taken from your Google listing, Facebook page and reviews. Your full list and prices go here.",
+    "themes": [
+      [
+        "Straight advice",
+        "Reviewers say the shop talks through whether a repair is worth it before doing the work."
+      ],
+      [
+        "Quick fixes",
+        "Several customers had their equipment diagnosed and fixed in minutes, sometimes on the spot."
+      ],
+      [
+        "Friendly and fair",
+        "Friendly staff and fair pricing are the two things reviewers mention most."
+      ]
+    ],
+    "cta": "Get a repair quote",
+    "photo": {
+      "id": "photo-1723811897933-eb57b6ed486a",
+      "by": "Maciej Karoń",
+      "user": "maciejka_dslr"
+    },
+    "pitch": {
+      "greeting": "Hi Altoona Small Engine team,",
+      "line1": "One reviewer brought in their dad's weed eater, and you talked through whether a repair was even worth it. Then you fixed it on the spot and didn't charge them.",
+      "gap": "I couldn't find a website for Altoona Small Engine"
+    },
+    "complexity": "standard",
+    "sources": [
+      "Google Maps listing (rating, hours, reviews, owner replies, phone, address, review topics)",
+      "facebook.com/AltoonaSmallEngine (email, phone, description: sales, service, repair and rentals; used mower for sale post)"
+    ],
+    "notes": "A reviewer names Jason as the person who helped; not confirmed as the owner (owner replies are unsigned and mention an employee), so greeting uses the team. Owner reply says they generally do not sell or order parts, so parts are left out of services. One recent 1-star review complains about a $50 deposit and diagnostic charge; the owner replied publicly. Facebook page is active (posts Oct 2026, 1.7K followers). Altoona is about 43,000 people in its own small metro, well away from Pittsburgh and Harrisburg."
+  },
+  {
+    "slug": "joses-lawn-landscape",
+    "name": "Jose's Lawn & Landscape",
+    "market": "US",
+    "town": "Twin Falls",
+    "state": "ID",
+    "tz": "America/Boise",
+    "category": "Landscaper",
+    "theme": "lawn-sun",
+    "found": "2026-11-14",
+    "channel": "messenger",
+    "email": null,
+    "emailSource": null,
+    "contactLink": "https://m.me/JosesLawnandlandscape2",
+    "phoneDisplay": "(208) 613-6006",
+    "phoneTel": "+12086136006",
+    "address": null,
+    "serviceArea": "Twin Falls and Southern Idaho",
+    "mapQuery": "Twin Falls, ID",
+    "rating": 4.9,
+    "reviewCount": 193,
+    "hours": [],
+    "hoursNote": "Your Google listing says open 24 hours, which Google often shows when hours were never set. Your real hours go here.",
+    "kicker": "Sprinklers · Sod · Landscaping · Twin Falls",
+    "headline": "Sprinklers, sod and landscaping in Twin Falls",
+    "sub": "Sprinkler blowouts and repair, sod and landscaping in Twin Falls, rated 4.9 by 193 Google reviewers.",
+    "servicesTitle": "What we do",
+    "services": [
+      [
+        "Sprinkler blowouts",
+        "Sprinkler systems blown out in the fall so lines don't freeze."
+      ],
+      [
+        "Sprinkler startup and repair",
+        "Systems turned on in spring, every zone checked, and broken parts repaired."
+      ],
+      [
+        "Sod installation",
+        "Sod delivered and laid for a quick, finished lawn."
+      ],
+      [
+        "Landscaping and backyard design",
+        "Yards redesigned and built out by Jose and his crew."
+      ],
+      [
+        "Tree trimming",
+        "Trees trimmed back and cleaned up."
+      ],
+      [
+        "Snow removal",
+        "Snow cleared in winter."
+      ]
+    ],
+    "servicesNote": "Taken from your Google listing and reviews. Your full list and prices go here.",
+    "themes": [
+      [
+        "Knows sprinklers",
+        "Reviewers say Jose checks every zone and fine-tunes coverage, and that repairs are quick and fairly priced."
+      ],
+      [
+        "Fast turnaround",
+        "Customers mention short waits from request to finished job and a crew that shows up on time."
+      ],
+      [
+        "Real transformations",
+        "Several reviewers describe their yards as transformed and call the crew top notch."
+      ]
+    ],
+    "cta": "Get a quote",
+    "photo": {
+      "id": "photo-1770664945615-52203ab54c88",
+      "by": "Alef Morais",
+      "user": "alef_visuals"
+    },
+    "pitch": {
+      "greeting": "Hi Jose,",
+      "line1": "Sprinkler blowouts come up in 28 of your Google reviews, and one customer said you walked every zone at spring startup and tweaked coverage they never would have noticed.",
+      "gap": "I couldn't find a website for Jose's Lawn & Landscape"
+    },
+    "complexity": "standard",
+    "sources": [
+      "Google Maps listing (rating, hours, reviews, phone, review topics)",
+      "facebook.com/JosesLawnandlandscape2 (Page, phone, Twin Falls location, description)"
+    ],
+    "notes": "No email found; Facebook Page 'Jose's Lawn & Landscape 2' (Twin Falls ID, same phone 208-613-6006, active Oct 2026) is a real Page, so Messenger is the channel. The '2' suggests an older page may exist; I did not find one for Twin Falls (a similarly named page in Springfield MO/VA is a different business). Owner Jose named in reviews; a reviewer also names Jessie on the crew. Google pin sits at a bad location (in the Pacific), so mapQuery uses the town. Google hours 'Open 24 hours' Mon to Sat look like a placeholder. Facebook intro says they have served Southern Idaho for 25 years (their own claim, misspelled 'surving'); left out of the page copy, confirm before using. Only 5 of 193 reviews were readable logged out; service list relies on Google review topic chips (sprinkler blowout 28, tree trimming 3, backyard design 2, snow removal 2)."
+  },
+  {
+    "slug": "sosas-barbershop",
+    "name": "Sosa's Barbershop",
+    "market": "US",
+    "town": "Joplin",
+    "state": "MO",
+    "tz": "America/Chicago",
+    "category": "Barber shop",
+    "theme": "barber",
+    "found": "2026-11-13",
+    "channel": "email",
+    "email": "sosamarlene01@gmail.com",
+    "emailSource": "Listed on their public Facebook page",
+    "phoneDisplay": "(417) 622-0393",
+    "phoneTel": "+14176220393",
+    "address": "3105 E 17th St, Joplin, MO 64801",
+    "mapQuery": "Sosa's Barbershop, 3105 E 17th St, Joplin, MO 64801",
+    "rating": 4.9,
+    "reviewCount": 198,
+    "hours": [
+      [
+        "Mon – Thu",
+        "10am – 6pm"
+      ],
+      [
+        "Fri – Sat",
+        "9am – 6pm"
+      ],
+      [
+        "Sunday",
+        "Closed"
+      ]
+    ],
+    "hoursNote": "Hours from your Google listing.",
+    "kicker": "Fades · Beard work · Kids' cuts · Joplin",
+    "headline": "Fresh fades and beard work in Joplin.",
+    "sub": "Cuts, fades and beard work in a relaxed, upbeat shop, rated 4.9 by 198 Google reviewers.",
+    "servicesTitle": "What we do",
+    "services": [
+      [
+        "Haircuts & fades",
+        "Skin fades, tapers and classic cuts. Fades come up again and again in the reviews."
+      ],
+      [
+        "Beard work",
+        "Beard shaping and trims, as listed on your Facebook page."
+      ],
+      [
+        "Kids' cuts",
+        "A kid-friendly shop where the little ones are kept busy while they wait."
+      ],
+      [
+        "Styling & color",
+        "Hair styling and color, both mentioned by reviewers."
+      ],
+      [
+        "Book online or walk in",
+        "Book ahead online, or stop by. Visitors from out of town mention walking in."
+      ]
+    ],
+    "servicesNote": "Taken from your Google listing, Facebook page and reviews. Your full list and prices go here.",
+    "themes": [
+      [
+        "Attention to detail",
+        "It's what reviewers mention most: barbers who take their time to get the cut exactly right."
+      ],
+      [
+        "Great with kids",
+        "Parents describe a kid-friendly shop, down to toys for the little ones in the waiting area."
+      ],
+      [
+        "Friendly from the door",
+        "People talk about polite, welcoming staff and good conversation in the chair."
+      ]
+    ],
+    "cta": "Book a cut",
+    "photo": {
+      "id": "photo-1781455793310-8427c96454c7",
+      "by": "Barney Goodman",
+      "user": "bgoodpic"
+    },
+    "complexity": "standard",
+    "pitch": {
+      "greeting": "Hi Marlene,",
+      "line1": "Attention to detail comes up in more of your Google reviews than anything else, and one parent mentioned you broke out toys for their two boys while they waited.",
+      "gap": "I couldn't find a website for Sosa's"
+    },
+    "sources": [
+      "Google Maps listing (rating, hours, address, phone, review topics, reviews)",
+      "facebook.com/p/Sosas-Barbershop-61582288561406 (email, description, beard work)"
+    ],
+    "notes": "Greeting uses Marlene from the page's email and Instagram handle; confirm she runs the shop. Barbers named in reviews: BJ and Omar. Google shows a Book online button (provider unknown). Fact-check: Line1 says 'while they waited'. The review only says they broke out toys for both boys. Fine as a paraphrase. The theme's 'toys in the waiting area' slightly embellishes the same review, which doesn't mention a waiting area."
+  },
+  {
+    "slug": "slay-all-day-pressure-washing",
+    "name": "Slay All Day Pressure Washing",
+    "market": "US",
+    "town": "Dothan",
+    "state": "AL",
+    "tz": "America/Chicago",
+    "category": "Pressure washing service",
+    "theme": "wash",
+    "found": "2026-11-13",
+    "channel": "email",
+    "email": "kslay5074@gmail.com",
+    "emailSource": "Listed on their public Facebook page",
+    "phoneDisplay": "(334) 726-3948",
+    "phoneTel": "+13347263948",
+    "address": null,
+    "serviceArea": "Dothan and the surrounding area",
+    "mapQuery": "Dothan, AL",
+    "rating": 4.9,
+    "reviewCount": 80,
+    "hours": [
+      [
+        "Mon – Fri",
+        "7am – 7pm"
+      ],
+      [
+        "Sat – Sun",
+        "Closed"
+      ]
+    ],
+    "hoursNote": "Hours from your Google listing.",
+    "kicker": "House washing · Driveways · Decks · Dothan",
+    "headline": "Pressure washing that lives up to the name.",
+    "sub": "Houses, driveways, decks and patios, washed by a local crew rated 4.9 by 80 Google reviewers.",
+    "servicesTitle": "What we do",
+    "services": [
+      [
+        "House washing",
+        "Siding and full exterior washes, with cushions and plants put back where they were."
+      ],
+      [
+        "Driveways & sidewalks",
+        "Concrete cleaned up. One of the most-mentioned jobs in the reviews."
+      ],
+      [
+        "Decks, porches & patios",
+        "Deck, porch and patio cleaning."
+      ],
+      [
+        "Carports & windows",
+        "Carports and exterior windows washed as part of the job."
+      ],
+      [
+        "Before & after photos",
+        "Out-of-town owners get pictures of the finished work."
+      ]
+    ],
+    "servicesNote": "Taken from your Google listing and reviews. Your full list and prices go here.",
+    "themes": [
+      [
+        "Quality you can see",
+        "Work quality is what reviewers mention most, and several say the place looked like new."
+      ],
+      [
+        "Quick to respond",
+        "People mention fast replies, punctual arrival and a job done in good time."
+      ],
+      [
+        "Makes it right",
+        "When one customer reported missed spots, the owner came back and fixed them, and they updated their review to say so."
+      ]
+    ],
+    "cta": "Get a free estimate",
+    "photo": {
+      "id": "photo-1677956787377-a0f32c0974af",
+      "by": "Adrian Raudaschl",
+      "user": "raudaschl"
+    },
+    "complexity": "simple",
+    "pitch": {
+      "greeting": "Hi Kevin,",
+      "line1": "Your Facebook page still links to slayalldaypressurewashing.com, but the site doesn't load, so anyone who taps it from your page hits a dead end.",
+      "gap": "I couldn't find a working website for Slay All Day"
+    },
+    "sources": [
+      "Google Maps listing (rating, hours, phone, review topics, reviews)",
+      "facebook.com/SlayAllDayPressurewashing (email, website link)",
+      "slayalldaypressurewashing.com did not load on 2026-11-13 (DNS lookup failed from two browsers)"
+    ],
+    "notes": "Owner Kevin Slay, named in reviews and a Facebook post. One 1-star review, updated after he came back to fix missed spots. Re-check the domain the day you send. Fact-check: Logged out, the Facebook page shows no town or phone. The match rests on the email (kslay), owner Kevin being named in Dothan reviews, and the listed domain. That's a reasonable match, but not a town/phone match. I didn't re-read the 'cushions and plants put back' and 'carports' services, because logged-out Maps only shows a few reviews. The chips do support deck, porch, siding, sidewalk and window washing, plus before/after pictures."
+  },
+  {
+    "slug": "baggett-exterior-cleaning",
+    "name": "Baggett Exterior Cleaning",
+    "market": "US",
+    "town": "Hattiesburg",
+    "state": "MS",
+    "tz": "America/Chicago",
+    "category": "Pressure washing service",
+    "theme": "wash",
+    "found": "2026-11-13",
+    "channel": "email",
+    "email": "baggettexteriorcleaning@gmail.com",
+    "emailSource": "Listed on their public Facebook page",
+    "phoneDisplay": "(601) 658-7964",
+    "phoneTel": "+16016587964",
+    "address": null,
+    "serviceArea": "Hattiesburg, Petal and the surrounding area",
+    "mapQuery": "Hattiesburg, MS",
+    "rating": 5,
+    "reviewCount": 109,
+    "hours": [
+      [
+        "Mon – Fri",
+        "7am – 7pm"
+      ],
+      [
+        "Sat – Sun",
+        "Closed"
+      ]
+    ],
+    "hoursNote": "Hours from your Google listing.",
+    "kicker": "Soft washing · Roofs · Concrete · Hattiesburg",
+    "headline": "Exterior cleaning done right in Hattiesburg.",
+    "sub": "Locally owned, detail-oriented exterior cleaning, rated a perfect 5.0 by 109 Google reviewers.",
+    "servicesTitle": "What we do",
+    "services": [
+      [
+        "House washing",
+        "Full house washes, including soft washing for siding."
+      ],
+      [
+        "Metal roof cleaning",
+        "Roof cleaning, mentioned in several reviews."
+      ],
+      [
+        "Concrete & pavers",
+        "Driveways, sidewalks, porches and paver patios."
+      ],
+      [
+        "Garages & campers",
+        "Garage floors and campers cleaned too."
+      ],
+      [
+        "Residential & commercial",
+        "Homes and businesses, as listed on your Facebook page."
+      ]
+    ],
+    "servicesNote": "Taken from your Google listing, Facebook page and reviews. Your full list and prices go here.",
+    "themes": [
+      [
+        "Fair, honest pricing",
+        "Fair pricing is the most-mentioned thing in your reviews, usually right next to the quality of the work."
+      ],
+      [
+        "Friendly and easy to book",
+        "Reviewers describe a friendly company and quick scheduling."
+      ],
+      [
+        "Thorough on every surface",
+        "People mention homes, roofs, concrete and campers coming out spotless."
+      ]
+    ],
+    "cta": "Get a free estimate",
+    "photo": {
+      "id": "photo-1773427610300-e19ad6c7bf27",
+      "by": "Roger Starnes Sr",
+      "user": "rstar50"
+    },
+    "complexity": "simple",
+    "pitch": {
+      "greeting": "Hi Roman,",
+      "line1": "Fair pricing comes up in 14 of your Google reviews, more than anything else, and you're still at a perfect 5.0 after 109 of them.",
+      "gap": "I couldn't find a website for Baggett Exterior Cleaning"
+    },
+    "sources": [
+      "Google Maps listing (rating, hours, phone, review topics, review summary)",
+      "facebook.com/baggettexteriorcleaning (email, description, residential and commercial, Petal and Bellevue jobs)",
+      "thumbtack.com Baggett Exterior Cleaning profile (owner name Roman Baggett, campers and driveways)"
+    ],
+    "notes": "Owner name Roman Baggett from the Thumbtack profile. Facebook post says 7 years in business (not used on the demo). Google lists 489 Sullivan Kilrain Rd; shown as a service area instead. Fact-check: Google's category is 'Pressure washing service', not 'Exterior cleaning service'. Campers and the owner name Roman come only from Thumbtack. I didn't re-check them here."
+  },
+  {
+    "slug": "full-circle-bakery-cafe",
+    "name": "Full Circle Bakery Cafe",
+    "market": "US",
+    "town": "Kearney",
+    "state": "NE",
+    "tz": "America/Chicago",
+    "category": "Bakery & cafe",
+    "theme": "cafe",
+    "found": "2026-11-13",
+    "channel": "email",
+    "email": "fullcirclebakerycafe@gmail.com",
+    "emailSource": "Listed on their public Facebook page",
+    "phoneDisplay": "(308) 224-4302",
+    "phoneTel": "+13082244302",
+    "address": "3324 2nd Ave, Kearney, NE 68847",
+    "mapQuery": "Full Circle Bakery Cafe, 3324 2nd Ave, Kearney, NE 68847",
+    "rating": 4.9,
+    "reviewCount": 157,
+    "hours": [
+      [
+        "Tue – Fri",
+        "6am – 1:30pm"
+      ],
+      [
+        "Saturday",
+        "6am – 12pm"
+      ],
+      [
+        "Sun – Mon",
+        "Closed"
+      ]
+    ],
+    "hoursNote": "Hours from your Google listing and Facebook page.",
+    "kicker": "Bakery · Breakfast · Lunch · Kearney",
+    "headline": "Real pastry, breakfast and lunch on 2nd Avenue.",
+    "sub": "A full-service bakery and cafe in Kearney, rated 4.9 by 157 Google reviewers.",
+    "servicesTitle": "On the menu",
+    "services": [
+      [
+        "Croissants & pastries",
+        "Flaky croissants, sweet and savory, plus danishes like fig and brie."
+      ],
+      [
+        "Breakfast",
+        "Breakfast burritos, quiche and French toast."
+      ],
+      [
+        "Lunch & the grill menu",
+        "Falafel sandwiches and salads, chorizo burritos and a Friday grill menu."
+      ],
+      [
+        "Gluten-free & dairy-free",
+        "A few gluten-free and dairy-free options, which reviewers go out of their way to mention."
+      ],
+      [
+        "Pies & treats",
+        "Pies and bakery treats from the case."
+      ]
+    ],
+    "servicesNote": "Taken from your reviews and Facebook posts. Your full menu and prices go here.",
+    "themes": [
+      [
+        "Kind people",
+        "Friendly staff is mentioned in more reviews than any single dish, and the owner often stops to chat."
+      ],
+      [
+        "Pastry worth the trip",
+        "Reviewers compare the pastry to what you'd find at a big-city bakery."
+      ],
+      [
+        "Something for everyone",
+        "People call out the falafel, the gluten-free treats and the fresh fruit."
+      ]
+    ],
+    "cta": "Call ahead",
+    "photo": {
+      "id": "photo-1597528662465-55ece5734101",
+      "by": "tabitha turner",
+      "user": "tabithaturnervisuals"
+    },
+    "complexity": "menu",
+    "pitch": {
+      "greeting": "Hi Full Circle team,",
+      "line1": "One of your reviewers drove past for four years before stopping in, then said the pastry was as good as anything in Chicago.",
+      "gap": "I couldn't find a website for Full Circle"
+    },
+    "sources": [
+      "Google Maps listing (rating, hours, address, phone, review topics, reviews)",
+      "facebook.com/p/Full-Circle-Bakery-Cafe-100065230772865 (email, hours, Friday grill menu)"
+    ],
+    "notes": "Facebook hours (Tue–Fri 6–1:30, Sat 6–12) match Google. Fact-check: The Google name is 'Full Circle Bakery/Cafe' and the Facebook name is 'Full Circle Bakery Cafe'. Either is fine. Breakfast burritos and pies don't appear in the chips. The review summary does mention pies, breakfast and lunch."
+  },
+  {
+    "slug": "renfrows-tree-service",
+    "name": "Renfrow's Tree Service",
+    "market": "US",
+    "town": "Paducah",
+    "state": "KY",
+    "tz": "America/Chicago",
+    "category": "Tree service",
+    "theme": "lawn",
+    "found": "2026-11-13",
+    "channel": "email",
+    "email": "270.renfrow@gmail.com",
+    "emailSource": "Listed on their public Facebook page",
+    "phoneDisplay": "(270) 994-8563",
+    "phoneTel": "+12709948563",
+    "address": null,
+    "serviceArea": "Paducah and the surrounding area",
+    "mapQuery": "Paducah, KY",
+    "rating": 5,
+    "reviewCount": 17,
+    "hours": [
+      [
+        "Mon – Fri",
+        "6:30am – 5pm"
+      ],
+      [
+        "Sat – Sun",
+        "Closed"
+      ]
+    ],
+    "hoursNote": "Hours from your Google listing.",
+    "kicker": "Tree removal · Trimming · Storm cleanup · Paducah",
+    "headline": "Trees down, mess gone, fair price.",
+    "sub": "Tree removal and trimming from a Paducah crew rated 5.0 by 17 Google reviewers.",
+    "servicesTitle": "What we do",
+    "services": [
+      [
+        "Tree removal",
+        "Big trees and pines taken down, safety first."
+      ],
+      [
+        "Trimming",
+        "Branches and limbs cut back."
+      ],
+      [
+        "Storm cleanup",
+        "Fallen branches cleared after a storm."
+      ],
+      [
+        "Full cleanup",
+        "Debris hauled off and the yard left clean."
+      ]
+    ],
+    "servicesNote": "Taken from your Google listing and reviews. Your full list and prices go here.",
+    "themes": [
+      [
+        "They clean up",
+        "Clean-up is the most-mentioned thing in your reviews: yards left tidy when the job is done."
+      ],
+      [
+        "Fair prices",
+        "Reviewers keep saying the price was very reasonable."
+      ],
+      [
+        "On time, as promised",
+        "People mention a punctual, hard-working crew that finished when they said they would."
+      ]
+    ],
+    "cta": "Get a quote",
+    "photo": {
+      "id": "photo-1754321860056-ca7254d5e7ac",
+      "by": "Zack Masters",
+      "user": "masters25"
+    },
+    "complexity": "simple",
+    "pitch": {
+      "greeting": "Hi Doug,",
+      "line1": "Clean-up is the thing your Google reviewers mention most, which is usually the first thing people worry about with tree work.",
+      "gap": "I couldn't find a website for Renfrow's Tree Service"
+    },
+    "sources": [
+      "Google Maps listing (rating, hours, phone, review topics, reviews)",
+      "facebook.com/p/Renfrows-Tree-Service-100049219102164 (email)"
+    ],
+    "notes": "Google lists 221 Forsythia Dr, Facebook lists 1131 Rutter St; shown as a service area. One review on this Google listing names a different company (Travis Tree Service) and was not used. Reviews are 3 to 7 years old. Line1 trimmed to the parts the 2026-11-14 fact-check could confirm. Fact-check: The Google name is 'Renfrow tree service'. The 'clean up' chip (5) ties with a generic 'job' chip (5), so 'mentioned most' is fair but not strictly true. Logged out, I couldn't re-read reviews to confirm that more than one thanks Doug and the crew by name. The owner name Doug isn't otherwise confirmed. The Facebook page shows no phone, and its address differs from Google's (1131 Rutter St vs 221 Forsythia Dr). Same town and name."
+  },
+  {
+    "slug": "motion-sudz",
+    "name": "Motion Sudz",
+    "market": "US",
+    "town": "Jonesboro",
+    "state": "AR",
+    "tz": "America/Chicago",
+    "category": "Mobile car wash & detailing",
+    "theme": "detailing",
+    "found": "2026-11-13",
+    "channel": "email",
+    "email": "ryankarr469@gmail.com",
+    "emailSource": "Listed on their public Facebook page",
+    "phoneDisplay": "(870) 520-0312",
+    "phoneTel": "+18705200312",
+    "address": null,
+    "serviceArea": "Jonesboro, Paragould and the surrounding area",
+    "mapQuery": "Jonesboro, AR",
+    "rating": 4.8,
+    "reviewCount": 20,
+    "hours": [
+      [
+        "Every day",
+        "6am – 10pm"
+      ]
+    ],
+    "hoursNote": "Hours from your Google listing.",
+    "kicker": "Mobile car wash · Detailing · Jonesboro",
+    "headline": "Detailing that comes to your driveway.",
+    "sub": "Mobile wash and detailing around Jonesboro, rated 4.8 by 20 Google reviewers.",
+    "servicesTitle": "What we do",
+    "services": [
+      [
+        "Full detail",
+        "Inside and out, finished with a clear coat for shine."
+      ],
+      [
+        "Interior deep clean",
+        "Seats and rugs shampooed."
+      ],
+      [
+        "Exterior wash",
+        "Washed and dried by hand."
+      ],
+      [
+        "We come to you",
+        "At home, at work, wherever the vehicle is."
+      ]
+    ],
+    "servicesNote": "Taken from your Google listing, Facebook posts and reviews. Your full list and prices go here.",
+    "themes": [
+      [
+        "On time and easy to deal with",
+        "Punctuality and clear communication are what reviewers mention most."
+      ],
+      [
+        "Hard-working, cold or not",
+        "Several reviews mention Ryan working for hours in chilly weather until the job was right."
+      ],
+      [
+        "Fair prices",
+        "People call the prices affordable for the quality."
+      ]
+    ],
+    "cta": "Book a detail",
+    "photo": {
+      "id": "photo-1633014041037-f5446fb4ce99",
+      "by": "mintosko",
+      "user": "mintosko"
+    },
+    "complexity": "simple",
+    "pitch": {
+      "greeting": "Hi Ryan,",
+      "line1": "One of your reviewers said you worked for hours in the cold on their Explorer and it came out looking better than they had ever seen it.",
+      "gap": "I couldn't find a website for Motion Sudz"
+    },
+    "sources": [
+      "Google Maps listing (rating, hours, phone, review topics, reviews)",
+      "facebook.com/p/Motion-sudz-mobile-carwash-and-detailing-61571829167507 (email, owner Ryan, mobile anywhere)",
+      "Paragould community Facebook group post by Motion Sudz (shampoo seats and rugs)"
+    ],
+    "notes": "Owner Ryan, from the Facebook intro. Line1 trimmed to the parts the 2026-11-14 fact-check could confirm. Fact-check: Google's category is 'Car wash', and Google shows an address (4505 E Highland Dr, Jonesboro). The demo uses a service area, which is fine for a mobile business. Logged out, I couldn't re-read the '47 degrees' review. The 'ford explorer' (2) and 'hard working' (2) chips support the Explorer and cold-weather part. Jonesboro AR is ~80k (78.6k in the 2020 census, a bit over now), the top of the range."
+  },
+  {
+    "slug": "angels-tacos",
+    "name": "Angel's Tacos",
+    "market": "US",
+    "town": "Chubbuck",
+    "state": "ID",
+    "tz": "America/Boise",
+    "category": "Mexican food truck",
+    "theme": "diner",
+    "found": "2026-11-13",
+    "channel": "messenger",
+    "contactLink": "https://m.me/angelstacos21",
+    "email": null,
+    "phoneDisplay": "(208) 403-4467",
+    "phoneTel": "+12084034467",
+    "address": "Idaho Coffee Co parking lot, 322 E Chubbuck Rd, Chubbuck, ID 83202",
+    "mapQuery": "322 E Chubbuck Rd, Chubbuck, ID 83202",
+    "rating": 4.8,
+    "reviewCount": 24,
+    "hours": [
+      [
+        "Tue – Wed",
+        "11am – 6:30pm"
+      ],
+      [
+        "Thursday",
+        "11am – 5pm"
+      ],
+      [
+        "Friday",
+        "11am – 6:30pm"
+      ],
+      [
+        "Saturday",
+        "11am – 6pm"
+      ],
+      [
+        "Sun – Mon",
+        "Closed"
+      ]
+    ],
+    "hoursNote": "From your Google listing. The weekly schedule is posted on your Facebook page.",
+    "kicker": "Street tacos · Birria · Burritos · Chubbuck",
+    "headline": "Street tacos worth pulling over for.",
+    "sub": "Your local taco truck in Chubbuck, rated 4.8 by 24 Google reviewers.",
+    "servicesTitle": "On the menu",
+    "services": [
+      [
+        "Street taco combo",
+        "Four tacos on double-wrapped corn tortillas, with rice and beans."
+      ],
+      [
+        "Birria & quesabirria",
+        "A reviewer favorite."
+      ],
+      [
+        "Chile relleno burrito",
+        "Called out by name in the reviews."
+      ],
+      [
+        "Saturday specials",
+        "Like menudo and carnitas."
+      ]
+    ],
+    "servicesNote": "Taken from your reviews and Facebook posts. Your full menu and prices go here.",
+    "themes": [
+      [
+        "Authentic and fresh",
+        "Reviewers say it tastes authentic, fresh and made with care."
+      ],
+      [
+        "The rice and beans",
+        "Even people who skip sides say these are worth eating on their own."
+      ],
+      [
+        "Fast and friendly",
+        "Quick service and a friendly window come up again and again."
+      ]
+    ],
+    "cta": "Find the truck",
+    "photo": {
+      "id": "photo-1648437595587-e6a8b0cdf1f9",
+      "by": "Frankie Lopez",
+      "user": "frankielopez"
+    },
+    "complexity": "menu",
+    "pitch": {
+      "greeting": "Hi Angel's Tacos team,",
+      "line1": "One of your reviewers said the four-taco combo smelled so good they nearly pulled over to eat it before getting back to work.",
+      "gap": "I couldn't find a website for Angel's Tacos"
+    },
+    "sources": [
+      "Google Maps listing (rating, hours, location, phone, review topics, reviews)",
+      "facebook.com/angelstacos21 (description, weekly schedule, Saturday specials)"
+    ],
+    "notes": "No email published; Messenger to the Facebook Page (4.8K followers). The truck's location moves; schedule is posted weekly on Facebook. Fact-check: Google's category is 'Mexican restaurant' and Facebook's is Food Truck. The file's category is fine. The Maps 'Website' field links only to facebook.com/angelstacos21, which doesn't count as a website. Chubbuck ID (~16k) is part of the Pocatello metro (~95k)."
+  },
+  {
+    "slug": "too-smooth-wash-pros",
+    "name": "Too Smooth Wash Pros & Detailing",
+    "market": "US",
+    "town": "Hutchinson",
+    "state": "KS",
+    "tz": "America/Chicago",
+    "category": "Car detailing service",
+    "theme": "detailing",
+    "found": "2026-11-13",
+    "channel": "messenger",
+    "email": null,
+    "emailSource": null,
+    "contactLink": "https://m.me/toosmoothwashpros",
+    "phoneDisplay": "(620) 474-1747",
+    "phoneTel": "+16204741747",
+    "address": "311 S Washington St, Hutchinson, KS 67501",
+    "serviceArea": null,
+    "mapQuery": "Too Smooth Wash Pros & Detailing, 311 S Washington St, Hutchinson, KS 67501",
+    "rating": 4.7,
+    "reviewCount": 38,
+    "hours": [
+      [
+        "Mon – Sat",
+        "8:30am – 5:30pm"
+      ],
+      [
+        "Sunday",
+        "Closed"
+      ]
+    ],
+    "hoursNote": "Hours from your Google listing.",
+    "kicker": "Detailing · Ceramic coatings · Fleet washing · Hutchinson",
+    "headline": "Detailing for cars, fleets and farm equipment",
+    "sub": "Auto detailing, ceramic coatings and fleet and equipment washing across Central Kansas, rated 4.7 by 38 Google reviewers.",
+    "servicesTitle": "What we do",
+    "services": [
+      [
+        "Auto detailing",
+        "Full interior and exterior detailing for cars, trucks and Jeeps."
+      ],
+      [
+        "Ceramic coatings",
+        "Long-lasting paint protection, a favorite with reviewers."
+      ],
+      [
+        "Paint correction",
+        "Polishing faded or tired paint back to a deep shine."
+      ],
+      [
+        "Fleet washing",
+        "Regular washing for company trucks and semis."
+      ],
+      [
+        "Heavy and farm equipment washing",
+        "Tractors and equipment cleaned and polished, including on the farm."
+      ]
+    ],
+    "servicesNote": "Taken from your Google listing, Facebook page and reviews. Your full list and prices go here.",
+    "themes": [
+      [
+        "Farm and fleet work",
+        "Reviewers include a farmer whose faded tractor came back looking new and companies that trust the team with their truck fleets."
+      ],
+      [
+        "Ceramic coating results",
+        "Several customers say the coating left their paint looking better than when the vehicle was new."
+      ],
+      [
+        "Easy to work with",
+        "People mention friendly service, good communication and quick invoicing from Gabe and his team."
+      ]
+    ],
+    "cta": "Get a free quote",
+    "photo": {
+      "id": "photo-1780558852670-3f49298ecc1f",
+      "by": "Luay Barani",
+      "user": "luaybarani"
+    },
+    "pitch": {
+      "greeting": "Hi Gabe,",
+      "line1": "Your Linktree still points to toosmoothwashpros.com, but that address doesn't load right now, so anyone who taps it from your page hits a dead end.",
+      "gap": "I couldn't find a working website for Too Smooth Wash Pros"
+    },
+    "complexity": "standard",
+    "sources": [
+      "Google Maps listing (rating, hours, reviews, phone, address)",
+      "facebook.com/toosmoothwashpros (description, phone)",
+      "linktr.ee/toosmoothwashpros (links toosmoothwashpros.com)"
+    ],
+    "notes": "Owner Gabe / Gabriel, named in several reviews and thanked in owner replies; his wife works with him (tractor review). No email published, so Messenger. Rebranded from Too Smooth Detailing (old page facebook.com/toosmoothdetailing now shows 'content isn't available' logged out). toosmoothwashpros.com is registered on Cloudflare nameservers but has no A record, so it doesn't load (checked 2026-11-13); a Dribbble logo shot for the new brand suggests a site may be in progress, so check again before sending. Bing lists the address as South Hutchinson; Google says Hutchinson. Business leans toward fleet and ag equipment washing now. Line1 trimmed to the parts the 2026-11-14 fact-check could confirm. Fact-check: Logged out, I couldn't re-read the New Holland tractor review, so the first sentence of line1 isn't re-verified. toosmoothwashpros.com still has no A record and didn't load on 2026-11-14. Re-check before sending, since a site may be in progress."
+  },
+  {
+    "slug": "rice-family-lawn-snow",
+    "name": "Rice Family Lawn & Snow Services +",
+    "market": "US",
+    "town": "Quincy",
+    "state": "IL",
+    "tz": "America/Chicago",
+    "category": "Lawn care service",
+    "theme": "lawn",
+    "found": "2026-11-13",
+    "channel": "email",
+    "email": "hardworkinrice@gmail.com",
+    "emailSource": "Listed on their public Facebook page",
+    "contactLink": null,
+    "phoneDisplay": "(217) 640-0326",
+    "phoneTel": "+12176400326",
+    "address": null,
+    "serviceArea": "Quincy and surrounding area",
+    "mapQuery": "Rice Family Lawn & Snow Services, Quincy, IL",
+    "rating": 5,
+    "reviewCount": 42,
+    "hours": [
+      [
+        "Mon – Sat",
+        "Open 24 hours"
+      ],
+      [
+        "Sunday",
+        "Closed"
+      ]
+    ],
+    "hoursNote": "Hours from your Google listing.",
+    "kicker": "Lawn care · Gutters · Snow removal · Quincy",
+    "headline": "Lawn, gutter and snow help for Quincy homes",
+    "sub": "Lawn care, gutter cleaning, leaf removal and snow removal in Quincy, rated 5.0 by 42 Google reviewers.",
+    "servicesTitle": "What we do",
+    "services": [
+      [
+        "Lawn mowing and trimming",
+        "Regular mowing and weed-eating, from small lots to acre-plus yards."
+      ],
+      [
+        "Bush trimming",
+        "Overgrown shrubs and bushes cut back to size, vines cleared out."
+      ],
+      [
+        "Gutter cleaning",
+        "Gutters cleared, with an eye on downspouts that drain toward the foundation."
+      ],
+      [
+        "Leaf removal and cleanup",
+        "Trimmings and yard waste cleaned up and hauled away."
+      ],
+      [
+        "Snow removal",
+        "Driveways cleared early, even before work in the morning."
+      ]
+    ],
+    "servicesNote": "Taken from your Google listing, Facebook page and reviews. Your full list and prices go here.",
+    "themes": [
+      [
+        "Shows up fast",
+        "Several reviewers say Josh came the next day or answered right away when they called."
+      ],
+      [
+        "Goes past the job",
+        "Customers mention him pointing out problems like downspouts aimed at the house, not just doing the minimum."
+      ],
+      [
+        "Easy to work with",
+        "People describe a friendly, local family business that is flexible when needs change."
+      ]
+    ],
+    "cta": "Get a free quote",
+    "photo": {
+      "id": "photo-1590820292118-e256c3ac2676",
+      "by": "Andres Siimon",
+      "user": "johnmcclane"
+    },
+    "pitch": {
+      "greeting": "Hi Josh,",
+      "line1": "One of your reviewers had to be at work by 5am one winter, and you had their snow cleared by 4:30.",
+      "gap": "I couldn't find a website for Rice Family Lawn & Snow Services"
+    },
+    "complexity": "simple",
+    "sources": [
+      "Google Maps listing (rating, hours, reviews, phone, address)",
+      "facebook.com/workhard.faith (email, description, phone)"
+    ],
+    "notes": "Owner Josh, named in several reviews; one reviewer says he and his wife did the job together. Phone conflict: Google lists (217) 640-0326, Facebook lists (217) 316-2662; used the Google number. Google shows an address at 901 N 15th St but it reads like a home base, so treated as a service-area business. Facebook page name is 'Rice Family Lawn and Snow services plus'; last public post seen is May 2024, so the page is quiet, but Google reviews run up to about a year ago. Google hours say 'Open 24 hours' Mon to Sat, likely a placeholder. Fact-check: The 4:30am snow review is about 4 years old. Line1 says 'one winter', which is fine. The phone conflict remains: Google lists +1 217-640-0326 and Facebook lists 217-316-2662. The demo uses the Google number."
+  },
+  {
+    "slug": "gios-paw-spa",
+    "name": "Gio's Paw Spa",
+    "market": "US",
+    "town": "Hot Springs",
+    "state": "AR",
+    "tz": "America/Chicago",
+    "category": "Pet groomer",
+    "theme": "wash",
+    "found": "2026-11-13",
+    "channel": "email",
+    "email": "giospawspa1217@gmail.com",
+    "emailSource": "Listed on their public Facebook page",
+    "phoneDisplay": "(501) 762-4010",
+    "phoneTel": "+15017624010",
+    "address": "1134 Malvern Ave, Ste C, Hot Springs, AR 71901",
+    "mapQuery": "Gio's Paw Spa, 1134 Malvern Ave, Hot Springs, AR 71901",
+    "rating": 4.5,
+    "reviewCount": 65,
+    "hours": [
+      [
+        "Tue – Sat",
+        "8am – 5pm"
+      ],
+      [
+        "Sun – Mon",
+        "Closed"
+      ]
+    ],
+    "hoursNote": "Hours from your Google listing.",
+    "kicker": "Dog grooming · Cat grooming · Hot Springs",
+    "headline": "Full service grooming for dogs and cats.",
+    "sub": "A full service dog and cat grooming salon in Hot Springs, rated 4.5 by 65 Google reviewers.",
+    "servicesTitle": "What we do",
+    "services": [
+      [
+        "Dog grooming",
+        "Full grooms and haircuts, with nails done and a clean finish."
+      ],
+      [
+        "Cat grooming",
+        "Grooming for cats too, including long-haired cats and nail trims."
+      ],
+      [
+        "Baths",
+        "A good bath and brush-out between full grooms."
+      ],
+      [
+        "Nail trims",
+        "Nail trimming for dogs and cats."
+      ],
+      [
+        "Spa packages",
+        "Specialized packages and products to pamper your pet from head to toe."
+      ]
+    ],
+    "servicesNote": "Taken from your Google listing, Facebook page and reviews. Your full list and prices go here.",
+    "themes": [
+      [
+        "They groom cats too",
+        "Cat grooming comes up in several reviews, from nail trims to long-haired cats."
+      ],
+      [
+        "Pets treated like family",
+        "Owners say the staff are caring and gentle, and they feel good leaving their pets here."
+      ],
+      [
+        "Fair prices, easy to book",
+        "People mention affordable prices and a team that works hard to fit pets in quickly."
+      ]
+    ],
+    "cta": "Book a groom",
+    "photo": {
+      "id": "photo-1719464454959-9cf304ef4774",
+      "by": "Buddy AN",
+      "user": "stbuddyp"
+    },
+    "pitch": {
+      "greeting": "Hi Gio's Paw Spa team,",
+      "line1": "Cat grooming comes up again and again in your Google reviews, and one longtime customer said your team treats their dogs and cats like family.",
+      "gap": "I couldn't find a website for Gio's Paw Spa"
+    },
+    "complexity": "standard",
+    "sources": [
+      "Google Maps listing (rating, hours, phone, address, reviews)",
+      "facebook.com/1134MalvernAve (email, description, phone)"
+    ],
+    "notes": "Google listing shows Add website. Facebook page (1.5K followers, active Nov 11, 2026) lists the email and describes them as a full service dog and cat grooming salon. A groomer named Molly is thanked in one review; owner name not found. Theme 'wash' chosen as closest fit for a grooming salon (no pet theme in list). Fact-check: line1 and theme 1 say reviewers call it 'one of the only places in Hot Springs' that grooms cats. I couldn't verify that. The 'cat grooming' chip (4) shows cats come up, but none of the reviews visible logged out say it's one of the only places. It overstates unless re-confirmed, so I replaced both with supported versions. The photo duplicated barks-and-bubbles-rapid-city (same Unsplash id). It stays here because the scissors-on-small-dog shot suits a salon, and Barks & Bubbles gets the new photo."
+  },
+  {
+    "slug": "barks-and-bubbles-rapid-city",
+    "name": "Barks & Bubbles",
+    "market": "US",
+    "town": "Rapid City",
+    "state": "SD",
+    "tz": "America/Denver",
+    "category": "Pet groomer",
+    "theme": "wash",
+    "found": "2026-11-13",
+    "channel": "email",
+    "email": "barksandbubbles20@gmail.com",
+    "emailSource": "Listed on their public Facebook page",
+    "contactLink": null,
+    "phoneDisplay": "(605) 719-9025",
+    "phoneTel": "+16057199025",
+    "address": "3606 Canyon Lake Dr, Rapid City, SD 57702",
+    "serviceArea": null,
+    "mapQuery": "Barks & Bubbles, 3606 Canyon Lake Dr, Rapid City, SD 57702",
+    "rating": 4.9,
+    "reviewCount": 149,
+    "hours": [
+      [
+        "Mon – Fri",
+        "9am – 5pm"
+      ],
+      [
+        "Sat – Sun",
+        "Closed"
+      ]
+    ],
+    "hoursNote": "Hours from your Google listing.",
+    "kicker": "Grooming · Nail trims · Self wash · Rapid City",
+    "headline": "Dog grooming on Canyon Lake Drive",
+    "sub": "Full grooms, nail trims and a self-wash option in Rapid City, rated 4.9 by 149 Google reviewers.",
+    "servicesTitle": "What we do",
+    "services": [
+      [
+        "Full grooming",
+        "Baths, haircuts and finishing for dogs of all sizes, including big breeds like Bernese."
+      ],
+      [
+        "Nail trims",
+        "Quick nail trims, even for dogs that usually fight them."
+      ],
+      [
+        "Self wash",
+        "Wash your own dog here and leave the mess behind."
+      ],
+      [
+        "First grooms and nervous dogs",
+        "Gentle, patient handling for puppies and anxious dogs."
+      ],
+      [
+        "Fun color",
+        "Color touches, like a bright tail, for owners who want something different."
+      ]
+    ],
+    "servicesNote": "Taken from your Google listing and reviews. Your full list and prices go here.",
+    "themes": [
+      [
+        "Calm with nervous dogs",
+        "Several owners say dogs that are anxious in new places or hate nail trims come home relaxed and done."
+      ],
+      [
+        "Treated like family",
+        "Reviewers describe the staff as kind and say their dogs are spoiled and well cared for every visit."
+      ],
+      [
+        "They smell great for days",
+        "More than one owner mentions the shampoo scent lasting well after the groom."
+      ]
+    ],
+    "cta": "Book a groom",
+    "photo": {
+      "id": "photo-1611173622933-91942d394b04",
+      "by": "Hayffield L",
+      "user": "hayffield"
+    },
+    "pitch": {
+      "greeting": "Hi Barks & Bubbles team,",
+      "line1": "One of your reviewers has been getting color added to her dog's tail with you for years.",
+      "gap": "I couldn't find a website for Barks & Bubbles"
+    },
+    "complexity": "standard",
+    "sources": [
+      "Google Maps listing (rating, hours, reviews, phone, address)",
+      "facebook.com/barksandbubblessd (email, description, address, phone)"
+    ],
+    "notes": "Facebook page (Barks & Bubbles Dog Grooming | Rapid City SD) matches Maps address and phone. Bing also returned barksandbubbles.com, which is a mobile groomer's site (since 2007) with no Rapid City address or phone, so it looks unrelated; their Facebook page lists no website. Owner first name not confirmed (a post is signed 'Jean' but unclear if owner), so greeting uses the team. Facebook showed 'Opening Soon' at the time checked, which just reflects hours. Line1 trimmed to the parts the 2026-11-14 fact-check could confirm. Fact-check: The photo was the same Unsplash id as gios-paw-spa. I replaced it with a Pomeranian in a pink towel being combed (no person's face, no logos), checked visually. Logged out, I couldn't re-read the Piedmont review. The tail-color part of line1 is verified."
+  },
+  {
+    "slug": "the-modest-barbershop-casper",
+    "name": "The Modest Barbershop",
+    "market": "US",
+    "town": "Casper",
+    "state": "WY",
+    "tz": "America/Denver",
+    "category": "Barber shop",
+    "theme": "barber-classic",
+    "found": "2026-11-13",
+    "channel": "messenger",
+    "email": null,
+    "emailSource": null,
+    "contactLink": "https://m.me/61579851485088",
+    "phoneDisplay": "(307) 797-8263",
+    "phoneTel": "+13077978263",
+    "address": "2649 E 2nd St, Casper, WY 82609",
+    "serviceArea": null,
+    "mapQuery": "The Modest Barbershop, 2649 E 2nd St, Casper, WY 82609",
+    "rating": 5,
+    "reviewCount": 41,
+    "hours": [
+      [
+        "Tue – Fri",
+        "9am – 6pm"
+      ],
+      [
+        "Saturday",
+        "8am – 4pm"
+      ],
+      [
+        "Sun – Mon",
+        "Closed"
+      ]
+    ],
+    "hoursNote": "Hours from your Google listing.",
+    "kicker": "Haircuts · Beard trims · Walk-ins · Casper",
+    "headline": "Traditional barber cuts in the Hilltop center",
+    "sub": "Walk-in haircuts, tapers, beard trims and shaves on E 2nd St, rated 5.0 by 41 Google reviewers.",
+    "servicesTitle": "What we do",
+    "services": [
+      [
+        "Haircuts",
+        "Traditional barber-style cuts, including tapers and fades."
+      ],
+      [
+        "Beard trims",
+        "Beard cleanups and trims to go with your cut."
+      ],
+      [
+        "Shaves",
+        "Shaves alongside the regular cut menu."
+      ],
+      [
+        "Kids' cuts",
+        "Cuts for the whole family, kids included."
+      ],
+      [
+        "Local goods",
+        "Products from other Casper makers for sale in the shop."
+      ]
+    ],
+    "servicesNote": "Taken from your Google listing, Facebook posts and reviews. Your full list and prices go here.",
+    "themes": [
+      [
+        "Attention to detail",
+        "Many reviewers point to precise, careful cuts and say they leave with their best haircut in town."
+      ],
+      [
+        "Welcoming owner and team",
+        "Customers describe the owner and staff as kind, easygoing and good company in the chair."
+      ],
+      [
+        "More than a barbershop",
+        "Reviewers like the mural, the arcade games to pass the wait, and the shelf of local products."
+      ]
+    ],
+    "cta": "Walk in or call ahead",
+    "photo": {
+      "id": "photo-1576168056582-0a851a87ab8e",
+      "by": "JJ Shev",
+      "user": "skjev5280"
+    },
+    "pitch": {
+      "greeting": "Hi Modest Barber team,",
+      "line1": "One of your reviewers says Trish has cut his hair for close to a decade, and others mention the arcade and the shelf of local products while they wait.",
+      "gap": "I couldn't find a website for The Modest Barbershop"
+    },
+    "complexity": "standard",
+    "sources": [
+      "Google Maps listing (rating, hours, reviews, phone, address)",
+      "facebook.com/p/Modest-Barber-61579851485088 (description, address, phone, walk-in posts)"
+    ],
+    "notes": "No email published on Facebook, so Messenger. Facebook page name is 'Modest Barber'; Maps name is 'The Modest Barbershop'; same address and phone. Opened about October 2025 per a Facebook post. Trish is a long-time barber there (a post calls her the 3rd longest practicing barber in Casper) but I could not confirm she is the owner, so the greeting uses the team. Facebook posts say 'walk in only' and recently 'open 9-5:30', which differs slightly from Google hours (9am – 6pm); confirm hours. Shaves come from a post saying 'get a cut or a shave'; the price list is only an image, so no prices taken. Fact-check could not re-load the review about Trish cutting hair for close to a decade; glance at the Google reviews before sending. Fact-check: Logged out, I couldn't re-read the 'close to a decade' review. Trish is named in a visible review, and a 'local products' (2) chip exists. Hours differ between sources: Google says Tue-Fri 9-6, Sat 8-4, while Facebook posts mention 9-5:30 and walk-in only (already in notes)."
   }
 ]

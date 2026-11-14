@@ -4,7 +4,7 @@
 // and every rule learned from past mistakes (data/mistakes.jsonl).
 // Usage: node qa.js [--offline]   (--offline skips the live-URL check)
 const fs = require('fs');
-const { P, readJSON, readJSONL, readCSV, today } = require('./lib');
+const { P, readJSON, readJSONL, readCSV } = require('./lib');
 
 const offline = process.argv.includes('--offline');
 const config = readJSON('config.json');
@@ -24,8 +24,10 @@ const warn = (scope, msg) => results.push(['WARN', scope, msg]);
 for (const k of ['studioName', 'ownerName', 'city', 'email']) if (!config.studio[k]) fail('config', `studio.${k} is empty`);
 if (!config.netlify.baseUrl) fail('config', 'netlify.baseUrl is empty: demos are not confirmed live');
 if (!config.payments.paypalEmail) warn('config', 'payments.paypalEmail is empty (needed before the first invoice, not before pitching)');
-const pitchedToday = outcomes.filter((e) => e.event === 'pitched' && e.date === today()).length;
-if (pitchedToday + queue.length > config.settings.dailyCap) warn('cap', `${pitchedToday} sent today + ${queue.length} queued is over the daily cap of ${config.settings.dailyCap}; send the rest another day`);
+// Daily cap is per send day (pitch.js spreads the queue across days).
+const perSendDay = {};
+for (const q of queue) { const d = (q.sendAt || '').slice(0, 10); perSendDay[d] = (perSendDay[d] || 0) + 1; }
+for (const [d, n] of Object.entries(perSendDay)) if (n > config.settings.dailyCap) warn('cap', `${n} messages scheduled for ${d}, over the daily cap of ${config.settings.dailyCap}`);
 
 // --- deliverability: caps, spacing, uniqueness (see playbook/deliverability.md) ---
 const perDay = {};

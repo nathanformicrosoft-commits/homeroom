@@ -1,0 +1,204 @@
+[
+  {
+    "slug": "kovacs-home-property-services",
+    "name": "Kovacs Home & Property Services",
+    "market": "US",
+    "town": "Marquette", "state": "MI", "tz": "America/Detroit",
+    "category": "Appliance repair service",
+    "theme": "sparky",
+    "found": "2026-11-14",
+    "channel": "email",
+    "email": "kovacshomeandpropertyservices@gmail.com",
+    "emailSource": "Listed on their public Facebook page",
+    "contactLink": null,
+    "phoneDisplay": "(906) 202-2498", "phoneTel": "+19062022498",
+    "address": null,
+    "serviceArea": "Marquette and surrounding area",
+    "mapQuery": "Kovacs Home & Property Services, Marquette, MI",
+    "rating": 4.9, "reviewCount": 36,
+    "hours": [],
+    "hoursNote": "No hours on your Google listing yet. Call or email to set up a visit.",
+    "kicker": "Appliance repair · Installs · Marquette",
+    "headline": "Washer, dryer and dishwasher help in Marquette",
+    "sub": "In-home appliance repair and installation in Marquette, rated 4.9 by 36 Google reviewers.",
+    "servicesTitle": "What we do",
+    "services": [
+      ["Washer repair", "Washers diagnosed and fixed at your home, often in under an hour."],
+      ["Dryer repair", "Dryers looked over, repaired and tested so they run right again."],
+      ["Dishwasher installation", "Old dishwashers pulled out and new ones set in to sit flush with your cabinets."],
+      ["Oven replacement", "Space measured, a fitting oven found and installed when the old one gives out."],
+      ["Refurbished used appliances", "Used units opened up, cleaned, inspected and tested before they are sold."]
+    ],
+    "servicesNote": "Taken from your Google listing, Facebook page and reviews. Your full list and prices go here.",
+    "themes": [
+      ["Fits your schedule", "Reviewers say Ryan answers fast and books a time that works, so they don't lose a whole day off work."],
+      ["Careful, tidy work", "Customers mention him pointing out tiny issues before installing and leaving the work area spotless."],
+      ["Fair and honest", "Several reviewers call his rates fair and say he clearly knows appliances and explains things patiently."]
+    ],
+    "cta": "Book a repair",
+    "photo": {"id": "photo-1778731660248-044f78e8c1fb", "by": "Franco Debartolo", "user": "francotheshooter"},
+    "pitch": {
+      "greeting": "Hi Ryan,",
+      "line1": "One of your reviewers was told no double oven would fit their kitchen, so they asked you for a second opinion. You measured the space, tracked one down that fit, and installed it.",
+      "gap": "I couldn't find a website for Kovacs Home & Property Services"
+    },
+    "complexity": "standard",
+    "sources": [
+      "Google Maps listing (rating, reviews, phone, review topics)",
+      "facebook.com/p/Kovacs-Home-Property-Services-LLC-100082986710123 (email, phone, description, used appliance post)"
+    ],
+    "notes": "Owner Ryan, named in nearly every review; a public Marquette Facebook group post calls him Ryan Kovacs with the same cell number. Google listing has no hours and no address, and Facebook says 'In-Home Service', so treated as service-area. Facebook page name is 'Kovacs Home & Property Services LLC'. An April 2026 post says he is getting the page back up and running; latest post April 20, 2026 offers a refurbished Amana dryer. A Bing snippet from a local group mentions service in parts of Alger and Delta counties, but I could not confirm that was his post, so left it out. One reviewer says he offers a warranty; not listed as a service. Theme 'sparky' chosen as the closest home-repair theme (could also be 'mechanic')."
+  },
+  {
+    "slug": "ftk-llc",
+    "name": "FTK llc.",
+    "market": "US",
+    "town": "Minot", "state": "ND", "tz": "America/Chicago",
+    "category": "Tree service",
+    "theme": "lawn",
+    "found": "2026-11-14",
+    "channel": "email",
+    "email": "brenden.luther@gmail.com",
+    "emailSource": "Listed on their public Facebook page",
+    "contactLink": null,
+    "phoneDisplay": "(701) 340-5524", "phoneTel": "+17013405524",
+    "address": null,
+    "serviceArea": "Minot and surrounding area",
+    "mapQuery": "FTK llc., 7600 58th Ave NW, Minot, ND 58703",
+    "rating": 4.8, "reviewCount": 12,
+    "hours": [["Mon – Fri", "7am – 7pm"], ["Sat – Sun", "7am – 5pm"]],
+    "hoursNote": "Hours from your Google listing.",
+    "kicker": "Tree removal · Stump grinding · Minot",
+    "headline": "Tree removal and stump grinding around Minot",
+    "sub": "Tree removal, trimming, stump grinding and snow removal in Minot, rated 4.8 by 12 Google reviewers.",
+    "servicesTitle": "What we do",
+    "services": [
+      ["Tree removal and trimming", "Dead, damaged or unwanted trees taken down, from single yard trees to rows of poplars and spruce."],
+      ["Stump grinding", "Stumps ground out after removal so the yard is ready to use again."],
+      ["Landscaping and hauling", "Branches and debris hauled away and the yard raked and leveled."],
+      ["Snow removal", "Snow cleared, including off roofs."],
+      ["24 hour emergency calls", "Storm damage and trees on power lines handled on short notice."]
+    ],
+    "servicesNote": "Taken from your Facebook page and Google reviews. Your full list and prices go here.",
+    "themes": [
+      ["Shows up fast", "Reviewers say Brenden got back to them right away, including after a hail storm dropped a tree on a power line."],
+      ["Leaves the yard clean", "Customers mention cleanup at the end of every day: raking, hauling branches and filling holes."],
+      ["Fair prices", "Several reviewers call the price fair and say the crew was punctual and polite."]
+    ],
+    "cta": "Request an estimate",
+    "photo": {"id": "photo-1474742509976-ddec6b387356", "by": "Tim Umphreys", "user": "timumphreys"},
+    "pitch": {
+      "greeting": "Hi Brenden,",
+      "line1": "Your Facebook page still links to ftkllc.business.site, but that address now just returns a Google error page.",
+      "gap": "I couldn't find a website for FTK llc."
+    },
+    "complexity": "simple",
+    "sources": [
+      "Google Maps listing (rating, hours, reviews, phone, address)",
+      "facebook.com/ftkhandyman (email, phone, service list, dead ftkllc.business.site link)"
+    ],
+    "notes": "Owner Brenden, named in reviews (one spells it Brendan) and matches the email brenden.luther@gmail.com. Facebook page name is 'FTK llc Property Maintenance and Improvements'; page is active (latest post Oct 30, 2026: removed 4 spruce trees and stumps). The Facebook link ftkllc.business.site returns HTTP 404 (Google Business Profile sites were shut down). Google shows 7600 58th Ave NW, Minot, which reads like a home base, so treated as service-area. Google category not captured; 'Tree service' is from the search it appeared under and the Facebook category 'Tree Cutting Service'. Most Google reviews are 6 to 8 years old; one is from about a year ago. A nice backup line1: one reviewer said the crew put her chain link fence back up at the end of each day because she has a dog."
+  },
+  {
+    "slug": "altoona-small-engine",
+    "name": "Altoona Small Engine",
+    "market": "US",
+    "town": "Altoona", "state": "PA", "tz": "America/New_York",
+    "category": "Small engine repair service",
+    "theme": "mechanic",
+    "found": "2026-11-14",
+    "channel": "email",
+    "email": "AltoonaSmallEngine@gmail.com",
+    "emailSource": "Listed on their public Facebook page",
+    "contactLink": null,
+    "phoneDisplay": "(814) 931-9397", "phoneTel": "+18149319397",
+    "address": "2929 Broad Ave, Altoona, PA 16601",
+    "serviceArea": null,
+    "mapQuery": "Altoona Small Engine, 2929 Broad Ave, Altoona, PA 16601",
+    "rating": 4.7, "reviewCount": 88,
+    "hours": [["Monday", "10am – 4pm"], ["Tue – Fri", "10am – 6pm"], ["Saturday", "10am – 2pm"], ["Sunday", "Closed"]],
+    "hoursNote": "Hours from your Google listing.",
+    "kicker": "Small engine repair · Sales · Altoona",
+    "headline": "Small engine repair on Broad Ave in Altoona",
+    "sub": "Repairs for mowers, snowblowers, chainsaws and trimmers in Altoona, rated 4.7 by 88 Google reviewers.",
+    "servicesTitle": "What we do",
+    "services": [
+      ["Diagnosis and repair", "Equipment looked over and the problem found fast, often fixed within minutes."],
+      ["Snowblower repair", "Snowblowers brought back to life before the snow hits."],
+      ["Chainsaw and trimmer repair", "Chainsaws, weed eaters and other handheld equipment repaired."],
+      ["Mower and lawn tractor repair", "Push mowers, riders and lawn tractors serviced and fixed."],
+      ["Used equipment sales", "Used mowers and other equipment for sale at the shop."],
+      ["Rentals", "Equipment rentals available. Ask what is in stock."]
+    ],
+    "servicesNote": "Taken from your Google listing, Facebook page and reviews. Your full list and prices go here.",
+    "themes": [
+      ["Straight advice", "Reviewers say the shop talks through whether a repair is worth it before doing the work."],
+      ["Quick fixes", "Several customers had their equipment diagnosed and fixed in minutes, sometimes on the spot."],
+      ["Friendly and fair", "Friendly staff and fair pricing are the two things reviewers mention most."]
+    ],
+    "cta": "Get a repair quote",
+    "photo": {"id": "photo-1723811897933-eb57b6ed486a", "by": "Maciej Karoń", "user": "maciejka_dslr"},
+    "pitch": {
+      "greeting": "Hi Altoona Small Engine team,",
+      "line1": "One reviewer brought in their dad's weed eater, and you talked through whether a repair was even worth it. Then you fixed it on the spot and didn't charge them.",
+      "gap": "I couldn't find a website for Altoona Small Engine"
+    },
+    "complexity": "standard",
+    "sources": [
+      "Google Maps listing (rating, hours, reviews, owner replies, phone, address, review topics)",
+      "facebook.com/AltoonaSmallEngine (email, phone, description: sales, service, repair and rentals; used mower for sale post)"
+    ],
+    "notes": "A reviewer names Jason as the person who helped; not confirmed as the owner (owner replies are unsigned and mention an employee), so greeting uses the team. Owner reply says they generally do not sell or order parts, so parts are left out of services. One recent 1-star review complains about a $50 deposit and diagnostic charge; the owner replied publicly. Facebook page is active (posts Oct 2026, 1.7K followers). Altoona is about 43,000 people in its own small metro, well away from Pittsburgh and Harrisburg."
+  },
+  {
+    "slug": "joses-lawn-landscape",
+    "name": "Jose's Lawn & Landscape",
+    "market": "US",
+    "town": "Twin Falls", "state": "ID", "tz": "America/Boise",
+    "category": "Landscaper",
+    "theme": "lawn-sun",
+    "found": "2026-11-14",
+    "channel": "messenger",
+    "email": null,
+    "emailSource": null,
+    "contactLink": "https://m.me/JosesLawnandlandscape2",
+    "phoneDisplay": "(208) 613-6006", "phoneTel": "+12086136006",
+    "address": null,
+    "serviceArea": "Twin Falls and Southern Idaho",
+    "mapQuery": "Twin Falls, ID",
+    "rating": 4.9, "reviewCount": 193,
+    "hours": [["Mon – Sat", "Open 24 hours"], ["Sunday", "Closed"]],
+    "hoursNote": "Hours from your Google listing.",
+    "kicker": "Sprinklers · Sod · Landscaping · Twin Falls",
+    "headline": "Sprinklers, sod and landscaping in Twin Falls",
+    "sub": "Sprinkler blowouts and repair, sod and landscaping in Twin Falls, rated 4.9 by 193 Google reviewers.",
+    "servicesTitle": "What we do",
+    "services": [
+      ["Sprinkler blowouts", "Sprinkler systems blown out in the fall so lines don't freeze."],
+      ["Sprinkler startup and repair", "Systems turned on in spring, every zone checked, and broken parts repaired."],
+      ["Sod installation", "Sod delivered and laid for a quick, finished lawn."],
+      ["Landscaping and backyard design", "Yards redesigned and built out by Jose and his crew."],
+      ["Tree trimming", "Trees trimmed back and cleaned up."],
+      ["Snow removal", "Snow cleared in winter."]
+    ],
+    "servicesNote": "Taken from your Google listing and reviews. Your full list and prices go here.",
+    "themes": [
+      ["Knows sprinklers", "Reviewers say Jose checks every zone and fine-tunes coverage, and that repairs are quick and fairly priced."],
+      ["Fast turnaround", "Customers mention short waits from request to finished job and a crew that shows up on time."],
+      ["Real transformations", "Several reviewers describe their yards as transformed and call the crew top notch."]
+    ],
+    "cta": "Get a quote",
+    "photo": {"id": "photo-1770664945615-52203ab54c88", "by": "Alef Morais", "user": "alef_visuals"},
+    "pitch": {
+      "greeting": "Hi Jose,",
+      "line1": "Sprinkler blowouts come up in 28 of your Google reviews, and one customer said you walked every zone at spring startup and tweaked coverage they never would have noticed.",
+      "gap": "I couldn't find a website for Jose's Lawn & Landscape"
+    },
+    "complexity": "standard",
+    "sources": [
+      "Google Maps listing (rating, hours, reviews, phone, review topics)",
+      "facebook.com/JosesLawnandlandscape2 (Page, phone, Twin Falls location, description)"
+    ],
+    "notes": "No email found; Facebook Page 'Jose's Lawn & Landscape 2' (Twin Falls ID, same phone 208-613-6006, active Oct 2026) is a real Page, so Messenger is the channel. The '2' suggests an older page may exist; I did not find one for Twin Falls (a similarly named page in Springfield MO/VA is a different business). Owner Jose named in reviews; a reviewer also names Jessie on the crew. Google pin sits at a bad location (in the Pacific), so mapQuery uses the town. Google hours 'Open 24 hours' Mon to Sat look like a placeholder. Facebook intro says they have served Southern Idaho for 25 years (their own claim, misspelled 'surving'); left out of the page copy, confirm before using. Only 5 of 193 reviews were readable logged out; service list relies on Google review topic chips (sprinkler blowout 28, tree trimming 3, backyard design 2, snow removal 2)."
+  }
+]

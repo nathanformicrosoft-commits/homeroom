@@ -1,0 +1,180 @@
+[
+  {
+    "slug": "the-busy-biscuit",
+    "name": "The Busy Biscuit",
+    "market": "US",
+    "town": "Meridian",
+    "state": "MS",
+    "tz": "America/Chicago",
+    "category": "Bakery",
+    "theme": "cafe",
+    "found": "2026-11-13",
+    "channel": "email",
+    "email": "The_busybiscuit@att.net",
+    "emailSource": "Listed on their public Facebook page",
+    "phoneDisplay": null,
+    "phoneTel": null,
+    "address": "2000 Front St Ste B, Meridian, MS 39301",
+    "mapQuery": "The Busy Biscuit, 2000 Front St Ste B, Meridian, MS 39301",
+    "rating": 5.0,
+    "reviewCount": 31,
+    "hours": [
+      [
+        "Mon – Fri",
+        "7am – 2pm"
+      ],
+      [
+        "Sat – Sun",
+        "Closed"
+      ]
+    ],
+    "hoursNote": "Hours from your Google listing.",
+    "kicker": "Scratch-made biscuits · Coffee · Meridian",
+    "headline": "Made-from-scratch gourmet biscuits in Meridian.",
+    "sub": "Sweet and savory biscuits baked from scratch, plus coffee, rated 5.0 by 31 Google reviewers.",
+    "servicesTitle": "On the menu",
+    "services": [
+      [
+        "Sweet biscuits",
+        "Flavors like white chocolate raspberry, blueberry and snickerdoodle."
+      ],
+      [
+        "Savory biscuits",
+        "Sausage and jalapeño biscuits for a filling breakfast."
+      ],
+      [
+        "Coffee drinks",
+        "Fresh coffee, including the Blondie that reviewers rave about."
+      ],
+      [
+        "Muffins and baked treats",
+        "Muffins and other treats from the bakery case."
+      ],
+      [
+        "Biscuits by the dozen",
+        "Order a dozen to share with the office or family."
+      ]
+    ],
+    "servicesNote": "Taken from your Google listing and reviews. Your full menu and prices go here.",
+    "themes": [
+      [
+        "Biscuits worth the trip",
+        "Reviewers call them flaky, rich and full of flavor, and some say they are the best biscuits they have had."
+      ],
+      [
+        "A cute, welcoming spot",
+        "Visitors describe a pretty, cozy shop with a great atmosphere."
+      ],
+      [
+        "Friendly staff",
+        "Many reviews mention kind, friendly people behind the counter and a young owner who takes time to chat."
+      ]
+    ],
+    "cta": "Order ahead",
+    "photo": {
+      "id": "photo-1688783944974-fc8283c7c877",
+      "by": "Andy Fluet",
+      "user": "afluet"
+    },
+    "pitch": {
+      "greeting": "Hi Busy Biscuit team,",
+      "line1": "One of your reviewers was in Meridian for a five-day conference and came in three times, and an RV couple who visit cafes all over the country called your place truly unique.",
+      "gap": "I couldn't find a website for The Busy Biscuit"
+    },
+    "complexity": "menu",
+    "sources": [
+      "Google Maps listing (rating, hours, address, reviews)",
+      "facebook.com/p/The-Busy-Biscuit-100088744846177 (email, description, EST 2022, delivery)"
+    ],
+    "notes": "Google listing's website field links to their Facebook page only. No phone on Google or Facebook, so phone fields are null. Facebook says EST 2022 and offers delivery. Owner is described in reviews as a young woman but no name found. Owner replies to reviews regularly. Facebook page has about 8.6K followers and posted Nov 12, 2026."
+  },
+  {
+    "slug": "gios-paw-spa",
+    "name": "Gio's Paw Spa",
+    "market": "US",
+    "town": "Hot Springs",
+    "state": "AR",
+    "tz": "America/Chicago",
+    "category": "Pet groomer",
+    "theme": "wash",
+    "found": "2026-11-13",
+    "channel": "email",
+    "email": "giospawspa1217@gmail.com",
+    "emailSource": "Listed on their public Facebook page",
+    "phoneDisplay": "(501) 762-4010",
+    "phoneTel": "+15017624010",
+    "address": "1134 Malvern Ave, Ste C, Hot Springs, AR 71901",
+    "mapQuery": "Gio's Paw Spa, 1134 Malvern Ave, Hot Springs, AR 71901",
+    "rating": 4.5,
+    "reviewCount": 65,
+    "hours": [
+      [
+        "Tue – Sat",
+        "8am – 5pm"
+      ],
+      [
+        "Sun – Mon",
+        "Closed"
+      ]
+    ],
+    "hoursNote": "Hours from your Google listing.",
+    "kicker": "Dog grooming · Cat grooming · Hot Springs",
+    "headline": "Full service grooming for dogs and cats.",
+    "sub": "A full service dog and cat grooming salon in Hot Springs, rated 4.5 by 65 Google reviewers.",
+    "servicesTitle": "What we do",
+    "services": [
+      [
+        "Dog grooming",
+        "Full grooms and haircuts, with nails done and a clean finish."
+      ],
+      [
+        "Cat grooming",
+        "Grooming for cats too, including long-haired cats and nail trims."
+      ],
+      [
+        "Baths",
+        "A good bath and brush-out between full grooms."
+      ],
+      [
+        "Nail trims",
+        "Nail trimming for dogs and cats."
+      ],
+      [
+        "Spa packages",
+        "Specialized packages and products to pamper your pet from head to toe."
+      ]
+    ],
+    "servicesNote": "Taken from your Google listing, Facebook page and reviews. Your full list and prices go here.",
+    "themes": [
+      [
+        "They groom cats too",
+        "Several reviewers point out this is one of the few places in town that will groom cats as well as dogs."
+      ],
+      [
+        "Pets treated like family",
+        "Owners say the staff are caring and gentle, and they feel good leaving their pets here."
+      ],
+      [
+        "Fair prices, easy to book",
+        "People mention affordable prices and a team that works hard to fit pets in quickly."
+      ]
+    ],
+    "cta": "Book a groom",
+    "photo": {
+      "id": "photo-1719464454959-9cf304ef4774",
+      "by": "Buddy AN",
+      "user": "stbuddyp"
+    },
+    "pitch": {
+      "greeting": "Hi Gio's Paw Spa team,",
+      "line1": "A few of your reviewers make the same point: you're one of the only places in Hot Springs that will groom cats as well as dogs.",
+      "gap": "I couldn't find a website for Gio's Paw Spa"
+    },
+    "complexity": "standard",
+    "sources": [
+      "Google Maps listing (rating, hours, phone, address, reviews)",
+      "facebook.com/1134MalvernAve (email, description, phone)"
+    ],
+    "notes": "Google listing shows Add website. Facebook page (1.5K followers, active Nov 11, 2026) lists the email and describes them as a full service dog and cat grooming salon. A groomer named Molly is thanked in one review; owner name not found. Theme 'wash' chosen as closest fit for a grooming salon (no pet theme in list)."
+  }
+]

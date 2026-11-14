@@ -1,0 +1,202 @@
+[
+  {
+    "slug": "brannen-tree-service",
+    "name": "Brannen Tree Service",
+    "market": "US",
+    "town": "Tifton", "state": "GA", "tz": "America/New_York",
+    "category": "Tree service",
+    "theme": "lawn",
+    "found": "2026-11-14",
+    "channel": "email",
+    "email": "Brannentreeservice@gmail.com",
+    "emailSource": "Listed on their public Facebook page",
+    "phoneDisplay": "(229) 529-5404", "phoneTel": "+12295295404",
+    "address": null,
+    "serviceArea": "Tifton and the surrounding area",
+    "mapQuery": "Tifton, GA",
+    "rating": 4.9, "reviewCount": 15,
+    "hours": [["Every day", "Open 24 hours"]],
+    "hoursNote": "Hours from your Google listing.",
+    "kicker": "Tree removal · Stump grinding · Storm cleanup · Tifton",
+    "headline": "Big trees down safely, yard left clean.",
+    "sub": "Tree removal, trimming and stump grinding in Tifton, rated 4.9 by 15 Google reviewers.",
+    "servicesTitle": "What we do",
+    "services": [
+      ["Tree removal", "Big trees and pines taken down, including ones close to the house, with a crane or bucket truck when needed."],
+      ["Tree trimming", "Branches and overgrown limbs cut back."],
+      ["Stump grinding", "Stumps ground down so the yard is smooth and level."],
+      ["Forestry mulching", "Brush and small trees ground into usable land, with no burning."],
+      ["24/7 storm cleanup", "Emergency help with storm-damaged and fallen trees."]
+    ],
+    "servicesNote": "Taken from your Google listing, Facebook page and reviews. Your full list and prices go here.",
+    "themes": [
+      ["Careful around the house", "Several reviewers had big trees right next to the house and say the crew took them down without anything hitting it."],
+      ["Clean when they leave", "People keep mentioning the cleanup: debris gone and the yard left smooth and level."],
+      ["Fair price, on time", "Most reviewers tag the price as great and say the crew showed up when promised and finished quickly."]
+    ],
+    "cta": "Get a free quote",
+    "photo": {"id": "photo-1474742509976-ddec6b387356", "by": "Tim Umphreys", "user": "timumphreys"},
+    "pitch": {
+      "greeting": "Hi Brannen Tree Service team,",
+      "line1": "Your Google reviewers keep describing big trees right up against the house coming down clean, and you've replied to nearly every one, thanking most of them by name.",
+      "gap": "I couldn't find a website for Brannen Tree Service"
+    },
+    "complexity": "simple",
+    "sources": [
+      "Google listing via Google Search knowledge panel (rating, review count, hours, phone, 'Add website', business description, all visible reviews and owner replies)",
+      "facebook.com/p/Brannen-Tree-Service-61579351892514 (email, services intro, 167 Kell Rd address, storm post Oct 9 2026, forestry mulching post Mar 9 2026)"
+    ],
+    "notes": "Reviewers repeatedly name the owner as John ('John and his crew'); public FMCSA/BrokerSnapshot records list owner John Brannen. Owner replies are unsigned, so greeting uses the team. Google shows 'Kell Rd, Tifton' without a number; Facebook lists 167 Kell Rd, shown as a service area. One 3-star review (2 years ago) complains about holes left in the yard after a crane removal; the owner replied in detail. Google description says '7+ years of experience' but a third-party site quotes '4+', so years were left out. The Maps place panel would not render in the hidden browser pane, so listing data was read from the Google Search knowledge panel and its reviews view instead."
+  },
+  {
+    "slug": "ellis-clean",
+    "name": "Ellis Clean",
+    "market": "US",
+    "town": "Greenwood", "state": "SC", "tz": "America/New_York",
+    "category": "Pressure washing service",
+    "theme": "wash",
+    "found": "2026-11-14",
+    "channel": "email",
+    "email": "Scellisclean@gmail.com",
+    "emailSource": "Listed on their public Facebook page",
+    "phoneDisplay": "(864) 321-7345", "phoneTel": "+18643217345",
+    "address": "213 Charles Rd, Greenwood, SC 29649",
+    "serviceArea": null,
+    "mapQuery": "Ellis Clean, 213 Charles Rd, Greenwood, SC 29649",
+    "rating": 5.0, "reviewCount": 28,
+    "hours": [["Mon – Thu", "8am – 7pm"], ["Fri – Sat", "7am – 7pm"], ["Sunday", "1pm – 7pm"]],
+    "hoursNote": "Hours from your Google listing.",
+    "kicker": "House washing · Driveways · Windows · Greenwood",
+    "headline": "Clean house, clean windows, inside and out.",
+    "sub": "Pressure washing and window cleaning in Greenwood, rated 5.0 by 28 Google reviewers.",
+    "servicesTitle": "What we do",
+    "services": [
+      ["House washing", "Siding, brick and two-story homes washed down."],
+      ["Driveways and walkways", "Concrete driveways, walkways, carports and patio pavers cleaned up."],
+      ["Decks, fences and docks", "Wood decks, fences and lake docks washed so they look new."],
+      ["Roof washing", "Black algae streaks washed off the roof."],
+      ["Window cleaning", "Windows cleaned inside and out."]
+    ],
+    "servicesNote": "Taken from your Google listing, Facebook page and reviews. Your full list and prices go here.",
+    "themes": [
+      ["Careful and thorough", "Reviewers describe a crew that takes its time, moves furniture carefully and cleans up after itself."],
+      ["Quick quote, on time", "People mention getting a quote within a day, a quick spot on the schedule, and a crew that showed up when promised."],
+      ["Looks brand new", "Driveways, docks and whole houses that reviewers say look new again afterward."]
+    ],
+    "cta": "Get a free quote",
+    "photo": {"id": "photo-1575397205849-f5e0a03323a3", "by": "Keagan Henman", "user": "henmankk"},
+    "pitch": {
+      "greeting": "Hi Jeff,",
+      "line1": "One of your Google reviewers said the house looked so good afterward that the neighbor hired you for his house and driveway too.",
+      "gap": "I couldn't find a website for Ellis Clean"
+    },
+    "complexity": "simple",
+    "sources": [
+      "Google listing via Google Search knowledge panel (rating, review count, address, hours, phone, 'Add website', business description, review topics, reviews and owner replies)",
+      "facebook.com/p/Ellis-Clean-61594835782903 (email, Greenwood address and phone matching Google)"
+    ],
+    "notes": "Owner signs one Google reply 'Thanks, Jeff, Ellis Clean'; a reviewer also mentions working with Jeff, and another mentions 'the 2 Ellis brothers'. There are two older Ellis Clean Facebook pages (100065232570787 and 105740327954508, one posting about jobs in Lexington); the page with the email matches the Google address and phone. Reviews range from 10 months to 6 years old. A Google AI overview claimed experience back to 1996, which was not used."
+  },
+  {
+    "slug": "all-clear-power-washing",
+    "name": "All Clear Power Washing",
+    "market": "US",
+    "town": "Florence", "state": "SC", "tz": "America/New_York",
+    "category": "Pressure washing service",
+    "theme": "wash",
+    "found": "2026-11-14",
+    "channel": "email",
+    "email": "jdingle68@gmail.com",
+    "emailSource": "Listed on their public Facebook page",
+    "phoneDisplay": "(843) 356-9137", "phoneTel": "+18433569137",
+    "address": "1001 Hallie Dr, Florence, SC 29505",
+    "serviceArea": null,
+    "mapQuery": "All Clear Power Washing, 1001 Hallie Dr, Florence, SC 29505",
+    "rating": 5.0, "reviewCount": 29,
+    "hours": [["Mon – Wed", "8am – 5pm"], ["Thu – Fri", "7am – 5pm"], ["Saturday", "7:30am – 5pm"], ["Sunday", "Closed"]],
+    "hoursNote": "Hours from your Google listing.",
+    "kicker": "House washing · Driveways · Decks & fences · Florence",
+    "headline": "Driveways and houses that look new again.",
+    "sub": "Veteran-led power washing in Florence, rated 5.0 by 29 Google reviewers.",
+    "servicesTitle": "What we do",
+    "services": [
+      ["House washing", "Whole-house washing that reviewers say takes years off the look of a home."],
+      ["Driveways and sidewalks", "Concrete driveways and sidewalks cleaned back to bright."],
+      ["Soft washing", "Gentler soft washing for surfaces that need it."],
+      ["Fences and pool decks", "Fencing and pool deck areas power washed."],
+      ["Deck and fence restoration", "Wood decks and fences cleaned and restored."]
+    ],
+    "servicesNote": "Taken from your Google listing, Facebook page and reviews. Your full list and prices go here.",
+    "themes": [
+      ["Fast response", "Reviewers say calls were returned within minutes, even on a Saturday, with a fair quote and a quick arrival."],
+      ["Like a new house", "People say their home and driveway looked brand new, including one reviewer whose ten-year-old house looked like new construction again."],
+      ["Professional crew", "Reviewers describe polite, professional technicians and a job that beat their expectations."]
+    ],
+    "cta": "Get a free quote",
+    "photo": {"id": "photo-1783125127143-d4e18726bab3", "by": "Salvo Media LLC", "user": "salvomedia"},
+    "pitch": {
+      "greeting": "Hi All Clear Power Washing team,",
+      "line1": "Your Facebook page links to allclearpowerwashing.org, but that domain no longer exists, so anyone who taps it gets nothing.",
+      "gap": "I couldn't find a working website for All Clear Power Washing"
+    },
+    "complexity": "simple",
+    "sources": [
+      "Google listing via Google Search knowledge panel (rating, review count, address, hours, phone, 'Add website', 'Veteran Led' description, review topics, reviews)",
+      "facebook.com/people/All-Clear-Power-Washing-LLC/100063622178113 (email, link to allclearpowerwashing.org, services intro from search snippet)",
+      "DNS check: allclearpowerwashing.org returns non-existent domain (checked 2026-11-14)"
+    ],
+    "notes": "Owner appears to be James 'Jimmy' Dingle (reviewers mention Mr. Dingle, James and Jimmy; email is jdingle68). Owner replies are unsigned, so greeting uses the team. The Facebook link has a utm_source=gmb tag, so the dead domain was probably once on the Google listing too. Most reviews are 2 to 7 years old; latest Facebook activity March 2026. 'Veteran Led' comes from the business's own Google description. Allbiz says founded 2018, not used."
+  },
+  {
+    "slug": "owens-landscaping-pressure-washing",
+    "name": "Owen's Landscaping & Pressure Washing",
+    "market": "US",
+    "town": "Danville", "state": "VA", "tz": "America/New_York",
+    "category": "Landscaper",
+    "theme": "lawn-sun",
+    "found": "2026-11-14",
+    "channel": "email",
+    "email": "Owen_scotty@yahoo.com",
+    "emailSource": "Listed on their public Facebook page",
+    "phoneDisplay": "(434) 728-5263", "phoneTel": "+14347285263",
+    "address": null,
+    "serviceArea": "Danville and the surrounding area",
+    "mapQuery": "Danville, VA",
+    "rating": 5.0, "reviewCount": 12,
+    "hours": [["Mon – Sat", "9am – 6pm"], ["Sunday", "Closed"]],
+    "hoursNote": "Hours from your Google listing.",
+    "kicker": "Lawn care · Landscaping · Pressure washing · Danville",
+    "headline": "Danville lawns, mulch and pressure washing.",
+    "sub": "Lawn care, landscaping and pressure washing in Danville, rated 5.0 by 12 Google reviewers.",
+    "servicesTitle": "What we do",
+    "services": [
+      ["Lawn maintenance", "Regular lawn care, year after year."],
+      ["Landscaping and mulch", "Beds and front lawns mulched and kept sharp."],
+      ["Pressure washing", "Houses and mobile homes washed down."],
+      ["Deck washing and staining", "Decks pressure washed and stained so they look new."],
+      ["Snow removal", "Driveways cleared when the snow comes."],
+      ["Small tree removal", "Small trees taken out."]
+    ],
+    "servicesNote": "Taken from your Google listing, Facebook page and reviews. Your full list and prices go here.",
+    "themes": [
+      ["Dependable for years", "Several reviewers say Scotty has taken care of their yard for years and always shows up."],
+      ["Takes pride in the work", "Reviewers call it a hometown, mom-and-pop business where the owner does the work himself and does it right."],
+      ["Honest timing and prices", "People mention accurate estimates on when he can get to the job and a reasonable price."]
+    ],
+    "cta": "Get a free quote",
+    "photo": {"id": "photo-1740822399239-6f0eb5cabc76", "by": "Naoki Suzuki", "user": "naopp"},
+    "pitch": {
+      "greeting": "Hi Scotty,",
+      "line1": "Your Facebook page still sends people to owens-landscaping-pressure.business.site, and that link now just shows a Google error page.",
+      "gap": "I couldn't find a working website for Owen's Landscaping"
+    },
+    "complexity": "standard",
+    "sources": [
+      "Google listing via Google Search knowledge panel (rating, review count, hours, phone, 'Add website', business description, reviews and owner replies)",
+      "facebook.com/owenslandscaping1 (email, Highway 29N Danville location, link to owens-landscaping-pressure.business.site, posts by Scotty Owen)",
+      "facebook.com/owenslandscaping1/posts/4266061596827162 (Feb 4 2022: thanks Danville for voting them favorite landscaping company in Showcase Magazine's Rave awards)",
+      "HTTP check: owens-landscaping-pressure.business.site returns Google 404 (checked 2026-11-14)"
+    ],
+    "notes": "Owner is Scotty Owen: named in several reviews and he posts on the page under his own name. Google name uses a curly apostrophe (Owen’s). Google reviews are 4 to 8 years old; latest Facebook activity April 2025 (Rave awards vote post), so confirm the business is still active. Facebook gives 'Highway 29N, Danville' rather than a street address, so shown as a service area. Facebook page shows no phone; phone is from Google. Possible extra pitch detail: voted Danville's favorite landscaping company in Showcase Magazine's Rave awards (2022)."
+  }
+]

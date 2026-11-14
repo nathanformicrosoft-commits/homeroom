@@ -1,0 +1,198 @@
+[
+  {
+    "slug": "goodridges-lawn-care",
+    "name": "Goodridge's Lawn Care LLC",
+    "market": "US",
+    "town": "Russellville", "state": "AR", "tz": "America/Chicago",
+    "category": "Lawn care service",
+    "theme": "lawn-sun",
+    "found": "2026-11-14",
+    "channel": "email",
+    "email": "goodridgeslawncare@outlook.com",
+    "emailSource": "Listed on their public Facebook page",
+    "phoneDisplay": "(479) 264-4278", "phoneTel": "+14792644278",
+    "address": "402 N Tulsa Ave, Russellville, AR 72801",
+    "mapQuery": "Goodridge's Lawn Care, 402 N Tulsa Ave, Russellville, AR 72801",
+    "rating": 4.7, "reviewCount": 61,
+    "hours": [["Mon – Fri", "7am – 5pm"], ["Saturday", "7am – 12pm"], ["Sunday", "Closed"]],
+    "hoursNote": "Hours from your Google listing.",
+    "kicker": "Lawn care · Landscaping · Russellville",
+    "headline": "Lawn care and landscaping across the River Valley.",
+    "sub": "Regular mowing, landscaping, sod and flower beds for homes and businesses, rated 4.7 by 61 Google reviewers.",
+    "servicesTitle": "What we do",
+    "services": [
+      ["Lawn care on a schedule", "Regular visits that keep your yard maintained, with driveways, sidewalks and porches left clean."],
+      ["Landscaping and design", "Fresh ideas for your yard, planned with you and carried through."],
+      ["Sod installation", "New sod laid for a full, even lawn."],
+      ["Flower beds and mulch", "Beds freshened up with new mulch for instant curb appeal."],
+      ["Shrub trimming and tree removal", "Bushes shaped and unwanted trees taken down."],
+      ["Commercial properties", "Grounds care for businesses as well as homes."]
+    ],
+    "servicesNote": "Taken from your Google listing, Facebook page and reviews. Your full list and prices go here.",
+    "themes": [
+      ["A family business people trust", "Reviewers describe a kind, family-run crew and an owner who genuinely cares about his customers."],
+      ["Curb appeal that sells", "One homeowner said the yard work before listing their house made it look amazing, with design ideas that were followed through."],
+      ["Set it and forget it", "Long-time customers say they never have to worry about their yard, and the crew even checks in after the job."]
+    ],
+    "cta": "Get a free quote",
+    "photo": {"id": "photo-1777428762767-e3a797da389a", "by": "QY Liu", "user": "qy_liu"},
+    "pitch": {
+      "greeting": "Hi Josh,",
+      "line1": "A reviewer just thanked your family for looking after her childhood home while her dad was in the hospital, and joked she's still sad she never got one of your original business cards.",
+      "gap": "I couldn't find a website for Goodridge's Lawn Care"
+    },
+    "complexity": "simple",
+    "sources": [
+      "Google Maps listing (rating, hours, address, phone, reviews)",
+      "facebook.com/goodridgeslawncare (email, intro, service area, services post from Feb 2021)"
+    ],
+    "notes": "Owner first name Josh comes from two Google reviews (\"Josh communicated well\", \"I have been with Josh and his company\"); not confirmed as owner on Facebook. Google lists 402 N Tulsa Ave; Facebook lists 8341 US Hwy 64, Russellville. Used the Google address. Facebook intro says they have served the River Valley for nine years, but the post date is unclear, so years in business are left out. Google listing shows 'Add website'. Facebook page has about 700 followers and posted Dec 26, 2025. The 'original business cards' review is about 2 weeks old."
+  },
+  {
+    "slug": "freddys-landscaping",
+    "name": "Freddy's Landscaping",
+    "market": "US",
+    "town": "Enid", "state": "OK", "tz": "America/Chicago",
+    "category": "Lawn care service",
+    "theme": "lawn",
+    "found": "2026-11-14",
+    "channel": "email",
+    "email": "fredylandscaping08@gmail.com",
+    "emailSource": "Listed on their public Facebook page",
+    "phoneDisplay": "(832) 641-6282", "phoneTel": "+18326416282",
+    "address": "317 E Cedar Ave, Enid, OK 73701",
+    "mapQuery": "Freddy's Landscaping, 317 E Cedar Ave, Enid, OK 73701",
+    "rating": 4.9, "reviewCount": 45,
+    "hours": [["Every day", "Open 24 hours"]],
+    "hoursNote": "Hours from your Google listing.",
+    "kicker": "Yard cleanup · Brush removal · Enid",
+    "headline": "Overgrown yard? Freddy clears it, often the same day.",
+    "sub": "Yard cleanups, brush and tree removal, mowing and hauling in Enid, rated 4.9 by 45 Google reviewers.",
+    "servicesTitle": "What we do",
+    "services": [
+      ["Overgrowth clearing", "Trees, bushes, weeds and ivy cut back so you can see your yard again."],
+      ["Brush and limb hauling", "Dead limbs and brush piles loaded up and hauled away."],
+      ["Mowing and raking", "Whole yards raked and mowed, with shrubs trimmed and weeds pulled from rock borders."],
+      ["Leaf cleanup in tight spots", "Leaves cleared from hard-to-reach areas, like between a house, a fence and an AC unit."],
+      ["Fence removal and leveling", "Old wood fences taken down, yards leveled and grass seed put down."]
+    ],
+    "servicesNote": "Taken from your Google listing and reviews. Your full list and prices go here.",
+    "themes": [
+      ["Fast turnaround", "Several reviewers say Freddy came out to quote the same day they called, and some had the work finished that same day."],
+      ["Friendly and hard working", "Customers keep mentioning a polite, patient crew that keeps appointments and works hard."],
+      ["Fair prices", "Reviewers describe the estimates as reasonable for the amount of work done."]
+    ],
+    "cta": "Get a free quote",
+    "photo": {"id": "photo-1776025808938-dec3b01391ea", "by": "QY Liu", "user": "qy_liu"},
+    "pitch": {
+      "greeting": "Hi Freddy,",
+      "line1": "Two of your recent reviewers said they wished they had taken before pictures, and one said the overgrowth was so bad you couldn't even see the fence until your crew cleared it.",
+      "gap": "I couldn't find a website for Freddy's Landscaping"
+    },
+    "complexity": "simple",
+    "sources": [
+      "Google Maps listing (rating, hours, address, phone, reviews)",
+      "facebook.com/people/Freddys-Lanscaping/100076169653734 (email, address, service area)",
+      "Facebook reels on fredy.gomez.hernandez.278438 (owner posts in English, Mar to Apr 2026)"
+    ],
+    "notes": "Owner first name Freddy from Google reviews (\"Freddy is so nice and great to work with\"); his personal Facebook is 'Fredy Gomez Hernandez' and the business page is spelled 'Freddy's Lanscaping' (missing d). Phone conflict: Google shows (832) 641-6282, Facebook shows (832) 641-6072 (also WhatsApp). Used Google. Houston area code on a local Enid business. Google says open 24 hours, which is probably a placeholder; confirm before showing. Google listing shows 'Add website'. Facebook page is small (99 followers) but reels were posted in 2026."
+  },
+  {
+    "slug": "windham-pressure-washing",
+    "name": "Windham Pressure Washing",
+    "market": "US",
+    "town": "Nacogdoches", "state": "TX", "tz": "America/Chicago",
+    "category": "Pressure washing service",
+    "theme": "wash",
+    "found": "2026-11-14",
+    "channel": "email",
+    "email": "windhampressurecleaning@gmail.com",
+    "emailSource": "Listed on their public Facebook page",
+    "phoneDisplay": "(936) 234-6821", "phoneTel": "+19362346821",
+    "address": null,
+    "serviceArea": "Nacogdoches, Lufkin, Center, Alto, Rusk, Diboll and surrounding East Texas towns",
+    "mapQuery": "Nacogdoches, TX",
+    "rating": 5.0, "reviewCount": 17,
+    "hours": [["Mon – Sat", "8am – 10pm"], ["Sunday", "Closed"]],
+    "hoursNote": "Hours from your Google listing.",
+    "kicker": "House washing · Concrete · Nacogdoches",
+    "headline": "Brick, porches and concrete cleaned in East Texas.",
+    "sub": "Pressure washing and soft washing for homes and businesses around Nacogdoches, rated 5.0 by 17 Google reviewers.",
+    "servicesTitle": "What we do",
+    "services": [
+      ["House and brick washing", "Brick and siding washed so your home looks fresh again."],
+      ["Porches and walkways", "Front porches and walkways cleaned all the way to the street."],
+      ["Driveways and concrete", "Stained, dark concrete brought back to a clean finish."],
+      ["Commercial soft washing", "Office buildings and storefronts cleaned with a gentle soft wash method."],
+      ["Pontoon boat polishing", "Pontoons cleaned up and polished."]
+    ],
+    "servicesNote": "Taken from your Google listing, Facebook posts and reviews. Your full list and prices go here.",
+    "themes": [
+      ["Ready for any job site", "A customer with no water on the property said the crew simply brought their own."],
+      ["A walk-through before they leave", "Reviewers like that the crew walks the job with them for approval before packing up."],
+      ["Honest pricing", "Homeowners and a corporate office both mention fair prices and flexible scheduling."]
+    ],
+    "cta": "Get a free quote",
+    "photo": {"id": "photo-1605146768851-eda79da39897", "by": "Dillon Kydd", "user": "kyddvisuals"},
+    "pitch": {
+      "greeting": "Hi Windham Pressure Washing team,",
+      "line1": "Your Facebook page still links to windhampressurewashing.com, but that domain no longer loads. One reviewer said you brought your own water to a property that had none and turned their black concrete white.",
+      "gap": "I couldn't find a working website for Windham Pressure Washing"
+    },
+    "complexity": "simple",
+    "sources": [
+      "Google Maps listing (rating, hours, phone, reviews; no address, 'Add website' shown)",
+      "facebook.com/windhampressurewashing/about (email, service area, website link, alt phone)",
+      "facebook.com/windhampressurewashing posts (soft wash commercial post; 'Pontoons polished' Apr 15, 2025)",
+      "DNS check: windhampressurewashing.com returns NXDOMAIN (Google DNS, 2026-11-14)"
+    ],
+    "notes": "Dead domain: Facebook lists http://Windhampressurewashing.com/ but the domain does not resolve (NXDOMAIN), so it has likely lapsed. One review thanks 'Brent' (possibly the owner, not confirmed), and a 'Helen Joyce Windham' comments on posts. Phone conflict: Google (936) 234-6821, Facebook (936) 553-6108. Used Google. Facebook also lists 628 NE Stallings Dr, Nacogdoches, but Google shows no address, so I treated it as a service-area business. Activity risk: Google reviews are 4 to 6 years old, and the last Facebook post I saw was Apr 2025. Instagram posted Jan 2024 ('big plans this year')."
+  },
+  {
+    "slug": "bubbas-stump-grinding",
+    "name": "Bubba's Stump Grinding",
+    "market": "US",
+    "town": "Hammond", "state": "LA", "tz": "America/Chicago",
+    "category": "Tree service",
+    "theme": "lawn",
+    "found": "2026-11-14",
+    "channel": "email",
+    "email": "bubbas.stump.grinding@gmail.com",
+    "emailSource": "Listed on their public Facebook page",
+    "phoneDisplay": "(985) 974-9896", "phoneTel": "+19859749896",
+    "address": null,
+    "serviceArea": "Hammond, Ponchatoula and the Tangipahoa Parish area",
+    "mapQuery": "Hammond, LA 70401",
+    "rating": 5.0, "reviewCount": 28,
+    "hours": [],
+    "hoursNote": "Your Google listing doesn't show hours yet. Your hours go here.",
+    "kicker": "Stump grinding · Tangipahoa Parish",
+    "headline": "Stumps gone, yard left clean.",
+    "sub": "Stump grinding around Hammond and Tangipahoa Parish, rated 5.0 by 28 Google reviewers.",
+    "servicesTitle": "What we do",
+    "services": [
+      ["Stump grinding", "Old stumps ground down so you can mow, plant or build over the spot."],
+      ["Multiple stumps in one visit", "Got several stumps? Bubba takes care of them in one trip."],
+      ["Clean finish", "Reviewers say there's nothing left for you to clean up afterward."]
+    ],
+    "servicesNote": "Taken from your Google listing and reviews. Your full list and prices go here.",
+    "themes": [
+      ["Best price around", "Reviewers say Bubba's quote was the best they got, and the work matched it."],
+      ["Quick and friendly", "Customers describe a kind, easygoing guy who gets the job done fast."],
+      ["Neat results", "People mention the yard looks nice when he's finished, with no cleanup needed."]
+    ],
+    "cta": "Get a free quote",
+    "photo": {"id": "photo-1605474321797-3b02fa702976", "by": "Yves Alarie", "user": "yvesalarie"},
+    "pitch": {
+      "greeting": "Hi Bubba,",
+      "line1": "On your New Year's post, a follower tagged a friend to say you were the stump grinder she'd been telling her about, and a Google reviewer said there was nothing left to clean up when you finished.",
+      "gap": "I couldn't find a website for Bubba's Stump Grinding"
+    },
+    "complexity": "simple",
+    "sources": [
+      "Google Maps listing (rating, phone, reviews, review topic chips; no hours, no street address)",
+      "facebook.com/people/Bubbas-Stump-Grinding/61573104430370 (email, intro, phone match, New Year's post Jan 2, 2026)"
+    ],
+    "notes": "Name 'Bubba' comes from a Google review (\"Bubba had the best price by far\"); real first name unknown. Facebook says Ponchatoula; Google says Hammond 70401 (service-area). Phone matches on both. Only 3 Google reviews were readable logged out, so services are limited to stump grinding; review chips mention stump grinding (10), fair quote (4), clean up (3), punctuality (3). Heads-up: a Bing result shows a demo site at felixchenyijun.github.io/websites/bubbas-stump-grinding/, which suggests someone else may already be pitching them. It isn't their own website. No hours on Google. Hammond is about 45 miles from Baton Rouge and New Orleans."
+  }
+]

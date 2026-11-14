@@ -179,8 +179,8 @@ ${themes}
 <section id="visit"><div class="wrap visit">
   <div>
     <p class="eyebrow">${p.address ? 'Find us' : 'Where we work'}</p>
-    <h2>Hours &amp; location</h2>
-    <table class="hours"><tbody>${hours}</tbody></table>
+    <h2>${hours ? 'Hours &amp; location' : (p.address ? 'Location' : 'Service area')}</h2>
+    ${hours ? `<table class="hours"><tbody>${hours}</tbody></table>` : ''}
     ${where}
     <p class="fine">${esc(p.hoursNote)}</p>
   </div>

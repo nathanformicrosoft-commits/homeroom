@@ -1,0 +1,96 @@
+[
+  {
+    "slug": "barks-and-bubbles-rapid-city",
+    "name": "Barks & Bubbles",
+    "market": "US",
+    "town": "Rapid City", "state": "SD", "tz": "America/Denver",
+    "category": "Pet groomer",
+    "theme": "wash",
+    "found": "2026-11-13",
+    "channel": "email",
+    "email": "barksandbubbles20@gmail.com",
+    "emailSource": "Listed on their public Facebook page",
+    "contactLink": null,
+    "phoneDisplay": "(605) 719-9025", "phoneTel": "+16057199025",
+    "address": "3606 Canyon Lake Dr, Rapid City, SD 57702",
+    "serviceArea": null,
+    "mapQuery": "Barks & Bubbles, 3606 Canyon Lake Dr, Rapid City, SD 57702",
+    "rating": 4.9, "reviewCount": 149,
+    "hours": [["Mon – Fri", "9am – 5pm"], ["Sat – Sun", "Closed"]],
+    "hoursNote": "Hours from your Google listing.",
+    "kicker": "Grooming · Nail trims · Self wash · Rapid City",
+    "headline": "Dog grooming on Canyon Lake Drive",
+    "sub": "Full grooms, nail trims and a self-wash option in Rapid City, rated 4.9 by 149 Google reviewers.",
+    "servicesTitle": "What we do",
+    "services": [
+      ["Full grooming", "Baths, haircuts and finishing for dogs of all sizes, including big breeds like Bernese."],
+      ["Nail trims", "Quick nail trims, even for dogs that usually fight them."],
+      ["Self wash", "Wash your own dog here and leave the mess behind."],
+      ["First grooms and nervous dogs", "Gentle, patient handling for puppies and anxious dogs."],
+      ["Fun color", "Color touches, like a bright tail, for owners who want something different."]
+    ],
+    "servicesNote": "Taken from your Google listing and reviews. Your full list and prices go here.",
+    "themes": [
+      ["Calm with nervous dogs", "Several owners say dogs that are anxious in new places or hate nail trims come home relaxed and done."],
+      ["Treated like family", "Reviewers describe the staff as kind and say their dogs are spoiled and well cared for every visit."],
+      ["They smell great for days", "More than one owner mentions the shampoo scent lasting well after the groom."]
+    ],
+    "cta": "Book a groom",
+    "photo": {"id": "photo-1719464454959-9cf304ef4774", "by": "Buddy AN", "user": "stbuddyp"},
+    "pitch": {
+      "greeting": "Hi Barks & Bubbles team,",
+      "line1": "One of your reviewers drives in from Piedmont just for you, and another has been getting color added to her dog's tail with you for years.",
+      "gap": "I couldn't find a website for Barks & Bubbles"
+    },
+    "complexity": "standard",
+    "sources": ["Google Maps listing (rating, hours, reviews, phone, address)", "facebook.com/barksandbubblessd (email, description, address, phone)"],
+    "notes": "Facebook page (Barks & Bubbles Dog Grooming | Rapid City SD) matches Maps address and phone. Bing also returned barksandbubbles.com, which is a mobile groomer's site (since 2007) with no Rapid City address or phone, so it looks unrelated; their Facebook page lists no website. Owner first name not confirmed (a post is signed 'Jean' but unclear if owner), so greeting uses the team. Facebook showed 'Opening Soon' at the time checked, which just reflects hours."
+  },
+  {
+    "slug": "the-modest-barbershop-casper",
+    "name": "The Modest Barbershop",
+    "market": "US",
+    "town": "Casper", "state": "WY", "tz": "America/Denver",
+    "category": "Barber shop",
+    "theme": "barber-classic",
+    "found": "2026-11-13",
+    "channel": "messenger",
+    "email": null,
+    "emailSource": null,
+    "contactLink": "https://m.me/61579851485088",
+    "phoneDisplay": "(307) 797-8263", "phoneTel": "+13077978263",
+    "address": "2649 E 2nd St, Casper, WY 82609",
+    "serviceArea": null,
+    "mapQuery": "The Modest Barbershop, 2649 E 2nd St, Casper, WY 82609",
+    "rating": 5.0, "reviewCount": 41,
+    "hours": [["Tue – Fri", "9am – 6pm"], ["Saturday", "8am – 4pm"], ["Sun – Mon", "Closed"]],
+    "hoursNote": "Hours from your Google listing.",
+    "kicker": "Haircuts · Beard trims · Walk-ins · Casper",
+    "headline": "Traditional barber cuts in the Hilltop center",
+    "sub": "Walk-in haircuts, tapers, beard trims and shaves on E 2nd St, rated 5.0 by 41 Google reviewers.",
+    "servicesTitle": "What we do",
+    "services": [
+      ["Haircuts", "Traditional barber-style cuts, including tapers and fades."],
+      ["Beard trims", "Beard cleanups and trims to go with your cut."],
+      ["Shaves", "Shaves alongside the regular cut menu."],
+      ["Kids' cuts", "Cuts for the whole family, kids included."],
+      ["Local goods", "Products from other Casper makers for sale in the shop."]
+    ],
+    "servicesNote": "Taken from your Google listing, Facebook posts and reviews. Your full list and prices go here.",
+    "themes": [
+      ["Attention to detail", "Many reviewers point to precise, careful cuts and say they leave with their best haircut in town."],
+      ["Welcoming owner and team", "Customers describe the owner and staff as kind, easygoing and good company in the chair."],
+      ["More than a barbershop", "Reviewers like the mural, the arcade games to pass the wait, and the shelf of local products."]
+    ],
+    "cta": "Walk in or call ahead",
+    "photo": {"id": "photo-1576168056582-0a851a87ab8e", "by": "JJ Shev", "user": "skjev5280"},
+    "pitch": {
+      "greeting": "Hi Modest Barber team,",
+      "line1": "One of your reviewers says Trish has cut his hair for close to a decade, and others mention the arcade and the shelf of local products while they wait.",
+      "gap": "I couldn't find a website for The Modest Barbershop"
+    },
+    "complexity": "standard",
+    "sources": ["Google Maps listing (rating, hours, reviews, phone, address)", "facebook.com/p/Modest-Barber-61579851485088 (description, address, phone, walk-in posts)"],
+    "notes": "No email published on Facebook, so Messenger. Facebook page name is 'Modest Barber'; Maps name is 'The Modest Barbershop'; same address and phone. Opened about October 2025 per a Facebook post. Trish is a long-time barber there (a post calls her the 3rd longest practicing barber in Casper) but I could not confirm she is the owner, so the greeting uses the team. Facebook posts say 'walk in only' and recently 'open 9-5:30', which differs slightly from Google hours (9am – 6pm); confirm hours. Shaves come from a post saying 'get a cut or a shave'; the price list is only an image, so no prices taken."
+  }
+]

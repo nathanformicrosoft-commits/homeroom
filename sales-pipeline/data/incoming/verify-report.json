@@ -1,0 +1,249 @@
+[
+  {
+    "slug": "sosas-barbershop",
+    "verdict": "keep",
+    "issues": [
+      "Line1 says 'while they waited'. The review only says they broke out toys for both boys. Fine as a paraphrase.",
+      "The theme's 'toys in the waiting area' slightly embellishes the same review, which doesn't mention a waiting area."
+    ],
+    "fixes": {},
+    "checked": [
+      "Google Maps listing 2026-11-14: 4.9 (198), Add website, +1 417-622-0393, 3105 E 17th St, hours Mon-Thu 10-6 / Fri-Sat 9-6 / Sun closed all match; chips attention to detail 10 (top), kid-friendly 7, hair styling 5, hair coloring 2, fade 7",
+      "Review read: 'Brought both my boys ... they broke out toys for them' (2 months ago); out-of-town walk-in with Omar; BJ named",
+      "Book online button goes to Square Appointments (not a website)",
+      "facebook.com/p/Sosas-Barbershop-61582288561406: email Sosamarlene01@gmail.com, address 3105 E 17th St Joplin, 'fades, and beard work' in intro",
+      "Joplin MO pop ~52k",
+      "curl images.unsplash.com/photo-1781455793310-8427c96454c7?w=800 -> 200"
+    ]
+  },
+  {
+    "slug": "slay-all-day-pressure-washing",
+    "verdict": "keep",
+    "issues": [
+      "Logged out, the Facebook page shows no town or phone. The match rests on the email (kslay), owner Kevin being named in Dothan reviews, and the listed domain. That's a reasonable match, but not a town/phone match.",
+      "I didn't re-read the 'cushions and plants put back' and 'carports' services, because logged-out Maps only shows a few reviews. The chips do support deck, porch, siding, sidewalk and window washing, plus before/after pictures."
+    ],
+    "fixes": {},
+    "checked": [
+      "Google Maps listing 2026-11-14: 4.9 (80), Add website, +1 334-726-3948, service area, Mon-Fri 7am-7pm, Sat-Sun closed; chips work quality 9 (top), quick response 7, sidewalk cleaning 5, before and after pictures 3",
+      "Reviews read: Kevin and crew named by an out-of-town owner (Princeton Dr, Dothan); 1-star review edited to say the owner came back and fixed missed spots",
+      "facebook.com/SlayAllDayPressurewashing: email Kslay5074@gmail.com, website field http://slayalldaypressurewashing.com/",
+      "slayalldaypressurewashing.com: NXDOMAIN on 1.1.1.1, timeout on 8.8.8.8, curl fails (2026-11-14), so line1 holds",
+      "Dothan AL pop ~71k",
+      "curl images.unsplash.com/photo-1677956787377-a0f32c0974af?w=800 -> 200"
+    ]
+  },
+  {
+    "slug": "baggett-exterior-cleaning",
+    "verdict": "fix",
+    "issues": [
+      "Google's category is 'Pressure washing service', not 'Exterior cleaning service'.",
+      "Campers and the owner name Roman come only from Thumbtack. I didn't re-check them here."
+    ],
+    "fixes": {
+      "category": "Pressure washing service"
+    },
+    "checked": [
+      "Google Maps listing 2026-11-14: 5.0 (109), Add website, +1 601-658-7964, 489 Sullivan Kilrain Rd, Mon-Fri 7am-7pm; chips fair pricing 14 (top), exterior cleaning 12, friendly company 6, soft washing 4, metal roof cleaning 3, concrete 3, quick scheduling 3, garage cleaning 2, paver 2, so line1 holds",
+      "facebook.com/baggettexteriorcleaning: email Baggettexteriorcleaning@gmail.com, phone 601-658-7964, Hattiesburg MS; Nov 11 post says 7 years in business",
+      "Hattiesburg MS pop ~48k",
+      "curl images.unsplash.com/photo-1773427610300-e19ad6c7bf27?w=800 -> 200"
+    ]
+  },
+  {
+    "slug": "full-circle-bakery-cafe",
+    "verdict": "keep",
+    "issues": [
+      "The Google name is 'Full Circle Bakery/Cafe' and the Facebook name is 'Full Circle Bakery Cafe'. Either is fine.",
+      "Breakfast burritos and pies don't appear in the chips. The review summary does mention pies, breakfast and lunch."
+    ],
+    "fixes": {},
+    "checked": [
+      "Google Maps listing 2026-11-14: 4.9 (157), Add website, +1 308-224-4302, 3324 2nd Ave, Tue-Fri 6am-1:30pm, Sat 6-12, Sun-Mon closed; chips friendly staff 31, gluten-free 9, fresh fruit 9, falafel 8, chorizo burrito 4, fig and brie danish 2, french toast 2, dairy-free 2",
+      "Review read: passed it for four years after moving to Kearney; pastry on par with what you'd find in Chicago, so line1 holds",
+      "facebook.com/p/Full-Circle-Bakery-Cafe-100065230772865: fullcirclebakerycafe@gmail.com, same phone and address, hours match",
+      "Kearney NE pop ~34k",
+      "curl images.unsplash.com/photo-1597528662465-55ece5734101?w=800 -> 200"
+    ]
+  },
+  {
+    "slug": "curbside-clips",
+    "verdict": "drop",
+    "issues": [
+      "contactLink m.me/curbside.clips.2024 points to a personal Facebook PROFILE, not a Page. It has Friends/Work/College sections ('Certified Master Groomer at Curbside Clips', 'Studied at University of Nebraska-Curtis') and 'See more people with the same name'.",
+      "No email is published. I searched Bing for a Grand Island Curbside Clips Page and found none. The other 'Curbside Clips' Pages are in Wedowee AL (curbsideclipsmobiledoggrooming) and Fillmore IN (curbsideclipsmobilegrooming). No email and no Page means skip, per the brief."
+    ],
+    "fixes": {},
+    "checked": [
+      "Google Maps listing 2026-11-14: 'Curbside Clips Mobile grooming pet spaw', 5.0 (30), Add website, +1 308-383-1330, 3088 W 2nd St, Mon-Fri 9-5, Sat 9-12. The listing itself is fine.",
+      "Reviews read: Stella with seizures (Jill), Apollo with bad anxiety. Line1 would have held.",
+      "facebook.com/curbside.clips.2024 (personal profile)",
+      "Bing: \"Curbside Clips\" Grand Island facebook",
+      "curl images.unsplash.com/photo-1782022491533-267c13b410bf?w=800 -> 200"
+    ]
+  },
+  {
+    "slug": "renfrows-tree-service",
+    "verdict": "keep",
+    "issues": [
+      "The Google name is 'Renfrow tree service'.",
+      "The 'clean up' chip (5) ties with a generic 'job' chip (5), so 'mentioned most' is fair but not strictly true.",
+      "Logged out, I couldn't re-read reviews to confirm that more than one thanks Doug and the crew by name. The owner name Doug isn't otherwise confirmed.",
+      "The Facebook page shows no phone, and its address differs from Google's (1131 Rutter St vs 221 Forsythia Dr). Same town and name."
+    ],
+    "fixes": {},
+    "checked": [
+      "Google Maps listing 2026-11-14: 5.0 (17), Add website, +1 270-994-8563, Mon-Fri 6:30am-5pm; chips clean up 5, job 5, punctuality 3, responsive 2, cleanliness 2; review summary quotes 'very reasonable' prices",
+      "facebook.com/p/Renfrows-Tree-Service-100049219102164: email 270.renfrow@gmail.com, Paducah KY, last post April 2026",
+      "Paducah KY pop ~27k",
+      "curl images.unsplash.com/photo-1754321860056-ca7254d5e7ac?w=800 -> 200"
+    ]
+  },
+  {
+    "slug": "motion-sudz",
+    "verdict": "keep",
+    "issues": [
+      "Google's category is 'Car wash', and Google shows an address (4505 E Highland Dr, Jonesboro). The demo uses a service area, which is fine for a mobile business.",
+      "Logged out, I couldn't re-read the '47 degrees' review. The 'ford explorer' (2) and 'hard working' (2) chips support the Explorer and cold-weather part.",
+      "Jonesboro AR is ~80k (78.6k in the 2020 census, a bit over now), the top of the range."
+    ],
+    "fixes": {},
+    "checked": [
+      "Google Maps listing 2026-11-14: 'Motion sudz mobile carwash and detailing', 4.8 (20), Add website, +1 870-520-0312, every day 6am-10pm; chips punctuality 5, pricing 5, car detailing 4, ford explorer 2, hard working 2",
+      "facebook.com/p/Motion-sudz-mobile-carwash-and-detailing-61571829167507: ryankarr469@gmail.com, +1 870-520-0312, Jonesboro AR, 'My name is Ryan and i own and run Motion Sudz', mobile anywhere",
+      "curl images.unsplash.com/photo-1633014041037-f5446fb4ce99?w=800 -> 200"
+    ]
+  },
+  {
+    "slug": "virgie-rees-cari-b-q",
+    "verdict": "drop",
+    "issues": [
+      "contactLink points to a Facebook group (groups/513456933029577), not a Page.",
+      "I found no Facebook Page. A Bing search for \"Virgie Ree's\" Bowling Green facebook returns only the group, group posts, a personal profile (facebook.com/virgie.rees) and third-party posts. A 'Cari-B Q' search found nothing relevant. No email is published, so it's a drop per the brief."
+    ],
+    "fixes": {},
+    "checked": [
+      "Bing: \"Virgie Ree's\" Bowling Green facebook",
+      "Bing: \"Cari-B Q\" OR \"CariBQ\" Bowling Green KY",
+      "Didn't re-check the Maps listing, since the contact rule already disqualifies it",
+      "curl images.unsplash.com/photo-1658833608786-22c4b4a621de?w=800 -> 200"
+    ]
+  },
+  {
+    "slug": "angels-tacos",
+    "verdict": "keep",
+    "issues": [
+      "Google's category is 'Mexican restaurant' and Facebook's is Food Truck. The file's category is fine.",
+      "The Maps 'Website' field links only to facebook.com/angelstacos21, which doesn't count as a website.",
+      "Chubbuck ID (~16k) is part of the Pocatello metro (~95k)."
+    ],
+    "fixes": {},
+    "checked": [
+      "Google Maps listing 2026-11-14: 4.8 (24), +1 208-403-4467, Idaho Coffee Co parking lot 322 E Chubbuck Rd, Tue-Wed 11-6:30, Thu 11-5, Fri 11-6:30, Sat 11-6, Sun-Mon closed; chips birria 4, friendly staff 4, quesabirria 2, beans and rice 2",
+      "Reviews read: 4-taco combo smelled so good the reviewer was tempted to pull over and eat it before getting back to work, so line1 holds; chile relleno burrito; rice and beans",
+      "facebook.com/angelstacos21: a Page (Food Truck, 4.8K followers), 322 E Chubbuck Rd, weekly schedule posted Nov 11",
+      "curl images.unsplash.com/photo-1648437595587-e6a8b0cdf1f9?w=800 -> 200"
+    ]
+  },
+  {
+    "slug": "too-smooth-wash-pros",
+    "verdict": "keep",
+    "issues": [
+      "Logged out, I couldn't re-read the New Holland tractor review, so the first sentence of line1 isn't re-verified.",
+      "toosmoothwashpros.com still has no A record and didn't load on 2026-11-14. Re-check before sending, since a site may be in progress."
+    ],
+    "fixes": {},
+    "checked": [
+      "Google Maps listing 2026-11-14 (read from page data): 38 reviews, Add website, +1 620-474-1747, 311 S Washington St Hutchinson KS 67501, Mon-Sat 8:30am-5:30pm, Sun closed",
+      "facebook.com/toosmoothwashpros: a Page (Cleaning Service, Auto Detailing), +1 620-474-1747, fleet, heavy and agricultural equipment washing plus auto detailing",
+      "linktr.ee/toosmoothwashpros links to http://toosmoothwashpros.com (confirmed with curl)",
+      "Hutchinson KS pop ~40k",
+      "curl images.unsplash.com/photo-1780558852670-3f49298ecc1f?w=800 -> 200"
+    ]
+  },
+  {
+    "slug": "rice-family-lawn-snow",
+    "verdict": "keep",
+    "issues": [
+      "The 4:30am snow review is about 4 years old. Line1 says 'one winter', which is fine.",
+      "The phone conflict remains: Google lists +1 217-640-0326 and Facebook lists 217-316-2662. The demo uses the Google number."
+    ],
+    "fixes": {},
+    "checked": [
+      "Google Maps listing 2026-11-14: 42 reviews, Add website, +1 217-640-0326, 901 N 15th St, Mon-Sat open 24 hours, Sun closed; chips value 8, friendly staff 6, snow removal 4, bush care 3, gutter cleaning 2",
+      "Reviews read: had to be at work by 5am and he cleared the snow at 4:30, so line1 holds; gutter review praising attention to details; came the very next day, he and his wife; 1.25 acre yard, yew bushes and vines",
+      "facebook.com/workhard.faith: hardworkinrice@Gmail.com, North 15th Quincy IL, links back to the Google listing",
+      "Quincy IL pop ~39k",
+      "curl images.unsplash.com/photo-1590820292118-e256c3ac2676?w=800 -> 200"
+    ]
+  },
+  {
+    "slug": "the-busy-biscuit",
+    "verdict": "keep",
+    "issues": [
+      "Logged out, I couldn't re-read the five-day-conference review. The RV couple part is verified.",
+      "The reviewer wrote 'definitely unique' and line1 says 'truly unique'. Fine as a paraphrase."
+    ],
+    "fixes": {},
+    "checked": [
+      "Google Maps listing 2026-11-14: 31 reviews, website field is their Facebook page only, no phone, 2000 Front St Ste B Meridian, Mon-Fri 7am-2pm, Sat-Sun closed",
+      "Reviews read: RV couple who visit cafes across the country (coffee, muffins, young friendly owner); white chocolate raspberry, blueberry and sausage biscuits",
+      "facebook.com/p/The-Busy-Biscuit-100088744846177: The_busybiscuit@att.net, 2000 Front St Meridian MS, EST 2022, posted Nov 12",
+      "Meridian MS pop ~34k",
+      "curl images.unsplash.com/photo-1688783944974-fc8283c7c877?w=800 -> 200"
+    ]
+  },
+  {
+    "slug": "gios-paw-spa",
+    "verdict": "fix",
+    "issues": [
+      "line1 and theme 1 say reviewers call it 'one of the only places in Hot Springs' that grooms cats. I couldn't verify that. The 'cat grooming' chip (4) shows cats come up, but none of the reviews visible logged out say it's one of the only places. It overstates unless re-confirmed, so I replaced both with supported versions.",
+      "The photo duplicated barks-and-bubbles-rapid-city (same Unsplash id). It stays here because the scissors-on-small-dog shot suits a salon, and Barks & Bubbles gets the new photo."
+    ],
+    "fixes": {
+      "pitch.line1": "Cat grooming comes up again and again in your Google reviews, and one longtime customer said your team treats their dogs and cats like family.",
+      "themes.0": ["They groom cats too", "Cat grooming comes up in several reviews, from nail trims to long-haired cats."]
+    },
+    "checked": [
+      "Google Maps listing 2026-11-14: 4.5 (65), Add website, +1 501-762-4010, 1134 Malvern Ave Hot Springs, Tue-Sat 8am-5pm, Sun-Mon closed; chips cat grooming 4, yorkie 3, cat nail trimming 2, long hair 2, baths 2, same-day appointments 2",
+      "Reviews read: workers 'treat your dogs and cats like family' (8 years ago); Molly thanked; price praised",
+      "facebook.com/1134MalvernAve: giospawspa1217@gmail.com, same phone and address, 'full service Dog and Cat grooming salon', specialized packages; active Nov 11",
+      "Hot Springs AR pop ~38k",
+      "curl images.unsplash.com/photo-1719464454959-9cf304ef4774?w=800 -> 200"
+    ]
+  },
+  {
+    "slug": "barks-and-bubbles-rapid-city",
+    "verdict": "fix",
+    "issues": [
+      "The photo was the same Unsplash id as gios-paw-spa. I replaced it with a Pomeranian in a pink towel being combed (no person's face, no logos), checked visually.",
+      "Logged out, I couldn't re-read the Piedmont review. The tail-color part of line1 is verified."
+    ],
+    "fixes": {
+      "photo": {"id": "photo-1611173622933-91942d394b04", "by": "Hayffield L", "user": "hayffield"}
+    },
+    "checked": [
+      "Google Maps listing 2026-11-14: 4.9 (149), Add website, +1 605-719-9025, 3606 Canyon Lake Dr, Mon-Fri 9-5, Sat-Sun closed; chips nail trim 7, self wash 6, quality grooming 5, affordable 4, anxious dogs 3, bernese grooming 2, first time grooming 2",
+      "Reviews read: anxious Aussie and a dog that hates nail trims, both smelled great for over a week; 'doing colors on my dog's tail for several years'",
+      "facebook.com/barksandbubblessd: barksandbubbles20@gmail.com, same address and phone",
+      "Rapid City SD pop ~78k",
+      "Unsplash search 'dog grooming': new photo by Hayffield L (@hayffield); curl images.unsplash.com/photo-1611173622933-91942d394b04?w=800 -> 200"
+    ]
+  },
+  {
+    "slug": "the-modest-barbershop-casper",
+    "verdict": "keep",
+    "issues": [
+      "Logged out, I couldn't re-read the 'close to a decade' review. Trish is named in a visible review, and a 'local products' (2) chip exists.",
+      "Hours differ between sources: Google says Tue-Fri 9-6, Sat 8-4, while Facebook posts mention 9-5:30 and walk-in only (already in notes)."
+    ],
+    "fixes": {},
+    "checked": [
+      "Google Maps listing 2026-11-14: 5.0 (41), Add website, +1 307-797-8263, 2649 E 2nd St, Tue-Fri 9am-6pm, Sat 8am-4pm, Sun-Mon closed; chips attention to detail 6, skillful team 4, welcoming 3, local products 2, kid-friendly 2, knowledgeable owner 2",
+      "Reviews read: Trish always finds time to cut the family's hair; something to do while you wait; 'more than just a barbershop'",
+      "facebook.com/p/Modest-Barber-61579851485088: a Page with the same address and phone, so m.me/61579851485088 is a Page link; no email",
+      "Casper WY pop ~59k",
+      "curl images.unsplash.com/photo-1576168056582-0a851a87ab8e?w=800 -> 200"
+    ]
+  }
+]
