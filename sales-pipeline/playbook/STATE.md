@@ -20,8 +20,8 @@ The memory between chats. `/visayaweb` loads this file in any new chat. **Every 
 
 ## Status (update when it changes)
 - Launch: first emails go out **Tue Nov 17** (AU 5:05–8:12 AM, US 9:03–10:28 PM Manila) and **Wed Nov 18** (9:05–11:26 PM Manila). Checked 2026-11-15: 26/26 Gmail drafts exist in nathanformicrosoft@gmail.com, 26/26 demos load, QA PASS.
-- The timed-send jobs live only in the chat that created them (session-only CronCreate). If that chat is closed, `/visayaweb` finds waiting sends without jobs and offers to reschedule them.
-- Prospect bank: empty. The 2026-11-14 and 2026-11-15 runs failed on usage limits. Fixed: research on Sonnet, 16 per run. Next runs at about 2:27 AM and 1:27 PM daily.
+- The timed-send jobs live only in the chat that created them (session-only CronCreate). If that chat is closed, `/visayaweb` finds waiting sends without jobs and offers to reschedule them. 2026-11-15 (evening): a /visayaweb chat rescheduled all 26 at +3 min (last one Wed Nov 18 11:29 PM Manila), so that chat and the app must stay open until then.
+- Prospect bank: empty. The 2026-11-14 and both 2026-11-15 runs failed on the 5-hour usage limit (the 1:27 PM run died in 6 seconds, so the Sonnet fix is still untested). Fixed: research on Sonnet, 16 per run. Next runs at about 2:27 AM and 1:27 PM daily.
 - Scheduled tasks: `visaya-daily-pipeline` (7:27 PM), `visaya-reply-watch` (hourly, Manila 9 PM to 5 PM; exits at once until the first send), `visaya-prospect-bank` (2:17 AM and 1:17 PM).
 
 ## Open items
@@ -33,3 +33,4 @@ The memory between chats. `/visayaweb` loads this file in any new chat. **Every 
 ## Session log (one line per session: date, what changed)
 - 2026-11-14/15: built the pipeline optimizer (price/copy/format tests, care tiers, revenue goal, send governor, lead scoring), one-line approvals, PayPal.me payments, email only, holiday skips, research fix, subagent workline, /visayaweb.
 - 2026-11-15: improved /visayaweb: it pulls first, checks every unsent timed send (not just the last few), asks about late and NOW sends instead of scheduling them, and covers the care/carepaid/upsell and STOP logging. NEW-CHAT-PROMPT.md is marked replaced.
+- 2026-11-15: /visayaweb check: no timed-send jobs found; owner approved rescheduling all 26 pitches at +3 min in this chat. Bank still empty (usage limit).
