@@ -32,3 +32,4 @@ The memory between chats. `/visayaweb` loads this file in any new chat. **Every 
 
 ## Session log (one line per session: date, what changed)
 - 2026-11-14/15: built the pipeline optimizer (price/copy/format tests, care tiers, revenue goal, send governor, lead scoring), one-line approvals, PayPal.me payments, email only, holiday skips, research fix, subagent workline, /visayaweb.
+- 2026-11-15: improved /visayaweb: it pulls first, checks every unsent timed send (not just the last few), asks about late and NOW sends instead of scheduling them, and covers the care/carepaid/upsell and STOP logging. NEW-CHAT-PROMPT.md is marked replaced.

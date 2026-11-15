@@ -1,3 +1,5 @@
+> **Replaced (2026-11-15): don't use this file.** To pick up the work in a new chat, type `/visayaweb` instead. It loads STATE.md and checks the timed sends against what's really waiting. The prompt below is kept only as a record of the Nov 14 handover. It is out of date: don't paste it, and don't act on its step 1 (scheduling all 26 sends).
+
 Paste everything below the line into a new Claude Code chat (project folder: C:\Users\natha\Projects\visaya-sales).
 
 ---
