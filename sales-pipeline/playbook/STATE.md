@@ -25,6 +25,7 @@ The memory between chats. `/visayaweb` loads this file in any new chat. **Every 
 - 2026-11-15: **upgrade alerts:** the ladder is `playbook/upgrades.json` + `node upgrades.js status`. learn.js puts an "**Act on:**" line at the top of insights.md (ready to buy, renewals, dated reminders, ₱ milestones). The daily report and push notification lead with it. The owner buys; Claude logs it with `node upgrades.js bought <id> --amount N` (`data/spend.jsonl`). `settings.reinvestShare` (1.0) sets how much of collected money goes to upgrades; `settings.upgradeCushionUSD` is 300.
 - 2026-11-15: **after Nov 18, widen `sendLocalHours` to 8–11 AM** (about 6 more slots per time zone). Not done yet: it's a sending change, frozen until the 26 are out. AU research stays off for now.
 - 2026-11-15: **weekly growth review approved** (the owner said to continue with it): task `visaya-growth-review`, with the self-tuning limits in "Status".
+- 2026-11-15: **improvement plan approved, in 3 phases.** (1) Reinvestment that learns: value per sent email from live numbers; buys ranked by payback; before/after measurement replaces assumed gains; new kinds of buys start as "proposed" and need the owner's yes; reinvestShare is only ever suggested. (2) From Nov 19: the frozen sending and workflow items in "Open items". (3) Subagent audit plus a usage budget for each scheduled task. Phase 1 starts after the 2026-11-16 2:27 AM bank run, so that run's usage-limit test stays clean.
 - 2026-11-15: **daily step 7 (pitch.js) is paused until 2026-11-19**, so the queue isn't rewritten while the 26 timed sends go out. Tonight's daily run was skipped (one-night skip line in its SKILL.md; remove it any time after today).
 
 ## Status (update when it changes)
@@ -35,6 +36,7 @@ The memory between chats. `/visayaweb` loads this file in any new chat. **Every 
 - Scheduled tasks: `visaya-daily-pipeline` (7:27 PM), `visaya-reply-watch` (hourly, Manila 9 PM to 5 PM; exits at once until the first send), `visaya-prospect-bank` (2:17 AM and 1:17 PM), `visaya-growth-review` (Sundays about 9:57 AM, Auto mode; first run Nov 22). The review writes a scorecard and ranked ideas to `playbook/growth-ideas.md`, may make only one copy challenger and trade-group prior changes of ±0.3 a week (groups with 15+ pitches at least 14 days old), and sends everything else to the owner.
 
 ## Open items
+- Phase 1 (reinvestment that learns): set to start in the 2026-11-15 night /visayaweb chat, via a one-shot wake-up at 7:47 AM Nov 16 Manila (session-only, so it's lost if that chat closes). If it hasn't started, any chat can begin it from the decision above.
 - After the first sends: watch replies and approve fast. Redo the revenue forecast after about 2 weeks of real data.
 - When sales reach about $115: tell the owner the upgrades are funded (`DOMAIN-SETUP.md`).
 - First weekly growth review runs Sun Nov 22 (very little data yet, so expect a mostly empty scorecard). Check `playbook/growth-ideas.md` afterwards and decide on its top idea.
