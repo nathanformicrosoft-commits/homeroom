@@ -21,6 +21,7 @@ The memory between chats. `/visayaweb` loads this file in any new chat. **Every 
 - 2026-11-15: **demo pages use nathanformicrosoft@gmail.com** (the watched inbox), not the personal Gmail.
 - 2026-11-15: **refund rule confirmed:** on a care cancel, every full unused month is refunded (yearly plan = 1/12 of its price a month). It's in the close terms and the cancel template.
 - 2026-11-15: **targeting:** the perfect customer is an owner-run home or outdoor service business in a small town that works at the customer's place, gets its calls from Google and reviews, charges $250–600 a job, has 4.5+ stars and 25–150 reviews, and reads a Gmail. Trade groups and priors are in `playbook/trade-groups.json`. Hunt order: tree, exterior cleaning, home trades, pest/septic, pets, lawn (year-round states), auto, cleaning/junk. **Barbers and food are deprioritized** (at most 1 each per run or take). HVAC, roofing, plumbing, snow-only work and chains are skipped.
+- 2026-11-15: **reinvest earnings into reach:** after the $115 own-domain setup, add one sending domain + inbox a month (about $95/yr each, up to 6 inboxes / about 240 emails a day) while cash covers it with a $300 cushion and every inbox is healthy. Each purchase still gets the owner's yes. Ladder in `DOMAIN-SETUP.md` "Reinvestment ladder". Projection (expected): ₱1M about May 2027, $200k pace about Dec 2027.
 - 2026-11-15: **after Nov 18, widen `sendLocalHours` to 8–11 AM** (about 6 more slots per time zone). Not done yet: it's a sending change, frozen until the 26 are out. AU research stays off for now.
 - 2026-11-15: **daily step 7 (pitch.js) is paused until 2026-11-19**, so the queue isn't rewritten while the 26 timed sends go out. Tonight's daily run was skipped (one-night skip line in its SKILL.md; remove it any time after today).
 
@@ -34,7 +35,7 @@ The memory between chats. `/visayaweb` loads this file in any new chat. **Every 
 ## Open items
 - After the first sends: watch replies and approve fast. Redo the revenue forecast after about 2 weeks of real data.
 - When sales reach about $115: tell the owner the upgrades are funded (`DOMAIN-SETUP.md`).
-- When a second inbox exists: build multi-inbox sending (caps and warm-up per inbox).
+- Before the second inbox is bought (expected about Jan 2027): build multi-inbox sending (caps and warm-up per inbox, drafts in the right mailbox, replies from the thread's inbox), and have learn.js say in insights.md when the next ladder rung is funded.
 - By Oct 2027: add 2028 holidays to `settings.skipDates` (learn.js warns).
 - Owner to confirm: the refund rule in the close terms (every full unused month comes back; yearly plan = 1/12 a month), that care starts on launch day, AUD prices for the founding-client discount and upsells (closing.md says "ask the owner"), and whether the close (about 330 words) should be trimmed.
 - After Nov 18 (frozen until then): match leads by slug, not name (`pitch.js`, `log.js`); make `pitch.js` merge the queue instead of rewriting it; `replies.md` and config `payments.rules` still write `$`/`USD` examples without the currency code.

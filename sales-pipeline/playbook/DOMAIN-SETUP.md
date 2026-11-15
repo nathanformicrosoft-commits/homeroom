@@ -48,6 +48,16 @@ Spend only what buys **more safe sending** or **more trust**. Each item needs th
 | 3 | A third inbox, only after the first two have run clean for a month | about $95 a year | About 120 a day in total. Past three inboxes, the bottleneck is finding good businesses and answering replies fast, not sending. |
 | – | Keep the rest (about $700) as reserve | – | Renewals, and a cushion if a month is slow. |
 
+## Reinvestment ladder (owner's intent 2026-11-15: reinvest earnings to reach more businesses)
+
+After the three steps above, keep adding reach out of revenue, one rung at a time. **Every purchase still needs the owner's yes in chat.** Claude only says when the next rung is funded.
+
+- **When:** at most one new domain + inbox a month, and only when (money collected − money spent on upgrades) covers it with at least $300 left as a cushion.
+- **Health gate:** only after every existing inbox has run a clean month (no complaints, bounces under 3%, STOPs under 5%). Any complaint pauses the ladder for a month.
+- **Each rung:** another sending domain + Workspace inbox, about $95 a year, warmed up from about 8 a day to 40. Up to **6 inboxes** (about 240 emails a day). Past that, revisit with real reply and close rates.
+- **Research has to keep up:** each inbox needs about 40 good businesses a weekday. From inbox 3 on, budget about $100 a month per extra inbox for more research capacity (a bigger Claude plan or `perRunMax`), and raise `perRunMax` only when bank runs finish inside the usage limit.
+- **Projection** (estimates, revenue outlook page, 2026-11-15): expected case passes ₱1M collected about May 2027 and a $200k-a-year pace about Dec 2027, against about $9,500 reinvested through 2028. One inbox only: ₱1M about Jul 2027, and the goal pace isn't reached by 2028.
+
 **Don't buy:** email lists (they bounce and get flagged), "warm-up" networks (fake engagement that Google penalizes), mass-mailing tools, or link trackers (tracking lowers replies). They all trade a short-term bump for a burned inbox.
 
 **Claude's part once inbox 2 exists:** a sending cap and warm-up per inbox in the scheduler and the volume governor, drafts created in the right mailbox, and replies always answered from the inbox the thread started in.
