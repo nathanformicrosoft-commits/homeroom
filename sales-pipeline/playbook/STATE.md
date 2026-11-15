@@ -19,6 +19,9 @@ The memory between chats. `/visayaweb` loads this file in any new chat. **Every 
 - 2026-11-15: the owner is upgrading to the Claude Max plan. **When confirmed:** set `perRunMax` to 24 in `data/bank-state.json`.
 - 2026-11-15 (revenue pass): approved and built: the reply watch reads emails and prices from `data/prospects.json` (never `queue.json`); research is two-stage and email first (`bank.js` stage A, then `enrich` at take time, using `playbook/photo-pool.json`); the one-email close in `closing.md`; a care ledger in `learn.js` that counts only paid-up plans (yearly = 10/12 of monthly) and adds "Care payments due"; `node learn.js --links <slug>` is the only source of payment amounts and links (market currency, AUD for AU).
 - 2026-11-15: **demo pages use nathanformicrosoft@gmail.com** (the watched inbox), not the personal Gmail.
+- 2026-11-15: **refund rule confirmed:** on a care cancel, every full unused month is refunded (yearly plan = 1/12 of its price a month). It's in the close terms and the cancel template.
+- 2026-11-15: **targeting:** the perfect customer is an owner-run home or outdoor service business in a small town that works at the customer's place, gets its calls from Google and reviews, charges $250–600 a job, has 4.5+ stars and 25–150 reviews, and reads a Gmail. Trade groups and priors are in `playbook/trade-groups.json`. Hunt order: tree, exterior cleaning, home trades, pest/septic, pets, lawn (year-round states), auto, cleaning/junk. **Barbers and food are deprioritized** (at most 1 each per run or take). HVAC, roofing, plumbing, snow-only work and chains are skipped.
+- 2026-11-15: **after Nov 18, widen `sendLocalHours` to 8–11 AM** (about 6 more slots per time zone). Not done yet: it's a sending change, frozen until the 26 are out. AU research stays off for now.
 - 2026-11-15: **daily step 7 (pitch.js) is paused until 2026-11-19**, so the queue isn't rewritten while the 26 timed sends go out. Tonight's daily run was skipped (one-night skip line in its SKILL.md; remove it any time after today).
 
 ## Status (update when it changes)
@@ -35,7 +38,11 @@ The memory between chats. `/visayaweb` loads this file in any new chat. **Every 
 - By Oct 2027: add 2028 holidays to `settings.skipDates` (learn.js warns).
 - Owner to confirm: the refund rule in the close terms (every full unused month comes back; yearly plan = 1/12 a month), that care starts on launch day, AUD prices for the founding-client discount and upsells (closing.md says "ask the owner"), and whether the close (about 330 words) should be trimmed.
 - After Nov 18 (frozen until then): match leads by slug, not name (`pitch.js`, `log.js`); make `pitch.js` merge the queue instead of rewriting it; `replies.md` and config `payments.rules` still write `$`/`USD` examples without the currency code.
-- Not built yet (owner decision needed): nudges for leads who replied and then went quiet (+2/+5 days), a day-28 re-pitch, follow-ups timed to the lead's morning, scoring grouped by trade, `take` spread across time zones, and a minimum-wins guard on the price-test rules.
+- Nov 19: set `settings.sendLocalHours` to [8,11] (owner approved 2026-11-15), and remove the one-night skip and step-7 pause lines from the daily SKILL.md.
+- After the 2026-11-16 2:27 AM run proves stage A: add the optional research fields `serviceArea`, `fbLastPost` and `deadDomain` to PROSPECTING-BRIEF.md and prospect-researcher.md (`bank.js` already scores them).
+- About Dec 1, once pitches are 14+ days old: learning by trade group weighted by first-year value with care counted most (`groupAdj` in bank.js, groups in learn.js "By business type"); planned, not built.
+- Owner to check: whether PayPal buyer protection covers PayPal.me payments (the "Is this a scam?" reply no longer claims it).
+- Not built yet (owner decision needed): nudges for leads who replied and then went quiet (+2/+5 days), a day-28 re-pitch, follow-ups timed to the lead's morning, a minimum-wins guard on the price-test rules, and a seasonal care pause plan.
 - insights.md is committed; "What people said" still quotes STOP and complaint notes. Check whether the repo is private.
 
 ## Session log (one line per session: date, what changed)
@@ -43,3 +50,4 @@ The memory between chats. `/visayaweb` loads this file in any new chat. **Every 
 - 2026-11-15: improved /visayaweb: it pulls first, checks every unsent timed send (not just the last few), asks about late and NOW sends instead of scheduling them, and covers the care/carepaid/upsell and STOP logging. NEW-CHAT-PROMPT.md is marked replaced.
 - 2026-11-15: /visayaweb check: no timed-send jobs found; owner approved rescheduling all 26 pitches at +3 min in this chat. Bank still empty (usage limit).
 - 2026-11-15 (evening): revenue pass. Fixed the reply watch losing pitched leads, cheaper two-stage research, the one-email close, the care billing ledger plus `--links`, AUD links for AU, permanent STOP, a care-cancel path, and the demo inbox. Reviewed and audited, demos redeployed, step 7 paused to Nov 19. The 26 send jobs are still in the earlier /visayaweb chat.
+- 2026-11-15 (night): targeting pass. Added trade groups plus an ICP lead score, a `take` spread across time zones and trades (35% zone cap, 40% trade cap, 20% exploration, barber/food at most 1, avoid list excluded, STOP-heavy trades at -5), the hunt list in the bank task, and care wording by trade (Local Growth first for Google-driven trades). Reviewed, and all 8 findings fixed.

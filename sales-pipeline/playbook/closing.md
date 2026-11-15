@@ -37,13 +37,31 @@ Everything they need is in this one email, so there is no back-and-forth before 
 > - Anything on the preview you'd like changed
 >
 > Last, for after launch, which would you like?
-> - Local Growth, [GROWTH] a month: everything in Basic, plus I keep your Google Business Profile current (two posts a month, hours and photos), set up a review-request link and a printable QR card, and send a short monthly note on what came in through the site.
-> - Basic, [CARE] a month: hosting, updates and small edits like new hours or prices. You just email me.
-> - Host it yourself: I hand over the logins at launch, one time, and there's nothing monthly.
+> [CARE OPTIONS]
 >
-> Either plan can be cancelled any time, and paying a year up front gets you 2 months free. You can tell me later; it doesn't hold anything up.
+> [CARE CLOSER]
 >
 > [Sign-off]
+
+**Care choice: which plan goes first.** Find the prospect's trade group in `playbook/trade-groups.json` (the first group whose `match` fits their Google category, then their business name; no match = other) and read its `careLead` and `seasonal`. `careLead: "growth"` (Google-driven trades: tree, exterior-clean, home-trades, pest-septic, lawn) uses growth-first; `careLead: "basic"` (repeat-booking trades: pets, auto, cleaning-junk, barber, food, other) uses basic-first. If the group can't be found, use basic-first. Both orders keep all three options, and the amounts are still exactly the [GROWTH] and [CARE] lines from `--links` (older pitches that said 39 for Basic keep it; `--links` already prints that).
+
+[CARE OPTIONS], growth-first:
+> - Local Growth, [GROWTH] a month, built around calls from Google: I keep your Google Business Profile current (two posts a month, hours and photos), set up a review-request link and a printable QR card so happy customers leave reviews, and send a short monthly note on what came in through the site. Hosting and small edits are included.
+> - Basic, [CARE] a month: hosting, updates and small edits like new hours or prices. You just email me.
+> - Host it yourself: I hand over the logins at launch, one time, and there's nothing monthly.
+
+[CARE OPTIONS], basic-first (keep "menu" for food only):
+> - Basic, [CARE] a month: I keep your hours, prices, menu and photos current, plus hosting and updates. When something changes, you just email me.
+> - Local Growth, [GROWTH] a month, the step up: everything in Basic, plus I keep your Google Business Profile current (two posts a month, hours and photos), set up a review-request link and a printable QR card, and send a short monthly note on what came in through the site.
+> - Host it yourself: I hand over the logins at launch, one time, and there's nothing monthly.
+
+[CARE CLOSER], usual:
+> Either plan can be cancelled any time, and paying a year up front gets you 2 months free. You can tell me later; it doesn't hold anything up.
+
+[CARE CLOSER], when `seasonal` is true (leave the slow-season words out if their hours or reviews show they work all year):
+> Either plan can be cancelled any time. If you pay for a year up front you get 2 months free, which covers your slow season. You can tell me later; it doesn't hold anything up.
+
+The yearly plan is the same offer either way: 12 months for 10 months' price ([CARE YEAR] or [GROWTH YEAR]), refunded at 1/12 of its price for every full month unused if they cancel. There is no pause plan.
 
 Then log: `node log.js <slug> interested` if not already logged. When the deposit arrives, log it with the deposit command `--links` prints (`node log.js <slug> deposit --amount <amount received> --currency [CUR]`). If they pick a plan in their reply, note it for launch (step 6); it is logged with `care` only when the first care payment comes in.
 
@@ -81,7 +99,11 @@ Send when they approve the finished site. `--links` prints [FINAL] and [FINAL LI
 >
 > **Host it yourself:** I'll walk you through the logins at handover, so you can change anything yourself.
 >
-> **Not chosen yet:** If you'd like me to look after it, Local Growth is [GROWTH] a month and Basic is [CARE] a month, and a year up front gets 2 months free. Or you can host it yourself; I'll hand over the logins either way.
+> **Not chosen yet, growth-first** (`careLead` as in step 1): If you'd like me to look after it, Local Growth is [GROWTH] a month and built around calls from Google: your Google profile, posts and a review-request link. Basic is [CARE] a month for hosting and small edits. A year up front gets 2 months free. Or you can host it yourself; I'll hand over the logins either way.
+>
+> **Not chosen yet, basic-first:** If you'd like me to look after it, Basic is [CARE] a month and keeps your hours, prices, menu and photos current (menu for food only). The step up is Local Growth at [GROWTH] a month, which adds your Google profile. A year up front gets 2 months free. Or you can host it yourself; I'll hand over the logins either way.
+
+If `seasonal` is true, add ", which covers your slow season" after "2 months free" in the "Not chosen yet" line, with the step 1 exception.
 
 Log the final payment with the `paid` command `--links` prints, and the care plan when its first payment comes in: `node log.js <slug> care --amount <monthly price> --plan basic|growth [--annual]`, and log that first payment as well: `node log.js <slug> carepaid --amount <amount received> --currency [CUR]` (log both, or learn.js shows the plan as unpaid and holds its reminders). Then connect their domain, transfer the Netlify site to an account in their name, and send the how-to below.
 
@@ -93,8 +115,15 @@ Log the final payment with the `paid` command `--links` prints, and the care pla
 > - **Google:** add the site link to your Google Business Profile so searchers can find it.
 
 ## 8. Care plan offer (only if they haven't chosen yet; same message or next day)
-The close and the launch message already offer care. Send this only if they still haven't picked a plan or said they'll host it themselves.
-> If you'd rather not deal with any of that, I can look after it. For [GROWTH] a month I'll keep your Google Business Profile current (two posts a month, hours and photos), set you up with a review-request link and a printable QR card for the counter or truck, and send you a short monthly note on what came in through the site. Or for [CARE] a month, just hosting, updates and small edits like new hours or prices. Either one, cancel any time, and if you pay for a year up front you get 2 months free. Want me to set one up?
+The close and the launch message already offer care. Send this only if they still haven't picked a plan or said they'll host it themselves. Pick the version from `careLead` in `playbook/trade-groups.json`, as in step 1; amounts from `--links`.
+
+Growth-first:
+> If you'd rather not deal with any of that, I can look after it. Local Growth, [GROWTH] a month, is built around calls from Google: I keep your Google Business Profile current (two posts a month, hours and photos), set you up with a review-request link and a printable QR card for the counter or truck, and send you a short monthly note on what came in through the site. Or for [CARE] a month, just hosting, updates and small edits like new hours or prices. Either one, cancel any time, and if you pay for a year up front you get 2 months free. Want me to set one up?
+
+Basic-first (keep "menu" for food only):
+> If you'd rather not deal with any of that, I can look after it. For [CARE] a month I keep your hours, prices, menu and photos current, plus hosting and updates; you just email me when something changes. The step up is Local Growth at [GROWTH] a month, which adds your Google Business Profile (two posts a month, hours and photos), a review-request link and a printable QR card. Either one, cancel any time, and if you pay for a year up front you get 2 months free. Want me to set one up?
+
+If `seasonal` is true, add ", which covers your slow season" after "2 months free" (same exception as step 1).
 
 Log it: `node log.js <slug> care --amount <monthly price> --plan basic|growth [--annual]`, each payment with `carepaid --amount <amount> --currency [CUR]`, a cancellation with `carecancel` (see "Cancelling care"). Then `node log.js <slug> offered --note care` so the reminder stops (also log this once the launch message has offered care and they've answered). Local Growth needs them to add the studio email as a manager on their Google Business Profile; never ask for their Google password.
 

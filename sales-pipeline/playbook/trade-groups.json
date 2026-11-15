@@ -1,0 +1,28 @@
+{
+  "_about": "Trade groups for bank.js (groupOf, score, balanced take) and the prospect-bank hunt list. Groups are checked in this order, avoid first; the first group whose regex matches the Google category wins, then the same regexes are tried on the business name; no match = other. prior = score points. hunt = research order (lower first; null = never hunt). careLead = which care plan to lead with. maxPerTake = most leads of that group one take may move. Regexes are case-insensitive. bank.js anchors every pattern at a word start, so write stems such as roof, not a leading word-boundary escape. Avoid groups are also checked against the business name.",
+  "groups": [
+    { "id": "avoid", "prior": -3, "seasonal": false, "careLead": "basic", "hunt": null, "avoid": true,
+      "match": ["hvac", "heating", "air condition", "furnace", "roof", "plumb", "snow\\s*(removal|plow)", "plowing", "holiday light", "christmas light", "lights? install"] },
+    { "id": "tree", "prior": 2.0, "seasonal": false, "careLead": "growth", "hunt": 1,
+      "match": ["tree", "stump", "arborist"] },
+    { "id": "exterior-clean", "prior": 1.8, "seasonal": false, "careLead": "growth", "hunt": 2,
+      "match": ["pressure wash", "power wash", "soft wash", "window clean", "window wash", "gutter"] },
+    { "id": "home-trades", "prior": 1.6, "seasonal": false, "careLead": "growth", "hunt": 3,
+      "match": ["fenc", "concrete", "handyman", "handy man", "garage door", "deck", "paving", "paver", "asphalt", "masonry", "driveway"] },
+    { "id": "pest-septic", "prior": 1.5, "seasonal": false, "careLead": "growth", "hunt": 4,
+      "match": ["pest", "exterminat", "septic", "termite"] },
+    { "id": "pets", "prior": 1.0, "seasonal": false, "careLead": "basic", "hunt": 5,
+      "match": ["pet groom", "dog groom", "groomer", "dog walk", "pet sit", "dog board", "kennel", "pet board", "dog train"] },
+    { "id": "lawn", "prior": 0.8, "seasonal": true, "careLead": "growth", "hunt": 6,
+      "match": ["lawn", "landscap", "mowing", "garden"] },
+    { "id": "auto", "prior": 0.6, "seasonal": false, "careLead": "basic", "hunt": 7,
+      "match": ["detail", "small engine", "mobile mechanic", "mechanic", "car wash", "auto repair", "auto detail", "mower repair"] },
+    { "id": "cleaning-junk", "prior": 0.6, "seasonal": false, "careLead": "basic", "hunt": 8,
+      "match": ["house clean", "home clean", "maid", "cleaning service", "junk", "hauling", "rubbish"] },
+    { "id": "barber", "prior": -0.5, "seasonal": false, "careLead": "basic", "hunt": 9, "deprioritized": true, "maxPerTake": 1,
+      "match": ["barber", "hair salon", "hairdress"] },
+    { "id": "food", "prior": -1.0, "seasonal": false, "careLead": "basic", "hunt": 10, "deprioritized": true, "maxPerTake": 1,
+      "match": ["cafe", "café", "diner", "bakery", "restaurant", "food truck", "coffee", "pizza", "grill", "bbq", "catering", "bistro", "taco"] },
+    { "id": "other", "prior": 0, "seasonal": false, "careLead": "basic", "hunt": 11, "match": [] }
+  ]
+}

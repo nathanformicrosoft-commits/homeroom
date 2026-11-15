@@ -86,35 +86,115 @@ function vet(p, k, req) {
 }
 
 // ---- lead score ----
+// Trade groups (playbook/trade-groups.json): prior, seasonality, care lead, hunt order. A missing file degrades to one "other" group.
+let GROUPS = [];
+try {
+  // each pattern must start at a word boundary (so "Street" is not tree, "Mermaid" is not maid, "Waterproofing" is not roof)
+  GROUPS = readJSON('playbook/trade-groups.json').groups.map((g) => Object.assign({}, g, { res: (g.match || []).map((x) => new RegExp('\\b(?:' + x + ')', 'i')) }));
+} catch (e) { console.error('WARN playbook/trade-groups.json unusable (' + e.message + '): every business falls back to group "other"'); GROUPS = []; }
+const OTHER = GROUPS.find((g) => g.id === 'other') || { id: 'other', prior: 0, seasonal: false, careLead: 'basic', hunt: 99, res: [] };
+// An avoid group matching the category or the name wins; then the first group (file order) matching the category; then the name.
+function groupOf(rec) {
+  const cat = String((rec && rec.category) || ''), name = String((rec && rec.name) || '');
+  const hit = (list, field) => field && list.find((x) => x.res.some((re) => re.test(field)));
+  const avoid = GROUPS.filter((g) => g.avoid);
+  return hit(avoid, cat) || hit(avoid, name) || hit(GROUPS, cat) || hit(GROUPS, name) || OTHER;
+}
 const outcomes = readJSONL('data/outcomes.jsonl');
 const POS = ['interested', 'won', 'deposit', 'paid'];
+const learnKey = (e) => { const g = groupOf(e); return g.id === 'other' ? 'other:' + e.category : g.id; }; // learn by group; ungrouped types by category
+const stopHeavy = {}; // STOP-heavy groups: at least 3 STOPs/complaints and over 8% of their pitches (any age, any sample size)
 const catAdj = (() => {
   const evs = {};
   for (const e of outcomes) (evs[e.slug] = evs[e.slug] || []).push(e.event);
-  const g = {};
-  for (const e of outcomes.filter((x) => x.event === 'pitched' && daysBetween(x.date, today()) >= 14)) {
-    const c = (g[e.category] = g[e.category] || { n: 0, pos: 0, stop: 0 });
+  const g = {}, st = {};
+  for (const e of outcomes.filter((x) => x.event === 'pitched')) {
+    const k = learnKey(e), stopped = (evs[e.slug] || []).some((x) => ['stop', 'complaint'].includes(x));
+    const t = (st[k] = st[k] || { n: 0, stop: 0 }); t.n++; if (stopped) t.stop++;
+    if (daysBetween(e.date, today()) < 14) continue;
+    const c = (g[k] = g[k] || { n: 0, pos: 0 });
     c.n++;
     if ((evs[e.slug] || []).some((x) => POS.includes(x))) c.pos++;
-    if ((evs[e.slug] || []).some((x) => ['stop', 'complaint'].includes(x))) c.stop++;
   }
+  for (const [k, t] of Object.entries(st)) if (t.stop >= 3 && t.stop / t.n > 0.08) stopHeavy[k] = true;
   const all = Object.values(g).reduce((a, c) => ({ n: a.n + c.n, pos: a.pos + c.pos }), { n: 0, pos: 0 });
   const base = (0.5 + all.pos) / (15 + all.n);
   const out = {};
   for (const [k, c] of Object.entries(g)) {
-    if (c.n >= 20 && c.stop / c.n > 0.1) { out[k] = -5; continue; }
-    out[k] = Math.max(-2, Math.min(2, 3 * (((0.5 + c.pos) / (15 + c.n)) / base - 1)));
+    let a = 3 * (((0.5 + c.pos) / (15 + c.n)) / base - 1);
+    if (a > 0 && (all.pos < 1 || c.n < 5)) a = 0; // no positive adjustment without a real positive outcome overall and a minimum sample (shrinkage is in the formula)
+    out[k] = Math.max(-2, Math.min(3, a));
   }
   return out;
 })();
+const adjOf = (p) => { const g = groupOf(p), k = g.id === 'other' ? 'other:' + p.category : g.id; return stopHeavy[k] ? -5 : catAdj[k] || 0; };
+// Pitched events per group: groups with fewer than 15 are still being explored.
+const pitchedByGroup = {};
+for (const e of outcomes) if (e.event === 'pitched') { const id = groupOf(e).id; pitchedByGroup[id] = (pitchedByGroup[id] || 0) + 1; }
+const NORTH = new Set('AK WA OR ID MT WY ND SD MN WI MI NE IA IL IN OH PA NY NJ CT RI MA VT NH ME CO UT KS MO KY WV MD DE'.split(' '));
+const FREEMAIL = /@(gmail|googlemail|yahoo|ymail|outlook|hotmail|live|msn|aol|icloud|me|proton|protonmail)\./i;
 function score(p) {
-  const r = Number(p.rating) || 0, n = Number(p.reviewCount) || 0;
-  let s = r >= 4.7 ? 2 : r >= 4.4 ? 1.2 : r >= 4.0 ? 0.5 : -1; // happy customers, owner who cares
-  s += Math.min(Math.log10(n + 1), 2.5); // established enough to pay: 10 reviews = 1, 100 = 2
-  s += catAdj[p.category] || 0; // learned from real replies
+  const r = Number(p.rating) || 0, n = Number(p.reviewCount) || 0, g = groupOf(p);
+  let s = g.prior;
+  s += n >= 400 ? 1.0 : n >= 151 ? 1.3 : n >= 25 ? 1.5 : n >= 10 ? 0.7 : 0; // established enough to pay, not so big it needs no help
+  s += r >= 4.7 ? 1.0 : r >= 4.5 ? 0.7 : r >= 4.3 ? 0.3 : -1; // happy customers, owner who cares
+  if (p.serviceArea === true || (!p.address && typeof p.serviceArea === 'string' && p.serviceArea)) s += 0.5; // no storefront: a site is their storefront
+  if (/^\d{4}-\d{2}$/.test(p.fbLastPost || '')) { const d = daysBetween(p.fbLastPost + '-01', today()); if (d <= 90) s += 0.5; else if (d > 365) s -= 0.5; }
+  if (p.deadDomain) s += 1.0;
+  if (FREEMAIL.test(p.email || '')) s += 0.3;
+  s += adjOf(p); // learned from real replies (already clamped -2..+3; a STOP-heavy group gets -5)
   if (p.market === (config.settings.marketOrder || ['US'])[0]) s += 0.5;
+  const mo = new Date().getMonth(); // Nov to Feb
+  if (g.seasonal && (mo >= 10 || mo <= 1) && NORTH.has(String(p.state).toUpperCase())) s -= 0.3;
   if (p.banked && daysBetween(p.banked, today()) > 45) s -= 1; // may have a website by now
   return Math.round(s * 100) / 100;
+}
+// Send zone from tz (the pitch goes out in the recipient's morning).
+function zoneOf(p) {
+  const tz = String(p.tz || '');
+  if (/^Australia\//.test(tz) || p.market === 'AU') return 'AU';
+  if (/New_York|Detroit|Indiana|Kentucky|Toronto|Eastern/i.test(tz)) return 'ET';
+  if (/Chicago|Menominee|Knox|Tell_City|Central/i.test(tz)) return 'CT';
+  if (/Denver|Boise|Phoenix|Mountain/i.test(tz)) return 'MT';
+  if (/Los_Angeles|Vancouver|Anchorage|Honolulu|Pacific/i.test(tz)) return 'PT';
+  return 'OTHER';
+}
+const ZONES = ['ET', 'CT', 'MT', 'PT', 'AU'];
+
+// Balanced pick of n leads from `cands` (already sorted best score first). `wait` = leads already waiting, as {zone, group, explore}.
+// Strict pass honours every cap; if it cannot fill n, caps are relaxed one at a time (group cap, zone cap, barber/food limit)
+// so a small bank never yields fewer leads than the old take. Avoid groups are never taken.
+function pickBalanced(cands, n, wait) {
+  const total = wait.length + n;
+  const cap = { zone: Math.max(1, Math.floor(0.35 * total)), group: Math.max(1, Math.floor(0.4 * total)) };
+  const cnt = { zone: {}, group: {}, take: {} };
+  for (const w of wait) { cnt.zone[w.zone] = (cnt.zone[w.zone] || 0) + 1; cnt.group[w.group] = (cnt.group[w.group] || 0) + 1; }
+  const seenSlug = new Set();
+  const info = cands.filter((p) => !groupOf(p).avoid && !seenSlug.has(p.slug) && seenSlug.add(p.slug)).map((p) => ({ p, zone: zoneOf(p), g: groupOf(p) }));
+  const chosen = [], notes = [];
+  const exploring = (x) => (pitchedByGroup[x.g.id] || 0) < 15;
+  const ok = (x, relax) => {
+    if (chosen.includes(x)) return false;
+    if (relax < 3 && x.g.maxPerTake && (cnt.take[x.g.id] || 0) >= x.g.maxPerTake) return false;
+    if (relax < 1 && (cnt.group[x.g.id] || 0) + 1 > cap.group) return false;
+    if (relax < 2 && (cnt.zone[x.zone] || 0) + 1 > cap.zone) return false;
+    return true;
+  };
+  const add = (x) => { chosen.push(x); cnt.zone[x.zone] = (cnt.zone[x.zone] || 0) + 1; cnt.group[x.g.id] = (cnt.group[x.g.id] || 0) + 1; cnt.take[x.g.id] = (cnt.take[x.g.id] || 0) + 1; };
+  const nExplore = Math.round(0.2 * n);
+  for (let relax = 0; relax <= 3 && chosen.length < n; relax++) {
+    while (chosen.length < n) {
+      const okAll = info.filter((x) => ok(x, relax));
+      if (!okAll.length) break;
+      // exploration slots go to an exploring lead that passes the caps, if one exists; otherwise to the best lead as usual
+      const ex = chosen.filter(exploring).length < nExplore ? okAll.filter(exploring) : [];
+      const pool = ex.length ? ex : okAll;
+      const zones = [...new Set(pool.map((x) => x.zone))].sort((a, b) => (cnt.zone[a] || 0) - (cnt.zone[b] || 0)); // round-robin: fewest waiting + taken first
+      add(pool.find((x) => x.zone === zones[0]));
+    }
+    if (chosen.length < n && relax < 3) notes.push('relaxed ' + ['group cap', 'zone cap', 'barber/food limit'][relax]);
+  }
+  return { picked: chosen.map((x) => x.p), notes, mix: { zone: cnt.zone, group: cnt.group } };
 }
 
 const [cmd, ...args] = process.argv.slice(2);
@@ -206,9 +286,8 @@ if (cmd === 'status' || !cmd) {
   console.log(`added ${added}; bank now ${bank.length}${state.refilling ? ' (still refilling)' : ''}`);
 } else if (cmd === 'take') {
   let n = Number(args[0]);
-  if (!args[0] || args[0] === 'auto') {
-    // Keep about `buffer` unsent pitches waiting; the warm-up caps in pitch.js space them out.
-    const buffer = state.buffer;
+  let waitRecs = []; // what is already waiting, for the zone/group balance
+  {
     const foundRows = readCSV('leads.csv').rows.filter((r) => r.status === 'found' && (!config.settings.emailOnly || r.channel === 'email'));
     // Enriched leads sit in prospects.json with no leads.csv row until pitch.js runs: count those too (not pitched, not do-not-contact, not already a found row).
     const pitched = new Set(outcomes.filter((e) => e.event === 'pitched').map((e) => e.slug));
@@ -217,14 +296,21 @@ if (cmd === 'status' || !cmd) {
     const dncEmails = new Set(dnc.map((r) => (r.email || '').toLowerCase()).filter(Boolean));
     const unpitched = prospects.filter((p) => !pitched.has(p.slug) && !dncNames.has(norm(p.name)) && !(p.email && dncEmails.has(p.email.toLowerCase())) && !foundNames.has(norm(p.name))).length;
     const waiting = foundRows.length + unpitched + queue.length;
-    n = Math.max(0, buffer - waiting);
+    // composition: unpitched prospects + enrich queue + found rows not already in prospects.json (zone from tz, else the market)
+    const byName = new Map(prospects.map((p) => [norm(p.name), p]));
+    const unp = prospects.filter((p) => !pitched.has(p.slug) && !dncNames.has(norm(p.name)) && !(p.email && dncEmails.has(p.email.toLowerCase())) && !foundNames.has(norm(p.name)));
+    waitRecs = [...unp, ...queue, ...foundRows.map((r) => byName.get(norm(r.name)) || { name: r.name, category: r.category, market: r.market })];
+    if (!args[0] || args[0] === 'auto') n = Math.max(0, state.buffer - waiting); // keep about `buffer` unsent pitches waiting; the warm-up caps in pitch.js space them out
   }
   const k = known();
   const moved = [], needEnrich = [];
   bank.sort((a, b) => score(b) - score(a)); // best fits first
-  while (moved.length < n && bank.length) {
-    const p = bank.shift();
-    if (prospects.some((x) => x.slug === p.slug) || queue.some((x) => x.slug === p.slug)) continue;
+  const bal = pickBalanced(bank.filter((p) => !prospects.some((x) => x.slug === p.slug) && !queue.some((x) => x.slug === p.slug)), n, waitRecs.map((p) => ({ zone: zoneOf(p), group: groupOf(p).id })));
+  const order = bal.picked.slice(); // take in balanced order
+  for (const p of bank.slice()) if (prospects.some((x) => x.slug === p.slug) || queue.some((x) => x.slug === p.slug)) bank.splice(bank.indexOf(p), 1); // already known elsewhere: drop it from the bank as before
+  while (moved.length < n && order.length) {
+    const p = order.shift();
+    for (let i = bank.length - 1; i >= 0; i--) if (bank[i] === p || bank[i].slug === p.slug) bank.splice(i, 1); // also any duplicate entry
     delete p.banked;
     if (!isFull(p)) { p.enriched = false; p.takenOn = today(); queue.push(p); needEnrich.push(p.slug); } // stage A: enrich before build/pitch can see it
     else prospects.push(p);
@@ -232,10 +318,12 @@ if (cmd === 'status' || !cmd) {
   }
   writeJSON('data/prospects.json', prospects); writeJSON('data/enrich-queue.json', queue);
   updateMode(); save();
+  const fmt = (o) => Object.entries(o).filter(([, v]) => v).sort((a, b) => b[1] - a[1]).map(([k, v]) => k + ' ' + v).join(', ');
   console.log(`took ${moved.length}: ${moved.length - needEnrich.length} ready in prospects.json; ${needEnrich.length} need enrichment (node bank.js pending): ${needEnrich.join(', ') || '(none)'}; bank now ${bank.length}${state.refilling ? ' (refilling)' : ''}`);
+  if (moved.length) console.log(`waiting after take: zones ${fmt(bal.mix.zone)}; groups ${fmt(bal.mix.group)}${bal.notes.length ? '; ' + bal.notes.join(', ') : ''}`);
 } else if (cmd === 'top') {
   const n = Number(args[0]) || 15;
-  for (const p of [...bank].sort((a, b) => score(b) - score(a)).slice(0, n)) console.log(`${String(score(p)).padStart(5)}  ${p.slug}  (${p.category}, ${p.rating} stars, ${p.reviewCount} reviews, ${p.town} ${p.state})`);
+  for (const p of [...bank].sort((a, b) => score(b) - score(a)).slice(0, n)) console.log(`${String(score(p)).padStart(5)}  ${p.slug}  [${groupOf(p).id}] (${p.category}, ${p.rating} stars, ${p.reviewCount} reviews, ${p.town} ${p.state})`);
   if (Object.keys(catAdj).length) console.log('learned type adjustments: ' + Object.entries(catAdj).map(([k, v]) => `${k} ${v > 0 ? '+' : ''}${v.toFixed(1)}`).join(', '));
 } else {
   console.error('usage: node bank.js status | skiplist [ST,ST] | known "<name>" "<town>" [email] | add <file...> | take [N|auto] | pending | enrich <file...> | drop <slug> "<why>" | top [N]');
