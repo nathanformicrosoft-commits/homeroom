@@ -50,6 +50,6 @@ After the 3-week warm-up, `node learn.js` sets the volume in `data/send-state.js
 
 ## Upgrades worth paying for later (ask before spending)
 
-- **Your own domain** for the demos (for example a `.com` for Visaya Web Studio, around $10–15 a year). Free `netlify.app` addresses are widely abused by phishers, so some filters distrust links to them. A custom domain also looks more professional in the pitch.
+- **Your own domain** (step-by-step plan: `playbook/DOMAIN-SETUP.md`) for the demos (for example a `.com` for Visaya Web Studio, around $10–15 a year). Free `netlify.app` addresses are widely abused by phishers, so some filters distrust links to them. A custom domain also looks more professional in the pitch.
 - **Email on that domain** with SPF, DKIM and DMARC set up (Google Workspace or Zoho, a few dollars a month). This lets you check your reputation in Google Postmaster Tools and protects your personal Gmail.
 - **A US postal address** (PO box or virtual mailbox). Required by CAN-SPAM in every US email; until you have one, US outreach is Messenger only, which caps US contacts at 10 a day.
