@@ -213,6 +213,7 @@ const priceValue = priceArmValue(config, ev);
 experiment('price', 'price', WON, priceValue, (a) => `x${a.multiplier} (US standard site about $${Math.round((config.markets.US.tiers.standard * a.multiplier) / 50) * 50})`);
 experiment('subject', 'subject line', POS, undefined, (a) => `"${a.text}"`);
 experiment('cta', 'call to action', POS, undefined, (a) => `"${a.text}"`);
+experiment('format', 'email format', POS, undefined, (a) => a.note);
 
 // ---------------------------------------------------------------- what is working + targeting
 lines.push('## What is working', '');

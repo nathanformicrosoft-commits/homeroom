@@ -62,10 +62,13 @@ for (const q of queue) {
   if (p.email && dnc.some((r) => r.domain && p.email.toLowerCase().endsWith('@' + r.domain.toLowerCase()))) fail(sc, 'email domain on the do-not-contact list');
   if (!p.sources || !p.sources.length) fail(sc, 'no sources recorded for the facts on the demo');
   if (!q.quote || q.quote < (m.minQuote || 0)) fail(sc, `quote ${q.quote} is below the ${p.market} minimum of ${m.minQuote} (ask the owner first)`);
-  if (q.quote && !q.body.includes(String(q.quote))) fail(sc, 'message does not state the same price as the quote');
+  const fmt = (q.variant && q.variant.format) || 'F1';
+  if (q.quote && fmt === 'F1' && !q.body.includes(String(q.quote))) fail(sc, 'message does not state the same price as the quote');
+  if (fmt !== 'F1' && /\$\d/.test(q.body)) fail(sc, `format ${fmt} must not state a price in the first email`);
   if (p.offer && !p.quote && q.quote !== p.offer.quote) fail(sc, `queued quote ${q.quote} differs from the offer stored on the prospect (${p.offer.quote}); the demo page shows the offer price`);
-  if (q.channel === 'email' && q.careQuote && !q.body.includes(String(q.careQuote))) warn(sc, 'message does not mention the same care plan price as careQuote');
-  if (!q.body.includes(q.demoUrl)) fail(sc, 'demo link missing from message');
+  if (q.channel === 'email' && fmt === 'F1' && q.careQuote && !q.body.includes(String(q.careQuote))) warn(sc, 'message does not mention the same care plan price as careQuote');
+  if (fmt === 'F2' && q.body.includes(q.demoUrl)) fail(sc, 'format F2 sends the demo link only after they reply');
+  if (fmt !== 'F2' && !q.body.includes(q.demoUrl)) fail(sc, 'demo link missing from message');
   if ((q.body.match(/https?:\/\//g) || []).length > 1) fail(sc, 'more than one link in the message (spam filters count links; keep only the demo link)');
   if (q.channel === 'email' && q.subject && (/[A-Z]{5,}/.test(q.subject) || /[!$%]/.test(q.subject))) fail(sc, 'subject has shouting caps or !/$/% (spam trigger)');
   for (const b of banned) if (text.toLowerCase().includes(b.toLowerCase())) fail(sc, `uses banned phrase "${b}" (see playbook/voice.md)`);

@@ -11,6 +11,7 @@ Payment is by **PayPal invoice** (address in `config.json` → `payments.paypalE
 > - Set up on your own domain (in your name)
 > - Up to 2 rounds of changes
 > - Live within 3 days of getting your photos and details
+> - Optional: I keep it running for $[CARE]/month (hosting, updates, small edits), so if your hours or prices change you just email me. You can decide at launch.
 >
 > The price is $[QUOTE]: $[HALF] to start and $[HALF] when you approve the finished site. I'll send a PayPal invoice for the first half. You can pay with a card or PayPal on the invoice page. Sound good?
 

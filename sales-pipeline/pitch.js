@@ -23,7 +23,7 @@ const armText = (ex, id, fallback) => ((ex && ex.arms.find((a) => a.id === id)) 
 const variantOf = (p) => {
   const o = p.offer || {};
   const v = { price: o.price, quoteUSD: Math.round(toUSD(quoteFor(p, config), config.markets[p.market].currency, config)) };
-  if (p.channel === 'email') Object.assign(v, { subject: o.subject, cta: o.cta });
+  if (p.channel === 'email') Object.assign(v, { subject: o.subject, format: o.format || 'F1' }, o.format === 'F2' ? {} : { cta: o.cta });
   return v;
 };
 
@@ -32,13 +32,28 @@ function emailPitch(p) {
   const m = config.markets[p.market];
   const url = `${base}/${p.slug}/`;
   const what = ['cafe', 'diner'].includes(p.theme) ? 'menu highlights' : 'services';
-  const body = [
+  const me = `I'm ${v('ownerName', 'YOUR NAME')} from ${v('studioName', 'STUDIO NAME')}, a small web design studio in ${v('city', 'CITY')}, Philippines.`;
+  const cta = armText(experiments.cta, o.cta, `Reply "yes" and I'll finish it in 3 days.`);
+  // F1: demo link + price. F2: no link or price, ask first (link and price go in the reply). F3: demo link, price left to the demo page.
+  const fmt = o.format || 'F1';
+  const body = (fmt === 'F2' ? [
     p.pitch.greeting, '',
     p.pitch.line1, '',
-    `I'm ${v('ownerName', 'YOUR NAME')} from ${v('studioName', 'STUDIO NAME')}, a small web design studio in ${v('city', 'CITY')}, Philippines. ${p.pitch.gap}, so I built you a free demo homepage: ${url}`, '',
+    `${me} ${p.pitch.gap}, so I built you a free demo homepage with your ${what}, hours, a map and click-to-call.`, '',
+    'Want me to send you the link?',
+  ] : fmt === 'F3' ? [
+    p.pitch.greeting, '',
+    p.pitch.line1, '',
+    `${me} ${p.pitch.gap}, so I built you a free demo homepage: ${url}`, '',
+    `It shows your ${what}, hours, a map, click-to-call and a contact form. The price is on the page, and there's nothing to pay unless you want it.`, '',
+    cta,
+  ] : [
+    p.pitch.greeting, '',
+    p.pitch.line1, '',
+    `${me} ${p.pitch.gap}, so I built you a free demo homepage: ${url}`, '',
     `It shows your ${what}, hours, a map, click-to-call and a contact form. The finished site with your own photos is ${money(p.market, quoteFor(p, config), config)} one-time, plus an optional ${money(p.market, careFor(p, config), config)}/month care plan for hosting and edits.`, '',
-    armText(experiments.cta, o.cta, `Reply "yes" and I'll finish it in 3 days.`),
-  ].join('\n');
+    cta,
+  ]).join('\n');
   const sig = ['', v('ownerName', 'YOUR NAME'), `${v('studioName', 'STUDIO NAME')} · ${v('city', 'CITY')}, Philippines`];
   if (m.postalAddressRequired) sig.push(v('postalAddress', 'POSTAL ADDRESS (required by law for this market)'));
   sig.push('', `Not interested? Reply STOP and I won't contact you again.`);
@@ -66,7 +81,7 @@ for (const p of prospects) {
     const e = emailPitch(p);
     queue.push({ slug: p.slug, market: p.market, channel: 'email', to: p.email, subject: e.subject, body: e.body, bodyWords: e.bodyWords, quote: quoteFor(p, config), careQuote: careFor(p, config), variant: variantOf(p), ...when, demoUrl: `${base}/${p.slug}/` });
     emails.push({ p, e, w });
-    fs.writeFileSync(P('pitches', `${p.slug}.md`), `**To:** ${p.email} (${p.emailSource})\n**Subject:** ${e.subject}  _(subject ${p.offer.subject}, call to action ${p.offer.cta}, price ${p.offer.price})_\n**Send:** ${w.manila} (${w.local})\n**Body words:** ${e.bodyWords}\n\n---\n\n${e.body}\n`);
+    fs.writeFileSync(P('pitches', `${p.slug}.md`), `**To:** ${p.email} (${p.emailSource})\n**Subject:** ${e.subject}  _(subject ${p.offer.subject}, format ${p.offer.format || 'F1'}, call to action ${p.offer.cta || '-'}, price ${p.offer.price})_\n**Send:** ${w.manila} (${w.local})\n**Body words:** ${e.bodyWords}\n\n---\n\n${e.body}\n`);
   } else {
     const msg = chatPitch(p);
     queue.push({ slug: p.slug, market: p.market, channel: p.channel, to: p.contactLink, body: msg, bodyWords: words(msg), quote: quoteFor(p, config), careQuote: careFor(p, config), variant: variantOf(p), ...when, demoUrl: `${base}/${p.slug}/` });

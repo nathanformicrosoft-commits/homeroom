@@ -52,6 +52,16 @@ Success = positive reply (interested, won or paid). Balanced until each version 
 
 Not enough data yet. Keep sending; never edit an arm that has been sent.
 
+### Experiment: email format
+
+Success = positive reply (interested, won or paid). Balanced until each version has 25 pitches; after that most pitches go to the likely winner.
+
+- F1 demo link + price in the email (original): 0 sent, 0 old enough to judge, 0 successes (–), still collecting data
+- F2 no link or price: "Want me to send you the link?" (link and price go in the reply): 0 sent, 0 old enough to judge, 0 successes (–), still collecting data
+- F3 demo link, price only on the demo page: 0 sent, 0 old enough to judge, 0 successes (–), still collecting data
+
+Not enough data yet. Keep sending; never edit an arm that has been sent.
+
 ## What is working
 
 ### By market

@@ -218,17 +218,18 @@ const priceArmValue = (config, outcomes) => { const cv = careValueUSD(config, ou
 // Prospects already in pitches/queue.json from before offers existed keep exactly what they were sent.
 function assignOffers(prospects, config, experiments, outcomes, oldQueue) {
   const prev = Object.fromEntries((oldQueue || []).map((q) => [q.slug, q]));
-  const keys = ['price', 'subject', 'cta'];
-  const assigned = { price: {}, subject: {}, cta: {} };
+  const keys = ['price', 'subject', 'cta', 'format'];
+  const assigned = { price: {}, subject: {}, cta: {}, format: {} };
   const count = (p) => { for (const k of keys) if (p.offer && p.offer[k]) assigned[k][p.offer[k]] = (assigned[k][p.offer[k]] || 0) + 1; };
   prospects.forEach(count);
   const asOf = today();
   const won = ['won', 'deposit', 'paid'], pos = ['interested', 'won', 'deposit', 'paid'];
-  const { price: priceEx, subject: subjEx, cta: ctaEx } = experiments;
+  const { price: priceEx, subject: subjEx, cta: ctaEx, format: fmtEx } = experiments;
   const stats = {
     price: priceEx ? experimentStats('price', priceEx, outcomes, asOf, won) : [],
     subject: subjEx ? experimentStats('subject', subjEx, outcomes, asOf, pos) : [],
     cta: ctaEx ? experimentStats('cta', ctaEx, outcomes, asOf, pos) : [],
+    format: fmtEx ? experimentStats('format', fmtEx, outcomes, asOf, pos) : [],
   };
   const value = priceArmValue(config, outcomes);
   let changed = 0;
@@ -238,13 +239,14 @@ function assignOffers(prospects, config, experiments, outcomes, oldQueue) {
     const q = prev[p.slug];
     if (q) {
       p.offer = { price: 'P1', quote: q.quote, care: m.careQuote, legacy: true };
-      if (q.channel === 'email') Object.assign(p.offer, { subject: q.variant && q.variant.subject, cta: 'C1' });
+      if (q.channel === 'email') Object.assign(p.offer, { subject: q.variant && q.variant.subject, cta: 'C1', format: 'F1' });
     } else {
       const pa = priceEx ? chooseArm(priceEx, stats.price, assigned.price, 'price:' + p.slug, value) : null;
       p.offer = { price: pa ? pa.id : 'P1', quote: p.quote || armQuote(p, config, pa), care: (m.careTiers && m.careTiers.basic) || m.careQuote };
       if (p.channel === 'email') {
         if (subjEx) p.offer.subject = chooseArm(subjEx, stats.subject, assigned.subject, 'subject:' + p.slug).id;
-        if (ctaEx) p.offer.cta = chooseArm(ctaEx, stats.cta, assigned.cta, 'cta:' + p.slug).id;
+        p.offer.format = fmtEx ? chooseArm(fmtEx, stats.format, assigned.format, 'format:' + p.slug).id : 'F1';
+        if (ctaEx && p.offer.format !== 'F2') p.offer.cta = chooseArm(ctaEx, stats.cta, assigned.cta, 'cta:' + p.slug).id;
       }
     }
     count(p);

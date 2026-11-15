@@ -4,33 +4,90 @@
     "metric": "won client (deposit or paid), weighed by first-year value: build price + expected care plan revenue",
     "minPerArm": 40,
     "ageDays": 14,
-    "prior": [0.2, 20],
+    "prior": [
+      0.2,
+      20
+    ],
     "maxMultiplier": 4,
     "step": 0.5,
     "arms": [
-      { "id": "P1", "multiplier": 1, "note": "original tiers (US $150 / $250 / $350)" },
-      { "id": "P2", "multiplier": 1.4, "note": "US about $200 / $350 / $500" },
-      { "id": "P3", "multiplier": 2, "note": "US about $300 / $500 / $700" }
+      {
+        "id": "P1",
+        "multiplier": 1,
+        "note": "original tiers (US $150 / $250 / $350)"
+      },
+      {
+        "id": "P2",
+        "multiplier": 1.4,
+        "note": "US about $200 / $350 / $500"
+      },
+      {
+        "id": "P3",
+        "multiplier": 2,
+        "note": "US about $300 / $500 / $700"
+      }
     ]
   },
   "subject": {
     "metric": "positive reply (interested, won or paid)",
     "minPerArm": 25,
     "ageDays": 7,
-    "prior": [0.5, 15],
+    "prior": [
+      0.5,
+      15
+    ],
     "arms": [
-      { "id": "S1", "text": "I built a free homepage for {name}" },
-      { "id": "S2", "text": "{name} homepage (already built, free to look)" }
+      {
+        "id": "S1",
+        "text": "I built a free homepage for {name}"
+      },
+      {
+        "id": "S2",
+        "text": "{name} homepage (already built, free to look)"
+      }
     ]
   },
   "cta": {
     "metric": "positive reply (interested, won or paid)",
     "minPerArm": 25,
     "ageDays": 7,
-    "prior": [0.5, 15],
+    "prior": [
+      0.5,
+      15
+    ],
     "arms": [
-      { "id": "C1", "text": "Reply \"yes\" and I'll finish it in 3 days." },
-      { "id": "C2", "text": "If you like it, reply \"yes\" and it can be live within 3 days of getting your photos." }
+      {
+        "id": "C1",
+        "text": "Reply \"yes\" and I'll finish it in 3 days."
+      },
+      {
+        "id": "C2",
+        "text": "If you like it, reply \"yes\" and it can be live within 3 days of getting your photos."
+      }
+    ]
+  },
+  "format": {
+    "metric": "positive reply (interested, won or paid)",
+    "minPerArm": 25,
+    "ageDays": 7,
+    "prior": [
+      0.5,
+      15
+    ],
+    "why": "Research (2026-11-15): one vendor A/B test saw a link in the first cold email cut replies from 9.4% to 5.1%; no study settles whether stating a small price up front helps. Our offer is the demo, so test it.",
+    "arms": [
+      {
+        "id": "F1",
+        "note": "demo link + price in the email (original)"
+      },
+      {
+        "id": "F2",
+        "note": "no link or price: \"Want me to send you the link?\" (link and price go in the reply)"
+      },
+      {
+        "id": "F3",
+        "note": "demo link, price only on the demo page"
+      }
     ]
   }
 }
