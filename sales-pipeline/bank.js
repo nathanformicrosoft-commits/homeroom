@@ -48,6 +48,7 @@ function vet(p, k) {
   if (p.email && k.emails.has(p.email.toLowerCase())) why.push('email already known or on do-not-contact');
   if (p.photo && k.photos.has(p.photo.id)) why.push('photo already used');
   if (p.channel === 'email' && !p.email) why.push('email channel without email');
+  if (config.settings.emailOnly && p.channel !== 'email') why.push('no published email (email-only mode: the owner sends no Messenger/SMS)');
   if (p.channel === 'messenger' && !/^https:\/\/m\.me\//.test(p.contactLink || '')) why.push('messenger link is not an m.me Page link');
   if (!p.phoneTel) why.push('no phone (demo is built around click-to-call)');
   if (!config.markets[p.market]) why.push('unknown market');
@@ -83,7 +84,7 @@ if (cmd === 'status' || !cmd) {
   if (!args[0] || args[0] === 'auto') {
     // Keep about `buffer` unsent pitches waiting; the warm-up caps in pitch.js space them out.
     const buffer = state.buffer;
-    const waiting = readCSV('leads.csv').rows.filter((r) => r.status === 'found').length;
+    const waiting = readCSV('leads.csv').rows.filter((r) => r.status === 'found' && (!config.settings.emailOnly || r.channel === 'email')).length;
     n = Math.max(0, buffer - waiting);
   }
   const k = known();

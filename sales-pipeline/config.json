@@ -50,7 +50,7 @@
     "minQuoteUSD": 100,
     "_pricing": "Each prospect gets a tier from its complexity (simple / standard / menu). Set prospect.quote to override. Never quote below minQuoteUSD (or the market equivalent) without asking the owner.",
     "emailGapMinutes": 9,
-    "messengerPerDay": 10,
+    "messengerPerDay": 0,
     "emailWarmup": [
       [
         0,
@@ -83,7 +83,9 @@
     "_fxToUSD": "Approximate rates used only to add up revenue in USD. Replace them with the rates PayPal actually gives you.",
     "_dailyCap": "Hard ceiling on all new first-touch messages in one send day (email + Messenger/SMS). The real email cap comes from the warm-up table and data/send-state.json (set by learn.js), never above emailCeiling.",
     "emailCeiling": 40,
-    "_emailCeiling": "Most cold emails per day from one Gmail inbox, however healthy the numbers look. Going past it needs a second sending domain and inbox, which costs money: ask the owner."
+    "_emailCeiling": "Most cold emails per day from one Gmail inbox, however healthy the numbers look. Going past it needs a second sending domain and inbox, which costs money: ask the owner.",
+    "emailOnly": true,
+    "_emailOnly": "Owner decision 2026-11-15: the owner sends no Messenger or SMS. Only businesses with a published email are researched and pitched; Messenger/SMS prospects are parked, never contacted."
   },
   "markets": {
     "US": {

@@ -154,12 +154,12 @@ if (bad.length && !throttled) {
 const L = LEVELS[state.level];
 state.sendDays = L.days;
 state.emailCapAfterWarmup = Math.min(L.email, ceiling);
-const chatPerDay = st.messengerPerDay || 10;
+const chatPerDay = st.messengerPerDay ?? 10;
 const perWeek = L.days.length * (state.emailCapAfterWarmup + chatPerDay);
 state.updated = T;
 state.history = [...(state.history || []), { date: T, level: state.level, throttleUntil: state.throttleUntil || null }].slice(-60);
 lines.push('## Sending volume', '');
-lines.push(`- Level ${state.level} of ${LEVELS.length - 1}: ${L.label} after warm-up, plus up to ${chatPerDay} Messenger/SMS a day sent by the owner. Up to about ${perWeek} new businesses a week.`);
+lines.push(`- Level ${state.level} of ${LEVELS.length - 1}: ${L.label} after warm-up${chatPerDay ? `, plus up to ${chatPerDay} Messenger/SMS a day sent by the owner` : ' (email only)'}. Up to about ${perWeek} new businesses a week.`);
 lines.push(`- Last 21 days: ${recent.length} emails, ${bounces.length} bounced, ${stops.length} STOP, ${complaints.length} complaints, ${pct(replies, agedRecent.length)} replied.`);
 lines.push(`- ${decision}`);
 lines.push(`- Rules: one level up at most every 7 days, only while healthy; any complaint, bounces over 3% (or 3 in one day) or STOPs over 5% halve the cap for a week. Never more than ${ceiling} emails a day from one inbox. Going beyond that needs your own domain and a second inbox (playbook/deliverability.md), which costs money, so ask the owner.`);

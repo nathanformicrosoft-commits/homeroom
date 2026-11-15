@@ -1,5 +1,7 @@
 # Reaching 30 businesses a day without landing in spam
 
+> **Email only since 2026-11-15:** the owner sends no Messenger or SMS (`settings.emailOnly`, `messengerPerDay: 0`). The Messenger rows below are kept for reference only. Reach comes from email alone: about 90 businesses a week at level 0, up to about 200 at level 4.
+
 The goal is 30 new businesses contacted per day. Do it by **spreading across channels and time**, not by blasting one inbox. Spam filters (and Facebook) flag patterns: many near-identical messages, sent fast, with links, from a new sender, that people ignore or report.
 
 ## The daily mix (30 a day)

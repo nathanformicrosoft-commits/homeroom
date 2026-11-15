@@ -70,10 +70,12 @@ const queue = [];
 const schedule = makeScheduler(config, outcomes, runDate);
 const emails = [];
 const chats = [];
+const parked = []; // Messenger/SMS prospects while settings.emailOnly is on: never contacted
 for (const p of prospects) {
   const st = statusOf[p.name] || 'found';
   if (st !== 'found' || p.status === 'do-not-contact') continue;
   const m = config.markets[p.market];
+  if (config.settings.emailOnly && p.channel !== 'email') { parked.push(p.slug); continue; }
   if (!m.channels.includes(p.channel)) { console.warn(`SKIP ${p.slug}: ${p.channel} is not allowed for ${p.market} (${m.law})`); continue; }
   const w = schedule(p);
   const when = { sendAt: w.utc, sendLocal: w.local, sendManila: w.manila };
@@ -128,4 +130,4 @@ for (const p of prospects) {
   added++;
 }
 writeCSV('leads.csv', leads);
-console.log(`queued ${queue.filter((q) => q.channel === 'email').length} email + ${queue.filter((q) => q.channel !== 'email').length} hand-sent; tracker rows added: ${added}. Next: node qa.js`);
+console.log(`queued ${queue.filter((q) => q.channel === 'email').length} email + ${queue.filter((q) => q.channel !== 'email').length} hand-sent${parked.length ? `; ${parked.length} Messenger/SMS prospect(s) parked (email-only mode)` : ''}; tracker rows added: ${added}. Next: node qa.js`);

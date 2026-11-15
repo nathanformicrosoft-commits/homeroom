@@ -6,7 +6,7 @@ You research small US businesses for Visaya Web Studio (Nathaniel Visaya, Antipo
 - Town of roughly 10,000–80,000 people, away from big metros.
 - Google Maps listing with real reviews (10 or more), open, **not a chain or franchise**.
 - **No website**: the Maps listing shows "Add website" (and no "Website" link). If Maps or Facebook links a site, open it: a working site disqualifies them; a dead domain is a great pitch detail (note it). A Facebook page, Facebook group, Square booking page or Linktree is NOT a website.
-- A published contact: an email shown on their public Facebook page (preferred), or a Facebook Page we can Messenger. No email + no Facebook page = skip. Never use phone/SMS for US (TCPA).
+- A published email, required: shown on their own Facebook page, Google listing or other page they control. The owner sends no Messenger or SMS (`settings.emailOnly`), so no email = skip, however good the business looks. Never use phone/SMS for US (TCPA).
 - English-language business (owner posts in English).
 - Skip anything in `sales-pipeline/leads.csv`, `sales-pipeline/data/prospects.json`, `sales-pipeline/data/do-not-contact.csv`, or already taken today (list in your task).
 - Max one business of the same type per town.
@@ -46,7 +46,7 @@ Write a JSON array to the file named in your task. One object per prospect, exac
   "category": "Google category",
   "theme": "one of: lawn, lawn-sun, cafe, diner, detailing, mechanic, wash, sparky, barber, barber-classic",
   "found": "YYYY-MM-DD",
-  "channel": "email or messenger",
+  "channel": "email",
   "email": "only if published, else null",
   "emailSource": "Listed on their public Facebook page",
   "contactLink": "https://m.me/<page username or id> (messenger only)",

@@ -21,7 +21,7 @@ Whoever runs the day (you or Claude) follows these steps in order. Commands run 
 Markets in `config.json → settings.marketOrder`; **USA first**.
 - Pick small towns (about 10,000–80,000 people), away from big metros, for example Dothan AL, Joplin MO, Kearney NE, Twin Falls ID, Bowling Green KY, Hattiesburg MS, Grand Junction CO. Vary the towns; don't pitch two businesses of the same type in the same town on the same day.
 - Search Google Maps through TinyFish: `https://www.google.com/maps/search/<type>+in+<town>+<ST>?hl=en`. Keep listings with real reviews (ideally 10 or more), no "Website" button, open, not a chain or franchise.
-- Find a published email: search `site:facebook.com "gmail.com" <type> <town>`, or the business's Facebook About page. No email means Messenger (US) or skip.
+- Find a published email: search `site:facebook.com "gmail.com" <type> <town>`, or the business's Facebook About page. No published email means skip (email only).
 - Skip anyone already in `leads.csv` or `data/do-not-contact.csv`.
 
 ## 4. Research and build
@@ -30,14 +30,14 @@ Markets in `config.json → settings.marketOrder`; **USA first**.
 - `node build.js`, then `node shoot.js` for screenshots. Look at the screenshot before pitching.
 
 ## 5. Pitch
-Target: as many new businesses as today's caps allow (warm-up table, then `data/send-state.json`; see `playbook/deliverability.md`). Never exceed them to hit a number.
+Target (email only): as many new businesses as today's caps allow (warm-up table, then `data/send-state.json`; see `playbook/deliverability.md`). Never exceed them to hit a number.
 - Prices, care price, subject and call to action come from each prospect's `offer` (assigned by `build.js` / `pitch.js`). Never hand-edit a quote; the demo page shows the same price.
 - Write `pitch.line1` yourself: one specific, true detail. Follow `playbook/voice.md`.
 - `node pitch.js`, then **`node qa.js`. It must say PASS.** Fix every FAIL; never edit around the check.
 - Email: create Gmail drafts from `pitches/queue.json` (draft mode), or use the one-click Gmail links in `send-list.md`. Each has its own scheduled time (Tue–Thu 8–10am their time, spaced apart); use Gmail's Schedule send. After the owner sends each one: `node log.js <slug> pitched`.
 - Record every Gmail draft: pitch drafts in `pitches/drafts.json`, replies, follow-ups and client messages in `pitches/pending.json`. When the owner approves in the main chat ("approve all"), that session runs `node autosend.js approve all`, schedules the pitches and sends the rest (`playbook/AUTOSEND.md`).
 - Log every reply with a short `--note` and tags (#price #trust #timing ...). learn.js turns them into "What people said".
-- Messenger: `send-list.md`, sent by the owner.
+- No Messenger or SMS: the owner decided on email only (`settings.emailOnly`, 2026-11-15).
 - Outside benchmarks (reply rates, spam limits, market prices): `playbook/RESEARCH.md`.
 
 ## 6. When something goes wrong

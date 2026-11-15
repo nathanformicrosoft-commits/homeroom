@@ -17,7 +17,7 @@ Read this before every run. It is rebuilt from data/outcomes.jsonl by `node lear
 
 ## Sending volume
 
-- Level 0 of 4: Tue–Thu, 30 emails a day after warm-up, plus up to 10 Messenger/SMS a day sent by the owner. Up to about 120 new businesses a week.
+- Level 0 of 4: Tue–Thu, 30 emails a day after warm-up (email only). Up to about 90 new businesses a week.
 - Last 21 days: 0 emails, 0 bounced, 0 STOP, 0 complaints, – replied.
 - Holding at level 0. Next step needs: finish the 21-day warm-up (0 days so far); at least 60 emails in the last 21 days (0); 30 emails at least 5 days old to judge replies; 7 days at the current level.
 - Rules: one level up at most every 7 days, only while healthy; any complaint, bounces over 3% (or 3 in one day) or STOPs over 5% halve the cap for a week. Never more than 40 emails a day from one inbox. Going beyond that needs your own domain and a second inbox (playbook/deliverability.md), which costs money, so ask the owner.
