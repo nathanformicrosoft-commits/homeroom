@@ -15,7 +15,9 @@
     "method": "PayPal invoice",
     "depositPercent": 50,
     "rules": "Invoices are created by you in PayPal and sent from PayPal. Never ask for card numbers, bank logins or passwords in any message.",
-    "_paypalOwner": "Name clients see on PayPal invoices. Mention it in the invoice message so a different name is not a surprise."
+    "_paypalOwner": "Name clients see on PayPal invoices. Mention it in the invoice message so a different name is not a surprise.",
+    "paypalMeLink": null,
+    "_paypalMeLink": "Optional. A PayPal.me link the owner creates once in PayPal (for example https://paypal.me/yourname). When set, drafts include [link]/<amount><currency> so buyers pay without an invoice. Claude never creates links, invoices or charges."
   },
   "settings": {
     "sendMode": "draft",

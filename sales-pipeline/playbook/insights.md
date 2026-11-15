@@ -77,6 +77,10 @@ Not enough data yet. Keep sending; never edit an arm that has been sent.
 - Not enough data yet (needs 20 pitches per business type, 14+ days old). Keep the current mix.
 - Nothing to avoid yet.
 
+## What people said (learn from every reply)
+
+- Nothing yet. Log every reply with a short note and tags, for example `node log.js <slug> declined --note "#price has a nephew who does sites"`. Tags: #price #trust #timing #has-site #facebook-enough #ai #not-owner #interested-later.
+
 ## Due today
 
 - No follow-ups due.

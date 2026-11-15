@@ -28,7 +28,13 @@ Payment is by **PayPal invoice** (address in `config.json` → `payments.paypalE
 
 Their "I agree" by email is the record. Claude never signs or agrees to anything on the owner's behalf.
 
-## 3. Invoice message (you send the actual invoice from PayPal)
+## 3a. Payment link (when `payments.paypalMeLink` is set in config.json)
+No invoice is needed: put the link with the exact amount in the draft, as `[LINK]/[HALF]USD` (use the market's currency code). Use the same for the second half and for care plans (`[LINK]/[CARE]USD` each month, or the yearly total).
+> To get started, here's the link for the first half ($[HALF]): [LINK]/[HALF]USD. You can pay with a card or a PayPal account. Payments go to Marjorie Visaya, who handles payments for the studio. As soon as it's in, I'll start. Could you send these over too?
+
+The owner tells the main chat when money arrives (PayPal emails the payment account, not this inbox), and the session logs it: `node log.js <slug> deposit --amount [HALF] --currency USD`.
+
+## 3. Invoice message (when there is no payment link; you send the actual invoice from PayPal)
 > Here's the PayPal invoice for the first half ($[HALF]): [you paste the link PayPal gives you]. The invoice comes from PayPal under the name Marjorie Visaya, who handles payments for the studio. As soon as it's paid I'll start. Could you send these over too?
 
 Then log: `node log.js <slug> deposit --amount [HALF] --currency USD`.

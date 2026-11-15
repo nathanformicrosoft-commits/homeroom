@@ -35,7 +35,8 @@ Target: as many new businesses as today's caps allow (warm-up table, then `data/
 - Write `pitch.line1` yourself: one specific, true detail. Follow `playbook/voice.md`.
 - `node pitch.js`, then **`node qa.js`. It must say PASS.** Fix every FAIL; never edit around the check.
 - Email: create Gmail drafts from `pitches/queue.json` (draft mode), or use the one-click Gmail links in `send-list.md`. Each has its own scheduled time (Tue–Thu 8–10am their time, spaced apart); use Gmail's Schedule send. After the owner sends each one: `node log.js <slug> pitched`.
-- Record every Gmail draft id in `pitches/drafts.json`. When the owner approves a batch in the main chat, that session runs `node autosend.js approve all` and schedules the sends (`playbook/AUTOSEND.md`).
+- Record every Gmail draft: pitch drafts in `pitches/drafts.json`, replies, follow-ups and client messages in `pitches/pending.json`. When the owner approves in the main chat ("approve all"), that session runs `node autosend.js approve all`, schedules the pitches and sends the rest (`playbook/AUTOSEND.md`).
+- Log every reply with a short `--note` and tags (#price #trust #timing ...). learn.js turns them into "What people said".
 - Messenger: `send-list.md`, sent by the owner.
 - Outside benchmarks (reply rates, spam limits, market prices): `playbook/RESEARCH.md`.
 

@@ -233,6 +233,19 @@ if (mk.length > 1) lines.push(`- Markets by interest: ${mk.map((c) => `${c.k} ${
 lines.push('');
 
 // ---------------------------------------------------------------- due today
+// What people actually said: every reply is logged with a short --note (the reason, objection or question).
+const said = ev.filter((e) => ['replied', 'interested', 'declined', 'stop', 'complaint'].includes(e.event) && e.note);
+lines.push('## What people said (learn from every reply)', '');
+if (said.length) {
+  const tags = {};
+  for (const e of said) for (const t of (e.note.match(/#[\w-]+/g) || [])) { const k = `${t} (${e.event})`; tags[k] = (tags[k] || 0) + 1; }
+  const top = Object.entries(tags).sort((a, b) => b[1] - a[1]).slice(0, 8);
+  if (top.length) lines.push(`- Most common: ${top.map(([k, n]) => `${k} x${n}`).join(', ')}`);
+  lines.push(...said.slice(-10).reverse().map((e) => `- ${e.date} ${e.slug} (${e.event}): ${e.note}`));
+  lines.push('', 'Use these: answer the common questions inside the first email or the demo, add a mistake rule when one reply shows a problem, and turn a repeated objection into the next copy challenger.');
+} else lines.push('- Nothing yet. Log every reply with a short note and tags, for example `node log.js <slug> declined --note "#price has a nephew who does sites"`. Tags: #price #trust #timing #has-site #facebook-enough #ai #not-owner #interested-later.');
+lines.push('');
+
 lines.push('## Due today', '');
 const due = leads.filter((r) => r.status === 'pitched' && [r.followup_1_due, r.followup_2_due].some((d) => d && d !== 'done' && d <= T));
 lines.push(...(due.length ? due.map((r) => `- Follow-up for ${r.name} (${r.followup_1_due !== 'done' ? 'first, day 4' : 'second and last, day 9'}). It must add something new: a demo tweak or a useful tip.`) : ['- No follow-ups due.']));
