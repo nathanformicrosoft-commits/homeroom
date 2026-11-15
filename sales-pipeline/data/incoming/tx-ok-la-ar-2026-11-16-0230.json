@@ -1,0 +1,34 @@
+[
+  {
+    "slug": "apex-outdoor-services-ruston",
+    "name": "Apex Outdoor Services",
+    "market": "US", "town": "Ruston", "state": "LA", "tz": "America/Chicago",
+    "category": "Landscaper",
+    "theme": "lawn",
+    "found": "2026-11-16",
+    "channel": "email",
+    "email": "Apexoutdoorservices1@gmail.com",
+    "emailSource": "Listed on their public Facebook page (https://www.facebook.com/p/Apex-Outdoor-Services-LLC-100086403214735/)",
+    "phoneDisplay": "(318) 655-5747", "phoneTel": "+13186555747",
+    "rating": 5.0, "reviewCount": 16,
+    "noWebsite": true,
+    "sources": ["Google Maps listing (rating, reviews, phone, Add website shown)", "facebook.com/p/Apex-Outdoor-Services-LLC-100086403214735 (email, phone)"],
+    "notes": "Facebook page name is Apex Outdoor Services LLC; phone matches Maps. Other Apex Outdoor businesses in other states are unrelated."
+  },
+  {
+    "slug": "monkey-tree-service-searcy",
+    "name": "Monkey Tree Service",
+    "market": "US", "town": "Searcy", "state": "AR", "tz": "America/Chicago",
+    "category": "Tree service",
+    "theme": "lawn",
+    "found": "2026-11-16",
+    "channel": "email",
+    "email": "monkeytreesrvc88@gmail.com",
+    "emailSource": "Listed on their public Facebook page (https://www.facebook.com/monkeytreeservices)",
+    "phoneDisplay": "(501) 388-3321", "phoneTel": "+15013883321",
+    "rating": 5.0, "reviewCount": 24,
+    "noWebsite": true,
+    "sources": ["Google Maps listing (rating, reviews, phone, Add website shown)", "facebook.com/monkeytreeservices (email, phone)"],
+    "notes": "Facebook page links monkeytreeservice.net, which does not resolve (dead domain), a pitch detail. Latest Facebook posts (Feb 2026) are about selling grafted fruit trees; confirm still doing tree work."
+  }
+]
