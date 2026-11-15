@@ -1,7 +1,8 @@
 {
   "target": 150,
   "low": 100,
-  "perRunMax": 24,
+  "perRunMax": 16,
   "buffer": 60,
-  "refilling": true
+  "refilling": true,
+  "_perRunMax": "16 (4 research subagents) while on the smaller Claude plan, so a run fits in the usage window; raise to 24 after the Max upgrade."
 }
