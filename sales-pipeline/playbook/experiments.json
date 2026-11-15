@@ -5,7 +5,7 @@
     "minPerArm": 40,
     "ageDays": 14,
     "prior": [0.2, 20],
-    "maxMultiplier": 3,
+    "maxMultiplier": 4,
     "step": 0.5,
     "arms": [
       { "id": "P1", "multiplier": 1, "note": "original tiers (US $150 / $250 / $350)" },

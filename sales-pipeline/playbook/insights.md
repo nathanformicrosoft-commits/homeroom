@@ -1,4 +1,4 @@
-# Insights (updated 2026-11-14)
+# Insights (updated 2026-11-15)
 
 Read this before every run. It is rebuilt from data/outcomes.jsonl by `node learn.js`, which also tunes prices, copy tests and sending volume.
 
