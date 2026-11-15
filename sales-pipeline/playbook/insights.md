@@ -95,6 +95,12 @@ Not enough data yet. Keep sending; never edit an arm that has been sent.
 
 - No follow-ups due.
 
+## Care payments due
+
+The daily run drafts a reminder only for a client below that shows a Link, from playbook/closing.md "## Care payment reminder", with exactly this amount and link, for the owner to approve. Never for "Link: none" or anyone under the checks. Nothing is sent without the owner's yes, and Claude never creates invoices or payment links. Listed when due within 3 days or overdue. When a payment arrives: `node log.js <slug> carepaid --amount <amount> --currency <its currency>`.
+
+- No care plans yet.
+
 ## Mistakes we will not repeat
 
 - None logged yet. Log one with `node log.js mistake "<what>" --fix "<rule>"`.

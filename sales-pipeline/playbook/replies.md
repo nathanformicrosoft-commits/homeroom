@@ -27,7 +27,7 @@ Answer in the email; don't push for a call.
 > Sure. It's a one-page site built for phones: your services, hours, map, click-to-call and a contact form, on your own domain and in your name. $[QUOTE] one-time, half to start and half when you approve it, paid by PayPal. Optional $[CARE]/month for hosting and edits. You can see the demo here: [DEMO LINK]. Anything you'd want changed on it?
 
 ## "How much?" (they missed it)
-Always use the exact prices in their pitch: `pitches/queue.json` → `quote` and `careQuote` (also stored on the prospect as `offer.quote` / `offer.care`). Prices are being tested, so different businesses were quoted different amounts. Quote only theirs, and never mention the test or anyone else's price.
+Always use the exact prices in their pitch: `data/prospects.json` → `offer.quote` and `offer.care` (never read them from `pitches/queue.json`: pitch.js drops pitched leads from it). Prices are being tested, so different businesses were quoted different amounts. Quote only theirs, and never mention the test or anyone else's price.
 > It's $[QUOTE] one-time for the finished site, set up on your own domain, plus $[CARE] a month if you want me to handle hosting and small changes. You can skip the monthly plan and host it yourself. Want me to go ahead?
 
 ## "Too expensive"

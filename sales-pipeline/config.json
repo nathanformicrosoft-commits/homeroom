@@ -5,17 +5,17 @@
     "ownerName": "Nathaniel Visaya",
     "city": "Antipolo City",
     "country": "Philippines",
-    "email": "nathanieljohnnicovisaya@gmail.com",
+    "email": "nathanformicrosoft@gmail.com",
     "chatLink": null,
     "postalAddress": "Lilium Street, Barangay Dalig, Antipolo City, Rizal 1870, Philippines"
   },
   "payments": {
     "paypalEmail": "marjnimae@yahoo.com",
     "paypalOwner": "Marjorie Visaya",
-    "method": "PayPal invoice",
+    "method": "PayPal.me link: payments.paypalMeLink with the amount and currency added, <link>/<amount><CUR>",
     "depositPercent": 50,
-    "rules": "Invoices are created by you in PayPal and sent from PayPal. Never ask for card numbers, bank logins or passwords in any message.",
-    "_paypalOwner": "Name clients see on PayPal invoices. Mention it in the invoice message so a different name is not a surprise.",
+    "rules": "Clients pay through the owner's PayPal.me link with the exact amount and currency added: <paypalMeLink>/<amount><CUR>, for example https://paypal.me/MarjorieVisaya/125USD. The amount must match the agreed quote or care price. Claude only puts that link into drafts; it never creates links, invoices or charges, and the owner approves every message before it is sent. Never ask for card numbers, bank logins or passwords in any message.",
+    "_paypalOwner": "Name clients see when they pay through the PayPal.me link. Every message with a payment link tells the client that payments go to Marjorie Visaya, so a different name is not a surprise.",
     "paypalMeLink": "https://paypal.me/MarjorieVisaya",
     "_paypalMeLink": "Optional. A PayPal.me link the owner creates once in PayPal (for example https://paypal.me/yourname). When set, drafts include [link]/<amount><currency> so buyers pay without an invoice. Claude never creates links, invoices or charges."
   },

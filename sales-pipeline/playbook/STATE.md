@@ -17,11 +17,15 @@ The memory between chats. `/visayaweb` loads this file in any new chat. **Every 
 - 2026-11-15: holidays skipped (US + AU, through 2027, `settings.skipDates`).
 - 2026-11-15: **subagent workline** in `CLAUDE.md` / `.claude/agents/` (11 agents, each with its own model and effort). Research runs on Sonnet (`prospect-researcher`) to save usage.
 - 2026-11-15: the owner is upgrading to the Claude Max plan. **When confirmed:** set `perRunMax` to 24 in `data/bank-state.json`.
+- 2026-11-15 (revenue pass): approved and built: the reply watch reads emails and prices from `data/prospects.json` (never `queue.json`); research is two-stage and email first (`bank.js` stage A, then `enrich` at take time, using `playbook/photo-pool.json`); the one-email close in `closing.md`; a care ledger in `learn.js` that counts only paid-up plans (yearly = 10/12 of monthly) and adds "Care payments due"; `node learn.js --links <slug>` is the only source of payment amounts and links (market currency, AUD for AU).
+- 2026-11-15: **demo pages use nathanformicrosoft@gmail.com** (the watched inbox), not the personal Gmail.
+- 2026-11-15: **daily step 7 (pitch.js) is paused until 2026-11-19**, so the queue isn't rewritten while the 26 timed sends go out. Tonight's daily run was skipped (one-night skip line in its SKILL.md; remove it any time after today).
 
 ## Status (update when it changes)
 - Launch: first emails go out **Tue Nov 17** (AU 5:05–8:12 AM, US 9:03–10:28 PM Manila) and **Wed Nov 18** (9:05–11:26 PM Manila). Checked 2026-11-15: 26/26 Gmail drafts exist in nathanformicrosoft@gmail.com, 26/26 demos load, QA PASS.
 - The timed-send jobs live only in the chat that created them (session-only CronCreate). If that chat is closed, `/visayaweb` finds waiting sends without jobs and offers to reschedule them. 2026-11-15 (evening): a /visayaweb chat rescheduled all 26 at +3 min (last one Wed Nov 18 11:29 PM Manila), so that chat and the app must stay open until then.
-- Prospect bank: empty. The 2026-11-14 and both 2026-11-15 runs failed on the 5-hour usage limit (the 1:27 PM run died in 6 seconds, so the Sonnet fix is still untested). Fixed: research on Sonnet, 16 per run. Next runs at about 2:27 AM and 1:27 PM daily.
+- Prospect bank: empty. The 2026-11-14 and both 2026-11-15 runs failed on the 5-hour usage limit. Now: Sonnet research, email-first stage-A leads (about a third of the old cost), still 16 per run (2 subagents x 8). The 2026-11-16 2:27 AM run is the first test of this; raise perRunMax only after a run finishes inside the limit. Daily step 4 now takes stage-A leads and enriches only those (Maps re-check + write-up).
+- Demos redeployed 2026-11-15 8 PM: contact email is nathanformicrosoft@gmail.com; the finished-site price line is updated. QA PASS.
 - Scheduled tasks: `visaya-daily-pipeline` (7:27 PM), `visaya-reply-watch` (hourly, Manila 9 PM to 5 PM; exits at once until the first send), `visaya-prospect-bank` (2:17 AM and 1:17 PM).
 
 ## Open items
@@ -29,8 +33,13 @@ The memory between chats. `/visayaweb` loads this file in any new chat. **Every 
 - When sales reach about $115: tell the owner the upgrades are funded (`DOMAIN-SETUP.md`).
 - When a second inbox exists: build multi-inbox sending (caps and warm-up per inbox).
 - By Oct 2027: add 2028 holidays to `settings.skipDates` (learn.js warns).
+- Owner to confirm: the refund rule in the close terms (every full unused month comes back; yearly plan = 1/12 a month), that care starts on launch day, AUD prices for the founding-client discount and upsells (closing.md says "ask the owner"), and whether the close (about 330 words) should be trimmed.
+- After Nov 18 (frozen until then): match leads by slug, not name (`pitch.js`, `log.js`); make `pitch.js` merge the queue instead of rewriting it; `replies.md` and config `payments.rules` still write `$`/`USD` examples without the currency code.
+- Not built yet (owner decision needed): nudges for leads who replied and then went quiet (+2/+5 days), a day-28 re-pitch, follow-ups timed to the lead's morning, scoring grouped by trade, `take` spread across time zones, and a minimum-wins guard on the price-test rules.
+- insights.md is committed; "What people said" still quotes STOP and complaint notes. Check whether the repo is private.
 
 ## Session log (one line per session: date, what changed)
 - 2026-11-14/15: built the pipeline optimizer (price/copy/format tests, care tiers, revenue goal, send governor, lead scoring), one-line approvals, PayPal.me payments, email only, holiday skips, research fix, subagent workline, /visayaweb.
 - 2026-11-15: improved /visayaweb: it pulls first, checks every unsent timed send (not just the last few), asks about late and NOW sends instead of scheduling them, and covers the care/carepaid/upsell and STOP logging. NEW-CHAT-PROMPT.md is marked replaced.
 - 2026-11-15: /visayaweb check: no timed-send jobs found; owner approved rescheduling all 26 pitches at +3 min in this chat. Bank still empty (usage limit).
+- 2026-11-15 (evening): revenue pass. Fixed the reply watch losing pitched leads, cheaper two-stage research, the one-email close, the care billing ledger plus `--links`, AUD links for AU, permanent STOP, a care-cancel path, and the demo inbox. Reviewed and audited, demos redeployed, step 7 paused to Nov 19. The 26 send jobs are still in the earlier /visayaweb chat.

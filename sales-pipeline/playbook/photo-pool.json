@@ -1,0 +1,239 @@
+{
+ "_note": "Vetted Unsplash hero photos by theme. bank.js enrich picks the least-used one for the lead theme (no per-lead search or curl). To add one: pick a strong, non-cheesy photo (no logos, no faces as focus, never from the business own pages), confirm curl -s -o /dev/null -w %{http_code} https://images.unsplash.com/<id>?w=800 prints 200, then append {id,by,user,vetted}.",
+ "lawn": [
+  {
+   "id": "photo-1458245201577-fc8a130b8829",
+   "by": "Daniel Watson",
+   "user": "danielwatsondesign",
+   "vetted": "2026-11-15"
+  },
+  {
+   "id": "photo-1776025808938-dec3b01391ea",
+   "by": "QY Liu",
+   "user": "qy_liu",
+   "vetted": "2026-11-15"
+  },
+  {
+   "id": "photo-1605474321797-3b02fa702976",
+   "by": "Yves Alarie",
+   "user": "yvesalarie",
+   "vetted": "2026-11-15"
+  },
+  {
+   "id": "photo-1474742509976-ddec6b387356",
+   "by": "Tim Umphreys",
+   "user": "timumphreys",
+   "vetted": "2026-11-15"
+  },
+  {
+   "id": "photo-1754322449185-31f56117ed87",
+   "by": "Zack Masters",
+   "user": "masters25",
+   "vetted": "2026-11-15"
+  },
+  {
+   "id": "photo-1754321860056-ca7254d5e7ac",
+   "by": "Zack Masters",
+   "user": "masters25",
+   "vetted": "2026-11-15"
+  },
+  {
+   "id": "photo-1590820292118-e256c3ac2676",
+   "by": "Andres Siimon",
+   "user": "johnmcclane",
+   "vetted": "2026-11-15"
+  }
+ ],
+ "cafe": [
+  {
+   "id": "photo-1655979283362-535e6a167a53",
+   "by": "Ajeet Panesar",
+   "user": "ajeetpanesarphotography",
+   "vetted": "2026-11-15"
+  },
+  {
+   "id": "photo-1597528662465-55ece5734101",
+   "by": "tabitha turner",
+   "user": "tabithaturnervisuals",
+   "vetted": "2026-11-15"
+  },
+  {
+   "id": "photo-1688783944974-fc8283c7c877",
+   "by": "Andy Fluet",
+   "user": "afluet",
+   "vetted": "2026-11-15"
+  }
+ ],
+ "diner": [
+  {
+   "id": "photo-1678712803863-6cd22f6b9dba",
+   "by": "Chris Boland",
+   "user": "londonweddingphotographer",
+   "vetted": "2026-11-15"
+  },
+  {
+   "id": "photo-1648437595587-e6a8b0cdf1f9",
+   "by": "Frankie Lopez",
+   "user": "frankielopez",
+   "vetted": "2026-11-15"
+  },
+  {
+   "id": "photo-1658833608786-22c4b4a621de",
+   "by": "Jopopz Tallorin",
+   "user": "jopopz",
+   "vetted": "2026-11-15"
+  }
+ ],
+ "detailing": [
+  {
+   "id": "photo-1658244500543-47f32dc51dc2",
+   "by": "Vitali Adutskevich",
+   "user": "vadutskevich",
+   "vetted": "2026-11-15"
+  },
+  {
+   "id": "photo-1633014041037-f5446fb4ce99",
+   "by": "mintosko",
+   "user": "mintosko",
+   "vetted": "2026-11-15"
+  },
+  {
+   "id": "photo-1780558852670-3f49298ecc1f",
+   "by": "Luay Barani",
+   "user": "luaybarani",
+   "vetted": "2026-11-15"
+  }
+ ],
+ "mechanic": [
+  {
+   "id": "photo-1676018366904-c083ed678e60",
+   "by": "Kato Blackmore",
+   "user": "katoblackmore",
+   "vetted": "2026-11-15"
+  },
+  {
+   "id": "photo-1723811897933-eb57b6ed486a",
+   "by": "Maciej Karoń",
+   "user": "maciejka_dslr",
+   "vetted": "2026-11-15"
+  }
+ ],
+ "wash": [
+  {
+   "id": "photo-1781637202423-33ec5b47e52e",
+   "by": "web seo",
+   "user": "webseoweb",
+   "vetted": "2026-11-15"
+  },
+  {
+   "id": "photo-1605146768851-eda79da39897",
+   "by": "Dillon Kydd",
+   "user": "kyddvisuals",
+   "vetted": "2026-11-15"
+  },
+  {
+   "id": "photo-1575397205849-f5e0a03323a3",
+   "by": "Keagan Henman",
+   "user": "henmankk",
+   "vetted": "2026-11-15"
+  },
+  {
+   "id": "photo-1783125127143-d4e18726bab3",
+   "by": "Salvo Media LLC",
+   "user": "salvomedia",
+   "vetted": "2026-11-15"
+  },
+  {
+   "id": "photo-1677956787377-a0f32c0974af",
+   "by": "Adrian Raudaschl",
+   "user": "raudaschl",
+   "vetted": "2026-11-15"
+  },
+  {
+   "id": "photo-1773427610300-e19ad6c7bf27",
+   "by": "Roger Starnes Sr",
+   "user": "rstar50",
+   "vetted": "2026-11-15"
+  },
+  {
+   "id": "photo-1719464454959-9cf304ef4774",
+   "by": "Buddy AN",
+   "user": "stbuddyp",
+   "vetted": "2026-11-15"
+  },
+  {
+   "id": "photo-1611173622933-91942d394b04",
+   "by": "Hayffield L",
+   "user": "hayffield",
+   "vetted": "2026-11-15"
+  }
+ ],
+ "barber": [
+  {
+   "id": "photo-1503951914875-452162b0f3f1",
+   "by": "Allef Vinicius",
+   "user": "seteph",
+   "vetted": "2026-11-15"
+  },
+  {
+   "id": "photo-1781455793310-8427c96454c7",
+   "by": "Barney Goodman",
+   "user": "bgoodpic",
+   "vetted": "2026-11-15"
+  }
+ ],
+ "barber-classic": [
+  {
+   "id": "photo-1585747860715-2ba37e788b70",
+   "by": "Nathon Oski",
+   "user": "onatecan",
+   "vetted": "2026-11-15"
+  },
+  {
+   "id": "photo-1576168056582-0a851a87ab8e",
+   "by": "JJ Shev",
+   "user": "skjev5280",
+   "vetted": "2026-11-15"
+  }
+ ],
+ "lawn-sun": [
+  {
+   "id": "photo-1558904541-efa843a96f01",
+   "by": "Petar Tonchev",
+   "user": "ptonchev",
+   "vetted": "2026-11-15"
+  },
+  {
+   "id": "photo-1777428762767-e3a797da389a",
+   "by": "QY Liu",
+   "user": "qy_liu",
+   "vetted": "2026-11-15"
+  },
+  {
+   "id": "photo-1740822399239-6f0eb5cabc76",
+   "by": "Naoki Suzuki",
+   "user": "naopp",
+   "vetted": "2026-11-15"
+  },
+  {
+   "id": "photo-1770664945615-52203ab54c88",
+   "by": "Alef Morais",
+   "user": "alef_visuals",
+   "vetted": "2026-11-15"
+  },
+  {
+   "id": "photo-1782022491533-267c13b410bf",
+   "by": "Alvan Nee",
+   "user": "alvannee",
+   "vetted": "2026-11-15"
+  }
+ ],
+ "sparky": [
+  {
+   "id": "photo-1778731660248-044f78e8c1fb",
+   "by": "Franco Debartolo",
+   "user": "francotheshooter",
+   "vetted": "2026-11-15"
+  }
+ ]
+}

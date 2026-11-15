@@ -109,7 +109,7 @@ function finishedSection(p) {
   <p class="eyebrow">This is a preview</p>
   <h2>What your finished site adds</h2>
   <ul class="adds">${adds.map((a) => `<li>${esc(a)}</li>`).join('')}</ul>
-  <p class="price-line">Finished site for ${esc(p.name)}: <strong>${esc(money(p.market, quoteFor(p, config), config))}</strong> one-time. Optional care plan ${esc(money(p.market, careFor(p, config), config))}/month for hosting and small edits.</p>
+  <p class="price-line">Finished site for ${esc(p.name)}: <strong>${esc(money(p.market, quoteFor(p, config), config))}</strong> one-time, half to start and half when you approve it. After launch, care is optional: from ${esc(money(p.market, careFor(p, config), config))}/month for hosting and small edits, or host it yourself.</p>
 </div></section>`;
 }
 
