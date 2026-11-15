@@ -159,6 +159,7 @@ const perWeek = L.days.length * (state.emailCapAfterWarmup + chatPerDay);
 state.updated = T;
 state.history = [...(state.history || []), { date: T, level: state.level, throttleUntil: state.throttleUntil || null }].slice(-60);
 lines.push('## Sending volume', '');
+for (const [mk, ds] of Object.entries(st.skipDates || {})) { const last = [...ds].sort().pop(); if (last && daysBetween(T, last) < 60) lines.push(`- **Action:** the holiday list for ${mk} ends ${last}. Add next year's dates to settings.skipDates in config.json.`); }
 lines.push(`- Level ${state.level} of ${LEVELS.length - 1}: ${L.label} after warm-up${chatPerDay ? `, plus up to ${chatPerDay} Messenger/SMS a day sent by the owner` : ' (email only)'}. Up to about ${perWeek} new businesses a week.`);
 lines.push(`- Last 21 days: ${recent.length} emails, ${bounces.length} bounced, ${stops.length} STOP, ${complaints.length} complaints, ${pct(replies, agedRecent.length)} replied.`);
 lines.push(`- ${decision}`);

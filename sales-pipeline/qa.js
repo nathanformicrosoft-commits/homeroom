@@ -67,6 +67,7 @@ for (const q of queue) {
   if (fmt !== 'F1' && /\$\d/.test(q.body)) fail(sc, `format ${fmt} must not state a price in the first email`);
   if (p.offer && !p.quote && q.quote !== p.offer.quote) fail(sc, `queued quote ${q.quote} differs from the offer stored on the prospect (${p.offer.quote}); the demo page shows the offer price`);
   if (q.channel === 'email' && fmt === 'F1' && q.careQuote && !q.body.includes(String(q.careQuote))) warn(sc, 'message does not mention the same care plan price as careQuote');
+  if (q.sendAt && p.tz && (((config.settings.skipDates || {})[p.market]) || []).includes(new Intl.DateTimeFormat('en-CA', { timeZone: p.tz }).format(new Date(q.sendAt))) && !alreadyPitched.has(q.slug)) fail(sc, 'scheduled on a holiday in their market (settings.skipDates); rerun node pitch.js');
   if (fmt === 'F2' && q.body.includes(q.demoUrl)) fail(sc, 'format F2 sends the demo link only after they reply');
   if (fmt !== 'F2' && !q.body.includes(q.demoUrl)) fail(sc, 'demo link missing from message');
   if ((q.body.match(/https?:\/\//g) || []).length > 1) fail(sc, 'more than one link in the message (spam filters count links; keep only the demo link)');

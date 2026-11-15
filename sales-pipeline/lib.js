@@ -93,7 +93,9 @@ function makeScheduler(config, outcomes, runDate) {
   const hourIn = (zone, t) => new Intl.DateTimeFormat('en-US', { timeZone: zone, hour: 'numeric', minute: '2-digit' }).format(t);
   return function assign(p) {
     let day = nextSendDay(runDate, config);
-    for (let tries = 0; tries < 40; tries++, day = nextSendDay(day, config)) {
+    const skip = new Set((st.skipDates || {})[p.market] || []);
+    for (let tries = 0; tries < 60; tries++, day = nextSendDay(day, config)) {
+      if (skip.has(day)) continue; // holiday in their market
       const u = (used[day] = used[day] || { email: 0, chat: 0 });
       const off = tzOffset(p.tz, day);
       const at = (h) => new Date(Date.parse(day + 'T00:00:00Z') + (h - off) * 3600e3);
