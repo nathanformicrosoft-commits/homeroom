@@ -1,5 +1,7 @@
 # Insights (updated 2026-11-15)
 
+**Act on:** nothing new
+
 Read this before every run. It is rebuilt from data/outcomes.jsonl by `node learn.js`, which also tunes prices, copy tests and sending volume.
 
 ## Money
@@ -21,6 +23,18 @@ Read this before every run. It is rebuilt from data/outcomes.jsonl by `node lear
 - Last 21 days: 0 emails, 0 bounced, 0 STOP, 0 complaints, – replied.
 - Holding at level 0. Next step needs: finish the 21-day warm-up (0 days so far); at least 60 emails in the last 21 days (0); 30 emails at least 5 days old to judge replies; 7 days at the current level.
 - Rules: one level up at most every 7 days, only while healthy; any complaint, bounces over 3% (or 3 in one day) or STOPs over 5% halve the cap for a week. Never more than 40 emails a day from one inbox. Going beyond that needs your own domain and a second inbox (playbook/deliverability.md), which costs money, so ask the owner.
+
+## Upgrades and milestones
+
+Claude never buys, pays or signs up for anything: the owner buys, then tells Claude, who logs it. Whole ladder: `node upgrades.js status` (rules: playbook/upgrades.json and DOMAIN-SETUP.md "Reinvestment ladder").
+
+- Money available for upgrades: **$0** ($0 collected x 100% reinvested - $0 spent). Cushion kept after an inbox or research upgrade: $300.
+- Ladder: running. Sending inboxes: 1. Health, last 30 days: 0 emails, 0 bounced (0%), 0 STOP (0%), 0 complaint(s).
+- Ready to buy: nothing yet.
+- Next: own-domain (Own domain + Google Workspace inbox, about $115/yr): needs $115 more collected ($0 of $115).
+- Renewals due within 30 days: none.
+- Reminders due: none.
+- Money milestones reached in the last 7 days: none. Next: ₱100,000 (₱0 so far, estimate at ₱58/USD; set settings.phpPerUSD for the real rate).
 
 ## Experiments
 

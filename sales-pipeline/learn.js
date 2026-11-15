@@ -402,6 +402,15 @@ if (winRate > 0 && aged.length >= 100) {
 if (perWeek > 200) lines.push(`- Research has to keep up: the prospect bank adds about 224 a week at most (16 per run, twice a day). If the bank keeps running dry, raise perRunMax in data/bank-state.json.`);
 lines.push('');
 
+// ---------------------------------------------------------------- upgrades and milestones (upgrades.js, read-only)
+// The reinvestment ladder, with the same collected figure as "## Money" and today's send-state. Its "**Act on:**" line
+// goes right under the title; the daily run copies it into the push notification. Claude never buys anything.
+let upgradeView;
+try { upgradeView = require('./upgrades').forInsights({ config, ev, T, collectedUSD: collected, sendState: state }); }
+catch (e) { upgradeView = { actOn: `**Act on:** Check: upgrades.js failed (${e.message})`, section: ['## Upgrades and milestones', '', `- **Check:** upgrades.js failed (${e.message}). Nothing shows as funded until it is fixed.`, ''] }; }
+lines.push(...upgradeView.section);
+lines.splice(2, 0, upgradeView.actOn, '');
+
 // ---------------------------------------------------------------- experiments
 function experiment(name, title, success, valueFn, label) {
   const ex = experiments[name];

@@ -73,6 +73,10 @@
     "goalUSDPerYear": 200000,
     "goalBy": "2028-12-31",
     "_goal": "goalUSDPerYear: the yearly revenue pace to reach by goalBy. learn.js tracks run-rate (care plans x 12 + last 90 days of build revenue x 4) against it.",
+    "reinvestShare": 1.0,
+    "_reinvestShare": "Share of collected money (0 to 1) the upgrade ladder counts as available: available = collected (as in insights.md) x reinvestShare - everything in data/spend.jsonl. 1.0 = reinvest all of it (owner's intent 2026-11-15). Anything outside 0-1 counts as 0. Ladder: playbook/upgrades.json, node upgrades.js status. Claude never buys; the owner buys and Claude logs it.",
+    "upgradeCushionUSD": 300,
+    "_upgradeCushionUSD": "Money that must still be left after buying an inbox or research-capacity rung (DOMAIN-SETUP.md \"Reinvestment ladder\"). The first rung, own domain + Workspace (upgradeCostUSD, default 115), uses the settled rule instead: funded once collected covers it, no cushion.",
     "fxToUSD": {
       "AUD": 0.65,
       "CAD": 0.72,

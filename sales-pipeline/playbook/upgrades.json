@@ -1,0 +1,139 @@
+{
+  "_readme": "The reinvestment ladder (owner's intent 2026-11-15; rules in playbook/DOMAIN-SETUP.md \"Budget plan\" and \"Reinvestment ladder\", and playbook/STATE.md owner decisions). upgrades.js reads it; learn.js shows it in insights.md. Claude never buys, pays or signs up for anything: it only says when a rung is funded and safe, and logs what the owner reports buying (node upgrades.js bought <id> --amount <paid>). Rungs are checked in this order, and money for a rung that is ready or funded-but-blocked is set aside before the next rung is checked, so two rungs never both look affordable out of the same money. costUSD is the planning price; the owner logs what was actually paid. Unknown keys in a `when` block stop the whole ladder (a typo there could loosen a rule).",
+  "_when": "money: \"collected\" = funded once collected money covers the cost (the settled first-upgrade rule, no cushion); \"available\" = funded once (collected x settings.reinvestShare - everything in data/spend.jsonl - money set aside for earlier rungs) - cost >= settings.upgradeCushionUSD. costSetting: read the cost from that setting when set. after + afterDays: the earlier rung must have been bought at least that many days ago (one new inbox a month). healthy: every sending inbox passes `health` below over its window. pauseOnComplaint: any spam complaint in the last health.complaintPauseDays days pauses the rung. requires: settings.<setting> must equal `equals`, otherwise the rung shows funded but blocked with `blocked`. minInboxes: at least this many sending inboxes bought. trigger \"bankShort\": only needed while the prospect bank cannot keep up (data/bank.json under data/bank-state.json `low` for lowDays days; bank.js records no dates yet, so today's count is used).",
+  "health": {
+    "windowDays": 30,
+    "maxBounceRate": 0.03,
+    "maxStopRate": 0.05,
+    "minEmails": 20,
+    "complaintPauseDays": 30,
+    "_health": "Read from the same data the send governor in learn.js uses: pitched emails in data/outcomes.jsonl in the last windowDays days, the bounced and stop events for those businesses, complaint events, and data/send-state.json throttleUntil. Healthy = bounces under 3% and STOPs under 5% for every inbox (events carry an `inbox` field once multi-inbox sending is built; until then all sends are one inbox), at least minEmails sent in the window (a quiet month proves nothing), and the governor not cutting back."
+  },
+  "rungs": [
+    {
+      "id": "own-domain",
+      "name": "Own domain + Google Workspace inbox",
+      "costUSD": 115,
+      "recurring": "yearly",
+      "addsInbox": true,
+      "unlocks": "demos move off netlify.app, a business inbox the Gmail connector still works with, Google Postmaster Tools, and the personal Gmail is protected. Needed before any second inbox. Steps: playbook/DOMAIN-SETUP.md",
+      "when": {
+        "money": "collected",
+        "costSetting": "upgradeCostUSD"
+      }
+    },
+    {
+      "id": "inbox-2",
+      "name": "Second sending domain + Workspace inbox",
+      "costUSD": 95,
+      "recurring": "yearly",
+      "addsInbox": true,
+      "unlocks": "about 80 cold emails a day in total once both inboxes are warmed up (the new one starts at about 8 a day)",
+      "when": {
+        "money": "available",
+        "after": "own-domain",
+        "afterDays": 30,
+        "healthy": true,
+        "pauseOnComplaint": true,
+        "requires": { "setting": "multiInbox", "equals": true, "blocked": "multi-inbox sending must be built first (caps and warm-up per inbox, drafts in the right mailbox, replies from the thread's inbox)" }
+      }
+    },
+    {
+      "id": "inbox-3",
+      "name": "Third sending domain + Workspace inbox",
+      "costUSD": 95,
+      "recurring": "yearly",
+      "addsInbox": true,
+      "unlocks": "about 120 cold emails a day in total once warmed up",
+      "when": {
+        "money": "available",
+        "after": "inbox-2",
+        "afterDays": 30,
+        "healthy": true,
+        "pauseOnComplaint": true,
+        "requires": { "setting": "multiInbox", "equals": true, "blocked": "multi-inbox sending must be built first" }
+      }
+    },
+    {
+      "id": "research-capacity",
+      "name": "More research capacity",
+      "costUSD": 100,
+      "recurring": "monthly",
+      "unlocks": "about 40 more good businesses a weekday for the prospect bank, so the extra inboxes have someone worth emailing",
+      "action": "a bigger Claude plan, or raise perRunMax in data/bank-state.json (to 24 once the owner confirms the Max plan, per STATE.md), and only after bank runs finish inside the usage limit",
+      "when": {
+        "money": "available",
+        "minInboxes": 3,
+        "trigger": "bankShort",
+        "lowDays": 7,
+        "healthy": true,
+        "pauseOnComplaint": true,
+        "requires": { "setting": "multiInbox", "equals": true, "blocked": "multi-inbox sending must be built first" }
+      }
+    },
+    {
+      "id": "inbox-4",
+      "name": "Fourth sending domain + Workspace inbox",
+      "costUSD": 95,
+      "recurring": "yearly",
+      "addsInbox": true,
+      "unlocks": "about 160 cold emails a day in total once warmed up",
+      "when": {
+        "money": "available",
+        "after": "inbox-3",
+        "afterDays": 30,
+        "healthy": true,
+        "pauseOnComplaint": true,
+        "requires": { "setting": "multiInbox", "equals": true, "blocked": "multi-inbox sending must be built first" }
+      }
+    },
+    {
+      "id": "inbox-5",
+      "name": "Fifth sending domain + Workspace inbox",
+      "costUSD": 95,
+      "recurring": "yearly",
+      "addsInbox": true,
+      "unlocks": "about 200 cold emails a day in total once warmed up",
+      "when": {
+        "money": "available",
+        "after": "inbox-4",
+        "afterDays": 30,
+        "healthy": true,
+        "pauseOnComplaint": true,
+        "requires": { "setting": "multiInbox", "equals": true, "blocked": "multi-inbox sending must be built first" }
+      }
+    },
+    {
+      "id": "inbox-6",
+      "name": "Sixth sending domain + Workspace inbox",
+      "costUSD": 95,
+      "recurring": "yearly",
+      "addsInbox": true,
+      "unlocks": "about 240 cold emails a day in total, the top of the ladder. Past this, revisit with real reply and close rates",
+      "when": {
+        "money": "available",
+        "after": "inbox-5",
+        "afterDays": 30,
+        "healthy": true,
+        "pauseOnComplaint": true,
+        "requires": { "setting": "multiInbox", "equals": true, "blocked": "multi-inbox sending must be built first" }
+      }
+    }
+  ],
+  "reminders": [
+    {
+      "id": "send-window-8-11",
+      "from": "2026-11-19",
+      "short": "widen the send window to 8-11 AM and remove the Nov skip and step-7 pause lines",
+      "text": "widen settings.sendLocalHours to [8,11] (owner approved 2026-11-15) and remove the one-night skip and step-7 pause lines from the daily SKILL.md",
+      "doneWhen": { "sendLocalHoursEndAtLeast": 11 }
+    },
+    {
+      "id": "holidays-2028",
+      "from": "2027-10-01",
+      "short": "add 2028 holidays to settings.skipDates",
+      "text": "add 2028 holidays to settings.skipDates",
+      "doneWhen": { "skipDatesYear": 2028 }
+    }
+  ]
+}
