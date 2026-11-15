@@ -1,5 +1,7 @@
 # Own domain and business email: setup plan (drafted 2026-11-15)
 
+**On hold until the first sales pay for it** (owner's decision, 2026-11-15). learn.js shows "Paid upgrades are funded" in insights.md once collected money covers about $115 (`settings.upgradeCostUSD`). Then the daily report tells the owner, and nothing is bought without the owner's yes. Until then the pipeline stays on the free setup: personal Gmail and `netlify.app` demos, with at most 30 emails a day after warm-up and the same health rules.
+
 Why: free `netlify.app` addresses are widely abused, so some spam filters distrust links to them. A domain also looks more professional, makes Google Postmaster Tools work, and is required before adding a second inbox to go past 40 emails a day.
 
 Prices below were checked on 2026-11-15 on third-party and reseller pages. Check the live price before paying.

@@ -8,6 +8,7 @@ Read this before every run. It is rebuilt from data/outcomes.jsonl by `node lear
 - Care plans: 0 active (0 Local Growth), $0/month
 - Yearly pace: **$0** of the $200,000 goal (0%), 26 months left to 2028-12-31. Pace = care plans x 12 + last 90 days of build and extra-work revenue x 4.
 - What the goal takes (60% from care plans, 40% from builds): about **163 paying care clients** at $62/month plus **19 new builds a month** at $367 (estimate from the live price arms).
+- Paid upgrades (own domain + business email, about $115 a year): on hold until sales cover them. $0 collected so far.
 - Toward ₱100,000: $0 USD (set settings.phpPerUSD to convert)
 
 ### Funnel (pitches at least 14 days old)

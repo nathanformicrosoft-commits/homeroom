@@ -75,6 +75,13 @@ lines.push(`- Collected so far: ${cash.length ? `${usd(collected)} USD from ${ca
 lines.push(`- Care plans: ${activeCare.length} active (${activeCare.filter((e) => e.plan === 'growth').length} Local Growth), ${usd(mrr)}/month`);
 lines.push(`- Yearly pace: **${usd(runRate)}** of the ${usd(goal)} goal (${pct(runRate, goal)}), ${monthsLeft} months left to ${goalBy}. Pace = care plans x 12 + last 90 days of build and extra-work revenue x 4.`);
 lines.push(`- What the goal takes (60% from care plans, 40% from builds): about **${careNeeded} paying care clients** at ${usd(avgCare)}/month plus **${buildsNeeded} new builds a month** at ${usd(avgBuild)}${paidBuilds.length >= 3 ? ' (measured)' : ' (estimate from the live price arms)'}.`);
+// Paid upgrades (own domain + business email) wait until sales have paid for them (owner's rule, 2026-11-15).
+const upgradeCost = st.upgradeCostUSD || 115;
+const clients = new Set(cash.filter((e) => ['deposit', 'paid'].includes(e.event)).map((e) => e.slug)).size;
+const domainLive = /^https:\/\/(?!.*netlify\.app)/.test(config.netlify.baseUrl || '');
+if (!domainLive) lines.push(collected >= upgradeCost
+  ? `- **Paid upgrades are funded:** ${usd(collected)} collected from ${clients} client(s) covers the domain and business email (about ${usd(upgradeCost)} for year one). Tell the owner, and ask before buying anything: playbook/DOMAIN-SETUP.md.`
+  : `- Paid upgrades (own domain + business email, about ${usd(upgradeCost)} a year): on hold until sales cover them. ${usd(collected)} collected so far.`);
 const rate = st.phpPerUSD;
 lines.push(`- Toward ₱${st.goalPHP.toLocaleString()}: ${rate ? `₱${Math.round(collected * rate).toLocaleString()} (at ₱${rate}/USD)` : `${usd(collected)} USD (set settings.phpPerUSD to convert)`}`, '');
 
