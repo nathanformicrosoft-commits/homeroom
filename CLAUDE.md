@@ -28,4 +28,6 @@ Typical feature: `feature-planner` → `builder` (or `frontend-ui` / `auth-payme
 - Never send emails or messages, create invoices or payment links, move money, or spend anything; the owner approves those in chat.
 - Never change already-queued or approved pitches (`pitches/queue.json`, `pitches/autosend.json`).
 - Test pipeline changes on a temp copy of `sales-pipeline/`, never on live `data/`.
+- Every sale is checked against the upgrade ladder at once: after logging any payment (`deposit`, `paid`, `carepaid`, `upsell`) or purchase (`upgrades.js bought`), run `node learn.js` and tell the owner the "Act on:" line in the same reply.
+- Usage comes first. The plan's 5-hour and weekly limits are shared by everything, in this order of priority: approved timed sends, the reply watch, the daily run, research, then builds. Before any multi-agent or long job, check the limits (`get_usage`); don't start one while approved sends are waiting and the weekly limit is over 60% used. Prefer a fresh `/visayaweb` chat over continuing a long one.
 - Commit messages end with `Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>`.

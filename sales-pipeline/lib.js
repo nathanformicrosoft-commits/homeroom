@@ -190,7 +190,13 @@ function probBest(stats, ex, valueFn = () => 1, draws = 4000, seed = 'pb') {
 function chooseArm(ex, stats, assigned, seed, valueFn = () => 1) {
   const live = ex.arms.filter((a) => !a.retired);
   const under = live.filter((a) => (assigned[a.id] || 0) < (ex.minPerArm || 25));
-  if (under.length) return under.sort((a, b) => (assigned[a.id] || 0) - (assigned[b.id] || 0))[0];
+  if (under.length) {
+    // Least-assigned first. Ties are broken by a draw seeded per test and prospect, so each test rotates in its own
+    // random order: a fixed order paired the same arms of two tests on the same prospects (P2 always with S1).
+    const min = Math.min(...under.map((a) => assigned[a.id] || 0));
+    const tied = under.filter((a) => (assigned[a.id] || 0) === min);
+    return tied[Math.floor(rng(seed)() * tied.length)];
+  }
   const [a0, b0] = ex.prior || [0.5, 10];
   const r = rng(seed);
   let best = live[0], bv = -1;
@@ -222,7 +228,10 @@ function assignOffers(prospects, config, experiments, outcomes, oldQueue) {
   const prev = Object.fromEntries((oldQueue || []).map((q) => [q.slug, q]));
   const keys = ['price', 'subject', 'cta', 'format'];
   const assigned = { price: {}, subject: {}, cta: {}, format: {} };
-  const count = (p) => { for (const k of keys) if (p.offer && p.offer[k]) assigned[k][p.offer[k]] = (assigned[k][p.offer[k]] || 0) + 1; };
+  // Balance counts mirror what the tests can measure. Legacy offers (the first pitches, queued before price, format
+  // and call-to-action variants were recorded) carry only a subject variant in their pitched event, so they count
+  // toward the subject balance only. Counting them elsewhere kept P1 and C1 out of the next ~70 pitches.
+  const count = (p) => { for (const k of keys) if (p.offer && p.offer[k] && !(p.offer.legacy && k !== 'subject')) assigned[k][p.offer[k]] = (assigned[k][p.offer[k]] || 0) + 1; };
   prospects.forEach(count);
   const asOf = today();
   const won = ['won', 'deposit', 'paid'], pos = ['interested', 'won', 'deposit', 'paid'];
