@@ -5,9 +5,13 @@
 //   node bank.js add <file.json> ...    vet research files and add the good records to the bank
 //   node bank.js take [N|auto]          move N (or enough to keep the pitch queue full) into data/prospects.json
 //   node bank.js skiplist               names, slugs and photo ids research subagents must avoid
+//   node bank.js top [N]                the best-scored banked businesses (what `take` will move next)
+// `take` moves the highest-scored businesses first: well-reviewed, well-rated, in the business types that
+// answer most (learned from data/outcomes.jsonl), fresh. Pitching the best fits first gets more clients
+// from the same number of emails, which is the only safe way to grow past the sending cap.
 const fs = require('fs');
 const path = require('path');
-const { P, readJSON, writeJSON, readCSV, today } = require('./lib');
+const { P, readJSON, writeJSON, readJSONL, readCSV, today, daysBetween } = require('./lib');
 
 const config = readJSON('config.json');
 const state = Object.assign({ target: 100, low: 25, perRunMax: 16, buffer: 50, refilling: true }, readJSON('data/bank-state.json', {}));
@@ -55,6 +59,38 @@ function vet(p, k) {
   return why;
 }
 
+// ---- lead score ----
+const outcomes = readJSONL('data/outcomes.jsonl');
+const POS = ['interested', 'won', 'deposit', 'paid'];
+const catAdj = (() => {
+  const evs = {};
+  for (const e of outcomes) (evs[e.slug] = evs[e.slug] || []).push(e.event);
+  const g = {};
+  for (const e of outcomes.filter((x) => x.event === 'pitched' && daysBetween(x.date, today()) >= 14)) {
+    const c = (g[e.category] = g[e.category] || { n: 0, pos: 0, stop: 0 });
+    c.n++;
+    if ((evs[e.slug] || []).some((x) => POS.includes(x))) c.pos++;
+    if ((evs[e.slug] || []).some((x) => ['stop', 'complaint'].includes(x))) c.stop++;
+  }
+  const all = Object.values(g).reduce((a, c) => ({ n: a.n + c.n, pos: a.pos + c.pos }), { n: 0, pos: 0 });
+  const base = (0.5 + all.pos) / (15 + all.n);
+  const out = {};
+  for (const [k, c] of Object.entries(g)) {
+    if (c.n >= 20 && c.stop / c.n > 0.1) { out[k] = -5; continue; }
+    out[k] = Math.max(-2, Math.min(2, 3 * (((0.5 + c.pos) / (15 + c.n)) / base - 1)));
+  }
+  return out;
+})();
+function score(p) {
+  const r = Number(p.rating) || 0, n = Number(p.reviewCount) || 0;
+  let s = r >= 4.7 ? 2 : r >= 4.4 ? 1.2 : r >= 4.0 ? 0.5 : -1; // happy customers, owner who cares
+  s += Math.min(Math.log10(n + 1), 2.5); // established enough to pay: 10 reviews = 1, 100 = 2
+  s += catAdj[p.category] || 0; // learned from real replies
+  if (p.market === (config.settings.marketOrder || ['US'])[0]) s += 0.5;
+  if (p.banked && daysBetween(p.banked, today()) > 45) s -= 1; // may have a website by now
+  return Math.round(s * 100) / 100;
+}
+
 const [cmd, ...args] = process.argv.slice(2);
 if (cmd === 'status' || !cmd) {
   updateMode(); save();
@@ -89,6 +125,7 @@ if (cmd === 'status' || !cmd) {
   }
   const k = known();
   const moved = [];
+  bank.sort((a, b) => score(b) - score(a)); // best fits first
   while (moved.length < n && bank.length) {
     const p = bank.shift();
     if (prospects.some((x) => x.slug === p.slug)) continue;
@@ -98,7 +135,11 @@ if (cmd === 'status' || !cmd) {
   writeJSON('data/prospects.json', prospects);
   updateMode(); save();
   console.log(`moved ${moved.length} into prospects.json: ${moved.join(', ') || '(none)'}; bank now ${bank.length}${state.refilling ? ' (refilling)' : ''}`);
+} else if (cmd === 'top') {
+  const n = Number(args[0]) || 15;
+  for (const p of [...bank].sort((a, b) => score(b) - score(a)).slice(0, n)) console.log(`${String(score(p)).padStart(5)}  ${p.slug}  (${p.category}, ${p.rating} stars, ${p.reviewCount} reviews, ${p.town} ${p.state})`);
+  if (Object.keys(catAdj).length) console.log('learned type adjustments: ' + Object.entries(catAdj).map(([k, v]) => `${k} ${v > 0 ? '+' : ''}${v.toFixed(1)}`).join(', '));
 } else {
-  console.error('usage: node bank.js status | skiplist | add <file...> | take [N|auto]');
+  console.error('usage: node bank.js status | skiplist | add <file...> | take [N|auto] | top [N]');
   process.exit(1);
 }

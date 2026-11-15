@@ -16,7 +16,7 @@ Whoever runs the day (you or Claude) follows these steps in order. Commands run 
 `insights.md` lists them. Max 2, on day 4 and day 9, and each must add something new: a tweak to their demo (their real menu item, a better photo) or one useful tip (for example: "add your site to your Google profile"). Never "just checking in". Log `followup1` / `followup2`. After day 9, stop.
 
 ## 3. Find new prospects (up to the daily cap minus today's follow-ups)
-**Prospect bank:** research lands in `data/bank.json` first (`node bank.js add <files>`), refilled to 100 by the visaya-prospect-bank task whenever it drops to 25. The daily run pulls from it with `node bank.js take auto` and re-checks each business is still website-less before building. `node bank.js status` shows the count.
+**Prospect bank:** research lands in `data/bank.json` first (`node bank.js add <files>`), kept at about 150 by the visaya-prospect-bank task (refills whenever it drops below 100). The daily run pulls the best-scored businesses first with `node bank.js take auto` (`node bank.js top` shows the ranking: rating, review count, business types that answer, freshness) and re-checks each business is still website-less before building. `node bank.js status` shows the count.
 
 Markets in `config.json → settings.marketOrder`; **USA first**.
 - Pick small towns (about 10,000–80,000 people), away from big metros, for example Dothan AL, Joplin MO, Kearney NE, Twin Falls ID, Bowling Green KY, Hattiesburg MS, Grand Junction CO. Vary the towns; don't pitch two businesses of the same type in the same town on the same day.

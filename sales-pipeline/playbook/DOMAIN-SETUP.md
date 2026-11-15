@@ -37,6 +37,21 @@ Prices below were checked on 2026-11-15 on third-party and reseller pages. Check
 - The 26 approved emails (Nov 17–18) go out from the current Gmail as planned. The switch starts after them.
 - **Later, past 40 emails a day:** a second sending domain and inbox (another about $11 a year plus $7 a month). Claude will ask first.
 
+## Budget plan for the first month's revenue (about $1,000, owner's intent 2026-11-15)
+
+Spend only what buys **more safe sending** or **more trust**. Each item needs the owner's yes before buying.
+
+| Order | What | About | Why |
+| --- | --- | --- | --- |
+| 1 | Own domain + Google Workspace inbox (the setup above) | $95–115 a year | Demos off `netlify.app`, Google Postmaster Tools, and protects the personal Gmail. |
+| 2 | Second sending domain + one more Workspace inbox (for example `getvisaya.com`), with its own SPF/DKIM/DMARC | about $95 a year | Each inbox can safely send about 40 a day. A second one doubles reach to about 80 a day once both are warmed up. It must warm up from scratch (about 8 a day in week 1). |
+| 3 | A third inbox, only after the first two have run clean for a month | about $95 a year | About 120 a day in total. Past three inboxes, the bottleneck is finding good businesses and answering replies fast, not sending. |
+| – | Keep the rest (about $700) as reserve | – | Renewals, and a cushion if a month is slow. |
+
+**Don't buy:** email lists (they bounce and get flagged), "warm-up" networks (fake engagement that Google penalizes), mass-mailing tools, or link trackers (tracking lowers replies). They all trade a short-term bump for a burned inbox.
+
+**Claude's part once inbox 2 exists:** a sending cap and warm-up per inbox in the scheduler and the volume governor, drafts created in the right mailbox, and replies always answered from the inbox the thread started in.
+
 ## Sources
 - Google Workspace plans and prices: https://support.google.com/a/answer/1247360
 - Philippine reseller pricing (Z.com): https://web.z.com/ph/google-workspace/
