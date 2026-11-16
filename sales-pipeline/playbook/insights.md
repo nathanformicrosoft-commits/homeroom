@@ -1,4 +1,4 @@
-# Insights (updated 2026-11-15)
+# Insights (updated 2026-11-16)
 
 **Act on:** nothing new
 
