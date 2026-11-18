@@ -13,3 +13,4 @@
 {"date":"2026-11-17","slug":"freddys-landscaping","event":"pitched","market":"US","category":"Lawn care service","channel":"email","variant":{"subject":"S2"},"amount":null}
 {"date":"2026-11-17","slug":"windham-pressure-washing","event":"pitched","market":"US","category":"Pressure washing service","channel":"email","variant":{"subject":"S1"},"amount":null}
 {"date":"2026-11-17","slug":"bubbas-stump-grinding","event":"pitched","market":"US","category":"Tree service","channel":"email","variant":{"subject":"S2"},"amount":null}
+{"date":"2026-11-18","slug":"brannen-tree-service","event":"declined","market":"US","category":"Tree service","channel":"email","amount":null,"note":"\"No thanks\" (one-line reply, no reason given)"}
