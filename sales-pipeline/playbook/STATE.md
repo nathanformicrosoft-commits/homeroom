@@ -55,7 +55,6 @@ The memory between chats. `/visayaweb` loads this file in any new chat. **Every 
 - By Oct 2027: add 2028 holidays to `settings.skipDates` (learn.js warns).
 - Owner to confirm: the refund rule in the close terms (every full unused month comes back; yearly plan = 1/12 a month), that care starts on launch day, AUD prices for the founding-client discount and upsells (closing.md says "ask the owner"), and whether the close (about 330 words) should be trimmed.
 - After Nov 18 (frozen until then): match leads by slug, not name (`pitch.js`, `log.js`); make `pitch.js` merge the queue instead of rewriting it; `replies.md` and config `payments.rules` still write `$`/`USD` examples without the currency code.
-- Nov 19: set `settings.sendLocalHours` to [8,11] (owner approved 2026-11-15), and remove the one-night skip and step-7 pause lines from the daily SKILL.md.
 - After the 2026-11-16 2:27 AM run proves stage A: add the optional research fields `serviceArea`, `fbLastPost` and `deadDomain` to PROSPECTING-BRIEF.md and prospect-researcher.md (`bank.js` already scores them).
 - About Dec 1, once pitches are 14+ days old: learning by trade group weighted by first-year value with care counted most (`groupAdj` in bank.js, groups in learn.js "By business type"); planned, not built.
 - Owner to check: whether PayPal buyer protection covers PayPal.me payments (the "Is this a scam?" reply no longer claims it).
@@ -75,3 +74,4 @@ The memory between chats. `/visayaweb` loads this file in any new chat. **Every 
 - 2026-11-16 (7:27 PM daily run): nothing sent yet, no replies, nothing due, 26 sends still waiting, none missed. Skipped step 4 (the 7 banked leads stay in the bank) because sends are waiting and the weekly limit is at 80% (Fable 92%). Step 7 paused. Report: `reports/2026-11-16.md`.
 - 2026-11-22: /visayaweb check: the 4 Tue Nov 24 send jobs stay in the earlier chat (owner confirmed it is open); no jobs made here.
 - 2026-11-22 (growth review): too little data (22 sent, 1 "No thanks", $0, bank 22); applied: none; top idea: send the 4 missed pitches Tue Nov 24 and widen sendLocalHours to 8-11 AM
+- 2026-11-23: owner asked to push for new business asap. Set sendLocalHours to [8,11], removed the one-night skip and step-7 pause lines from the daily SKILL.md, so tonight's 7:27 PM daily run pitches new bank leads (38 banked) and drafts the overdue follow-ups. Running the daily task early was refused by the permission check. Weekly usage 52%.
