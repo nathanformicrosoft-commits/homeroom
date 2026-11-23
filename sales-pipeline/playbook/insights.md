@@ -1,4 +1,4 @@
-# Insights (updated 2026-11-16)
+# Insights (updated 2026-11-23)
 
 **Act on:** nothing new
 
@@ -8,7 +8,7 @@ Read this before every run. It is rebuilt from data/outcomes.jsonl by `node lear
 
 - Collected so far: nothing yet
 - Care plans: 0 active (0 Local Growth), $0/month
-- Yearly pace: **$0** of the $200,000 goal (0%), 26 months left to 2028-12-31. Pace = care plans x 12 + last 90 days of build and extra-work revenue x 4.
+- Yearly pace: **$0** of the $200,000 goal (0%), 25 months left to 2028-12-31. Pace = care plans x 12 + last 90 days of build and extra-work revenue x 4.
 - What the goal takes (60% from care plans, 40% from builds): about **163 paying care clients** at $62/month plus **19 new builds a month** at $367 (estimate from the live price arms).
 - Paid upgrades (own domain + business email, about $115 a year): on hold until sales cover them. $0 collected so far.
 - Toward ₱100,000: $0 USD (set settings.phpPerUSD to convert)
@@ -20,8 +20,8 @@ Read this before every run. It is rebuilt from data/outcomes.jsonl by `node lear
 ## Sending volume
 
 - Level 0 of 4: Tue–Thu, 30 emails a day after warm-up (email only). Up to about 90 new businesses a week.
-- Last 21 days: 0 emails, 0 bounced, 0 STOP, 0 complaints, – replied.
-- Holding at level 0. Next step needs: finish the 21-day warm-up (0 days so far); at least 60 emails in the last 21 days (0); 30 emails at least 5 days old to judge replies; 7 days at the current level.
+- Last 21 days: 22 emails, 0 bounced, 0 STOP, 0 complaints, 5% replied.
+- Holding at level 0. Next step needs: finish the 21-day warm-up (7 days so far); at least 60 emails in the last 21 days (22); 30 emails at least 5 days old to judge replies.
 - Rules: one level up at most every 7 days, only while healthy; any complaint, bounces over 3% (or 3 in one day) or STOPs over 5% halve the cap for a week. Never more than 40 emails a day from one inbox. Going beyond that needs your own domain and a second inbox (playbook/deliverability.md), which costs money, so ask the owner.
 
 ## Upgrades and milestones
@@ -29,7 +29,7 @@ Read this before every run. It is rebuilt from data/outcomes.jsonl by `node lear
 Claude never buys, pays or signs up for anything: the owner buys, then tells Claude, who logs it. Whole ladder: `node upgrades.js status` (rules: playbook/upgrades.json and DOMAIN-SETUP.md "Reinvestment ladder").
 
 - Money available for upgrades: **$0** ($0 collected x 100% reinvested - $0 spent). Cushion kept after an inbox or research upgrade: $300.
-- Ladder: running. Sending inboxes: 1. Health, last 30 days: 0 emails, 0 bounced (0%), 0 STOP (0%), 0 complaint(s).
+- Ladder: running. Sending inboxes: 1. Health, last 30 days: 22 emails, 0 bounced (0%), 0 STOP (0%), 0 complaint(s).
 - Ready to buy: nothing yet.
 - Next: own-domain (Own domain + Google Workspace inbox, about $115/yr): needs $115 more collected ($0 of $115).
 - Renewals due within 30 days: none.
@@ -52,8 +52,8 @@ Not enough data yet. Keep sending; never edit an arm that has been sent.
 
 Success = positive reply (interested, won or paid). Balanced until each version has 25 pitches; after that most pitches go to the likely winner.
 
-- S1 "I built a free homepage for {name}": 0 sent, 0 old enough to judge, 0 successes (–), still collecting data
-- S2 "{name} homepage (already built, free to look)": 0 sent, 0 old enough to judge, 0 successes (–), still collecting data
+- S1 "I built a free homepage for {name}": 11 sent, 2 old enough to judge, 0 successes (0%), still collecting data
+- S2 "{name} homepage (already built, free to look)": 11 sent, 2 old enough to judge, 0 successes (0%), still collecting data
 
 Not enough data yet. Keep sending; never edit an arm that has been sent.
 
@@ -82,19 +82,31 @@ Not enough data yet. Keep sending; never edit an arm that has been sent.
 
 | Group | Sent | Replied | Positive | Won | STOP |
 | --- | --- | --- | --- | --- | --- |
-| (no sends yet) | 0 | – | – | 0 | 0 |
+| AU | 6 | 0% | 0% | 0 | 0 |
+| US | 16 | 6% | 0% | 0 | 0 |
 
 ### By business type
 
 | Group | Sent | Replied | Positive | Won | STOP |
 | --- | --- | --- | --- | --- | --- |
-| (no sends yet) | 0 | – | – | 0 | 0 |
+| Lawn care service | 3 | 0% | 0% | 0 | 0 |
+| Pressure washing service | 6 | 0% | 0% | 0 | 0 |
+| Cafe | 1 | 0% | 0% | 0 | 0 |
+| Diner | 1 | 0% | 0% | 0 | 0 |
+| Mobile car detailing | 1 | 0% | 0% | 0 | 0 |
+| Mechanic | 1 | 0% | 0% | 0 | 0 |
+| Tree service | 4 | 25% | 0% | 0 | 0 |
+| Landscaper | 1 | 0% | 0% | 0 | 0 |
+| Appliance repair service | 1 | 0% | 0% | 0 | 0 |
+| Small engine repair service | 1 | 0% | 0% | 0 | 0 |
+| Barber shop | 1 | 0% | 0% | 0 | 0 |
+| Bakery & cafe | 1 | 0% | 0% | 0 | 0 |
 
 ### By channel
 
 | Group | Sent | Replied | Positive | Won | STOP |
 | --- | --- | --- | --- | --- | --- |
-| (no sends yet) | 0 | – | – | 0 | 0 |
+| email | 22 | 5% | 0% | 0 | 0 |
 
 ## Targeting (the prospect bank reads this)
 
@@ -103,11 +115,33 @@ Not enough data yet. Keep sending; never edit an arm that has been sent.
 
 ## What people said (learn from every reply)
 
-- Nothing yet. Log every reply with a short note and tags, for example `node log.js <slug> declined --note "#price has a nephew who does sites"`. Tags: #price #trust #timing #has-site #facebook-enough #ai #not-owner #interested-later.
+- 2026-11-18 brannen-tree-service (declined): "No thanks" (one-line reply, no reason given)
+
+Use these: answer the common questions inside the first email or the demo, add a mistake rule when one reply shows a problem, and turn a repeated objection into the next copy challenger.
 
 ## Due today
 
-- No follow-ups due.
+- Follow-up for Mildura Lawn Mowing (first, day 4). It must add something new: a demo tweak or a useful tip.
+- Follow-up for Blended Cafe (first, day 4). It must add something new: a demo tweak or a useful tip.
+- Follow-up for Route 66 Diner (first, day 4). It must add something new: a demo tweak or a useful tip.
+- Follow-up for Kalgoorlie Mobile Detailing (first, day 4). It must add something new: a demo tweak or a useful tip.
+- Follow-up for Keeley Industries (first, day 4). It must add something new: a demo tweak or a useful tip.
+- Follow-up for Dubbo Exterior Cleaning (first, day 4). It must add something new: a demo tweak or a useful tip.
+- Follow-up for Goodridge's Lawn Care LLC (first, day 4). It must add something new: a demo tweak or a useful tip.
+- Follow-up for Freddy's Landscaping (first, day 4). It must add something new: a demo tweak or a useful tip.
+- Follow-up for Windham Pressure Washing (first, day 4). It must add something new: a demo tweak or a useful tip.
+- Follow-up for Bubba's Stump Grinding (first, day 4). It must add something new: a demo tweak or a useful tip.
+- Follow-up for Ellis Clean (first, day 4). It must add something new: a demo tweak or a useful tip.
+- Follow-up for All Clear Power Washing (first, day 4). It must add something new: a demo tweak or a useful tip.
+- Follow-up for Owen's Landscaping & Pressure Washing (first, day 4). It must add something new: a demo tweak or a useful tip.
+- Follow-up for Kovacs Home & Property Services (first, day 4). It must add something new: a demo tweak or a useful tip.
+- Follow-up for FTK llc. (first, day 4). It must add something new: a demo tweak or a useful tip.
+- Follow-up for Altoona Small Engine (first, day 4). It must add something new: a demo tweak or a useful tip.
+- Follow-up for Sosa's Barbershop (first, day 4). It must add something new: a demo tweak or a useful tip.
+- Follow-up for Slay All Day Pressure Washing (first, day 4). It must add something new: a demo tweak or a useful tip.
+- Follow-up for Baggett Exterior Cleaning (first, day 4). It must add something new: a demo tweak or a useful tip.
+- Follow-up for Full Circle Bakery Cafe (first, day 4). It must add something new: a demo tweak or a useful tip.
+- Follow-up for Renfrow's Tree Service (first, day 4). It must add something new: a demo tweak or a useful tip.
 
 ## Care payments due
 
