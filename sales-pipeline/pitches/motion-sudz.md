@@ -1,6 +1,6 @@
 **To:** ryankarr469@gmail.com (Listed on their public Facebook page)
-**Subject:** I built a free homepage for Motion Sudz  _(variant S1)_
-**Send:** Wed, Nov 18, 10:59 PM Manila time (Wed, Nov 18, 8:59 AM their time)
+**Subject:** I built a free homepage for Motion Sudz  _(subject S1, format F1, call to action C1, price P1)_
+**Send:** Tue, Nov 24, 10:00 PM Manila time (Tue, Nov 24, 8:00 AM their time)
 **Body words:** 103
 
 ---

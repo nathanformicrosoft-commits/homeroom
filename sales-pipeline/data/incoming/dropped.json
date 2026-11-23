@@ -1,0 +1,83 @@
+[
+  {
+    "slug": "apex-outdoor-services-ruston",
+    "name": "Apex Outdoor Services",
+    "market": "US",
+    "town": "Ruston",
+    "state": "LA",
+    "tz": "America/Chicago",
+    "category": "Landscaper",
+    "theme": "lawn",
+    "found": "2026-11-16",
+    "channel": "email",
+    "email": "Apexoutdoorservices1@gmail.com",
+    "emailSource": "Listed on their public Facebook page (https://www.facebook.com/p/Apex-Outdoor-Services-LLC-100086403214735/)",
+    "phoneDisplay": "(318) 655-5747",
+    "phoneTel": "+13186555747",
+    "rating": 5,
+    "reviewCount": 16,
+    "noWebsite": true,
+    "sources": [
+      "Google Maps listing (rating, reviews, phone, Add website shown)",
+      "facebook.com/p/Apex-Outdoor-Services-LLC-100086403214735 (email, phone)"
+    ],
+    "notes": "Facebook page name is Apex Outdoor Services LLC; phone matches Maps. Other Apex Outdoor businesses in other states are unrelated.",
+    "enriched": false,
+    "takenOn": "2026-11-23",
+    "dropped": "Facebook page that listed the email is now Davis Landscape (Monroe LA) with a different phone and email; published email can no longer be verified"
+  },
+  {
+    "slug": "action-power-wash-llc",
+    "name": "Action Power Wash LLC",
+    "market": "US",
+    "town": "Orangeburg",
+    "state": "SC",
+    "tz": "America/New_York",
+    "category": "Pressure washing service",
+    "theme": "wash",
+    "found": "2026-11-22",
+    "channel": "email",
+    "email": "apwnow@gmail.com",
+    "emailSource": "Listed on their public Facebook page (https://www.facebook.com/people/Action-Power-Wash-LLC/100085932805054/)",
+    "phoneDisplay": "(803) 223-4615",
+    "phoneTel": "+18032234615",
+    "rating": 5,
+    "reviewCount": 43,
+    "noWebsite": true,
+    "sources": [
+      "Google Maps listing (rating, reviews, phone, Add website shown, no Website link)",
+      "facebook.com/people/Action-Power-Wash-LLC/100085932805054 (email, phone, service area)"
+    ],
+    "notes": "Service-area business, no address. Facebook lists service area Calhoun, Lexington and Richland counties SC; town Orangeburg comes only from the Maps search hit, confirm home town before pitching. Family owned, soft wash.",
+    "enriched": false,
+    "takenOn": "2026-11-23",
+    "dropped": "Home town Orangeburg unverified: Maps pin is a service-area centroid and Facebook lists only Calhoun, Lexington and Richland counties; Facebook last post 2023"
+  },
+  {
+    "slug": "blue-collar-pressure-wash",
+    "name": "Blue Collar Pressure Wash",
+    "market": "US",
+    "town": "Cheyenne",
+    "state": "WY",
+    "tz": "America/Denver",
+    "category": "Pressure washing service",
+    "theme": "wash",
+    "found": "2026-11-22",
+    "channel": "email",
+    "email": "bluecollarpressurewash@gmail.com",
+    "emailSource": "Listed on their public Facebook page About section (https://www.facebook.com/307BlueCollarPressureWash/about)",
+    "phoneDisplay": "(307) 223-2280",
+    "phoneTel": "+13072232280",
+    "rating": 5,
+    "reviewCount": 25,
+    "noWebsite": true,
+    "sources": [
+      "Google Maps listing (rating, reviews, phone, Add website shown)",
+      "facebook.com/307BlueCollarPressureWash/about (email)"
+    ],
+    "notes": "Cheyenne is about 65k, near the upper size limit. Maps address 3721 Rawlins St. Facebook shows no website; serves Cheyenne, Laramie and northern Colorado.",
+    "enriched": false,
+    "takenOn": "2026-11-23",
+    "dropped": "Looks inactive: last Facebook post Nov 2023, Maps reviews seen are 3 to 5 years old"
+  }
+]

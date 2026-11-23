@@ -1,6 +1,6 @@
 **To:** barksandbubbles20@gmail.com (Listed on their public Facebook page)
-**Subject:** Barks & Bubbles homepage (already built, free to look)  _(variant S2)_
-**Send:** Wed, Nov 18, 11:26 PM Manila time (Wed, Nov 18, 8:26 AM their time)
+**Subject:** Barks & Bubbles homepage (already built, free to look)  _(subject S2, format F1, call to action C1, price P1)_
+**Send:** Tue, Nov 24, 11:05 PM Manila time (Tue, Nov 24, 8:05 AM their time)
 **Body words:** 97
 
 ---

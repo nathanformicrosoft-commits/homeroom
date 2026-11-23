@@ -3313,5 +3313,859 @@
       "care": 39,
       "legacy": true
     }
+  },
+  {
+    "slug": "mr-cleans-washing-longview",
+    "name": "M.R. Cleans Washing",
+    "market": "US",
+    "town": "Longview",
+    "state": "WA",
+    "tz": "America/Los_Angeles",
+    "category": "Pressure washing service",
+    "theme": "wash",
+    "found": "2026-11-23",
+    "channel": "email",
+    "email": "m.r.cleanswashing@gmail.com",
+    "emailSource": "Listed on their public Facebook page (https://www.facebook.com/M.R.Cleanswashing/)",
+    "phoneDisplay": "(360) 773-3141",
+    "phoneTel": "+13607733141",
+    "rating": 5,
+    "reviewCount": 30,
+    "sources": [
+      "Google Maps place page (rating 5.0, 30 reviews, phone, Add website shown, only a tr.ee link)",
+      "facebook.com/M.R.Cleanswashing (email, phone, services; lists mrcleanswashing.com)",
+      "Google Maps place page rechecked 2026-11-23 (5.0, 30 reviews, phone, Add website, no site)",
+      "facebook.com/M.R.Cleanswashing (intro, mrcleanswashing.com listed; domain does not resolve)"
+    ],
+    "notes": "Facebook page lists mrcleanswashing.com but the domain does not resolve (dead domain, good pitch detail). Maps shows only a Linktree link. Soft washing, roof/moss, gutter and window cleaning. Last Facebook post seen Oct 24 2025; confirm still active. | mrcleanswashing.com does not resolve (checked 2026-11-23). Reviewers name Ryan and Monty; owner first name not confirmed, so greeting uses the team. Last Facebook post Oct 24 2025 (fall gutter specials), newest Maps reviews are about 2 years old, so activity is uncertain. No hours on Maps.",
+    "enriched": true,
+    "address": null,
+    "serviceArea": "Longview and surrounding area",
+    "mapQuery": "M.R. Cleans Washing, Longview WA",
+    "hours": [
+      [
+        "Every day",
+        "Open"
+      ]
+    ],
+    "hoursNote": "Hours were not listed on Google, so confirm yours here.",
+    "kicker": "Soft washing · Roof and moss · Gutters · Longview",
+    "headline": "Soft washing and roof cleaning in Longview",
+    "sub": "Roof, siding, gutter and window cleaning, rated 5.0 by 30 Google reviewers.",
+    "servicesTitle": "What we do",
+    "services": [
+      [
+        "Roof and moss cleaning",
+        "Gentle soft washing that clears moss and buildup from your roof."
+      ],
+      [
+        "House and siding washing",
+        "Soft washing for siding, decks and driveways."
+      ],
+      [
+        "Gutter cleaning",
+        "Single story and two story homes."
+      ],
+      [
+        "Window cleaning",
+        "Interior and exterior window cleaning."
+      ]
+    ],
+    "servicesNote": "Taken from your Google listing, Facebook page and reviews. Your full list and prices go here.",
+    "themes": [
+      [
+        "Roofs are the big one",
+        "Roof work comes up in more reviews than anything else, with moss removal close behind."
+      ],
+      [
+        "On time and careful",
+        "Reviewers say the crew shows up when promised and protects landscaping while working."
+      ],
+      [
+        "Fair price, clean finish",
+        "Several customers mention the price felt fair and the cleanup was thorough."
+      ]
+    ],
+    "cta": "Get a free quote",
+    "pitch": {
+      "greeting": "Hi M.R. Cleans team,",
+      "line1": "Your Facebook page links to mrcleanswashing.com, but that address doesn't load, and your roof and moss work is what reviewers mention most.",
+      "gap": "I couldn't find a working website for M.R. Cleans Washing"
+    },
+    "complexity": "simple",
+    "photo": {
+      "id": "photo-1781637202423-33ec5b47e52e",
+      "by": "web seo",
+      "user": "webseoweb"
+    },
+    "enrichedOn": "2026-11-23",
+    "offer": {
+      "price": "P1",
+      "quote": 150,
+      "care": 49,
+      "subject": "S1",
+      "format": "F2"
+    }
+  },
+  {
+    "slug": "elite-edge-exterior-cleaning-llc",
+    "name": "Elite Edge Exterior Cleaning LLC",
+    "market": "US",
+    "town": "Tullahoma",
+    "state": "TN",
+    "tz": "America/Chicago",
+    "category": "Pressure washing service",
+    "theme": "wash",
+    "found": "2026-11-22",
+    "channel": "email",
+    "email": "Eliteedgeexteriorcleaning@gmail.com",
+    "emailSource": "Listed on their public Facebook page (https://www.facebook.com/p/Elite-Edge-Exterior-Cleaning-LLC-61584606044290/)",
+    "phoneDisplay": "(931) 273-8843",
+    "phoneTel": "+19312738843",
+    "rating": 5,
+    "reviewCount": 30,
+    "sources": [
+      "Google Maps listing (rating, reviews, phone, Add website shown, no Website link)",
+      "facebook.com/p/Elite-Edge-Exterior-Cleaning-LLC-61584606044290 (email, phone, recent post Nov 18 2026)",
+      "Google Maps place page rechecked 2026-11-23 (5.0, 30 reviews, phone, Add website, hours, review themes)",
+      "facebook.com/p/Elite-Edge-Exterior-Cleaning-LLC-61584606044290 (veteran owned, Christmas light post Nov 18 2026)"
+    ],
+    "notes": "Service-area business (no street address on Maps). Veteran owned per Facebook intro. Facebook page itself shows 0 ratings but Maps has 30. | Owner is called Rocky in a Google review; not confirmed on Facebook, so greeting uses the team. Maps hours show Open 24 hours every day, which is probably a listing setting. Service-area business.",
+    "enriched": true,
+    "address": null,
+    "serviceArea": "Tullahoma and surrounding area",
+    "mapQuery": "Elite Edge Exterior Cleaning LLC, Tullahoma TN",
+    "hours": [],
+    "hoursNote": "Your Google listing says open 24 hours, which Google often shows when hours were never set. Your real hours go here.",
+    "kicker": "Pressure washing · Gutters · Christmas lights · Tullahoma",
+    "headline": "Exterior cleaning and Christmas lights in Tullahoma",
+    "sub": "Veteran owned pressure washing and gutter cleaning, rated 5.0 by 30 Google reviewers.",
+    "servicesTitle": "What we do",
+    "services": [
+      [
+        "Pressure washing",
+        "House, patio and driveway cleaning."
+      ],
+      [
+        "Gutter cleaning",
+        "Gutters come up in more reviews than any other service."
+      ],
+      [
+        "Roof assessment and cleaning",
+        "Roof inspection and cleaning, with an honest call on whether it needs replacing."
+      ],
+      [
+        "Window cleaning",
+        "Exterior window cleaning."
+      ],
+      [
+        "Christmas light installation",
+        "Custom fit lights for your home, now booking."
+      ]
+    ],
+    "servicesNote": "Taken from your Google listing, Facebook page and reviews. Your full list and prices go here.",
+    "themes": [
+      [
+        "Gutters and washing",
+        "Gutter cleaning leads the reviews, along with pressure washing the whole house."
+      ],
+      [
+        "Quick, fair and on time",
+        "Reviewers mention fast replies, reasonable prices and showing up when promised."
+      ],
+      [
+        "Honest advice",
+        "One customer was told a roof needed replacing instead of a cleaning, and thanked the owner for saying so."
+      ]
+    ],
+    "cta": "Get a free quote",
+    "pitch": {
+      "greeting": "Hi Elite Edge team,",
+      "line1": "One customer thanked you for telling them their roof needed replacing instead of selling a cleaning, and you are now booking Christmas light installs too.",
+      "gap": "I couldn't find a website for Elite Edge Exterior Cleaning"
+    },
+    "complexity": "simple",
+    "photo": {
+      "id": "photo-1605146768851-eda79da39897",
+      "by": "Dillon Kydd",
+      "user": "kyddvisuals"
+    },
+    "enrichedOn": "2026-11-23",
+    "offer": {
+      "price": "P3",
+      "quote": 300,
+      "care": 49,
+      "subject": "S2",
+      "format": "F3",
+      "cta": "C1"
+    }
+  },
+  {
+    "slug": "obky-pressure-washing-owensboro-ky",
+    "name": "OBKY Pressure Washing",
+    "market": "US",
+    "town": "Owensboro",
+    "state": "KY",
+    "tz": "America/Chicago",
+    "category": "Pressure washing service",
+    "theme": "wash",
+    "found": "2026-11-23",
+    "channel": "email",
+    "email": "OBKYPressureWashing@gmail.com",
+    "emailSource": "Listed on their public Facebook page (https://www.facebook.com/OBKYPressureWashing/)",
+    "phoneDisplay": "(270) 903-0101",
+    "phoneTel": "+12709030101",
+    "rating": 5,
+    "reviewCount": 43,
+    "sources": [
+      "Google Maps listing (5.0 stars, 43 reviews, phone, Add website shown, no Website link)",
+      "facebook.com/OBKYPressureWashing (email, phone, says serving only Owensboro)",
+      "obky-pressure-washing.business.site returns 404 (dead Google business site linked on their Facebook page)",
+      "Google Maps place page rechecked 2026-11-23 (5.0, 43 reviews, phone, Add website, hours)",
+      "facebook.com/OBKYPressureWashing (intro, services, dead business.site link, post Apr 13 2026)",
+      "obky-pressure-washing.business.site returns 404 (checked 2026-11-23)"
+    ],
+    "notes": "Dead domain: the Facebook page still links obky-pressure-washing.business.site, which now returns 404 (checked 2026-11-23). Maps shows no address (service area business). Facebook shows 9 reviews, Google 43. | A review mentions Shawn; owner first name not confirmed, so greeting uses the team. Service-area business.",
+    "enriched": true,
+    "address": null,
+    "serviceArea": "Owensboro only",
+    "mapQuery": "OBKY Pressure Washing, Owensboro KY",
+    "hours": [
+      [
+        "Every day",
+        "8am – 6pm"
+      ]
+    ],
+    "hoursNote": "Hours from your Google listing.",
+    "kicker": "Soft washing · Driveways · Gutters · Owensboro",
+    "headline": "Pressure washing in Owensboro, Kentucky",
+    "sub": "Soft washing, driveways, patios and gutters, rated 5.0 by 43 Google reviewers.",
+    "servicesTitle": "What we do",
+    "services": [
+      [
+        "Soft washing and house washing",
+        "Low pressure cleaning for siding and exteriors."
+      ],
+      [
+        "Roof cleaning",
+        "Roof cleaning with free estimates."
+      ],
+      [
+        "Driveways, patios and sidewalks",
+        "Concrete flatwork cleaned back to bright."
+      ],
+      [
+        "Gutter cleaning",
+        "Gutter cleaning for your home."
+      ],
+      [
+        "Fence cleaning and staining",
+        "Fence cleaning and staining."
+      ]
+    ],
+    "servicesNote": "Taken from your Google listing, Facebook page and reviews. Your full list and prices go here.",
+    "themes": [
+      [
+        "Fast to schedule",
+        "Reviewers say they got a quick estimate and were booked fast."
+      ],
+      [
+        "Clean sidewalks and driveways",
+        "Sidewalk and patio cleaning come up the most, with one customer saying the concrete looked almost too bright."
+      ],
+      [
+        "Fair, professional and communicative",
+        "Customers mention a reasonable price and clear updates from the owner."
+      ]
+    ],
+    "cta": "Get a free estimate",
+    "pitch": {
+      "greeting": "Hi OBKY team,",
+      "line1": "Your Facebook page still links to obky-pressure-washing.business.site, which now shows a 404, and you serve only Owensboro.",
+      "gap": "I couldn't find a working website for OBKY Pressure Washing"
+    },
+    "complexity": "simple",
+    "photo": {
+      "id": "photo-1575397205849-f5e0a03323a3",
+      "by": "Keagan Henman",
+      "user": "henmankk"
+    },
+    "enrichedOn": "2026-11-23",
+    "offer": {
+      "price": "P2",
+      "quote": 200,
+      "care": 49,
+      "subject": "S2",
+      "format": "F1",
+      "cta": "C2"
+    }
+  },
+  {
+    "slug": "knox-exterior-services-mount-vernon-oh",
+    "name": "Knox Exterior Services LLC",
+    "market": "US",
+    "town": "Mount Vernon",
+    "state": "OH",
+    "tz": "America/New_York",
+    "category": "Pressure washing service",
+    "theme": "wash",
+    "found": "2026-11-23",
+    "channel": "email",
+    "email": "Ajhurt0315@gmail.com",
+    "emailSource": "Listed on their public Facebook page (https://www.facebook.com/knoxexteriorservices/)",
+    "phoneDisplay": "(740) 507-8447",
+    "phoneTel": "+17405078447",
+    "rating": 4.9,
+    "reviewCount": 34,
+    "sources": [
+      "Google Maps listing (4.9 stars, 34 reviews, phone, address 12 Roosevelt Ave Mt Vernon, Add website shown, no Website link)",
+      "facebook.com/knoxexteriorservices (email, phone, services: pressure washing, soft washing, gutters, concrete sealing, window cleaning)",
+      "knoxexteriorservicesllc.business.site returns 404 (dead Google business site linked on their Facebook page)",
+      "Google Maps place page rechecked 2026-11-23 (4.9, 34 reviews, address, phone, Add website, hours)",
+      "facebook.com/knoxexteriorservices (intro, services, dead business.site link, cover photo update Sep 11 2026)",
+      "knoxexteriorservicesllc.business.site returns 404 (checked 2026-11-23)"
+    ],
+    "notes": "Dead domain: Facebook page links knoxexteriorservicesllc.business.site, which returns 404 (checked 2026-11-23). Facebook shows 4 reviews, Google 34. Recent Facebook posting not checked. | Email contact name looks like AJ (a review calls him AJ), not confirmed on Facebook, so greeting uses the team. One recent Google review says a window cleaning inquiry went unanswered.",
+    "enriched": true,
+    "address": "12 Roosevelt Ave, Mt Vernon, OH 43050",
+    "serviceArea": "Mount Vernon and surrounding area",
+    "mapQuery": "Knox Exterior Services LLC, 12 Roosevelt Ave, Mt Vernon OH",
+    "hours": [
+      [
+        "Every day",
+        "7am – 8pm"
+      ]
+    ],
+    "hoursNote": "Hours from your Google listing.",
+    "kicker": "Pressure washing · Soft washing · Gutters · Mount Vernon",
+    "headline": "Exterior cleaning in Mount Vernon, Ohio",
+    "sub": "Fully insured pressure washing and soft washing, rated 4.9 by 34 Google reviewers.",
+    "servicesTitle": "What we do",
+    "services": [
+      [
+        "Pressure washing",
+        "Driveways, walkways, garages and patios."
+      ],
+      [
+        "Soft washing",
+        "Low pressure cleaning for siding and exteriors."
+      ],
+      [
+        "Gutter clean out and brightening",
+        "Gutters cleaned out and brightened."
+      ],
+      [
+        "Concrete sealing",
+        "Sealing for concrete surfaces."
+      ],
+      [
+        "Window cleaning",
+        "Exterior window cleaning."
+      ]
+    ],
+    "servicesNote": "Taken from your Google listing, Facebook page and reviews. Your full list and prices go here.",
+    "themes": [
+      [
+        "Same day quotes",
+        "Reviewers say they got a quote the same day, while other companies in the area took about a week."
+      ],
+      [
+        "Fair prices, finished on time",
+        "Customers mention reasonable pricing and jobs wrapped up promptly."
+      ],
+      [
+        "Walkways, decks and patios",
+        "Flatwork and outdoor living spaces are what customers mention most."
+      ]
+    ],
+    "cta": "Get a free quote",
+    "pitch": {
+      "greeting": "Hi Knox Exterior team,",
+      "line1": "A reviewer said you gave them a same day quote when others in Mount Vernon took about a week.",
+      "gap": "I couldn't find a working website for Knox Exterior Services"
+    },
+    "complexity": "simple",
+    "photo": {
+      "id": "photo-1783125127143-d4e18726bab3",
+      "by": "Salvo Media LLC",
+      "user": "salvomedia"
+    },
+    "enrichedOn": "2026-11-23",
+    "offer": {
+      "price": "P3",
+      "quote": 300,
+      "care": 49,
+      "subject": "S1",
+      "format": "F1",
+      "cta": "C1"
+    }
+  },
+  {
+    "slug": "canine-theory-pet-styling-klamath-falls",
+    "name": "Canine Theory Pet Styling",
+    "market": "US",
+    "town": "Klamath Falls",
+    "state": "OR",
+    "tz": "America/Los_Angeles",
+    "category": "Pet groomer",
+    "theme": "wash",
+    "found": "2026-11-23",
+    "channel": "email",
+    "email": "caninetheorystudio@gmail.com",
+    "emailSource": "Listed on their public Facebook page (https://www.facebook.com/p/Canine-Theory-Pet-Styling-100088509523376/)",
+    "phoneDisplay": "(458) 254-6665",
+    "phoneTel": "+14582546665",
+    "rating": 5,
+    "reviewCount": 10,
+    "sources": [
+      "Google Maps place page (rating 5.0, 10 reviews, phone, address 125 N Broad St, Add website shown, no website link)",
+      "facebook.com/p/Canine-Theory-Pet-Styling-100088509523376 (email, phone, description)"
+    ],
+    "notes": "Privately owned grooming salon, owner has a veterinary background and 6+ years experience per the Facebook intro. Exactly 10 reviews, at the minimum. Theme is a placeholder, no grooming theme exists in the list. | Owner first name Tiffany from Google reviews and owner replies, not signed on Facebook. No grooming theme exists, theme left as mechanic placeholder. Maps re-checked 2026-11-23: no website, phone matches.",
+    "enriched": true,
+    "address": "125 N Broad St, Klamath Falls, OR 97601",
+    "hours": [
+      [
+        "Mon – Thu",
+        "8am – 4pm"
+      ],
+      [
+        "Fri – Sun",
+        "Closed"
+      ]
+    ],
+    "hoursNote": "Hours from your Google listing.",
+    "kicker": "Dog grooming · Salon · Klamath Falls",
+    "headline": "Gentle, one-on-one dog grooming in Klamath Falls",
+    "sub": "A privately owned grooming salon in Klamath Falls, rated 5.0 by 10 Google reviewers.",
+    "servicesTitle": "What we do",
+    "services": [
+      [
+        "Full grooms",
+        "Cuts and styling tailored to each dog and what the owner asks for."
+      ],
+      [
+        "Bath and brush",
+        "Baths and deshedding for dogs that mainly need a refresh."
+      ],
+      [
+        "First-time grooms",
+        "A calm, slow introduction for nervous dogs, with a meet and greet first."
+      ],
+      [
+        "Last-minute openings",
+        "Open appointment slots shared on the Facebook page when they come up."
+      ]
+    ],
+    "servicesNote": "Taken from your Google listing, reviews and Facebook page. Your full list and prices go here.",
+    "themes": [
+      [
+        "Trust with nervous dogs",
+        "Reviewers say she went slow and earned the trust of a dog that is wary of strangers."
+      ],
+      [
+        "Clean, comfortable space",
+        "A first-time customer noticed the salon was tidy and the crate roomy and cozy."
+      ],
+      [
+        "Listens to what you want",
+        "One owner says she asked about the cut they wanted and delivered it."
+      ]
+    ],
+    "cta": "Book a groom",
+    "pitch": {
+      "greeting": "Hi Tiffany,",
+      "line1": "A reviewer with a wary Blue Healer says you took it slow at a meet and greet, and now he loves you.",
+      "gap": "I couldn't find a website for Canine Theory Pet Styling"
+    },
+    "complexity": "standard",
+    "mapQuery": "Canine Theory Pet Styling, 125 N Broad St, Klamath Falls OR",
+    "photo": {
+      "id": "photo-1719464454959-9cf304ef4774",
+      "by": "Buddy AN",
+      "user": "stbuddyp"
+    },
+    "enrichedOn": "2026-11-23",
+    "offer": {
+      "price": "P1",
+      "quote": 250,
+      "care": 49,
+      "subject": "S1",
+      "format": "F2"
+    }
+  },
+  {
+    "slug": "arnoldos-pressure-washing-roswell",
+    "name": "Arnoldo’s pressure washing service & mobile detailing",
+    "market": "US",
+    "town": "Roswell",
+    "state": "NM",
+    "tz": "America/Denver",
+    "category": "Pressure washing service",
+    "theme": "wash",
+    "found": "2026-11-23",
+    "channel": "email",
+    "email": "arnoldocabrales8@gmail.com",
+    "emailSource": "Listed on their public Facebook page for Arnoldo’s Home & Property Solutions, same phone as the Maps listing (https://www.facebook.com/people/Arnoldos-Home-Property-Solutions/100084248301832/)",
+    "phoneDisplay": "(575) 914-0029",
+    "phoneTel": "+15759140029",
+    "rating": 5,
+    "reviewCount": 32,
+    "sources": [
+      "Google Maps place page (rating 5.0, 32 reviews, phone, Add website shown, no website link)",
+      "facebook.com/people/Arnoldos-Home-Property-Solutions/100084248301832 (email, phone 575-914-0029 matches Maps)"
+    ],
+    "notes": "Owner appears to be Arnoldo (email handle arnoldocabrales8, page name Arnoldo’s Home & Property Solutions); name not confirmed. Facebook page last post seen Jan 1 2026 (profile picture update); confirm still active. Also does mobile detailing per Maps name. | First name Arnoldo from the page name and email handle only. Facebook page last post seen Jan 1 2026 (profile picture); Google reviews mostly older. Facebook page is named Arnoldo's Home & Property Solutions. Maps re-checked 2026-11-23: no website, phone matches.",
+    "enriched": true,
+    "address": null,
+    "serviceArea": "Roswell and surrounding area",
+    "hours": [],
+    "hoursNote": "Your Google listing says open 24 hours, which Google often shows when hours were never set. Your real hours go here.",
+    "kicker": "Pressure washing · Mobile detailing · Roswell",
+    "headline": "Pressure washing and mobile detailing in Roswell",
+    "sub": "Pressure washing and mobile detailing, rated 5.0 by 32 Google reviewers.",
+    "servicesTitle": "What we do",
+    "services": [
+      [
+        "Pressure washing",
+        "Exterior cleaning for homes and property."
+      ],
+      [
+        "Mobile detailing",
+        "Detailing that comes to you."
+      ],
+      [
+        "Home and property work",
+        "Home and property solutions with a free estimate."
+      ]
+    ],
+    "servicesNote": "Taken from your Google listing and Facebook page. Your full list and prices go here.",
+    "themes": [
+      [
+        "Clean results",
+        "Reviewers mention how clean the work comes out."
+      ],
+      [
+        "Respectful",
+        "Customers describe him as respectful to work with."
+      ],
+      [
+        "Hard worker",
+        "Reviewers say he puts in the effort and does a professional job."
+      ]
+    ],
+    "cta": "Get a free estimate",
+    "pitch": {
+      "greeting": "Hi Arnoldo,",
+      "line1": "Your Google listing says you are open 24 hours, which is rare for a one-man pressure washing outfit.",
+      "gap": "I couldn't find a website for Arnoldo's pressure washing service & mobile detailing"
+    },
+    "complexity": "simple",
+    "mapQuery": "Arnoldo's pressure washing service & mobile detailing, Roswell NM",
+    "photo": {
+      "id": "photo-1677956787377-a0f32c0974af",
+      "by": "Adrian Raudaschl",
+      "user": "raudaschl"
+    },
+    "enrichedOn": "2026-11-23",
+    "offer": {
+      "price": "P2",
+      "quote": 200,
+      "care": 49,
+      "subject": "S2",
+      "format": "F3",
+      "cta": "C2"
+    }
+  },
+  {
+    "slug": "pro-auto-detail-inc",
+    "name": "Pro Auto Detail, Inc.",
+    "market": "US",
+    "town": "Cookeville",
+    "state": "TN",
+    "tz": "America/Chicago",
+    "category": "Car detailing service",
+    "theme": "detailing",
+    "found": "2026-11-22",
+    "channel": "email",
+    "email": "detail_guy@hotmail.com",
+    "emailSource": "Listed on their public Facebook page (https://www.facebook.com/proautodetailinc/)",
+    "phoneDisplay": "(931) 260-1011",
+    "phoneTel": "+19312601011",
+    "rating": 4.8,
+    "reviewCount": 29,
+    "sources": [
+      "Google Maps listing (rating, reviews, phone, address, Add website shown, no Website link)",
+      "facebook.com/proautodetailinc (email, phone, address)"
+    ],
+    "notes": "Explore lead (auto detailing). Facebook page links detailersoftheroundtable.com, which is a live detailing community site, not the shop own site as far as I could tell; confirm if it matters. Facebook has 1.8K followers. | Facebook lists detailersoftheroundtable.com, checked: a detailers' membership community site, not the shop's own site. Kirk is named in reviews, owner not confirmed so team greeting used. Maps re-checked 2026-11-23: no website, phone matches.",
+    "enriched": true,
+    "address": "980 Salem Church Rd, Cookeville, TN 38501",
+    "hours": [
+      [
+        "Mon – Fri",
+        "9am – 5pm"
+      ],
+      [
+        "Sat – Sun",
+        "Closed"
+      ]
+    ],
+    "hoursNote": "Hours from your Google listing.",
+    "kicker": "Auto detailing · Ceramic coating · Cookeville",
+    "headline": "Full-service auto detailing in Cookeville",
+    "sub": "A full-service auto detailer in Cookeville, rated 4.8 by 29 Google reviewers.",
+    "servicesTitle": "What we do",
+    "services": [
+      [
+        "Full detailing",
+        "Full-service detailing for cars, trucks and boats."
+      ],
+      [
+        "Wax and buff",
+        "Reviewers mention waxed and buffed trucks that look new again."
+      ],
+      [
+        "Ceramic coatings",
+        "The Facebook page promotes high-solid ceramic coatings."
+      ],
+      [
+        "Headlight restoration",
+        "One reviewer had a headlight assembly reconditioned instead of replaced."
+      ]
+    ],
+    "servicesNote": "Taken from your Google listing, reviews and Facebook page. Your full list and prices go here.",
+    "themes": [
+      [
+        "Like-new results",
+        "A reviewer says a neglected truck with mold looked brand new after a detail."
+      ],
+      [
+        "Saves money",
+        "A reviewer says a headlight restoration saved hundreds over replacing the assembly."
+      ],
+      [
+        "Long-time repeat customers",
+        "One reviewer says the shop has kept boats, cars and trucks looking new for years."
+      ]
+    ],
+    "cta": "Book a detail",
+    "pitch": {
+      "greeting": "Hi Pro Auto Detail team,",
+      "line1": "One of your reviewers had a truck unwashed for two years and covered in mold, and said it came back looking brand new.",
+      "gap": "I couldn't find a website for Pro Auto Detail, Inc."
+    },
+    "complexity": "standard",
+    "mapQuery": "Pro Auto Detail, Inc., 980 Salem Church Rd, Cookeville TN",
+    "photo": {
+      "id": "photo-1658244500543-47f32dc51dc2",
+      "by": "Vitali Adutskevich",
+      "user": "vadutskevich"
+    },
+    "enrichedOn": "2026-11-23",
+    "offer": {
+      "price": "P2",
+      "quote": 350,
+      "care": 49,
+      "subject": "S1",
+      "format": "F2"
+    }
+  },
+  {
+    "slug": "peak-to-peak-pressure-washing",
+    "name": "Peak to Peak Pressure Washing",
+    "market": "US",
+    "town": "Bozeman",
+    "state": "MT",
+    "tz": "America/Denver",
+    "category": "Pressure washing service",
+    "theme": "wash",
+    "found": "2026-11-22",
+    "channel": "email",
+    "email": "peaktopeakpressurewashing@gmail.com",
+    "emailSource": "Listed on their public Facebook page About section (https://www.facebook.com/61576327388550/about)",
+    "phoneDisplay": "(406) 595-9656",
+    "phoneTel": "+14065959656",
+    "rating": 5,
+    "reviewCount": 10,
+    "sources": [
+      "Google Maps listing (rating, reviews, phone, Add website shown)",
+      "facebook.com/61576327388550/about (email)"
+    ],
+    "notes": "Exactly 10 Google reviews, page founded March 2024 (young business). Maps address 375 Stone Fly Dr, Bozeman. A different Facebook page with a similar name (PeakToPeakPressureWashing) is a British Columbia business, not this one; the email above is from the Bozeman page. | First name Austin from Google reviews, not on the Facebook page. Service area from the Facebook About page. Facebook page founded March 2024. Maps re-checked 2026-11-23: no website, phone matches.",
+    "enriched": true,
+    "address": "375 Stone Fly Dr, Bozeman, MT 59718",
+    "serviceArea": "Bozeman, Belgrade, Big Sky, Manhattan and Gallatin County",
+    "hours": [
+      [
+        "Mon – Sat",
+        "7am – 7pm"
+      ],
+      [
+        "Sunday",
+        "9am – 5pm"
+      ]
+    ],
+    "hoursNote": "Hours from your Google listing.",
+    "kicker": "Pressure washing · Exterior cleaning · Bozeman",
+    "headline": "Pressure washing for Bozeman and Gallatin County",
+    "sub": "Exterior pressure washing in Bozeman, rated 5.0 by 10 Google reviewers.",
+    "servicesTitle": "What we do",
+    "services": [
+      [
+        "House exterior washing",
+        "Whole-house exterior cleaning, as one reviewer had done for spring cleaning."
+      ],
+      [
+        "Driveways and sidewalks",
+        "Driveway, sidewalk and patio cleaning."
+      ],
+      [
+        "Deck washing",
+        "One reviewer had a deck washed the same day they called."
+      ]
+    ],
+    "servicesNote": "Taken from your Google listing and reviews. Your full list and prices go here.",
+    "themes": [
+      [
+        "Quick to respond",
+        "Reviewers say Austin replied fast and scheduling was easy."
+      ],
+      [
+        "On time and professional",
+        "Customers say he showed up when promised and was personable."
+      ],
+      [
+        "Visible difference",
+        "A reviewer says the driveway, sidewalk and patio looked fresh and new."
+      ]
+    ],
+    "cta": "Get a free quote",
+    "pitch": {
+      "greeting": "Hi Austin,",
+      "line1": "A Bozeman customer called you to wash a deck and said it was finished the same day.",
+      "gap": "I couldn't find a website for Peak to Peak Pressure Washing"
+    },
+    "complexity": "simple",
+    "mapQuery": "Peak to Peak Pressure Washing, 375 Stone Fly Dr, Bozeman MT",
+    "photo": {
+      "id": "photo-1773427610300-e19ad6c7bf27",
+      "by": "Roger Starnes Sr",
+      "user": "rstar50"
+    },
+    "enrichedOn": "2026-11-23",
+    "offer": {
+      "price": "P3",
+      "quote": 300,
+      "care": 49,
+      "subject": "S2",
+      "format": "F3",
+      "cta": "C1"
+    }
+  },
+  {
+    "slug": "desert-view-yard-care-sierra-vista",
+    "name": "Desert View Yard Care",
+    "market": "US",
+    "town": "Sierra Vista",
+    "state": "AZ",
+    "tz": "America/Phoenix",
+    "category": "Gardener",
+    "theme": "lawn",
+    "found": "2026-11-23",
+    "channel": "email",
+    "email": "Desertviewyardcare@gmail.com",
+    "emailSource": "Listed on their public Facebook page (https://www.facebook.com/p/Desert-View-Yard-Care-61564644016541/)",
+    "phoneDisplay": "(520) 477-8209",
+    "phoneTel": "+15204778209",
+    "rating": 5,
+    "reviewCount": 12,
+    "sources": [
+      "Google Maps place page (rating 5.0, 12 reviews, phone, Add website shown, no website link)",
+      "facebook.com/p/Desert-View-Yard-Care-61564644016541 (email, phone, tree and shrub, junk removal, post Oct 13 2026)"
+    ],
+    "notes": "Family owned, serves Hereford and Sierra Vista. Tree, shrub, debris haul and junk removal. Facebook page itself is new (few followers). | Family owned per Facebook intro. Carlos is named in one review, owner not confirmed so team greeting used. Facebook page is new (2 followers). Maps re-checked 2026-11-23: no website, phone matches.",
+    "enriched": true,
+    "address": null,
+    "serviceArea": "Sierra Vista, Hereford and surrounding area",
+    "hours": [
+      [
+        "Mon – Fri",
+        "9am – 6pm"
+      ],
+      [
+        "Saturday",
+        "Closed"
+      ],
+      [
+        "Sunday",
+        "9am – 6pm"
+      ]
+    ],
+    "hoursNote": "Hours from your Google listing.",
+    "kicker": "Yard care · Junk removal · Sierra Vista",
+    "headline": "Yard care and junk hauling in Sierra Vista",
+    "sub": "A family-owned yard care and hauling business, rated 5.0 by 12 Google reviewers.",
+    "servicesTitle": "What we do",
+    "services": [
+      [
+        "Tree and shrub service",
+        "Tree and shrub work in Hereford and Sierra Vista."
+      ],
+      [
+        "Yard cleanup",
+        "Overgrown yards cleaned up, with periodic yard care."
+      ],
+      [
+        "Debris haul",
+        "Hauling debris away."
+      ],
+      [
+        "Junk removal",
+        "Same day or next day junk removal with free estimates."
+      ],
+      [
+        "Moving help",
+        "Hauling and moving help, such as large pots."
+      ]
+    ],
+    "servicesNote": "Taken from your Facebook page and Google listing. Your full list and prices go here.",
+    "themes": [
+      [
+        "Fast to respond",
+        "Reviewers say they answered calls quickly and sent help the next day."
+      ],
+      [
+        "Polite and hardworking",
+        "Customers describe a courteous, professional crew."
+      ],
+      [
+        "Fair price",
+        "A reviewer found the pricing reasonable and the service dependable."
+      ]
+    ],
+    "cta": "Get a free estimate",
+    "pitch": {
+      "greeting": "Hi Desert View Yard Care team,",
+      "line1": "Your Facebook page lets people text a photo of their junk for a quick estimate.",
+      "gap": "I couldn't find a website for Desert View Yard Care"
+    },
+    "complexity": "simple",
+    "mapQuery": "Desert View Yard Care, Sierra Vista AZ",
+    "photo": {
+      "id": "photo-1458245201577-fc8a130b8829",
+      "by": "Daniel Watson",
+      "user": "danielwatsondesign",
+      "vetted": "2026-11-15"
+    },
+    "enrichedOn": "2026-11-23",
+    "offer": {
+      "price": "P1",
+      "quote": 150,
+      "care": 49,
+      "subject": "S2",
+      "format": "F1",
+      "cta": "C2"
+    }
   }
 ]
