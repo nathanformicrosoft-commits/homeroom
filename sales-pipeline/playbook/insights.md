@@ -1,4 +1,4 @@
-# Insights (updated 2026-11-23)
+# Insights (updated 2026-11-24)
 
 **Act on:** nothing new
 
@@ -21,7 +21,7 @@ Read this before every run. It is rebuilt from data/outcomes.jsonl by `node lear
 
 - Level 0 of 4: Tue–Thu, 30 emails a day after warm-up (email only). Up to about 90 new businesses a week.
 - Last 21 days: 22 emails, 0 bounced, 0 STOP, 0 complaints, 5% replied.
-- Holding at level 0. Next step needs: finish the 21-day warm-up (7 days so far); at least 60 emails in the last 21 days (22); 30 emails at least 5 days old to judge replies.
+- Holding at level 0. Next step needs: finish the 21-day warm-up (8 days so far); at least 60 emails in the last 21 days (22); 30 emails at least 5 days old to judge replies.
 - Rules: one level up at most every 7 days, only while healthy; any complaint, bounces over 3% (or 3 in one day) or STOPs over 5% halve the cap for a week. Never more than 40 emails a day from one inbox. Going beyond that needs your own domain and a second inbox (playbook/deliverability.md), which costs money, so ask the owner.
 
 ## Upgrades and milestones
@@ -52,8 +52,8 @@ Not enough data yet. Keep sending; never edit an arm that has been sent.
 
 Success = positive reply (interested, won or paid). Balanced until each version has 25 pitches; after that most pitches go to the likely winner.
 
-- S1 "I built a free homepage for {name}": 11 sent, 2 old enough to judge, 0 successes (0%), still collecting data
-- S2 "{name} homepage (already built, free to look)": 11 sent, 2 old enough to judge, 0 successes (0%), still collecting data
+- S1 "I built a free homepage for {name}": 11 sent, 8 old enough to judge, 0 successes (0%), still collecting data
+- S2 "{name} homepage (already built, free to look)": 11 sent, 7 old enough to judge, 0 successes (0%), still collecting data
 
 Not enough data yet. Keep sending; never edit an arm that has been sent.
 
@@ -121,27 +121,7 @@ Use these: answer the common questions inside the first email or the demo, add a
 
 ## Due today
 
-- Follow-up for Mildura Lawn Mowing (first, day 4). It must add something new: a demo tweak or a useful tip.
-- Follow-up for Blended Cafe (first, day 4). It must add something new: a demo tweak or a useful tip.
-- Follow-up for Route 66 Diner (first, day 4). It must add something new: a demo tweak or a useful tip.
-- Follow-up for Kalgoorlie Mobile Detailing (first, day 4). It must add something new: a demo tweak or a useful tip.
-- Follow-up for Keeley Industries (first, day 4). It must add something new: a demo tweak or a useful tip.
-- Follow-up for Dubbo Exterior Cleaning (first, day 4). It must add something new: a demo tweak or a useful tip.
-- Follow-up for Goodridge's Lawn Care LLC (first, day 4). It must add something new: a demo tweak or a useful tip.
-- Follow-up for Freddy's Landscaping (first, day 4). It must add something new: a demo tweak or a useful tip.
-- Follow-up for Windham Pressure Washing (first, day 4). It must add something new: a demo tweak or a useful tip.
-- Follow-up for Bubba's Stump Grinding (first, day 4). It must add something new: a demo tweak or a useful tip.
-- Follow-up for Ellis Clean (first, day 4). It must add something new: a demo tweak or a useful tip.
-- Follow-up for All Clear Power Washing (first, day 4). It must add something new: a demo tweak or a useful tip.
-- Follow-up for Owen's Landscaping & Pressure Washing (first, day 4). It must add something new: a demo tweak or a useful tip.
-- Follow-up for Kovacs Home & Property Services (first, day 4). It must add something new: a demo tweak or a useful tip.
-- Follow-up for FTK llc. (first, day 4). It must add something new: a demo tweak or a useful tip.
-- Follow-up for Altoona Small Engine (first, day 4). It must add something new: a demo tweak or a useful tip.
-- Follow-up for Sosa's Barbershop (first, day 4). It must add something new: a demo tweak or a useful tip.
-- Follow-up for Slay All Day Pressure Washing (first, day 4). It must add something new: a demo tweak or a useful tip.
-- Follow-up for Baggett Exterior Cleaning (first, day 4). It must add something new: a demo tweak or a useful tip.
-- Follow-up for Full Circle Bakery Cafe (first, day 4). It must add something new: a demo tweak or a useful tip.
-- Follow-up for Renfrow's Tree Service (first, day 4). It must add something new: a demo tweak or a useful tip.
+- No follow-ups due.
 
 ## Care payments due
 
