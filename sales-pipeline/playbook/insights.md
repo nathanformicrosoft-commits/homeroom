@@ -20,8 +20,8 @@ Read this before every run. It is rebuilt from data/outcomes.jsonl by `node lear
 ## Sending volume
 
 - Level 0 of 4: Tue–Thu, 30 emails a day after warm-up (email only). Up to about 90 new businesses a week.
-- Last 21 days: 22 emails, 0 bounced, 0 STOP, 0 complaints, 5% replied.
-- Holding at level 0. Next step needs: finish the 21-day warm-up (8 days so far); at least 60 emails in the last 21 days (22); 30 emails at least 5 days old to judge replies.
+- Last 21 days: 31 emails, 0 bounced, 1 STOP, 0 complaints, 9% replied.
+- Holding at level 0. Next step needs: finish the 21-day warm-up (8 days so far); at least 60 emails in the last 21 days (31); STOPs at 3% or less; 30 emails at least 5 days old to judge replies.
 - Rules: one level up at most every 7 days, only while healthy; any complaint, bounces over 3% (or 3 in one day) or STOPs over 5% halve the cap for a week. Never more than 40 emails a day from one inbox. Going beyond that needs your own domain and a second inbox (playbook/deliverability.md), which costs money, so ask the owner.
 
 ## Upgrades and milestones
@@ -29,7 +29,7 @@ Read this before every run. It is rebuilt from data/outcomes.jsonl by `node lear
 Claude never buys, pays or signs up for anything: the owner buys, then tells Claude, who logs it. Whole ladder: `node upgrades.js status` (rules: playbook/upgrades.json and DOMAIN-SETUP.md "Reinvestment ladder").
 
 - Money available for upgrades: **$0** ($0 collected x 100% reinvested - $0 spent). Cushion kept after an inbox or research upgrade: $300.
-- Ladder: running. Sending inboxes: 1. Health, last 30 days: 22 emails, 0 bounced (0%), 0 STOP (0%), 0 complaint(s).
+- Ladder: running. Sending inboxes: 1. Health, last 30 days: 31 emails, 0 bounced (0%), 1 STOP (3.2%), 0 complaint(s).
 - Ready to buy: nothing yet.
 - Next: own-domain (Own domain + Google Workspace inbox, about $115/yr): needs $115 more collected ($0 of $115).
 - Renewals due within 30 days: none.
@@ -42,9 +42,9 @@ Claude never buys, pays or signs up for anything: the owner buys, then tells Cla
 
 Success = won client (deposit or paid), weighed by first-year value: build price + expected care plan revenue. Balanced until each version has 40 pitches; after that most pitches go to the likely winner.
 
-- P1 x1 (US standard site about $250): 0 sent, 0 old enough to judge, 0 successes (–), still collecting data
-- P2 x1.4 (US standard site about $350): 0 sent, 0 old enough to judge, 0 successes (–), still collecting data
-- P3 x2 (US standard site about $500): 0 sent, 0 old enough to judge, 0 successes (–), still collecting data
+- P1 x1 (US standard site about $250): 3 sent, 0 old enough to judge, 0 successes (–), still collecting data
+- P2 x1.4 (US standard site about $350): 3 sent, 0 old enough to judge, 0 successes (–), still collecting data
+- P3 x2 (US standard site about $500): 3 sent, 0 old enough to judge, 0 successes (–), still collecting data
 
 Not enough data yet. Keep sending; never edit an arm that has been sent.
 
@@ -52,8 +52,8 @@ Not enough data yet. Keep sending; never edit an arm that has been sent.
 
 Success = positive reply (interested, won or paid). Balanced until each version has 25 pitches; after that most pitches go to the likely winner.
 
-- S1 "I built a free homepage for {name}": 11 sent, 8 old enough to judge, 0 successes (0%), still collecting data
-- S2 "{name} homepage (already built, free to look)": 11 sent, 7 old enough to judge, 0 successes (0%), still collecting data
+- S1 "I built a free homepage for {name}": 15 sent, 8 old enough to judge, 0 successes (0%), still collecting data
+- S2 "{name} homepage (already built, free to look)": 16 sent, 7 old enough to judge, 0 successes (0%), still collecting data
 
 Not enough data yet. Keep sending; never edit an arm that has been sent.
 
@@ -61,8 +61,8 @@ Not enough data yet. Keep sending; never edit an arm that has been sent.
 
 Success = positive reply (interested, won or paid). Balanced until each version has 25 pitches; after that most pitches go to the likely winner.
 
-- C1 "Reply "yes" and I'll finish it in 3 days.": 0 sent, 0 old enough to judge, 0 successes (–), still collecting data
-- C2 "If you like it, reply "yes" and it can be live within 3 days of getting your photos.": 0 sent, 0 old enough to judge, 0 successes (–), still collecting data
+- C1 "Reply "yes" and I'll finish it in 3 days.": 3 sent, 0 old enough to judge, 0 successes (–), still collecting data
+- C2 "If you like it, reply "yes" and it can be live within 3 days of getting your photos.": 3 sent, 0 old enough to judge, 0 successes (–), still collecting data
 
 Not enough data yet. Keep sending; never edit an arm that has been sent.
 
@@ -70,9 +70,9 @@ Not enough data yet. Keep sending; never edit an arm that has been sent.
 
 Success = positive reply (interested, won or paid). Balanced until each version has 25 pitches; after that most pitches go to the likely winner.
 
-- F1 demo link + price in the email (original): 0 sent, 0 old enough to judge, 0 successes (–), still collecting data
-- F2 no link or price: "Want me to send you the link?" (link and price go in the reply): 0 sent, 0 old enough to judge, 0 successes (–), still collecting data
-- F3 demo link, price only on the demo page: 0 sent, 0 old enough to judge, 0 successes (–), still collecting data
+- F1 demo link + price in the email (original): 3 sent, 0 old enough to judge, 0 successes (–), still collecting data
+- F2 no link or price: "Want me to send you the link?" (link and price go in the reply): 3 sent, 0 old enough to judge, 0 successes (–), still collecting data
+- F3 demo link, price only on the demo page: 3 sent, 0 old enough to judge, 0 successes (–), still collecting data
 
 Not enough data yet. Keep sending; never edit an arm that has been sent.
 
@@ -83,30 +83,33 @@ Not enough data yet. Keep sending; never edit an arm that has been sent.
 | Group | Sent | Replied | Positive | Won | STOP |
 | --- | --- | --- | --- | --- | --- |
 | AU | 6 | 0% | 0% | 0 | 0 |
-| US | 16 | 6% | 0% | 0 | 0 |
+| US | 25 | 8% | 0% | 0 | 1 |
 
 ### By business type
 
 | Group | Sent | Replied | Positive | Won | STOP |
 | --- | --- | --- | --- | --- | --- |
 | Lawn care service | 3 | 0% | 0% | 0 | 0 |
-| Pressure washing service | 6 | 0% | 0% | 0 | 0 |
+| Pressure washing service | 12 | 0% | 0% | 0 | 0 |
 | Cafe | 1 | 0% | 0% | 0 | 0 |
 | Diner | 1 | 0% | 0% | 0 | 0 |
 | Mobile car detailing | 1 | 0% | 0% | 0 | 0 |
 | Mechanic | 1 | 0% | 0% | 0 | 0 |
-| Tree service | 4 | 25% | 0% | 0 | 0 |
+| Tree service | 4 | 50% | 0% | 0 | 1 |
 | Landscaper | 1 | 0% | 0% | 0 | 0 |
 | Appliance repair service | 1 | 0% | 0% | 0 | 0 |
 | Small engine repair service | 1 | 0% | 0% | 0 | 0 |
 | Barber shop | 1 | 0% | 0% | 0 | 0 |
 | Bakery & cafe | 1 | 0% | 0% | 0 | 0 |
+| Car detailing service | 1 | 0% | 0% | 0 | 0 |
+| Gardener | 1 | 0% | 0% | 0 | 0 |
+| Pet groomer | 1 | 0% | 0% | 0 | 0 |
 
 ### By channel
 
 | Group | Sent | Replied | Positive | Won | STOP |
 | --- | --- | --- | --- | --- | --- |
-| email | 22 | 5% | 0% | 0 | 0 |
+| email | 31 | 6% | 0% | 0 | 1 |
 
 ## Targeting (the prospect bank reads this)
 
@@ -115,6 +118,8 @@ Not enough data yet. Keep sending; never edit an arm that has been sent.
 
 ## What people said (learn from every reply)
 
+- Most common: #not-owner (stop) x1
+- 2026-11-24 bubbas-stump-grinding (stop): #not-owner no, replied 'Stop' to the 2026-11-24 follow-up
 - 2026-11-18 brannen-tree-service (declined): "No thanks" (one-line reply, no reason given)
 
 Use these: answer the common questions inside the first email or the demo, add a mistake rule when one reply shows a problem, and turn a repeated objection into the next copy challenger.
