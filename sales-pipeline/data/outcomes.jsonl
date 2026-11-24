@@ -50,3 +50,4 @@
 {"date":"2026-11-24","slug":"peak-to-peak-pressure-washing","event":"pitched","market":"US","category":"Pressure washing service","channel":"email","variant":{"price":"P3","quoteUSD":300,"subject":"S2","format":"F3","cta":"C1"},"amount":null}
 {"date":"2026-11-24","slug":"desert-view-yard-care-sierra-vista","event":"pitched","market":"US","category":"Gardener","channel":"email","variant":{"price":"P1","quoteUSD":150,"subject":"S2","format":"F1","cta":"C2"},"amount":null}
 {"date":"2026-11-24","slug":"mr-cleans-washing-longview","event":"pitched","market":"US","category":"Pressure washing service","channel":"email","variant":{"price":"P1","quoteUSD":150,"subject":"S1","format":"F2"},"amount":null}
+{"date":"2026-11-24","slug":"canine-theory-pet-styling-klamath-falls","event":"pitched","market":"US","category":"Pet groomer","channel":"email","variant":{"price":"P1","quoteUSD":250,"subject":"S1","format":"F2"},"amount":null}
