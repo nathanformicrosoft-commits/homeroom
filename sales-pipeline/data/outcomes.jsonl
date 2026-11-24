@@ -44,3 +44,4 @@
 {"date":"2026-11-24","slug":"renfrows-tree-service","event":"followup1","market":"US","category":"Tree service","channel":"email","amount":null}
 {"date":"2026-11-24","slug":"knox-exterior-services-mount-vernon-oh","event":"pitched","market":"US","category":"Pressure washing service","channel":"email","variant":{"price":"P3","quoteUSD":300,"subject":"S1","format":"F1","cta":"C1"},"amount":null}
 {"date":"2026-11-24","slug":"elite-edge-exterior-cleaning-llc","event":"pitched","market":"US","category":"Pressure washing service","channel":"email","variant":{"price":"P3","quoteUSD":300,"subject":"S2","format":"F3","cta":"C1"},"amount":null}
+{"date":"2026-11-24","slug":"obky-pressure-washing-owensboro-ky","event":"pitched","market":"US","category":"Pressure washing service","channel":"email","variant":{"price":"P2","quoteUSD":200,"subject":"S2","format":"F1","cta":"C2"},"amount":null}
