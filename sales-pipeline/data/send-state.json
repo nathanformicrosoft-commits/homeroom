@@ -101,6 +101,16 @@
       "date": "2026-11-25",
       "level": 0,
       "throttleUntil": null
+    },
+    {
+      "date": "2026-11-26",
+      "level": 0,
+      "throttleUntil": null
+    },
+    {
+      "date": "2026-11-26",
+      "level": 0,
+      "throttleUntil": null
     }
   ],
   "sendDays": [
@@ -109,5 +119,5 @@
     4
   ],
   "emailCapAfterWarmup": 30,
-  "updated": "2026-11-25"
+  "updated": "2026-11-26"
 }
