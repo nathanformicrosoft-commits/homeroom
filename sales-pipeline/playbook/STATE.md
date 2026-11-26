@@ -59,7 +59,7 @@ The memory between chats. `/visayaweb` loads this file in any new chat. **Every 
 - About Dec 1, once pitches are 14+ days old: learning by trade group weighted by first-year value with care counted most (`groupAdj` in bank.js, groups in learn.js "By business type"); planned, not built.
 - Owner to check: whether PayPal buyer protection covers PayPal.me payments (the "Is this a scam?" reply no longer claims it).
 - Not built yet (owner decision needed): nudges for leads who replied and then went quiet (+2/+5 days), a day-28 re-pitch, follow-ups timed to the lead's morning, a minimum-wins guard on the price-test rules, and a seasonal care pause plan.
-- insights.md is committed; "What people said" still quotes STOP and complaint notes. Check whether the repo is private.
+- insights.md is committed; "What people said" still quotes STOP and complaint notes. **Checked 2026-11-26: the repo (nathanformicrosoft-commits/homeroom) is public**, pipeline data included. Owner to decide on making it private; nothing changed yet.
 
 ## Session log (one line per session: date, what changed)
 - 2026-11-14/15: built the pipeline optimizer (price/copy/format tests, care tiers, revenue goal, send governor, lead scoring), one-line approvals, PayPal.me payments, email only, holiday skips, research fix, subagent workline, /visayaweb.
