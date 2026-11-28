@@ -1,4 +1,4 @@
-# Insights (updated 2026-11-26)
+# Insights (updated 2026-11-28)
 
 **Act on:** nothing new
 
@@ -21,7 +21,7 @@ Read this before every run. It is rebuilt from data/outcomes.jsonl by `node lear
 
 - Level 0 of 4: Tue–Thu, 30 emails a day after warm-up (email only). Up to about 90 new businesses a week.
 - Last 21 days: 31 emails, 0 bounced, 1 STOP, 0 complaints, 9% replied.
-- Holding at level 0. Next step needs: finish the 21-day warm-up (10 days so far); at least 60 emails in the last 21 days (31); STOPs at 3% or less; 30 emails at least 5 days old to judge replies.
+- Holding at level 0. Next step needs: finish the 21-day warm-up (12 days so far); at least 60 emails in the last 21 days (31); STOPs at 3% or less; 30 emails at least 5 days old to judge replies.
 - Rules: one level up at most every 7 days, only while healthy; any complaint, bounces over 3% (or 3 in one day) or STOPs over 5% halve the cap for a week. Never more than 40 emails a day from one inbox. Going beyond that needs your own domain and a second inbox (playbook/deliverability.md), which costs money, so ask the owner.
 
 ## Upgrades and milestones
@@ -139,6 +139,22 @@ Use these: answer the common questions inside the first email or the demo, add a
 - Follow-up for All Clear Power Washing (second and last, day 9). It must add something new: a demo tweak or a useful tip.
 - Follow-up for Owen's Landscaping & Pressure Washing (second and last, day 9). It must add something new: a demo tweak or a useful tip.
 - Follow-up for Kovacs Home & Property Services (second and last, day 9). It must add something new: a demo tweak or a useful tip.
+- Follow-up for FTK llc. (second and last, day 9). It must add something new: a demo tweak or a useful tip.
+- Follow-up for Altoona Small Engine (second and last, day 9). It must add something new: a demo tweak or a useful tip.
+- Follow-up for Sosa's Barbershop (second and last, day 9). It must add something new: a demo tweak or a useful tip.
+- Follow-up for Slay All Day Pressure Washing (second and last, day 9). It must add something new: a demo tweak or a useful tip.
+- Follow-up for Baggett Exterior Cleaning (second and last, day 9). It must add something new: a demo tweak or a useful tip.
+- Follow-up for Full Circle Bakery Cafe (second and last, day 9). It must add something new: a demo tweak or a useful tip.
+- Follow-up for Renfrow's Tree Service (second and last, day 9). It must add something new: a demo tweak or a useful tip.
+- Follow-up for M.R. Cleans Washing (first, day 4). It must add something new: a demo tweak or a useful tip.
+- Follow-up for Elite Edge Exterior Cleaning LLC (first, day 4). It must add something new: a demo tweak or a useful tip.
+- Follow-up for OBKY Pressure Washing (first, day 4). It must add something new: a demo tweak or a useful tip.
+- Follow-up for Knox Exterior Services LLC (first, day 4). It must add something new: a demo tweak or a useful tip.
+- Follow-up for Canine Theory Pet Styling (first, day 4). It must add something new: a demo tweak or a useful tip.
+- Follow-up for Arnoldo’s pressure washing service & mobile detailing (first, day 4). It must add something new: a demo tweak or a useful tip.
+- Follow-up for Pro Auto Detail, Inc. (first, day 4). It must add something new: a demo tweak or a useful tip.
+- Follow-up for Peak to Peak Pressure Washing (first, day 4). It must add something new: a demo tweak or a useful tip.
+- Follow-up for Desert View Yard Care (first, day 4). It must add something new: a demo tweak or a useful tip.
 
 ## Care payments due
 
