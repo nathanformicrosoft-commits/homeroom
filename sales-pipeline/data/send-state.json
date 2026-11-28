@@ -121,6 +121,11 @@
       "date": "2026-11-28",
       "level": 0,
       "throttleUntil": null
+    },
+    {
+      "date": "2026-11-28",
+      "level": 0,
+      "throttleUntil": null
     }
   ],
   "sendDays": [
